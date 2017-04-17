@@ -1,6 +1,5 @@
 # unity-static
-
-[Describe the project.]
+Unity design language/styleguide site
 
 ## Project Setup
 This project is built with the HCA's Liftoff Yeoman generator.
@@ -18,7 +17,7 @@ or...
 Serve your source locally into your browser. BrowserSync will automatically load any changes to HTML, CSS and JavaScript that you make.
 
 ##### `grunt check`
-Check the quality of your source with tools like [ESLint](http://eslint.org/), [LESS Lint](http://jgable.github.io/grunt-lesslint/), [CSSLint](http://csslint.net/), and [Uncss](http://giakki.github.io/uncss/).
+Check the quality of your source with tools like [ESLint](http://eslint.org/), [Grunt SCSS Lint](https://github.com/ahmednuaman/grunt-scss-lint), [CSSLint](http://csslint.net/), and [Uncss](http://giakki.github.io/uncss/).
 
 ##### `grunt build`
 Build the concatenated, minified production version of the source into the `dist` directory.
