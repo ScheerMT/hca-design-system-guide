@@ -1,0 +1,59 @@
+// colors
+// primary grays & tints
+$color__asphalt: #1f2532;
+$color__cadet: #465561;
+$color__slate: #7f94a2;
+$color__geyser: #d8dde6;
+$color__steam: #f5f7f9; // aka "kyle gray"
+$color__white: #fff;
+
+// primary utility & feedback colors
+// default/info
+$color__night: #063d7a;
+$color__evening: #1e71cd; // rgb(30, 113, 205)
+$color__noon: #268af9;
+$color__morning: #e9f3fe;
+
+// success/positive
+$color__pine: #10572f;
+$color__ivy: #208052;
+$color__grass: #26cc6d;
+$color__mint: #e9f9f0;
+
+// warning/caution
+$color__mocha: #6f4704;
+$color__hazelnut: #966c24;
+$color__butterscotch: #ffb63d;
+$color__vanilla: #fff4e2;
+
+// error/danger/fail
+$color__cranberry: #990112;
+$color__cherry: #c83426;
+$color__strawberry: #f55d50;
+$color__watermelon: #fee7e5;
+
+// text & links
+$color__text: $color__asphalt;
+$color__text--secondary: $color__cadet;
+$color__link: $color__evening;
+$color__link--hover: $color__night;
+
+// backgrounds
+$background-color: $color__white;
+$background-color--secondary: $color__steam;
+
+// fonts
+$font-family__default: 'Open Sans', Arial, sans-serif;
+$font-weight__light: 300;
+$font-weight__regular: 400;
+$font-weight__semi-bold: 600;
+
+// box model?
+$border-radius__default: 5px;
+$box-shadow__1: 0 2px 4px 0 rgba(6, 28, 63, .2);
+$box-shadow__2: 0 6px 12px 0 rgba(6, 28, 63, .2);
+$box-shadow__3: 0 10px 16px 0 rgba(6, 28, 63, .15);
+$box-shadow__4: 0 16px 30px 0 rgba(31, 37, 50, .5);
+
+// transition
+$transition: all .1s cubic-bezier;

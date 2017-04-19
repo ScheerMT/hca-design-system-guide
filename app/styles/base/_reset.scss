@@ -1,0 +1,22 @@
+* {
+  transition: $transition;
+}
+
+body,
+html {
+  background-color: $background-color;
+  color: $color__text;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  color: $color__text;
+  text-decoration: none;
+}
+
+nav, ul, li {
+  margin: 0;
+  padding: 0;
+}

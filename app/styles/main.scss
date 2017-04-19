@@ -2,4 +2,11 @@
 // Syntax highlighting (has no dependencies)
 @import 'syntax';
 
-// Custom
+// Base/Global
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/application';
+
+// Components
+@import 'components/lists';
+@import 'components/menus';
