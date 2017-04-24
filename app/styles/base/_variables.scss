@@ -57,3 +57,11 @@ $box-shadow__4: 0 16px 30px 0 rgba(31, 37, 50, .5);
 
 // transition
 $transition: all .1s ease-in-out;
+
+// media queries (named after Chrome dev tools responsive device breakpoints)
+$screen__mobile--s: 320px;
+$screen__mobile--m: 375px;
+$screen__mobile--l: 425px;
+$screen__tablet: 768px;
+$screen__laptop: 1024px;
+$screen__laptop--l: 1440px;
