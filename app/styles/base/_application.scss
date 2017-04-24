@@ -9,11 +9,18 @@ $color__menu-background--hover: $background-color--secondary;
   height: 100%;
   left: 0;
   overflow-y: scroll;
-  position: fixed;
-  top: 0;
+  min-width: 175px;
+  position: absolute;
   width: 250px;
+  min-height: 100vh;
+
+  @media (min-width: $screen__tablet) {
+    position: relative;
+  }
 
   &--hidden {
+    top: 0;
+    position: absolute;
     left: -250px;
     box-shadow: none;
   }
@@ -107,4 +114,5 @@ $color__menu-background--hover: $background-color--secondary;
 
 .app-container {
   padding: 1rem;
+  max-width: 1400px;
 }
