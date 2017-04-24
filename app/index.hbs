@@ -5,7 +5,18 @@ body_class: 'index'
 base_url: ''
 ---
 
-<h1>hello, world</h1>
+<h1>{{ category.categoryName }}</h1>
+<p>{{ category.categoryText }}</p>
+<h2>{{ category.resource.resourceName }}</h2>
+<h3>{{ category.resource.topic.topicName }}</h3>
+{{!-- loop these here --}}
+<p>{{ category.resource.topic.topicText }}</p>
 
-<p>Here are some variables name: <b>{{ name }}</b> with a widget modifier: <b>{{ modifier }}</b>.</p>
-<p>Here are some other variables name: <b>{{ other-data.name }}</b> with a widget modifier: <b>{{ other-data.modifier }}</b>.</p>
+<h4>{{ category.resource.topic.section.sectionTitle }}</h4>
+<p>{{ category.resource.topic.section.sectionText }}</p>
+
+<h5>{{ category.resource.topic.section.subSection.subSectionTitle }}</h5>
+<dl>
+  <dt>{{ category.resource.topic.section.subSection.spec.attribute }}</dt>
+  <dd>{{ category.resource.topic.section.subSection.spec.value }}</dd>
+</dl>
