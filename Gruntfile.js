@@ -119,8 +119,11 @@ module.exports = function (grunt) {
           cwd: './vendor/bower_components',
           expand: true,
           flatten: true,
-          src: [''],
-          dest: '/vendor/fonts/'
+          src: [
+            'font-awesome/fonts/*',
+            'font-awesome/css/font-awesome.css'
+          ],
+          dest: '<%= yeoman.dist %>/fonts/'
         }]
       }
     },
@@ -334,7 +337,7 @@ module.exports = function (grunt) {
     'copy:tmp',
     'copy:vendorScripts',
     // 'copy:vendorStyles',
-    // 'copy:vendorFonts',
+    'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:app',
@@ -350,7 +353,7 @@ module.exports = function (grunt) {
     'copy:tmp',
     'copy:vendorScripts',
     // 'copy:vendorStyles',
-    // 'copy:vendorFonts',
+    'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:app',
@@ -366,7 +369,7 @@ module.exports = function (grunt) {
     'copy:tmp',
     'copy:vendorScripts',
     // 'copy:vendorStyles',
-    // 'copy:vendorFonts',
+    'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:dist',

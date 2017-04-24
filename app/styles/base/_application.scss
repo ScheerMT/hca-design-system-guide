@@ -1,9 +1,110 @@
+$color__close-btn-bg: $color__noon;
+$color__close-btn: $color__white;
+$color__menu-background: $background-color;
+$color__menu-background--hover: $background-color--secondary;
+
 .app-nav {
+  background-color: $color__menu-background;
   box-shadow: $box-shadow__3;
-  position: fixed;
-  overflow-y: scroll;
+  height: 100%;
   left: 0;
+  overflow-y: scroll;
+  position: fixed;
   top: 0;
   width: 250px;
-  height: 100%;
+
+  &--hidden {
+    left: -250px;
+    box-shadow: none;
+  }
+
+  &__toggle {
+    background-color: $color__close-btn-bg;
+    border: 0;
+    color: $color__close-btn;
+    padding: .5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &:before {
+      content: '\f0c9';
+      font-family: FontAwesome;
+      margin-right: .25rem;
+    }
+
+    &:after {
+      content: 'Menu';
+    }
+
+    &--open {
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: 0;
+
+      &:before {
+        content: '\f00d';
+      }
+
+      &:after {
+        content: 'Close';
+      }
+    }
+  }
+}
+
+.app-menu {
+  list-style: none;
+  padding-left: 0;
+  transition: none;
+
+  &--hidden {
+    left: -1000px;
+    position: absolute;
+  }
+
+  &__heading {
+    display: block;
+    font-weight: $font-weight__semi-bold;
+    padding: 1rem;
+
+    &:after {
+      content: '\f0d7'; // caret-down
+      float: right;
+      font-family: FontAwesome;
+      position: relative;
+      top: 3px;
+    }
+
+    &--open:after {
+      content: '\f0d8'; // caret-up
+    }
+  }
+
+  &__subheading {
+    color: $color__text--secondary;
+    font-size: .75rem;
+    font-weight: $font-weight__semi-bold;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: block;
+    font-weight: $font-weight__semi-bold;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $color__menu-background--hover;
+    }
+
+    &--nested {
+      font-weight: $font-weight__regular;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.app-container {
+  padding: 1rem;
 }

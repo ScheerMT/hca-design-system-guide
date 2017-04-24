@@ -1,42 +1,44 @@
-<nav class="app-nav">
-  <ul class="menu">
+<nav class="app-nav js-app-nav">
+  <button class="app-nav__toggle app-nav__toggle--open js-app-nav-toggle"></button>
+  <ul class="app-menu">
     <li>
-      <a class="menu__item" href="/">
+      <a class="app-menu__item" href="/">
         Unity
         <br>
-        <span class="menu__subheading">v0.1.0<span>
+        <span class="app-menu__subheading">v0.1.0<span>
       </a>
     </li>
-    <li><a class="menu__item" href="/pages/essentials">Essentials</a></li>
-    <li>
-      <ul class="menu menu--nested">
-        <span class="menu__heading">Components</span>
-        <li><a class="menu__item menu__item--nested" href="/pages/elevation">Elevation</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/typography">Typography</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/tooltips">Tooltips</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/snackbars">Snackbars</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/lists">Lists</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/text-fields">Text Fields</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/search">Search</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/expansion-panels">Expansion Panels</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/menus">Menus</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/data-tables">Data Tables</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/buttons">Buttons</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/chips">Chips</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/steppers">Steppers</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/dividers">Dividers</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/cards">Cards</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/dialogs">Dialogs</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/tabs">Tabs</a></li>
-        <li><a class="menu__item menu__item--nested" href="/pages/subheaders">Subheaders</a></li>
+    <li><a class="app-menu__item" href="/pages/essentials">Essentials</a></li>
+    <li class="js-component-dropdown">
+      <span class="app-menu__item app-menu__heading">Components</span>
+      <ul class="app-menu app-menu--hidden js-component-dropdown-list">
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/elevation">Elevation</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/typography">Typography</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/tooltips">Tooltips</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/snackbars">Snackbars</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/lists">Lists</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/text-fields">Text Fields</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/search">Search</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/expansion-panels">Expansion Panels</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/menus">Menus</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/data-tables">Data Tables</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/buttons">Buttons</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/chips">Chips</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/steppers">Steppers</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/dividers">Dividers</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/cards">Cards</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/dialogs">Dialogs</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/tabs">Tabs</a></li>
+        <li><a class="app-menu__item app-menu__item--nested" href="/pages/subheaders">Subheaders</a></li>
       </ul>
     </li>
-    <li><a class="menu__item" href="/pages/accessibility">Accessibility</a></li>
-    <li>
-      <ul class="menu menu--nested">
-        <span class="menu__heading">Resources</span>
-        <li><a class="menu__item menu__item--nested" href="https://offroadcode.com/rem-calculator">Rem Calculator</a> </li>
+    <li><a class="app-menu__item" href="/pages/accessibility">Accessibility</a></li>
+    <li class="js-resources-dropdown">
+      <span class="app-menu__item app-menu__heading">Resources</span>
+      <ul class="app-menu app-menu--hidden js-resources-dropdown-list">
+        <li><a class="app-menu__item app-menu__item--nested" href="https://offroadcode.com/rem-calculator">Rem Calculator</a> </li>
       </ul>
     </li>
+    <li><a class="app-menu__item" href="http://www.hcahealthcare.com/"><span class="app-menu__subheading">Copyright 1999-2017 C-HCA, Inc.; All rights reserved.</span></a></li>
   </ul>
 </nav>
