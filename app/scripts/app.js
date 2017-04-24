@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var componentsDropdown = document.querySelector('.js-component-dropdown');
   var resourcesDropdown = document.querySelector('.js-resources-dropdown');
+  var appNav = document.querySelector('.js-app-nav');
+  var appNavToggle = document.querySelector('.js-app-nav-toggle');
 
   componentsDropdown.addEventListener('click', function() {
     // console.log('componentsDropdown clicked');
@@ -29,6 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       resourcesDropdownList.classList.add('app-menu--hidden');
       // console.log('menu is visible, should hide the menu now');
+    }
+  });
+
+  appNavToggle.addEventListener('click', function() {
+    console.log('appNavToggle clicked');
+    if (appNav.classList.contains('app-nav--hidden')) {
+      appNav.classList.remove('app-nav--hidden');
+      this.classList.add('app-nav__toggle--open');
+    } else {
+      appNav.classList.add('app-nav--hidden');
+      this.classList.remove('app-nav__toggle--open');
     }
   });
 });

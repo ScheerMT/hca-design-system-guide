@@ -12,7 +12,10 @@
 
   <body class="{{ page.body_class }}">
     {{> nav }}
-    {{> body }}
+
+    <div class="app-container">
+      {{> body }}
+    </div>
 
     {{> scripts }}
     {{> google-analytics }}
