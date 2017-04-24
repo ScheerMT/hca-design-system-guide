@@ -1,9 +1,63 @@
+$color__menu-background: $background-color;
+$color__menu-background--hover: $background-color--secondary;
+
 .app-nav {
   box-shadow: $box-shadow__3;
   position: fixed;
-  overflow-y: scroll;
   left: 0;
   top: 0;
   width: 250px;
   height: 100%;
+  overflow-y: scroll;
+}
+
+.app-menu {
+  list-style: none;
+  padding-left: 0;
+  transition: none;
+
+  &--hidden {
+    position: absolute;
+    left: -1000px;
+  }
+
+  &__heading {
+    display: block;
+    font-weight: $font-weight__semi-bold;
+    padding: 1rem;
+
+    &:after {
+      content: '\f0d7'; // caret-down
+      font-family: FontAwesome;
+      float: right;
+      position: relative;
+      top: 3px;
+    }
+
+    &--open:after {
+      content: '\f0d8'; // caret-up
+    }
+  }
+
+  &__subheading {
+    color: $color__text--secondary;
+    font-size: .75rem;
+    font-weight: $font-weight__semi-bold;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: block;
+    font-weight: $font-weight__semi-bold;
+    padding: 1rem;
+
+    &:hover {
+      background-color: $color__menu-background--hover;
+    }
+
+    &--nested {
+      font-weight: $font-weight__regular;
+      padding-left: 2rem;
+    }
+  }
 }
