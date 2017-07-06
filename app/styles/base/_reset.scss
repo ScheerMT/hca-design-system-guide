@@ -22,3 +22,13 @@ nav, ul, li {
   margin: 0;
   padding: 0;
 }
+
+dl, dd, dt,
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}

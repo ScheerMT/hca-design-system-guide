@@ -1,12 +1,30 @@
+//
+//VENDOR IMPORTS
 // vendor/bower_components is included in the sass import path
-// Syntax highlighting (has no dependencies)
-@import 'syntax';
+//
 
+
+
+//
 // Base/Global
+//
 @import 'base/variables';
 @import 'base/reset';
 @import 'base/application';
 
+// Syntax highlighting (has no dependencies)
+@import 'syntax';
+
+
+//
+// Layout
+//
+@import 'layout/containers';
+@import 'layout/drawer';
+
+
+//
 // Components
-@import 'components/lists';
+//
+@import 'components/hca-list';
 @import 'components/menus';

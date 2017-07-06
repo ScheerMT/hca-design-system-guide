@@ -33,14 +33,17 @@ $color__strawberry: #f55d50;
 $color__watermelon: #fee7e5;
 
 // text & links
-$color__text: $color__asphalt;
-$color__text--secondary: $color__cadet;
+$color__text: $color__cadet;
+$color__text--contrast: $color__asphalt;
 $color__link: $color__evening;
 $color__link--hover: $color__night;
 
 // backgrounds
 $background-color: $color__white;
 $background-color--secondary: $color__steam;
+
+
+//Typography
 
 // fonts
 $font-family__default: 'Open Sans', Arial, sans-serif;
@@ -56,7 +59,7 @@ $box-shadow__3: 0 10px 16px 0 rgba(6, 28, 63, .15);
 $box-shadow__4: 0 16px 30px 0 rgba(31, 37, 50, .5);
 
 // transition
-$transition: all .1s ease-in-out;
+$transition: all .15s ease-in-out;
 
 // media queries (named after Chrome dev tools responsive device breakpoints)
 $screen__mobile--s: 320px;

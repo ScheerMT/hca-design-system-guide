@@ -90,7 +90,7 @@ $color__menu-background--hover: $background-color--secondary;
   }
 
   &__subheading {
-    color: $color__text--secondary;
+    color: $color__text--contrast;
     font-size: .75rem;
     font-weight: $font-weight__semi-bold;
   }
@@ -110,9 +110,4 @@ $color__menu-background--hover: $background-color--secondary;
       padding-left: 2rem;
     }
   }
-}
-
-.app-container {
-  padding: 1rem;
-  max-width: 1400px;
 }
