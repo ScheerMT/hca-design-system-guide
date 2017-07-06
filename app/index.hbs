@@ -4,19 +4,3 @@ title: 'Liftoff'
 body_class: 'index'
 base_url: ''
 ---
-
-<h1>{{ category.categoryName }}</h1>
-<p>{{ category.categoryText }}</p>
-<h2>{{ category.resource.resourceName }}</h2>
-<h3>{{ category.resource.topic.topicName }}</h3>
-{{!-- loop these here --}}
-<p>{{ category.resource.topic.topicText }}</p>
-
-<h4>{{ category.resource.topic.section.sectionTitle }}</h4>
-<p>{{ category.resource.topic.section.sectionText }}</p>
-
-<h5>{{ category.resource.topic.section.subSection.subSectionTitle }}</h5>
-<dl>
-  <dt>{{ category.resource.topic.section.subSection.spec.attribute }}</dt>
-  <dd>{{ category.resource.topic.section.subSection.spec.value }}</dd>
-</dl>

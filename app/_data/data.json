@@ -16,6 +16,10 @@
             "spec": {
               "attribute": "HEX:",
               "value": "#1F2532"
+            },
+            "spec": {
+              "attribute": "RGB:",
+              "value": "#1F2532"
             }
           }
         }
