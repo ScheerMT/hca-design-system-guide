@@ -9,13 +9,15 @@
     {{> styles }}
   </head>
 
-  <body class="{{ page.body_class }}">
+  <body class="{{ page.body_class }} hca-layout--has-drawer">
+
 
     {{> nav }}
 
     <div class="hca-layout__container">
       {{> body }}
     </div>
+
 
     {{> scripts }}
     {{> google-analytics }}

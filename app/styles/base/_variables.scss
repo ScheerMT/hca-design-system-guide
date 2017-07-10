@@ -51,12 +51,38 @@ $font-weight__light: 300;
 $font-weight__regular: 400;
 $font-weight__semi-bold: 600;
 
-// box model?
+
+//core border radius
+$hca-border-radius: 5px;
+
+
+
+//
+// Mixin created to combine box shadow and z index levels for each HCA Design
+// system elevation level 0-4.
+//
+
+// elevation
 $border-radius__default: 5px;
 $box-shadow__1: 0 2px 4px 0 rgba(6, 28, 63, .2);
 $box-shadow__2: 0 6px 12px 0 rgba(6, 28, 63, .2);
 $box-shadow__3: 0 10px 16px 0 rgba(6, 28, 63, .15);
 $box-shadow__4: 0 16px 30px 0 rgba(31, 37, 50, .5);
+
+//z-index
+$z-level-0: 1;
+$z-level-1: 2;
+$z-level-2: 3;
+$z-level-3: 4;
+$z-level-4: 5;
+
+
+//app bar
+$hca-app-bar-height: 56px;
+$hca-app-bar-horizontal-spacing: 20px;
+
+//drawer
+$hca-drawer-width: 300px;
 
 // transition
 $transition: all .15s ease-in-out;

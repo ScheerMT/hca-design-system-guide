@@ -4,14 +4,13 @@ $hca-list--vertical-margin: 10px;
 .hca-list {
   display: block;
   color: $color__text;
-  padding-left: $hca-list--horiztonal-padding;
-  padding-right: $hca-list--horiztonal-padding;
-  margin-top: $hca-list--vertical-margin;
+  // margin-top: $hca-list--vertical-margin;
   margin-bottom: $hca-list--vertical-margin;
-  background-color: $color__steam;
 
   .material-icons {
-    vertical-align: middle;
+    // vertical-align: middle;
+    float: right;
+    margin-top: 14px;
   }
 
 }
@@ -24,15 +23,19 @@ $hca-list--vertical-margin: 10px;
   height: 50px;
   line-height: 50px;
   font-weight: $font-weight__semi-bold;
+  padding-left: $hca-list--horiztonal-padding;
+  padding-right: $hca-list--horiztonal-padding;
 
   &--nested,
   &--double-nested {
+    width: calc(100% - 10px); //offsets nested margin left
     color: $color__cadet;
     height: 35px;
     line-height: 35px;
     font-weight: $font-weight__regular;
     border-left: 1px solid $color__geyser;
     padding-left: $hca-list--horiztonal-padding/2;
+
   }
 
   &--nested {
@@ -42,5 +45,12 @@ $hca-list--vertical-margin: 10px;
 
   &--double-nested {
     margin-left: $hca-list--horiztonal-padding*1.5;
+  }
+
+
+
+  &:hover,
+  &:focus {
+    background-color: $color__steam;
   }
 }

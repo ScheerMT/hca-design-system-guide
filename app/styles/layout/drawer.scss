@@ -1,6 +1,23 @@
 .hca-layout__drawer {
   display: block;
-  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $hca-drawer-width;
   height: 100vh;
-  border: 1px solid red;
+  // border: 1px solid red;
+
+  @include level-3;
+}
+
+.hca-layout__drawer-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.hca-layout__drawer--is-closed {
+  transform: translateX(-300px);
 }

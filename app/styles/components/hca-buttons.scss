@@ -1,0 +1,25 @@
+$hca-button-horizontal-padding: 15px;
+.hca-button {
+  height: 40px;
+  padding-left: $hca-button-horizontal-padding;
+  padding-right: $hca-button-horizontal-padding;
+  color: $color__asphalt;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: $hca-border-radius;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  margin-right: 10px;
+
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color__asphalt, .12);
+  }
+
+  &:active {
+    background-color: rgba($color__asphalt, .5);
+  }
+
+}

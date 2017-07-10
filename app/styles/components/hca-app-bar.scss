@@ -1,0 +1,37 @@
+.hca-app-bar {
+  display: block;
+  width: 100%;
+  height: $hca-app-bar-height;
+  line-height: $hca-app-bar-height;
+  background-color: $color__slate;
+  color: $color__asphalt;
+  padding-right: $hca-app-bar-horizontal-spacing;
+  padding-left: $hca-app-bar-horizontal-spacing;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+
+  @include level-1;
+
+}
+
+.hca-app-bar__menu-toggle {
+  padding-right: $hca-app-bar-horizontal-spacing;
+  line-height: $hca-app-bar-height;
+}
+
+.hca-app-bar__title {
+  position: absolute;
+  display: inline-block;
+  height: $hca-app-bar-height;
+  line-height: $hca-app-bar-height;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+//modifiers
+.hca-app-bar--fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

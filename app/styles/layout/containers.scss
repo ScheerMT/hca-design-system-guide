@@ -8,3 +8,11 @@
 .hca-layout__container--line-length {
 
 }
+
+.hca-layout--has-app-bar {
+  padding-top: $hca-app-bar-height;
+}
+
+.hca-layout--has-drawer .hca-layout__container {
+  margin-left: $hca-drawer-width;
+}
