@@ -34,8 +34,8 @@ $color__strawberry: #f55d50;
 $color__watermelon: #fee7e5;
 
 // text & links
-$color__text: $color__asphalt;
-$color__text--secondary: $color__cadet;
+$color__text: $color__cadet;
+$color__text--contrast: $color__asphalt;
 $color__link: $color__evening;
 $color__link--hover: $color__night;
 
@@ -43,13 +43,25 @@ $color__link--hover: $color__night;
 $color__entity-branding: #004990;
 
 // backgrounds
-$background-color: $color__white;
-$background-color--secondary: $color__steam;
+$background-color: $color__steam;
+$background-color--secondary: $color__white;
+
+
+//Typography
 
 // font weights
 $font-weight__light: 300;
 $font-weight__regular: 400;
 $font-weight__semi-bold: 600;
+
+
+$font-size-base: 16px;
+
+
+//core border radius
+$hca-border-radius: 5px;
+
+
 
 // font values
 $font-size__display-4: 112px;
@@ -170,14 +182,36 @@ $font-weight__default: $font-weight__body-1;
   }
 }
 
-// box model?
+
+//
+// Mixin created to combine box shadow and z index levels for each HCA Design
+// system elevation level 0-4.
+//
+// elevation
 $border-radius__default: 5px;
 $box-shadow__1: 0 2px 4px 0 rgba(6, 28, 63, .2);
 $box-shadow__2: 0 6px 12px 0 rgba(6, 28, 63, .2);
 $box-shadow__3: 0 10px 16px 0 rgba(6, 28, 63, .15);
 $box-shadow__4: 0 16px 30px 0 rgba(31, 37, 50, .5);
 
+//z-index
+$z-level-0: 1;
+$z-level-1: 2;
+$z-level-2: 3;
+$z-level-3: 4;
+$z-level-4: 5;
+
+
+//app bar
+$hca-app-bar-height: 56px;
+$hca-app-bar-horizontal-spacing: 20px;
+
+//drawer
+$hca-drawer-width: 300px;
+
 // transition
+$transition: all .15s ease-in-out;
+
 $transition-timing-function: ease-in-out;
 $transition-duration: .2s;
 
@@ -186,6 +220,7 @@ $content-max-width: 1100px;
 
 // base spacing
 $spacing: 10px;
+
 
 // media queries (named after Chrome dev tools responsive device breakpoints)
 // added a few custom breakpoints for more control over tablet

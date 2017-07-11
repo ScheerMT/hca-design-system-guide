@@ -1,0 +1,23 @@
+.hca-layout__container {
+  display: block;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  max-width: 1100px;
+}
+
+
+//container for content needing to abide by line length rules
+.hca-layout__container--body-content {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.hca-layout--has-app-bar {
+  padding-top: $hca-app-bar-height + 30px;
+}
+
+.hca-layout--has-drawer .hca-layout__container {
+  margin-left: $hca-drawer-width;
+}

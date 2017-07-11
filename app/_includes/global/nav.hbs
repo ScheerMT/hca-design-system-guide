@@ -1,44 +1,79 @@
-<nav class="app-nav js-app-nav">
-  <button class="app-nav__toggle app-nav__toggle--open js-app-nav-toggle"></button>
-  <ul class="app-menu">
-    <li>
-      <a class="app-menu__item" href="/">
-        Unity
-        <br>
-        <span class="app-menu__subheading">v0.1.0<span>
-      </a>
-    </li>
-    <li><a class="app-menu__item" href="/pages/essentials">Essentials</a></li>
-    <li class="js-component-dropdown">
-      <span class="app-menu__item app-menu__heading">Components</span>
-      <ul class="app-menu app-menu--hidden js-component-dropdown-list">
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/elevation">Elevation</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/typography">Typography</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/tooltips">Tooltips</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/snackbars">Snackbars</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/lists">Lists</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/text-fields">Text Fields</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/search">Search</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/expansion-panels">Expansion Panels</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/menus">Menus</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/data-tables">Data Tables</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/buttons">Buttons</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/chips">Chips</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/steppers">Steppers</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/dividers">Dividers</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/cards">Cards</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/dialogs">Dialogs</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/tabs">Tabs</a></li>
-        <li><a class="app-menu__item app-menu__item--nested" href="/pages/subheaders">Subheaders</a></li>
-      </ul>
-    </li>
-    <li><a class="app-menu__item" href="/pages/accessibility">Accessibility</a></li>
-    <li class="js-resources-dropdown">
-      <span class="app-menu__item app-menu__heading">Resources</span>
-      <ul class="app-menu app-menu--hidden js-resources-dropdown-list">
-        <li><a class="app-menu__item app-menu__item--nested" href="https://offroadcode.com/rem-calculator">Rem Calculator</a> </li>
-      </ul>
-    </li>
-    <li><a class="app-menu__item" href="http://www.hcahealthcare.com/"><span class="app-menu__subheading">Copyright 1999-2017 C-HCA, Inc.; All rights reserved.</span></a></li>
-  </ul>
-</nav>
+<div class="hca-layout__drawer">
+
+  <div class="app-styleguide-brand">
+
+    <svg version="1.1" id="hca-design-system-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 1500 1500" style="enable-background:new 0 0 1500 1500;" xml:space="preserve">
+      <rect class="hca-animation--colorful" x="150" y="470" width="85" height="99"/>
+      <rect class="hca-animation--colorful" x="274" y="394" width="85" height="597"/>
+      <rect class="hca-animation--colorful" x="398" y="464" width="85" height="168"/>
+      <rect x="522" y="414" width="85" height="499"/>
+      <rect x="646" y="457" width="85" height="298"/>
+      <rect x="770" y="407" width="85" height="455"/>
+      <rect x="895" y="393" width="85" height="656"/>
+      <rect x="1019" y="150" width="85" height="1200"/>
+      <rect x="1143" y="150" width="85" height="681"/>
+      <rect class="hca-animation--colorful" x="1267" y="437" width="85" height="280"/>
+    </svg>
+    <h1 class="hca-typography--title">HCA Design System</h1>
+    <small class="hca-typography--caption">Beta Version 0.0.1</small>
+  </div>
+
+  <hr />
+
+  <nav class="hca-list">
+
+    <a href="{{page.base_url}}" class="hca-list__item">Get Started</a>
+
+    <dl>
+      <dt>
+        <a href="#hca-drawer-nav__item--essentials" class="hca-list__item collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--essentials">Essentials <span class="material-icons">keyboard_arrow_up</span></a>
+      </dt>
+      <div class="collapse" id="hca-drawer-nav__item--essentials">
+        <dd>
+          <a href="{{page.base_url}}color/" class="hca-list__item hca-list__item--nested">Color</a>
+        </dd>
+        <dd>
+          <a href="{{page.base_url}}typography/" class="hca-list__item hca-list__item--nested">Typography</a>
+        </dd>
+      </div>
+    </dl>
+
+    <dl>
+      <dt>
+        <a href="#hca-drawer-nav__item--components" class="hca-list__item collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--components">Components<span class="material-icons">keyboard_arrow_up</span></a>
+      </dt>
+      <div class="collapse" id="hca-drawer-nav__item--components">
+        <dd>
+          <a href="#" class="hca-list__item hca-list__item--nested">Nested Nav Item</a>
+        </dd>
+        <dd>
+          <a href="#" class="hca-list__item hca-list__item--nested">Nested Nav Item 2</a>
+        </dd>
+      </div>
+    </dl>
+
+    <dl>
+      <dt>
+        <a href="#hca-drawer-nav__item--patterns" class="hca-list__item collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--patterns">Patterns <span class="material-icons">keyboard_arrow_up</span></a>
+      </dt>
+      <div class="collapse" id="hca-drawer-nav__item--patterns">
+        <dd>
+          <a href="#" class="hca-list__item hca-list__item--nested">Nested Nav Item</a>
+        </dd>
+      </div>
+    </dl>
+
+    <a href="#" class="hca-list__item">Downloads</a>
+
+  </nav>
+  {{!-- //hca-navigation --}}
+
+  <hr />
+
+  <div class="app-nav-footer-cc">
+    <p class="hca-typography--caption">HCA Design System is created and maintained by HCA IT&S User Experience team. &copy; 2017</p>
+  </div>
+
+</div>
+{{!-- //layout__drawer --}}

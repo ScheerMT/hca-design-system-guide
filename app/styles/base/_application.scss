@@ -1,118 +1,95 @@
-$color__close-btn-bg: $color__noon;
-$color__close-btn: $color__white;
-$color__menu-background: $background-color;
-$color__menu-background--hover: $background-color--secondary;
+body {
+  background-color: $color__steam;
+}
 
-.app-nav {
-  background-color: $color__menu-background;
-  box-shadow: $box-shadow__3;
-  height: 100%;
-  left: 0;
-  overflow-y: scroll;
-  min-width: 175px;
-  position: absolute;
-  width: 250px;
-  min-height: 100vh;
+.app-styleguide-brand {
+  padding: 20px;
+  font-size: 26px;
+  text-align: center;
 
-  @media (min-width: $screen__tablet) {
-    position: relative;
-  }
-
-  &--hidden {
-    top: 0;
-    position: absolute;
-    left: -250px;
-    box-shadow: none;
-  }
-
-  &__toggle {
-    background-color: $color__close-btn-bg;
-    border: 0;
-    color: $color__close-btn;
-    padding: .5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    &:before {
-      content: '\f0c9';
-      font-family: FontAwesome;
-      margin-right: .25rem;
-    }
-
-    &:after {
-      content: 'Menu';
-    }
-
-    &--open {
-      position: absolute;
-      right: 0;
-      left: auto;
-      top: 0;
-
-      &:before {
-        content: '\f00d';
-      }
-
-      &:after {
-        content: 'Close';
-      }
-    }
+  #hca-design-system-logo {
+    display: block;
+    margin: auto;
+    height: 75px;
+    width: 75px;
   }
 }
 
-.app-menu {
-  list-style: none;
-  padding-left: 0;
-  transition: none;
-
-  &--hidden {
-    left: -1000px;
-    position: absolute;
-  }
-
-  &__heading {
-    display: block;
-    font-weight: $font-weight__semi-bold;
-    padding: 1rem;
-
-    &:after {
-      content: '\f0d7'; // caret-down
-      float: right;
-      font-family: FontAwesome;
-      position: relative;
-      top: 3px;
-    }
-
-    &--open:after {
-      content: '\f0d8'; // caret-up
-    }
-  }
-
-  &__subheading {
-    color: $color__text--secondary;
-    font-size: .75rem;
-    font-weight: $font-weight__semi-bold;
-  }
-
-  &__item {
-    cursor: pointer;
-    display: block;
-    font-weight: $font-weight__semi-bold;
-    padding: 1rem;
-
-    &:hover {
-      background-color: $color__menu-background--hover;
-    }
-
-    &--nested {
-      font-weight: $font-weight__regular;
-      padding-left: 2rem;
-    }
-  }
+.app-nav-footer-cc {
+  padding: 20px;
 }
 
-.app-container {
-  padding: 1rem;
-  max-width: 1400px;
+.hca-layout__drawer {
+  background: $color__white;
+}
+
+//navigation icon rotating.
+.hca-list__item.collapsed .material-icons {
+  transform: rotate(180deg);
+}
+
+
+
+// .hca-animation--colorful {
+//   animation: colorful;
+//   animation-duration: 10s;
+//   animation-iteration-count: infinite;
+// }
+
+@keyframes colorful {
+  0% {
+    fill: $color__strawberry;
+    transform: scale(1);
+  }
+
+  10% {
+    fill: $color__cranberry;
+    transform: scale(.9);
+  }
+
+  20% {
+    fill: $color__grass;
+    transform: scale(.8);
+  }
+
+  30% {
+    fill: $color__ivy;
+    transform: scale(.9);
+  }
+
+  40% {
+    fill: $color__morning;
+    transform: scale(1);
+  }
+
+  50% {
+    fill: $color__noon;
+    transform: scale(.9);
+  }
+
+  60% {
+    fill: $color__butterscotch;
+    transform: scale(.8);
+  }
+
+  70% {
+    fill: $color__hazelnut;
+    transform: scale(.9);
+  }
+
+  80% {
+    fill: $color__geyser;
+    transform: scale(1);
+  }
+
+  90% {
+    fill: $color__cadet;
+    transform: scale(.9);
+  }
+
+  100% {
+    fill: $color__asphalt;
+    transform: scale(1);
+  }
+
 }

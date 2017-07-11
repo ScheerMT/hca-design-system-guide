@@ -55,7 +55,7 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '<%= yeoman.app %>/*.hbs',
-            '<%= yeoman.app %>/pages/**/*.hbs'
+            '<%= yeoman.app %>/guidelines/**/*.hbs'
           ],
           dest: '<%= yeoman.tmp %>'
         }]
@@ -241,7 +241,7 @@ module.exports = function (grunt) {
     watch: {
       styles: {
         files: ['<%= yeoman.app %>/styles/**/*.scss'],
-        tasks: ['sass:dist', 'scsslint:app']
+        tasks: ['sass:dist'] //, 'scsslint:app'
       },
       scripts: {
         files: ['<%= yeoman.app %>/scripts/**/*.js'],

@@ -1,0 +1,26 @@
+//
+// Mixin for Elevation levels that combines box shadow and z-index control.
+//
+@mixin level-0 {
+  z-index: $z-level-0;
+}
+
+@mixin level-1 {
+  box-shadow: $box-shadow__1;
+  z-index: $z-level-1;
+}
+
+@mixin level-2 {
+  box-shadow: $box-shadow__2;
+  z-index: $z-level-2;
+}
+
+@mixin level-3 {
+  box-shadow: $box-shadow__3;
+  z-index: $z-level-3;
+}
+
+@mixin level-4 {
+  box-shadow: $box-shadow__4;
+  z-index: $z-level-4;
+}

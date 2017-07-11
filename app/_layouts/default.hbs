@@ -6,18 +6,28 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     {{> styles }}
   </head>
 
-  <body class="{{ page.body_class }}">
+  <body class="{{ page.body_class }} hca-layout--has-app-bar hca-layout--has-drawer">
+
+    {{!-- fixed menu toggle button --}}
+    <button class="hca-button hca-button--raised hca-layout__drawer-toggle">Close</button>
+
+    {{!-- fixed app bar --}}
+    <div class="hca-app-bar hca-app-bar--fixed-top">
+      <span class="hca-app-bar__title">{{page.title}}</span>
+    </div>
+
     {{> nav }}
 
-    <div class="app-container">
+    <div class="hca-layout__container">
       {{> body }}
     </div>
 
+
     {{> scripts }}
     {{> google-analytics }}
+
   </body>
 </html>
