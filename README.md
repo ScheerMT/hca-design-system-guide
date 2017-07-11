@@ -1,6 +1,10 @@
 # unity-static
 Unity design language/styleguide site
 
+## Dependencies
+1. Node.js & NPM
+2. Yarn
+
 ## Project Setup
 This project is built with the HCA's Liftoff Yeoman generator.
 
@@ -8,7 +12,7 @@ This project is built with the HCA's Liftoff Yeoman generator.
 2. `yarn`
 
 ## Usage
-`npm start`
+`yarn start`
 
 or...
 
