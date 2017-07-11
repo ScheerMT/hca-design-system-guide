@@ -2,6 +2,7 @@
 // primary grays & tints
 $color__asphalt: #1f2532;
 $color__cadet: #465561;
+$color__cadet--hover: darken($color__cadet, 15);
 $color__slate: #7f94a2;
 $color__geyser: #d8dde6;
 $color__steam: #f5f7f9; // aka "kyle gray"
@@ -9,7 +10,7 @@ $color__white: #fff;
 
 // primary utility & feedback colors
 // default/info
-$color__night: #063d7a;
+$color__night: #063d7a; // rgb(6, 61, 122)
 $color__evening: #1e71cd; // rgb(30, 113, 205)
 $color__noon: #268af9;
 $color__morning: #e9f3fe;
@@ -38,15 +39,136 @@ $color__text--secondary: $color__cadet;
 $color__link: $color__evening;
 $color__link--hover: $color__night;
 
+// entity branding
+$color__entity-branding: #004990;
+
 // backgrounds
 $background-color: $color__white;
 $background-color--secondary: $color__steam;
 
-// fonts
-$font-family__default: 'Open Sans', Arial, sans-serif;
+// font weights
 $font-weight__light: 300;
 $font-weight__regular: 400;
 $font-weight__semi-bold: 600;
+
+// font values
+$font-size__display-4: 112px;
+$font-weight__display-4: $font-weight__light;
+$font-size__display-3: 56px;
+$font-weight__display-3: $font-weight__regular;
+$font-size__display-2: 45px;
+$font-weight__display-2: $font-weight__regular;
+$font-size__display-1: 34px;
+$font-weight__display-1: $font-weight__regular;
+$font-size__headline: 26px;
+$font-weight__headline: $font-weight__regular;
+$font-size__title: 22px;
+$font-weight__title: $font-weight__semi-bold;
+$font-size__subhead: 18px;
+$font-weight__subhead: $font-weight__regular;
+$font-size__body-2: 16px;
+$font-weight__body-2: $font-weight__semi-bold;
+$font-size__body-1: 16px;
+$font-weight__body-1: $font-weight__regular;
+$font-size__caption: 14px;
+$font-weight__caption: $font-weight__regular;
+$font-size__menu: 16px;
+$font-weight__menu: $font-weight__semi-bold;
+$font-size__button: 16px;
+$font-weight__button: $font-weight__regular;
+$font-size__tag: 14px;
+$font-weight__tag: $font-weight__semi-bold;
+$font-size__support: 12px;
+$font-weight__support: $font-weight__semi-bold;
+
+// font values (base)
+$font-path: '/fonts';
+$fa-font-path: $font-path;
+$font-family__default: 'Open Sans', Arial, sans-serif;
+$font-size__default: $font-size__body-1;
+$font-weight__default: $font-weight__body-1;
+
+// must use lowercase
+@mixin typography($name) {
+  @if $name == 'display-4' {
+    font-size: $font-size__display-4;
+    font-weight: $font-weight__display-4;
+  }
+
+  @if $name == 'display-3' {
+    font-size: $font-size__display-3;
+    font-weight: $font-weight__display-3;
+  }
+
+  @if $name == 'display-2' {
+    font-size: $font-size__display-2;
+    font-weight: $font-weight__display-2;
+  }
+
+  @if $name == 'display-1' {
+    font-size: $font-size__display-1;
+    font-weight: $font-weight__display-1;
+  }
+
+  @if $name == 'headline' {
+    font-size: $font-size__headline;
+    font-weight: $font-weight__headline;
+  }
+
+  @if $name == 'title' {
+    font-size: $font-size__title;
+    font-weight: $font-weight__title;
+  }
+
+  @if $name == 'subhead' {
+    color: $color__text--secondary;
+    font-size: $font-size__subhead;
+    font-weight: $font-weight__subhead;
+  }
+
+  @if $name == 'body-2' {
+    font-size: $font-size__body-2;
+    font-weight: $font-weight__body-2;
+  }
+
+  @if $name == 'body-1' {
+    color: $color__text--secondary;
+    font-size: $font-size__body-1;
+    font-weight: $font-weight__body-1;
+  }
+
+  @if $name == 'caption' {
+    color: $color__text--secondary;
+    font-size: $font-size__caption;
+    font-weight: $font-weight__caption;
+  }
+
+  @if $name == 'menu' {
+    font-size: $font-size__menu;
+    font-weight: $font-weight__menu;
+  }
+
+  @if $name == 'button' {
+    font-size: $font-size__button;
+    font-weight: $font-weight__button;
+  }
+
+  @if $name == 'tag' {
+    font-size: $font-size__tag;
+    font-weight: $font-weight__tag;
+    text-transform: uppercase;
+  }
+
+  @if $name == 'support' {
+    font-size: $font-size__support;
+    font-weight: $font-weight__support;
+  }
+
+  @if $name == 'default' {
+    font-size: $font-size__body-1;
+    font-weight: $font-weight__body-1;
+  }
+}
 
 // box model?
 $border-radius__default: 5px;
@@ -56,12 +178,28 @@ $box-shadow__3: 0 10px 16px 0 rgba(6, 28, 63, .15);
 $box-shadow__4: 0 16px 30px 0 rgba(31, 37, 50, .5);
 
 // transition
-$transition: all .1s ease-in-out;
+$transition-timing-function: ease-in-out;
+$transition-duration: .2s;
+
+// inner content max-width
+$content-max-width: 1100px;
+
+// base spacing
+$spacing: 10px;
 
 // media queries (named after Chrome dev tools responsive device breakpoints)
-$screen__mobile--s: 320px;
-$screen__mobile--m: 375px;
-$screen__mobile--l: 425px;
-$screen__tablet: 768px;
-$screen__laptop: 1024px;
-$screen__laptop--l: 1440px;
+// added a few custom breakpoints for more control over tablet
+$max-screen__mobile--s: 320px; // <= 320px
+$min-screen__mobile--m: 321px; // 321-375px
+$max-screen__mobile--m: 375px; // 321-375px
+$min-screen__mobile--l: 376px; // 376-425px
+$max-screen__mobile--l: 425px; // 376-425px
+$min-screen__tablet--s: 426px; // 426-768px
+$max-screen__tablet--s: 600px; // 426-600px
+$min-screen__tablet: 601px; // 601-768px
+$max-screen__tablet: 768px; // 601-768px
+$min-screen__laptop: 769px; // 769-1024px
+$max-screen__laptop: 1024px; // 769-1024px
+$min-screen__laptop--l: 1025px; // 1025-1440px
+$max-screen__laptop--l: 1440px; // 1025-1440px
+$min-screen__desktop: 1441px; // 1441 > *px
