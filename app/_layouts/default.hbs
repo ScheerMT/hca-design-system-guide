@@ -9,8 +9,15 @@
     {{> styles }}
   </head>
 
-  <body class="{{ page.body_class }} hca-layout--has-drawer">
+  <body class="{{ page.body_class }} hca-layout--has-app-bar hca-layout--has-drawer">
 
+    {{!-- fixed menu toggle button --}}
+    <button class="hca-button hca-button--raised hca-layout__drawer-toggle">Close</button>
+
+    {{!-- fixed app bar --}}
+    <div class="hca-app-bar hca-app-bar--fixed-top">
+      <span class="hca-app-bar__title">{{page.title}}</span>
+    </div>
 
     {{> nav }}
 

@@ -39,8 +39,8 @@ $color__link: $color__evening;
 $color__link--hover: $color__night;
 
 // backgrounds
-$background-color: $color__white;
-$background-color--secondary: $color__steam;
+$background-color: $color__steam;
+$background-color--secondary: $color__white;
 
 
 //Typography
@@ -50,6 +50,8 @@ $font-family__default: 'Open Sans', Arial, sans-serif;
 $font-weight__light: 300;
 $font-weight__regular: 400;
 $font-weight__semi-bold: 600;
+
+$font-size-base: 16px;
 
 
 //core border radius

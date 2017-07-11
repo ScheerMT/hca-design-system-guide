@@ -2,8 +2,6 @@
 
   <div class="app-styleguide-brand">
 
-    <button class="hca-button hca-button--raised hca-layout__drawer-toggle">Close</button>
-
     <svg version="1.1" id="hca-design-system-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 1500 1500" style="enable-background:new 0 0 1500 1500;" xml:space="preserve">
       <rect class="hca-animation--colorful" x="150" y="470" width="85" height="99"/>
@@ -17,7 +15,7 @@
       <rect x="1143" y="150" width="85" height="681"/>
       <rect class="hca-animation--colorful" x="1267" y="437" width="85" height="280"/>
     </svg>
-    <h1 class="hca-typography--headline">HCA Design System</h1>
+    <h1 class="hca-typography--title">HCA Design System</h1>
     <small class="hca-typography--caption">Beta Version 0.0.1</small>
   </div>
 
@@ -25,7 +23,7 @@
 
   <nav class="hca-list">
 
-    <a href="#" class="hca-list__item">Get Started</a>
+    <a href="{{page.base_url}}" class="hca-list__item">Get Started</a>
 
     <dl>
       <dt>
@@ -33,7 +31,10 @@
       </dt>
       <div class="collapse" id="hca-drawer-nav__item--essentials">
         <dd>
-          <a href="#" class="hca-list__item hca-list__item--nested">Nested Nav Item</a>
+          <a href="{{page.base_url}}color/" class="hca-list__item hca-list__item--nested">Color</a>
+        </dd>
+        <dd>
+          <a href="{{page.base_url}}typography/" class="hca-list__item hca-list__item--nested">Typography</a>
         </dd>
       </div>
     </dl>

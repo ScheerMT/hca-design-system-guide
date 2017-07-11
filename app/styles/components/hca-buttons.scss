@@ -1,5 +1,6 @@
 $hca-button-horizontal-padding: 15px;
 .hca-button {
+  display: inline-block;
   height: 40px;
   padding-left: $hca-button-horizontal-padding;
   padding-right: $hca-button-horizontal-padding;
@@ -10,7 +11,10 @@ $hca-button-horizontal-padding: 15px;
   border: none;
   box-shadow: none;
   background-color: transparent;
+  margin-top: 8px;
   margin-right: 10px;
+  margin-bottom: 8px;
+
 
 
   &:hover,
@@ -20,6 +24,21 @@ $hca-button-horizontal-padding: 15px;
 
   &:active {
     background-color: rgba($color__asphalt, .5);
+  }
+
+
+  &--raised {
+    background-color: $color__white;
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color__white, .88);
+      color: $color__cadet;
+    }
+
+    &:active {
+      background-color: rgba($color__white, .5);
+    }
   }
 
 }

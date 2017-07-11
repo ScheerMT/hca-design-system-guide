@@ -15,8 +15,13 @@ html {
 }
 
 a {
-  color: $color__text;
+  color: $color__night;
   text-decoration: none;
+  // font-weight: 600;
+
+  &:hover {
+    background-color: $color__morning;
+  }
 }
 
 nav, ul, li {

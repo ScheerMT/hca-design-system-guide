@@ -1,20 +1,115 @@
-.hca-typography--headline {
+//display settings so that they are not dependent on markup
+.hca-typography--display-4,
+.hca-typography--display-3,
+.hca-typography--display-2,
+.hca-typography--display-1,
+.hca-typography--headline,
+.hca-typography--title,
+.hca-typography--subhead,
+.hca-typography--body-2,
+.hca-typography--body-1,
+.hca-typography--caption,
+.hca-typography--support {
   display: inline-block;
-  font-size: 26px;
-  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+
+
+//
+// Colors
+//
+.hca-typography--display-4,
+.hca-typography--display-3,
+.hca-typography--display-2,
+.hca-typography--subhead,
+.hca-typography--body-1,
+.hca-typography--caption {
+  color: $color__cadet;
+}
+
+.hca-typography--display-1,
+.hca-typography--headline,
+.hca-typography--title,
+.hca-typography--body-2 {
   color: $color__asphalt;
+}
+
+//
+// Weights
+//
+.hca-typography--display-3,
+.hca-typography--display-2,
+.hca-typography--display-1,
+.hca-typography--headline,
+.hca-typography--subhead,
+.hca-typography--body-1,
+.hca-typography--caption {
+  font-weight: 400;
+}
+
+.hca-typography--title,
+.hca-typography--body-2,
+.hca-typography--support{
+  font-weight: 600;
+}
+
+
+
+//
+//Sizes and specifics
+//
+.hca-typography--display-4 {
+  font-weight: 300;
+  font-size: 112px;
+  margin-bottom: 25px;
+}
+
+.hca-typography--display-3 {
+  font-size: 56px;
+  margin-bottom: 25px;
+}
+
+.hca-typography--display-2 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.hca-typography--display-1 {
+  font-size: 34px;
+  margin-bottom: 17px;
+}
+
+.hca-typography--headline {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 .hca-typography--title {
-  display: inline-block;
   font-size: 22px;
-  font-weight: 600;
-  color: $color__asphalt;
+}
+
+.hca-typography--subhead {
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.hca-typography--body-2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.hca-typography--body-1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.81;
 }
 
 .hca-typography--caption {
-  display: inline-block;
-  font-weight: 400;
   font-size: 14px;
-  color: $color__cadet;
+}
+
+.hca-typography--support {
+  font-size: 12px;
 }
