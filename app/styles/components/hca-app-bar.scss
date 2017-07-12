@@ -33,7 +33,7 @@
   font-weight: 600;
   margin-left: 75px;
 
-  @media (min-width: $screen__tablet) {
+  @media (min-width: $min-screen__laptop) {
     margin-left: 0;
   }
 }
