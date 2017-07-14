@@ -29,6 +29,17 @@ body {
 }
 
 
+//attempt at styling google sheet embed
+iframe {
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+
+
 
 // .hca-animation--colorful {
 //   animation: colorful;

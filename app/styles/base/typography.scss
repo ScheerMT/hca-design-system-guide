@@ -1,3 +1,7 @@
+/* ==========================================================================
+   DEFAULT BASE SETTINGS
+   ========================================================================== */
+
 //display settings so that they are not dependent on markup
 .hca-typography--display-4,
 .hca-typography--display-3,
@@ -10,16 +14,14 @@
 .hca-typography--body-1,
 .hca-typography--caption,
 .hca-typography--support {
-  display: inline-block;
+  display: block;
   line-height: 1.5;
 }
 
 
-
-
-//
-// Colors
-//
+/**
+ * Color Defaults
+ */
 .hca-typography--display-4,
 .hca-typography--display-3,
 .hca-typography--display-2,
@@ -36,9 +38,9 @@
   color: $color__asphalt;
 }
 
-//
-// Weights
-//
+/**
+ * Weight Defaults
+ */
 .hca-typography--display-3,
 .hca-typography--display-2,
 .hca-typography--display-1,
@@ -57,9 +59,9 @@
 
 
 
-//
-//Sizes and specifics
-//
+/**
+ * Default sizes and specifics
+ */
 .hca-typography--display-4 {
   font-weight: 300;
   font-size: 112px;
@@ -88,6 +90,7 @@
 
 .hca-typography--title {
   font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .hca-typography--subhead {
@@ -103,7 +106,7 @@
 .hca-typography--body-1 {
   font-size: 16px;
   margin-bottom: 10px;
-  line-height: 1.81;
+  line-height: 1.625;
 }
 
 .hca-typography--caption {
@@ -113,3 +116,29 @@
 .hca-typography--support {
   font-size: 12px;
 }
+
+
+
+
+
+/* ==========================================================================
+   MODIFIERS
+   ========================================================================== */
+
+/**
+ * Weight modifiers
+ */
+ .hca-typography__weight--light {
+   font-weight: lighter !important;
+   font-weight: 300 !important;
+ }
+
+ .hca-typography__weight--regular {
+   font-weight: normal !important;
+   font-weight: 400 !important;
+ }
+
+ .hca-typography__weight--semibold {
+   font-weight: bold !important;
+   font-weight: 600 !important;
+ }
