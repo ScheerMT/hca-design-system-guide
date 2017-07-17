@@ -3,13 +3,13 @@
   width: 100%;
   height: $hca-app-bar-height;
   line-height: $hca-app-bar-height;
-  background-color: $color__slate;
-  color: $color__asphalt;
+  background-color: $color__cadet;
+  color: $color__white;
   padding-right: $hca-app-bar-horizontal-spacing;
   padding-left: $hca-app-bar-horizontal-spacing;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: clip;
+  // overflow: hidden;
+  // white-space: nowrap;
+  // text-overflow: ellipsis;
   text-align: center;
 
   @include level-1;
@@ -29,12 +29,19 @@
   display: inline-block;
   height: $hca-app-bar-height;
   line-height: $hca-app-bar-height;
-  font-size: 18px;
-  font-weight: 600;
-  margin-left: 75px;
+  font-size: 16px;
+  // font-weight: 600;
+  margin-left: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 70px);
+
+  //max-width settings for ellipsis at different screen sizes
 
   @media (min-width: $screen__tablet) {
     margin-left: 0;
+    max-width: calc(100% - 140px);
   }
 }
 
