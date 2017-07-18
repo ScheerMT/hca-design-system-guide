@@ -142,3 +142,14 @@
    font-weight: bold !important;
    font-weight: 600 !important;
  }
+
+ /**
+  * Color modifiers
+  */
+  .hca-typography__color--asphalt {
+    color: $color__asphalt !important;
+  }
+
+  .hca-typography__color--cadet {
+    color: $color__cadet !important;
+  }

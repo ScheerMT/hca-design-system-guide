@@ -25,17 +25,19 @@
     {{> nav }}
 
     <header class="app-header">
-      <div class="hca-layout__container">
+      <div class="container hca-layout__container">
+        <h1 class="hca-typography--caption">HCA Design System</h1>
         <h2 class="hca-typography--display-2">{{page.title}}</h2>
-        <div class="hca-layout__container--body-content">
+        {{!-- <div class="hca-layout__container--body-content">
           <p class="hca-typography--body-1">{{page.intro}}</p>
-        </div>
+        </div> --}}
+
       </div>
     </header>
 
-    <div class="hca-layout__container">
+    <main class="container hca-layout__container" role="main">
       {{> body }}
-    </div>
+    </main>
 
 
     {{> scripts }}

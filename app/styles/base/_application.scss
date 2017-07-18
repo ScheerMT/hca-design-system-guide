@@ -8,6 +8,7 @@ body {
 
 .app-header {
   background-color: $color__geyser;
+  margin-bottom: 30px;
 
   .hca-typography--display-2,
   .hca-typography--body-1 {
@@ -109,6 +110,32 @@ body {
 }
 // end app-tabs customized bootstrap tabs
 
-.tab-content {
-  padding-top: 30px;
+// .tab-content {
+//   padding-top: 30px;
+// }
+
+.app-tab-header {
+  margin-bottom: 50px;
+}
+
+.app-toc {
+  padding-left: 15px;
+  border-left: 3px solid $color__cadet;
+}
+.app-toc__item {
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.app-article-headline {
+  &:after {
+    display: block;
+    content: '';
+    margin-top: 15px;
+    height: 3px;
+    width: 100px;
+    background-color: $color__asphalt;
+  }
+  margin-bottom: 30px;
 }

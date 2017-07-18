@@ -22,5 +22,6 @@
 @media (min-width: $screen__tablet) and (max-width: 1700px) {
   .hca-layout--has-drawer .hca-layout__container {
     margin-left: $hca-drawer-width;
+    max-width: calc(100% - 300px);
   }
 }
