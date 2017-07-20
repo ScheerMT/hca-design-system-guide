@@ -123,4 +123,4 @@ base_url: '../../'
 
 ### Visual Helpers for General Page Layout
 
-![Step 1](https://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Step 1 yo")
+(https://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Step 1 yo")
