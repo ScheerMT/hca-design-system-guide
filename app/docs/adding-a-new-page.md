@@ -130,3 +130,24 @@ base_url: '../../'
 
 #### Step 2
 ![Step 2](http://www.hcaprototypes.com/images/hca-design-system-docs/2-page-title.png "Set the page title")
+
+#### Step 3
+![Step 3](http://www.hcaprototypes.com/images/hca-design-system-docs/3-tabs.png "your tabs are automatically included from default layout")
+
+#### Step 4
+![Step 4](http://www.hcaprototypes.com/images/hca-design-system-docs/4-app-tab-header.png "copy code for tab header from other pages")
+
+#### Step 5
+![Step 5](http://www.hcaprototypes.com/images/hca-design-system-docs/5-article-title.png "tabs can have articles. articles can have sections")
+
+#### Step 6
+![Step 6](http://www.hcaprototypes.com/images/hca-design-system-docs/6-section-title.png "section titles")
+
+#### Step 7
+![Step 7](http://www.hcaprototypes.com/images/hca-design-system-docs/7-section-content.png "section content")
+
+#### Step 8
+![Step 8](http://www.hcaprototypes.com/images/hca-design-system-docs/8-visual-examples.png "visual examples")
+
+#### Step 9
+![Step 9](http://www.hcaprototypes.com/images/hca-design-system-docs/9-dos-donts.png "dos and donts")
