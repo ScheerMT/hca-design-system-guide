@@ -1,4 +1,4 @@
-#Adding a New Page / Topic
+# Adding a New Page / Topic
 
 (Skip to bottom for New Page Boilerplate)
 
@@ -33,7 +33,7 @@ app/ (root)
 Let's pretend for the rest of the examples that the topic we are going to add
 is Typography. We have identified that it needs to live in the Essentials/ directory.
 
-##Create a folder for each page/topic 
+## Create a folder for each page/topic 
 
 Rather than create a typography.hbs, we are creating a folder for topic and giving
 each folder an index.hbs file. 
@@ -41,7 +41,7 @@ each folder an index.hbs file.
 This means your page for Typography would live at ```essentials/typography/index.hbs```. 
 
 
-##Add front-matter
+## Add front-matter
 
 Every index.hbs file needs a couple front-matter variables declared at the very top of the file before any other code. 
 This is an example of the one used on our Typography page:
@@ -56,17 +56,17 @@ base_url: '../../'
 These variables need to be declared between the opening and closing ```---```. 
 
 
-###layout:
+### layout:
 
 The layout is the most important part, and technically the only variable that is ABSOLUTELY needed. We need a layout declared to handle generating your new page correctly. 
 
 Right now we have two different layout types: ```default.hbs```, and ```no-tabs.hbs```. The default layout creates a page with the three tabs like you see in the demonstrations.  They will always have Usage, Styles, and Code tabs. 
 
-###title:
+### title:
 
 This is the title of your page. It will appear as the page header, in the app bar fixed to the top of the site, and the the actual ```<title>``` of the html document. 
 
-###base_url:
+### base_url:
 
 This variable is used to prepend to any file references or paths on your page. In this example it is two steps back because the page is nested two directories deep in the file tree. ```essentials/typography/index.hbs```.
 
@@ -77,7 +77,7 @@ An example of this variable being used in markup for an image path:
 ```
 
 
-##Add your content
+## Add your content
 
 You will add your content below the front-matter variables. Make sure you replace the title with the actual title of your page/topic. You may also need to adjust the ```base_url``` depending on where your page sits in the directory tree. 
 
@@ -89,7 +89,7 @@ Remember you can use ```layout: no-tabs.hbs``` if you would like a blank page wi
 
 Refer to the new page boilerplate for base markup when using tabs. 
 
-###New page boilerplate
+### New page boilerplate
 
 ```
 ---
@@ -121,6 +121,6 @@ base_url: '../../'
 ```
 
 
-###Visual Helpers for General Page Layout
+### Visual Helpers for General Page Layout
 
 ![Step 1](https://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Step 1 yo")
