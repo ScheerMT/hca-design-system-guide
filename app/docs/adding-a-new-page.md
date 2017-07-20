@@ -21,8 +21,10 @@ app/ (root)
   |     |   |--index.hbs
   |     |  
   |     |--etc...
+  |
   |--components/
   |     |--etc...
+  |
   |--patterns/
   |     |--etc...
   |
@@ -123,4 +125,8 @@ base_url: '../../'
 
 ### Visual Helpers for General Page Layout
 
-![Step 1](https://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Step 1 yo")
+#### Step 1
+![Step 1](http://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Add your nav item")
+
+#### Step 2
+![Step 2](http://www.hcaprototypes.com/images/hca-design-system-docs/2-page-title.png "Set the page title")
