@@ -97,6 +97,9 @@ Remember you can use ```layout: no-tabs.hbs``` if you would like a blank page wi
 
 Refer to the new page boilerplate for base markup when using tabs. 
 
+
+
+
 ### New page boilerplate
 
 ```

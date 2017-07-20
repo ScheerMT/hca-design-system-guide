@@ -1,0 +1,67 @@
+table,
+.hca-table {
+  background-color: $color__white;
+}
+
+
+thead tr,
+.hca-table__head tr {
+
+  &:hover {
+    background-color: $color__white;
+    cursor: default;
+  }
+}
+
+
+thead,
+.hca-table__head {
+  // line-height: 55px;
+}
+
+th,
+.hca-table__heading {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color__asphalt;
+
+  // &:hover {
+  //   background-color: $color__white;
+  //   cursor: default;
+  // }
+}
+
+tr,
+.hca-table__row {
+  // line-height: 48px;
+  border-bottom: 1px solid $color__geyser;
+
+  &:hover {
+    background-color: $color__steam;
+    cursor: pointer;
+  }
+
+}
+
+
+td,
+th,
+.hca-table__cell,
+.hca-table__heading {
+  padding-right: 30px;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+
+td,
+.hca-table__cell {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+th,
+.hca-table__heading {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
