@@ -43,6 +43,10 @@ each folder an index.hbs file.
 This means your page for Typography would live at ```essentials/typography/index.hbs```. 
 
 
+### Where this lives in the nav
+![Step 1](http://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Add your nav item")
+
+
 ## Add front-matter
 
 Every index.hbs file needs a couple front-matter variables declared at the very top of the file before any other code. 
@@ -67,6 +71,8 @@ Right now we have two different layout types: ```default.hbs```, and ```no-tabs.
 ### title:
 
 This is the title of your page. It will appear as the page header, in the app bar fixed to the top of the site, and the the actual ```<title>``` of the html document. 
+
+![Page title](http://www.hcaprototypes.com/images/hca-design-system-docs/2-page-title.png "Set the page title")
 
 ### base_url:
 
