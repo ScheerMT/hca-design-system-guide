@@ -139,3 +139,29 @@ body {
   }
   margin-bottom: 30px;
 }
+
+
+.app-type-specs--type-list {
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  margin-bottom: 30px;
+
+  .hca-typography--display-4,
+  .hca-typography--display-3,
+  .hca-typography--display-2,
+  .hca-typography--display-1,
+  .hca-typography--headline,
+  .hca-typography--title,
+  .hca-typography--subhead,
+  .hca-typography--body-2,
+  .hca-typography--body-1,
+  .hca-typography--caption,
+  .hca-typography--support {
+    line-height: 1;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+  }
+}

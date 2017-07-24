@@ -16,65 +16,6 @@ base_url: '../../'
   <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
 
 
-    <span class="hca-typography--title">Specs</span>
-    <div class="hca-specs">
-      <table class="hca-table">
-        <thead class="hca-table__head">
-          <th></th>
-          <th class="hca-table__heading">Font Size</th>
-          <th class="hca-table__heading">Font Weight</th>
-          <th class="hca-table__heading">Line Height</th>
-          <th class="hca-table__heading">Color</th>
-          <th class="hca-table__heading">Bottom Padding</th>
-        </thead>
-        <tbody>
-          <tr>
-            <th class="hca-table__heading">Display 4</th>
-            <td class="hca-table__cell">112px</td>
-            <td class="hca-table__cell">Light (300)</td>
-            <td class="hca-table__cell">1.5</td>
-            <td class="hca-table__cell">{{> cadet}}</td>
-            <td class="hca-table__cell">25px</td>
-          </tr>
-          <tr>
-            <th class="hca-table__heading">Display 3</th>
-            <td class="hca-table__cell">56px</td>
-            <td class="hca-table__cell">Regular (400)</td>
-            <td class="hca-table__cell">1.5</td>
-            <td class="hca-table__cell">{{> cadet}}</td>
-            <td class="hca-table__cell">25px</td>
-          </tr>
-          <tr>
-            <th class="hca-table__heading">Display 2</th>
-            <td class="hca-table__cell">45px</td>
-            <td class="hca-table__cell">Regular (400)</td>
-            <td class="hca-table__cell">1.5</td>
-            <td class="hca-table__cell">{{> cadet}}</td>
-            <td class="hca-table__cell">25px</td>
-          </tr>
-          <tr>
-            <th class="hca-table__heading">Display 1</th>
-            <td class="hca-table__cell">34px</td>
-            <td class="hca-table__cell">Regular (400)</td>
-            <td class="hca-table__cell">1.5</td>
-            <td class="hca-table__cell">{{> asphalt }}</td>
-            <td class="hca-table__cell">17px</td>
-          </tr>
-          <tr>
-            <th class="hca-table__heading">Headline</th>
-            <td class="hca-table__cell">26px</td>
-            <td class="hca-table__cell">Regular (400)</td>
-            <td class="hca-table__cell">1.5</td>
-            <td class="hca-table__cell">{{> cadet}}</td>
-            <td class="hca-table__cell">10px</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    {{!-- / hca-specs --}}
-
-    <br /><br />
-
     <section class="app-tab-header">
       <div class="row">
         <div class="col-sm-7">
@@ -324,20 +265,79 @@ base_url: '../../'
 
     <hr />
 
-    <span class="hca-typography--display-4">Display 4</span>
-    <span class="hca-typography--display-3">Display 3</span>
-    <span class="hca-typography--display-2">Display 2</span>
-    <span class="hca-typography--display-1">Display 1</span>
-    <span class="hca-typography--headline">Headline</span>
-    <span class="hca-typography--title">Title</span>
-    <span class="hca-typography--subhead">Subhead</span>
-    <span class="hca-typography--body-2">Body 2</span>
-    <span class="hca-typography--body-1">Body 1</span>
-    <span class="hca-typography--caption">Caption</span>
-    <span class="hca-typography--support">Support</span>
 
-    <br /><br /><br />
+    <article>
+      <div class="app-type-specs--type-list">
+        <span class="hca-typography--display-4">Display 4</span>
+        <span class="hca-typography--display-3">Display 3</span>
+        <span class="hca-typography--display-2">Display 2</span>
+        <span class="hca-typography--display-1">Display 1</span>
+        <span class="hca-typography--headline">Headline</span>
+        <span class="hca-typography--title">Title</span>
+        <span class="hca-typography--subhead">Subhead</span>
+        <span class="hca-typography--body-2">Body 2</span>
+        <span class="hca-typography--body-1">Body 1</span>
+        <span class="hca-typography--caption">Caption</span>
+        <span class="hca-typography--support">Support</span>
+      </div>
 
+      <span class="hca-typography--title">Specs</span>
+      <div class="hca-specs table-responsive">
+        <table class="table">
+          <thead class="">
+            <th></th>
+            <th class="">Font Size</th>
+            <th class="">Font Weight</th>
+            <th class="">Line Height</th>
+            <th class="">Color</th>
+            <th class="">Bottom Padding</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="">Display 4</th>
+              <td class="">112px</td>
+              <td class="">Light (300)</td>
+              <td class="">1.5</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">25px</td>
+            </tr>
+            <tr>
+              <th class="">Display 3</th>
+              <td class="">56px</td>
+              <td class="">Regular (400)</td>
+              <td class="">1.5</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">25px</td>
+            </tr>
+            <tr>
+              <th class="">Display 2</th>
+              <td class="">45px</td>
+              <td class="">Regular (400)</td>
+              <td class="">1.5</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">25px</td>
+            </tr>
+            <tr>
+              <th class="">Display 1</th>
+              <td class="">34px</td>
+              <td class="">Regular (400)</td>
+              <td class="">1.5</td>
+              <td class="">{{> asphalt }}</td>
+              <td class="">17px</td>
+            </tr>
+            <tr>
+              <th class="">Headline</th>
+              <td class="">26px</td>
+              <td class="">Regular (400)</td>
+              <td class="">1.5</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">10px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{!-- / hca-specs --}}
+    </article>
 
 
   </div>

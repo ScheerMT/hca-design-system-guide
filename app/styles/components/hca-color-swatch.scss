@@ -1,0 +1,103 @@
+//set sizes for color swatch squares.
+$color-swatch-xs: 16px;
+$color-swatch-sm: 25px;
+$color-swatch-md: 40px;
+$color-swatch-lg: 75px;
+
+
+
+
+.hca-color-swatch {
+  display: inline-block;
+  width: $color-swatch-sm;
+  height: $color-swatch-sm;
+  line-height: $color-swatch-sm;
+  border-radius: $hca-border-radius;
+  background-color: $color__asphalt;
+}
+
+
+
+
+/* Size Modifiers */
+.hca-color-swatch--xs {
+  width: $color-swatch-xs;
+  height: $color-swatch-xs;
+  line-height: $color-swatch-xs;
+}
+
+
+
+/* Color Modifiers */
+.hca-color-swatch--asphalt {
+  background-color: $color__asphalt;
+}
+.hca-color-swatch--cadet {
+  background-color: $color__cadet;
+}
+.hca-color-swatch--geyser {
+  background-color: $color__geyser;
+}
+.hca-color-swatch--steam {
+  background-color: $color__steam;
+}
+.hca-color-swatch--white {
+  background-color: $color__white;
+  border: 1px solid $color__steam;
+}
+
+//Default / Blue
+.hca-color-swatch--night {
+  background-color: $color__night;
+}
+.hca-color-swatch--evening {
+  background-color: $color__evening;
+}
+.hca-color-swatch--noon {
+  background-color: $color__noon;
+}
+.hca-color-swatch--morning {
+  background-color: $color__morning;
+}
+
+//Success / Green
+.hca-color-swatch--pine {
+  background-color: $color__pine;
+}
+.hca-color-swatch--ivy {
+  background-color: $color__ivy;
+}
+.hca-color-swatch--grass {
+  background-color: $color__grass;
+}
+.hca-color-swatch--mint {
+  background-color: $color__mint;
+}
+
+//Warning / Caution
+.hca-color-swatch--mocha {
+  background-color: $color__mocha;
+}
+.hca-color-swatch--hazelnut {
+  background-color: $color__hazelnut;
+}
+.hca-color-swatch--butterscotch {
+  background-color: $color__butterscotch;
+}
+.hca-color-swatch--vanilla {
+  background-color: $color__vanilla;
+}
+
+//Danger / Error / Red
+.hca-color-swatch--cranberry {
+  background-color: $color__cranberry;
+}
+.hca-color-swatch--cherry {
+  background-color: $color__cherry;
+}
+.hca-color-swatch--strawberry {
+  background-color: $color__strawberry;
+}
+.hca-color-swatch--watermelon {
+  background-color: $color__watermelon;
+}
