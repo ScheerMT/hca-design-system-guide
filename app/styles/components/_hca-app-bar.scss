@@ -39,7 +39,7 @@
 
   //max-width settings for ellipsis at different screen sizes
 
-  @media (min-width: $screen__tablet) {
+  @media (min-width: $min-screen__laptop) {
     margin-left: 0;
     max-width: calc(100% - 140px);
   }
