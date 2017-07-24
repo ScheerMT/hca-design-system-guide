@@ -1,0 +1,42 @@
+/* ==========================================================================
+   HCA visual examples
+   Two elements:
+    -comp
+    -caption
+
+  Do & Don't Modifiers (if needing to display do and/or dont)
+   ========================================================================== */
+.hca-visual-example {
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hca-visual-example__comp {
+  display: block;
+  margin-bottom: 5px;
+  border-bottom: 5px solid transparent;
+}
+
+/* Do and Don't modifiers */
+.hca-visual-example--do {
+  .hca-visual-example__comp {
+    padding-bottom: 5px;
+    border-bottom: 5px solid $color__grass;
+  }
+  .hca-visual-example__caption:before {
+    display: block;
+    content: '\2714  Do';
+  }
+}
+
+.hca-visual-example--dont {
+  .hca-visual-example__comp {
+    padding-bottom: 5px;
+    border-bottom: 5px dashed $color__strawberry;
+  }
+  .hca-visual-example__caption:before {
+    display: block;
+    content: '\2717  Dont.';
+  }
+}

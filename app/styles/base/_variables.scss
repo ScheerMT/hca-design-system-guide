@@ -238,3 +238,10 @@ $max-screen__laptop: 1024px; // 769-1024px
 $min-screen__laptop--l: 1025px; // 1025-1440px
 $max-screen__laptop--l: 1440px; // 1025-1440px
 $min-screen__desktop: 1441px; // 1441 > *px
+
+
+//for mobile-first breakpoints. always min-width. breaking up
+$screen__mobile: 320px;
+$screen__tablet: 768px;
+$screen__laptop-s: 1024px;
+$screen__laptop-l: 1440px;

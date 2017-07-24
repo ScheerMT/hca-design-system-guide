@@ -1,0 +1,20 @@
+.hca-menu-toggle {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  z-index: 5;
+  color: $color__white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+
+  .hca-menu-toggle__icon {
+    display: block;
+    margin-bottom: -3px;
+  }
+}
