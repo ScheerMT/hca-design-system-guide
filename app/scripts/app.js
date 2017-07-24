@@ -55,11 +55,6 @@ $( document ).ready(function() {
     }
 });
 
-if (window.innerWidth < 1024) {
-  body.classList.remove('hca-layout--has-drawer');
-  drawer.classList.add('hca-layout__drawer--is-closed');
-  toggle.innerHTML = 'Menu';
-}
 
 $('.hca-menu-toggle').on('click', function(){
   $('.hca-layout__drawer').toggleClass('hca-layout__drawer--is-closed');
