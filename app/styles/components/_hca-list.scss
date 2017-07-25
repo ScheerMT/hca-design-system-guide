@@ -47,7 +47,9 @@ $hca-list--vertical-margin: 10px;
     margin-left: $hca-list--horiztonal-padding*1.5;
   }
 
-
+  &:hover {
+    text-decoration: none;
+  }
 
   &:hover,
   &:focus {

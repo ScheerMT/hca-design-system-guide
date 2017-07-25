@@ -6,6 +6,11 @@ body {
   background-color: $color__steam;
 }
 
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .app-header {
   background-color: $color__geyser;
   margin-bottom: 30px;
@@ -14,6 +19,10 @@ body {
   .hca-typography--body-1 {
     color: $color__asphalt;
   }
+}
+
+.app-section {
+  margin-bottom: 50px;
 }
 
 .app-styleguide-brand {
@@ -149,19 +158,31 @@ body {
 
   margin-bottom: 30px;
 
-  .hca-typography--display-4,
-  .hca-typography--display-3,
-  .hca-typography--display-2,
-  .hca-typography--display-1,
-  .hca-typography--headline,
-  .hca-typography--title,
-  .hca-typography--subhead,
-  .hca-typography--body-2,
-  .hca-typography--body-1,
-  .hca-typography--caption,
-  .hca-typography--support {
-    line-height: 1;
-    margin-bottom: 0;
-    padding-bottom: 15px;
+  // .hca-typography--display-4,
+  // .hca-typography--display-3,
+  // .hca-typography--display-2,
+  // .hca-typography--display-1,
+  // .hca-typography--headline,
+  // .hca-typography--title,
+  // .hca-typography--subhead,
+  // .hca-typography--body-2,
+  // .hca-typography--body-1,
+  // .hca-typography--caption,
+  // .hca-typography--support {
+  //   line-height: 1;
+  //   margin-bottom: 0;
+  //   padding-bottom: 15px;
+  // }
+}
+
+
+.app-card {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+
+  &.hca-background--steam {
+    border: 1px solid $color__geyser;
   }
 }
