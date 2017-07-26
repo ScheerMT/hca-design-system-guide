@@ -1,7 +1,10 @@
 $hca-button-horizontal-padding: 15px;
-.hca-button {
+.hca-button,
+a.hca-button {
   display: inline-block;
+  min-width: 90px;
   height: 40px;
+  line-height: 40px;
   padding-left: $hca-button-horizontal-padding;
   padding-right: $hca-button-horizontal-padding;
   color: $color__asphalt;
@@ -15,6 +18,10 @@ $hca-button-horizontal-padding: 15px;
   margin-right: 10px;
   margin-bottom: 8px;
 
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
 
 
   &:hover,
@@ -27,17 +34,53 @@ $hca-button-horizontal-padding: 15px;
   }
 
 
+  &--large {
+    height: 55px;
+    line-height: 55px;
+    padding-left: $hca-button-horizontal-padding + 10px;
+    padding-right: $hca-button-horizontal-padding + 10px;
+  }
+
   &--raised {
     background-color: $color__white;
 
     &:hover,
     &:focus {
       background-color: rgba($color__white, .88);
-      color: $color__cadet;
+      box-shadow: $box-shadow__1;
     }
 
     &:active {
       background-color: rgba($color__white, .5);
+      box-shadow: $box-shadow__2;
+    }
+  }
+
+
+
+  /**
+   * Color Modifiers
+   */
+
+  &--evening {
+    background-color: $color__evening;
+    color: $color__white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color__night;
+      box-shadow: $box-shadow__1;
+    }
+
+    &:active {
+      background-color: $color__night;
+      box-shadow: $box-shadow__2;
     }
   }
 
