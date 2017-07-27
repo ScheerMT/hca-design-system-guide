@@ -114,16 +114,54 @@ base_url: '../../'
 
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
-    Put your content here. Don't forget to include an app-tab-header that will need a hard coded table of contents for this tab.  
+  
+  <section class="app-tab-header">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <ul class="app-toc">
+          <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+          <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+          <li class="app-toc__item"><a href="#section-name">List</a></li>
+          <li class="app-toc__item"><a href="#section-name">Here</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+    Put your content here.   
   </div>
   
   {{!-- STYLES TAB --}}
-  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-styles-tab">
-    Put your content here. Don't forget to include an app-tab-header that will need a hard coded table of contents for this tab.
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+  
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+            <li class="app-toc__item"><a href="#section-name">List</a></li>
+            <li class="app-toc__item"><a href="#section-name">Here</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    Put your content here.
   </div>
   
   {{!-- CODE TAB --}}
-  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-code-tab">
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">
     Coming soon.
   </div>
 

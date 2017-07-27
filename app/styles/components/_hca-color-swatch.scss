@@ -3,6 +3,7 @@ $color-swatch-xs: 16px;
 $color-swatch-sm: 25px;
 $color-swatch-md: 40px;
 $color-swatch-lg: 75px;
+$color-swatch-xl: 125px;
 
 
 
@@ -25,6 +26,26 @@ $color-swatch-lg: 75px;
   height: $color-swatch-xs;
   line-height: $color-swatch-xs;
 }
+.hca-color-swatch--sm {
+  width: $color-swatch-sm;
+  height: $color-swatch-sm;
+  line-height: $color-swatch-sm;
+}
+.hca-color-swatch--md {
+  width: $color-swatch-md;
+  height: $color-swatch-md;
+  line-height: $color-swatch-md;
+}
+.hca-color-swatch--lg {
+  width: $color-swatch-lg;
+  height: $color-swatch-lg;
+  line-height: $color-swatch-lg;
+}
+.hca-color-swatch--xl {
+  width: $color-swatch-xl;
+  height: $color-swatch-xl;
+  line-height: $color-swatch-xl;
+}
 
 
 
@@ -35,11 +56,15 @@ $color-swatch-lg: 75px;
 .hca-color-swatch--cadet {
   background-color: $color__cadet;
 }
+.hca-color-swatch--slate {
+  background-color: $color__slate;
+}
 .hca-color-swatch--geyser {
   background-color: $color__geyser;
 }
 .hca-color-swatch--steam {
   background-color: $color__steam;
+  border: 1px solid $color__geyser;
 }
 .hca-color-swatch--white {
   background-color: $color__white;
