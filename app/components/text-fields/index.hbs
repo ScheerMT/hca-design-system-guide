@@ -1,0 +1,524 @@
+---
+layout: default.hbs
+title: Text Fields
+base_url: '../../'
+---
+
+
+
+
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
+
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Typography is one of the most powerful tools you have to communicate your digital content. Good use of typography establishes a clear visual hierarchy through the use of type size, weight, and contrast.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+            <li class="app-toc__item"><a href="#section-color">Color</a></li>
+            <li class="app-toc__item"><a href="#section-font-weight">Font Weight</a></li>
+            <li class="app-toc__item"><a href="#section-case">Case</a></li>
+            <li class="app-toc__item"><a href="#section-italics">Italics</a></li>
+            <li class="app-toc__item"><a href="#section-ellipsis">Use of Ellipsis</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">General Usage</h1>
+
+      {{!-- color section --}}
+      <section id="section-color" class="app-section">
+        <h2 class="hca-typography--title">Color</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">To ensure accessible content, color should never be used as a primary differentiation of context. Use of color in type should only supplement or enhance a context that is already communicated through either size, weight, or contrast.</p>
+            </div>
+          </div>
+          {{!-- / col-*-* text content --}}
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/typography/greyscale-message.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Greyscale message visually communicates all context without any added color.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/typography/color-message.png" class="img-responsive hca-visual-example__comp" alt="Color enhances messaging that is already communicated without it." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Color only enhances the visual experience.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          {{!-- /col-*-* visual examples --}}
+        </div>
+        {{!-- /row --}}
+
+      </section>
+      {{!-- / color section --}}
+
+
+      <section id="section-font-weight" class="app-section">
+        <h2 class="hca-typography--title">Font Weight</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Change in font weight must attach context such as title vs. body copy, change in state from inactive to active, or an action you would like to highlight.</p>
+              <p class="hca-typography--body-1">Never use font weight for aesthetic without a clear contextual purpose.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/essentials/typography/font-weight-do.png" class="img-responsive hca-visual-example__comp" alt="Increase in font weight helps communicate active tab." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Increase in font weight helps communicate active tab.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/essentials/typography/font-weight-dont.png" class="img-responsive hca-visual-example__comp" alt="Overuse of increased font weight loses visual hierarchy and makes primary content/actions hard to discern." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Overuse of increased font weight loses visual hierarchy and makes primary content/actions hard to discern.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / font weight section --}}
+
+
+      <section id="section-case" class="app-section">
+        <h2 class="hca-typography--title">Case</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Much like font weight, case should only be used to add obvious context or hierarchy.</p>
+              <p class="hca-typography--body-1">Avoid using all caps unless needed to clearly establish a contextual hierarchy, or unless your intention is to SHOUT AT YOUR USER.</p>
+              <p class="hca-typography--body-1">There are very few situations in which you should need to use all caps text.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/essentials/typography/case-do.png" class="img-responsive hca-visual-example__comp" alt="Uppercase is used to distinguish column headers among a table of information that is already utilizing font weight for other distinguishments." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Uppercase is used to distinguish column headers among a table of information that is already utilizing font weight for other distinguishments.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/essentials/typography/case-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not make titles or subtitles uppercase just because it looks cool." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Do not make titles or subtitles uppercase just because it "looks cool".</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / case section --}}
+
+      <section id="section-italics" class="app-section">
+        <h2 class="hca-typography--title">Italics / Emphasis</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Italic type, or <em>emphasis</em>, should only be used when there is pertinent information related to the content that is not the content itself.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/essentials/typography/italics-do.png" class="img-responsive hca-visual-example__comp" alt="Correct use of italics." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Correct use of italics.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/essentials/typography/italics-dont-2.png" class="img-responsive hca-visual-example__comp" alt="Incorrect use of italics" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Incorrect use of italics.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / italics emphasis section --}}
+
+      <section id="section-ellipsis" class="app-section">
+        <h2 class="hca-typography--title">Use of Ellipsis (...)</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">When ellipsis occurs or is used, there must be "follow up" of the hidden information. This means you must be able to follow the ellipsis and access the complete text.</p>
+              <span class="hca-typography--body-2">Some examples:</span> <p class="hca-typography--body-1">The user could click through to a new view that displays the whole text.</p>
+              <p class="hca-typography--body-1">There could be an info button next to ellipsis that creates a tooltip of the expanded text.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/typography/ellipsis-occur.png" class="img-responsive hca-visual-example__comp" alt="Ellipsis occuring on a tab." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Ellipsis occuring on a tab.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/typography/ellipsis-follow-up.png" class="img-responsive hca-visual-example__comp" alt="Ellipsis follow up in tab's content." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Ellipsis follow up happening in tab content.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / use of ellipsis section --}}
+    </article>
+    {{!-- /general usage article --}}
+  </div>
+  {{!-- / Usage tab panel --}}
+
+
+
+
+
+
+
+
+  {{!-- SPECS TAB --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intentional typographic styles were developed to balance content density and improve reading comfort. Overuse of multiple typographic styles will disrupt the layout.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Consider typography as another UI element that needs to fit with the overall design. We leverage typographic styles to establish visual hierarchy and would not recommend utilizing color to communicate any hierarchy (with the exception of links).</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+            <li class="app-toc__item"><a href="#section-typeface">Typeface</a></li>
+            <li class="app-toc__item"><a href="#section-font-weights-used">Font Weights Used</a></li>
+            <li class="app-toc__item"><a href="#section-line-length-and-height">Line Length &amp; Height</a></li>
+            <li class="app-toc__item"><a href="#section-contrast-and-accessibility">Contrast &amp; Accessibility</a></li>
+            <li class="app-toc__item"><a href="#section-specs">Specs</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">Styles</h1>
+      <div class="app-type-specs--type-list">
+        <span class="hca-typography--display-4">Display 4</span>
+        <span class="hca-typography--display-3">Display 3</span>
+        <span class="hca-typography--display-2">Display 2</span>
+        <span class="hca-typography--display-1">Display 1</span>
+        <span class="hca-typography--headline">Headline</span>
+        <span class="hca-typography--title">Title</span>
+        <span class="hca-typography--subhead">Subhead</span>
+        <span class="hca-typography--body-2">Body 2</span>
+        <span class="hca-typography--body-1">Body 1</span>
+        <span class="hca-typography--caption">Caption</span>
+        <span class="hca-typography--support">Support</span>
+      </div>
+
+      <section id="section-typeface" class="app-section">
+        <h2 class="hca-typography--title">Typeface</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Open Sans is the chosen typeface for the HCA Design System. It is a free, open source, sans-serif font created and maintained by Google. It was developed with a focus on having a neutral, yet friendly appearance, and is optimized for legibility across print, web, and mobile interfaces.</p>
+              <p class="hca-typography--body-1">Open Sans is also one of the fastest loading fonts from <a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Google Fonts</a>.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+                <span class="hca-typography--display-1 hca-typography__weight--regular">ABCDEFGHIJKLMN<br />OPQRSTUVWXYZ<br />abcdefghijklmnop<br />qrstuvwxyz0123<br />456789</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-font-weights-used" class="app-section">
+        <h2 class="hca-typography--title">Font weights used</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Our base typographic system utilizes the <span class="hca-typography__weight--light">light (300)</span>, <span class="hca-typography__weight--regular">regular (400)</span>, and <span class="hca-typography__weight--semibold">semibold (600)</span> font weights that come baked right in to Open Sans.</p>
+              <p class="hca-typography--body-1">We stuck to just these three weights to avoid visual clutter and to lay the ground for a solid visual hierarchy when it comes to type.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-12">
+                <span class="hca-typography--display-1 hca-typography__weight--light">Open Sans Light</span>
+                <span class="hca-typography--display-1 hca-typography__weight--regular">Open Sans Regular</span>
+                <span class="hca-typography--display-1 hca-typography__weight--semibold">Open Sans Semibold</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="section-line-length-and-height" class="app-section">
+        <h2 class="hca-typography--title">Line Length &amp; Height</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            {{!-- <h3 class="hca-typography--body-2">Line Length</h3> --}}
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Consider this advice on readability and line length from the Baymard Institute (a world leader in usability studies for Fortune 500 companies):</p>
+              <p class="hca-typography--body-1">“You should have around 60 characters per line if you want a good reading experience. Having the right amount of characters on each line is key to the readability of your text.”</p>
+              <p class="hca-typography--body-1">"Too wide – if a line of text is too long, the user’s eye will have a hard time focusing on the text. This is because the length makes it difficult to get an idea of where the line starts and ends. Furthermore it can be difficult to continue from the correct line in large blocks of text.”</p>
+              <p class="hca-typography--body-1">"Too narrow – if a line is too short, the eye will have to travel back too often, breaking the reader’s rhythm. Too short lines also tend to stress people, making them begin on the next line before finishing the current one (hence skipping potentially important words).”</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            {{!-- <h3 class="hca-typography--body-2">Line Height</h3> --}}
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">To achieve proper readability and appropriate pacing, specific line heights have been determined based on each style’s individual size and weight. </p>
+              <p class="hca-typography--body-1">Line wrapping only applies to Body, Subhead, Headline, Display 1, and Display 2 styles. All other styles should exist as single lines.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/typography/body-line-length.png" class="img-responsive hca-visual-example__comp" alt="The ideal range for body copy is about 60 characters long before breaking to the next line." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">The ideal range for body copy is about 60 characters long before breaking to the next line.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/typography/short-line-length.png" class="img-responsive hca-visual-example__comp" alt="The ideal range for short copy is 30-35 characters before breaking to the second line." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Short lines are copy that is not long enough to be a paragraph. The ideal range for short copy is 30-35 characters before breaking to the second line.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </section>
+      {{!-- / line length and height section --}}
+
+
+
+      <section id="section-contrast-and-accessibility" class="app-section">
+        <h2 class="hca-typography--title">Contrast &amp; Accessibility</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">A text color that is too similar to the background color is hard to read. Text with too much contrast can also be hard to read (for example, for readers with dyslexia). This is especially true of light-colored text against dark backgrounds.</p>
+
+              <p class="hca-typography--body-1">WCAG 2.0 level AA requires a contrast ratio of 4.5:1 for normal text and 3:1 for large text. Level AAA requires a contrast ratio of 7:1 for normal text and 4.5:1 for large text. Large text is defined as 14 point (typically 18.66px) and bold or larger, or 18 point (typically 24px) or larger.</p>
+
+              <p class="hca-typography--body-1">Our color combinations also consider contrast ratios for users who perceive color differently.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="app-card hca-background--white">
+                  <span class="hca-typography--subhead hca-typography__color--asphalt">Asphalt on White</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 15.34:1</small>
+
+                <br /><br />
+
+                <div class="app-card hca-background--steam">
+                  <span class="hca-typography--subhead hca-typography__color--asphalt">Asphalt on Steam</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 14.28:1</small>
+
+                <br /><br />
+
+                <div class="app-card hca-background--geyser">
+                  <span class="hca-typography--subhead hca-typography__color--asphalt">Asphalt on Geyser</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 11.25:1</small>
+
+                <br /><br />
+
+                <div class="app-card hca-background--slate">
+                  <span class="hca-typography--subhead hca-typography__color--asphalt">Asphalt on Slate</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 4.87:1</small>
+
+                <br /><br />
+              </div>
+
+              <div class="col-sm-6">
+                <div class="app-card hca-background--white">
+                  <span class="hca-typography--subhead">Cadet on White</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 7.69:1</small>
+
+                <br /><br />
+
+                <div class="app-card hca-background--steam">
+                  <span class="hca-typography--subhead">Cadet on Steam</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 7.16:1</small>
+
+                <br /><br />
+
+                <div class="app-card hca-background--geyser">
+                  <span class="hca-typography--subhead">Cadet on Geyser</span>
+                </div>
+                <small class="hca-typography--support">Contrast ratio: 5.64:1</small>
+
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <hr />
+
+    <article id="section-specs">
+      <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+
+      {{!-- <span class="hca-typography--title">Specs</span> --}}
+      <div class="hca-specs table-responsive">
+        <table class="table">
+          <thead class="">
+            <th></th>
+            <th class="">Font Size</th>
+            <th class="">Font Weight</th>
+            <th class="">Line Height</th>
+            <th class="">Color</th>
+            <th class="">Bottom Padding</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="">Display 4</th>
+              <td class="">112px</td>
+              <td class="">Light (300)</td>
+              <td class="">140px (1.25)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">25px</td>
+            </tr>
+            <tr>
+              <th class="">Display 3</th>
+              <td class="">56px</td>
+              <td class="">Regular (400)</td>
+              <td class="">70px (1.25)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">25px</td>
+            </tr>
+            <tr>
+              <th class="">Display 2</th>
+              <td class="">45px</td>
+              <td class="">Regular (400)</td>
+              <td class="">50px (1.11)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">25px</td>
+            </tr>
+            <tr>
+              <th class="">Display 1</th>
+              <td class="">34px</td>
+              <td class="">Regular (400)</td>
+              <td class="">40px (1.18)</td>
+              <td class="">{{> asphalt }}</td>
+              <td class="">17px</td>
+            </tr>
+            <tr>
+              <th class="">Headline</th>
+              <td class="">26px</td>
+              <td class="">Regular (400)</td>
+              <td class="">32px (1.23)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">10px</td>
+            </tr>
+            <tr>
+              <th class="">Title</th>
+              <td class="">22px</td>
+              <td class="">Semibold (600)</td>
+              <td class="">32px (1.45)</td>
+              <td class="">{{> asphalt}}</td>
+              <td class="">10px</td>
+            </tr>
+            <tr>
+              <th class="">Subhead</th>
+              <td class="">18px</td>
+              <td class="">Regular (400)</td>
+              <td class="">27px (1.5)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">3px</td>
+            </tr>
+            <tr>
+              <th class="">Body 2</th>
+              <td class="">16px</td>
+              <td class="">Semibold (600)</td>
+              <td class="">26px (1.625)</td>
+              <td class="">{{> asphalt}}</td>
+              <td class="">5px</td>
+            </tr>
+            <tr>
+              <th class="">Body 1</th>
+              <td class="">16px</td>
+              <td class="">Regular (400)</td>
+              <td class="">26px (1.625)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">10px</td>
+            </tr>
+            <tr>
+              <th class="">Caption</th>
+              <td class="">14px</td>
+              <td class="">Regular (400)</td>
+              <td class="">22px (1.57)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">0</td>
+            </tr>
+            <tr>
+              <th class="">Support</th>
+              <td class="">12px</td>
+              <td class="">Semibold (600)</td>
+              <td class="">20px (1.67)</td>
+              <td class="">{{> cadet}}</td>
+              <td class="">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {{!-- / hca-specs --}}
+    </article>
+
+
+
+
+  </div>
+  {{!-- end specs tab panel --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">Coming soon.</div>
+  {{!-- end code tab panel --}}
+
+</div>
+{{!-- /tab-content --}}
