@@ -4,18 +4,10 @@ title: Elevation
 base_url: '../../'
 ---
 
-
-
-
-
 <!-- Tab panes - tab controls in _layouts/default.hbs -->
 <div class="tab-content">
-
-
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
-
-
     <section class="app-tab-header">
       <div class="row">
         <div class="col-sm-7">
@@ -28,14 +20,12 @@ base_url: '../../'
             <h2 class="hca-typography--subhead">Topics on this tab:</h2>
             <li class="app-toc__item"><a href="#section-elevation-levels">Elevation Levels</a></li>
             <li class="app-toc__item"><a href="#section-elevation-and-interaction">Elevation and Interaction</a></li>
-            <li class="app-toc__item"><a href="#section-specs">Specs</a></li>
           </ul>
         </div>
       </div>
     </section>
 
     <article>
-
       {{!-- elevation-levels section --}}
       <section id="article-elevation-levels" class="app-section">
         <h1 class="app-article-headline hca-typography--headline">Elevation Levels</h1>
@@ -146,145 +136,145 @@ base_url: '../../'
         <div class="row">
           <div class="col-sm-4">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/essentials/elevation/raised-button.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              <img src="{{page.base_url}}images/essentials/elevation/raised-button.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." style="max-width:200px" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Raised button resting state</figcaption>
             </figure>
           </div>
           <div class="col-sm-4">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/essentials/elevation/raised-button-hover.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              <img src="{{page.base_url}}images/essentials/elevation/raised-button-hover.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." style="max-width:200px" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Raised button hover state (Level 1)</figcaption>
             </figure>
           </div>
           <div class="col-sm-4">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/essentials/elevation/raised-button-pressed.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              <img src="{{page.base_url}}images/essentials/elevation/raised-button-pressed.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." style="max-width:200px" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Raised button pressed state (Level 2)</figcaption>
             </figure>
           </div>
         </div>
+
+        <h2 class="hca-typography--title">Cards</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/card-resting-state.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." width="310px" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Card resting state (Level 2)</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/card-hover-state.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." width="310px" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Card hover state (Level 2)</figcaption>
+            </figure>
+          </div>
+        </div>
       </section>
-      {{!-- / level-0 section --}}
+      {{!-- / elevation-and-interaction section --}}
     </article>
+  </div>
 
-    <hr />
+  {{!-- SPECS TAB --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+    <article>
+      {{!-- elevation-and-interaction section --}}
+      <section id="section-elevation-and-interaction" class="app-section">
+        <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+        <h2 class="hca-typography--title">Level 4: Top Elevation</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Shadow:</dt>
+                <dd>0 16px 30px 0 rgba(31, 37, 50, 0.5)</dd>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/level-4-box.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Example of Level 4 elevation: Dialog</figcaption> --}}
+            </figure>
+          </div>
+        </div>
 
-    <article id="article-specs">
-      <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+        <h2 class="hca-typography--title">Level 3: Upper Elevation</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Shadow:</dt>
+                <dd>0 10px 16px 0 rgba(6, 28, 63, 0.15)</dd>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/level-3-box.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Example of Level 3 elevation: Navigation</figcaption> --}}
+            </figure>
+          </div>
+        </div>
 
-      {{!-- <span class="hca-typography--title">Specs</span> --}}
-      <div class="hca-specs table-responsive">
-        <table class="table">
-          <thead class="">
-            <th></th>
-            <th class="">Font Size</th>
-            <th class="">Font Weight</th>
-            <th class="">Line Height</th>
-            <th class="">Color</th>
-            <th class="">Bottom Padding</th>
-          </thead>
-          <tbody>
-            <tr>
-              <th class="">Display 4</th>
-              <td class="">112px</td>
-              <td class="">Light (300)</td>
-              <td class="">140px (1.25)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">25px</td>
-            </tr>
-            <tr>
-              <th class="">Display 3</th>
-              <td class="">56px</td>
-              <td class="">Regular (400)</td>
-              <td class="">70px (1.25)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">25px</td>
-            </tr>
-            <tr>
-              <th class="">Display 2</th>
-              <td class="">45px</td>
-              <td class="">Regular (400)</td>
-              <td class="">50px (1.11)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">25px</td>
-            </tr>
-            <tr>
-              <th class="">Display 1</th>
-              <td class="">34px</td>
-              <td class="">Regular (400)</td>
-              <td class="">40px (1.18)</td>
-              <td class="">{{> asphalt }}</td>
-              <td class="">17px</td>
-            </tr>
-            <tr>
-              <th class="">Headline</th>
-              <td class="">26px</td>
-              <td class="">Regular (400)</td>
-              <td class="">32px (1.23)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">10px</td>
-            </tr>
-            <tr>
-              <th class="">Title</th>
-              <td class="">22px</td>
-              <td class="">Semibold (600)</td>
-              <td class="">32px (1.45)</td>
-              <td class="">{{> asphalt}}</td>
-              <td class="">10px</td>
-            </tr>
-            <tr>
-              <th class="">Subhead</th>
-              <td class="">18px</td>
-              <td class="">Regular (400)</td>
-              <td class="">27px (1.5)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">3px</td>
-            </tr>
-            <tr>
-              <th class="">Body 2</th>
-              <td class="">16px</td>
-              <td class="">Semibold (600)</td>
-              <td class="">26px (1.625)</td>
-              <td class="">{{> asphalt}}</td>
-              <td class="">5px</td>
-            </tr>
-            <tr>
-              <th class="">Body 1</th>
-              <td class="">16px</td>
-              <td class="">Regular (400)</td>
-              <td class="">26px (1.625)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">10px</td>
-            </tr>
-            <tr>
-              <th class="">Caption</th>
-              <td class="">14px</td>
-              <td class="">Regular (400)</td>
-              <td class="">22px (1.57)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">0</td>
-            </tr>
-            <tr>
-              <th class="">Support</th>
-              <td class="">12px</td>
-              <td class="">Semibold (600)</td>
-              <td class="">20px (1.67)</td>
-              <td class="">{{> cadet}}</td>
-              <td class="">0</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      {{!-- / hca-specs --}}
+        <h2 class="hca-typography--title">Level 2: Mid Elevation</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Shadow:</dt>
+                <dd>0 6px 12px 0 rgba(6, 28, 63, 0.2)</dd>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/level-2-box.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Example of Level 2 elevation: Card hover state</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+
+        <h2 class="hca-typography--title">Level 1: Low Elevation</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Shadow:</dt>
+                <dd>0 2px 4px 0 rgba(6, 28, 63, 0.2)</dd>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/level-1-box.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Example of Level 1 elevation: Raised button hover state</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+
+        <h2 class="hca-typography--title">Level 0: No Elevation</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Shadow:</dt>
+                <dd>None</dd>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/essentials/elevation/level-0-box.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Example of Level 0 elevation: Text Field</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+      {{!-- / elevation-and-interaction section --}}
     </article>
-
-
-
-
   </div>
   {{!-- end specs tab panel --}}
   <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">Coming soon.</div>
   {{!-- end code tab panel --}}
-
 </div>
 {{!-- /tab-content --}}
