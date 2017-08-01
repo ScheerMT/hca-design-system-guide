@@ -48,7 +48,7 @@ $color-swatch-xl: 125px;
 }
 .hca-color-swatch--full-width {
   width: 100%;
-  height: $color-swatch-lg;
+  min-height: $color-swatch-lg;
   line-height: $color-swatch-lg;
   // margin-bottom: 25px;
   text-align: center;

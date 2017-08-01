@@ -6,6 +6,8 @@
 
   Do & Don't Modifiers (if needing to display do and/or dont)
    ========================================================================== */
+
+$visual-example-line-size: 10px;
 .hca-visual-example {
   display: inline-block;
   margin-bottom: 50px;
@@ -15,28 +17,46 @@
 .hca-visual-example__comp {
   display: block;
   margin-bottom: 5px;
-  border-bottom: 5px solid transparent;
+  border-bottom: $visual-example-line-size solid transparent;
+}
+
+.hca-visual-example__overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: rgba($color__asphalt, .2);
 }
 
 /* Do and Don't modifiers */
 .hca-visual-example--do {
   .hca-visual-example__comp {
     padding-bottom: 5px;
-    border-bottom: 5px solid $color__grass;
+    border-bottom: $visual-example-line-size solid $color__grass;
   }
   .hca-visual-example__caption:before {
     display: block;
     content: '\2714  Do';
+  }
+
+  .hca-visual-example__overlay {
+    background-color: rgba($color__grass, .15);
   }
 }
 
 .hca-visual-example--dont {
   .hca-visual-example__comp {
     padding-bottom: 5px;
-    border-bottom: 5px dashed $color__strawberry;
+    border-bottom: $visual-example-line-size dashed $color__strawberry;
   }
   .hca-visual-example__caption:before {
     display: block;
     content: '\2717  Dont.';
+  }
+
+  .hca-visual-example__overlay {
+    background-color: rgba($color__strawberry, .15);
   }
 }
