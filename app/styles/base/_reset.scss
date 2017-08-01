@@ -15,6 +15,16 @@ html {
 }
 
 a {
+  color: $color__link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color__link--hover;
+    text-decoration: none;
+  }
+}
+
+.hca-link {
   border-bottom: 1px solid transparent;
   color: $color__link;
   text-decoration: none;
