@@ -1,0 +1,330 @@
+---
+layout: no-tabs.hbs
+title: Iconography
+base_url: '../../'
+---
+
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Icons are an important part of any digital design when used correctly. They can communicate when words may fail to communicate, and they can give clarity to an action that a user may want or need to take.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Below are specific guidelines for how HCA Design System utilizes common user interface icons. Adhereing to these guidelines helps ensure a consistent experience for all users when they experience a digital product from HCA.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Topics on this page:</h2>
+            <li class="app-toc__item"><a href="#section-expand-and-collapse">Expand and Collapse</a></li>
+            <li class="app-toc__item"><a href="#section-more-menu">"More" Menu</a></li>
+            <li class="app-toc__item"><a href="#section-view-change">View Change</a></li>
+            <li class="app-toc__item"><a href="#section-primary-navigation-menu">Primary Navigation Menu</a></li>
+            <li class="app-toc__item"><a href="#section-close">Close</a></li>
+            <li class="app-toc__item"><a href="#section-info-vs-help">More Info vs. Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">General Usage</h1>
+      <div class="hca-layout__container--body-content">
+        <p class="hca-typography--body-1">It is best to use icons sparingly. They should only add context, and never be used solely for design or making something "look better”.</p>
+        <p class="hca-typography--body-1">An exception to this rule may occur if the icon is being used as a logo, or to communicate to a user who may not be literate in the language of your content.</p>
+      </div>
+
+      <section id="section-expand-and-collapse" class="app-section">
+        <h1 class="hca-typography--title">Expand and Collapse</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">keyboard_arrow_down</span>
+                  </div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">keyboard_arrow_up</span>
+                  </div>
+                </div>
+              </div>
+              <p class="hca-typography--body-1">Chevron arrows pointing up or down indicate expanding and collapsing content.</p>
+              <p class="hca-typography--body-1">A chevron-down icon indicates that there is content available to be expanded, but is not yet expanded.</p>
+              <p class="hca-typography--body-1">A chevron-up icon indicates a section that is currently expanded, and can be collapsed.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/expansion-panel-closed.png" class="img-responsive hca-visual-example__comp" alt="A group of closed expansion panels with chevron-down icons." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">A group of closed expansion panels with chevron-down icons.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/expansion-panel-open.png" class="img-responsive hca-visual-example__comp" alt="Expanded section shows chevron-up icon to indicate collapsable content." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Expanded section shows chevron-up icon to indicate collapsible content.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / expand and collapse --}}
+
+      <section id="section-more-menu" class="app-section">
+        <h1 class="hca-typography--title">Three Dots = "More"</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">more_vert</span>
+                  </div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">more_horiz</span>
+                  </div>
+                </div>
+              </div>
+              <p class="hca-typography--body-1">Three dots, or the "more" icon, should only be used when there are more options related to the specfic component/feature that the icon is living within.</p>
+              <p class="hca-typography--body-1">There should be no global options, or options that are unrelated to the content of the component/feature where this menu lives.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/menu-vertical-tap.png" class="img-responsive hca-visual-example__comp" alt="Vertical More icon being used for options related to a row of data in a table." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Vertical More icon being used for options related to a row of data in a table.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/open-more-menu.png" class="img-responsive hca-visual-example__comp" alt="Expanded section shows chevron-up icon to indicate collapsable content." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Open menu of options related only to the row of data that the icon lives within.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="section-view-change" class="app-section">
+        <h1 class="hca-typography--title">View Change</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">keyboard_arrow_left</span>
+                  </div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">keyboard_arrow_right</span>
+                  </div>
+                </div>
+              </div>
+              <p class="hca-typography--body-1">Chevron arrows pointing left or right indicate that the user will be taken to a completely different or new view/page.</p>
+              <p class="hca-typography--body-1">You should choose which direction to point the arrow based on the user's journey through your product.
+
+              <p class="hca-typography--body-1">For example, you should use a left chevron arrow to take a user "back" in your product, or traverse backwards up your navigation tree. Use a right chevron arrow to navigate a user forward in their journey with your product, or deeper into your navigation tree. </p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/lists-visual-example.png" class="img-responsive hca-visual-example__comp" alt="A list of options that, when tapped/clicked, take you to a new view." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">A list of options that, when interacted with, take you to a new view.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/detail-view-back-button.png" class="img-responsive hca-visual-example__comp" alt="The new view that was navigated to after interacting with an element with a right chevron." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">The new detail view that was navigated to after interacting with an element/component displaying a right chevron.</p>
+                    <span class="hca-typography--support">Note also, the left chevron to indicate the ability to navigate back to the previous view.</span>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-primary-navigation-menu" class="app-section">
+        <h1 class="hca-typography--title">Primary Navigation Menu</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="app-card">
+                    <div class="hca-button--icon-and-text">
+                      <span class="material-icons hca-button__icon">menu</span>
+                      <span class="hca-button__text">Menu</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="hca-button--icon-and-text hca-button--left-text">
+                    <span class="hca-button__text">Menu</span>
+                    <span class="material-icons hca-button__icon">menu</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="hca-button--icon-and-text hca-button--right-text">
+                    <span class="material-icons hca-button__icon">menu</span>
+                    <span class="hca-button__text">Menu</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="hca-typography--body-1">The primary navigation menu icon should always be paired with the word "Menu" in either a stacked or horizontal format. It should also only be used for primary navigation or global navigation.</p>
+              <p class="hca-typography--body-1">Upon interacting with the menu icon, if a menu displays and has the ability to be dismissed or closed, the icon and word should change to the close icon mentioned below.</p>
+
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/menu-icon.png" class="img-responsive hca-visual-example__comp" alt="The menu icon stacked and paired with the word "Menu"." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">The menu icon stacked and paired with the word "Menu".</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/close-icon.png" class="img-responsive hca-visual-example__comp" alt="The menu icon converts to the close icon upon opening or showing a navigation menu that can be dismissed or closed." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">The menu icon converts to the close icon upon opening or showing a navigation menu that can be dismissed or closed.</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-close" class="app-section">
+        <h1 class="hca-typography--title">Close</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="app-card">
+                    <div class="hca-button--icon-and-text">
+                      <span class="material-icons hca-button__icon">close</span>
+                      <span class="hca-button__text">Close</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="hca-button--icon-and-text hca-button--left-text">
+                    <span class="hca-button__text">Close</span>
+                    <span class="material-icons hca-button__icon">close</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="hca-button--icon-and-text hca-button--right-text">
+                    <span class="material-icons hca-button__icon">close</span>
+                    <span class="hca-button__text">Close</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="hca-typography--body-1">The close icon should only be used to close or dismiss content that cannot be moved on from without closing or dismissing it. i.e. a full-view overlay or fixed view that cannot be scrolled past or ignored.</p>
+
+              <p class="hca-typography--body-1">The close icon must always be paired with the word "Close" in one of the formats above.</p>
+
+              <p class="hca-typography--body-1">Using the <span class="material-icons">close</span> alone without any accompanying text can be unclear of the exact action it represents, and thus confuses users.</p>
+
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/essentials/iconography/close-icon.png" class="img-responsive hca-visual-example__comp" alt="The close icon, in stacked form, part of an open menu that takes up the entire screen until closed." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">The close icon shown, in stacked form, is part of an open menu that takes up the entire screen until closed.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/essentials/iconography/close-dont.png" class="img-responsive hca-visual-example__comp" alt="The new view that was navigated to after interacting with an element with a right chevron." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">Using the close icon without the word pairing, and for anything other than closing a fixed view can cause confusion in the overall UI experience.</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-info-vs-help" class="app-section">
+        <h1 class="hca-typography--title">More Info vs Help</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">info</span>
+                  </div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">info_outline</span>
+                  </div>
+                </div>
+              </div>
+              <span class="hca-typography--body-2">Information</span>
+              <p class="hca-typography--body-1">The information icon should only be used to note "more information" about the content you are interacting with. </p>
+              <p class="hca-typography--body-1">This could be in the form of a quick tooltip or even guiding the user to an entire new section of content providing more information on the topic with the icon.</p>
+
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-copy">
+              <div class="row">
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">help</span>
+                  </div>
+                </div>
+                <div class="col-xs-3">
+                  <div class="app-card">
+                    <span class="material-icons hca-typography--display-1">help_outline</span>
+                  </div>
+                </div>
+              </div>
+              <span class="hca-typography--body-2">Help and Support</span>
+              <p class="hca-typography--body-1">The help icon should only be used to communicate available help regarding the app or site as a whole. </p>
+
+              <p class="hca-typography--body-1">This could be the ability to contact Support via chat, phone, email, or site/app submission, a Frequently Asked Question's and answers feature, etc.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+</div>

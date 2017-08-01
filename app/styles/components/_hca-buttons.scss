@@ -1,7 +1,7 @@
 $hca-button-horizontal-padding: 15px;
 .hca-button,
 a.hca-button {
-  display: inline-block;
+  display: block;
   min-width: 90px;
   height: 40px;
   line-height: 40px;
@@ -82,6 +82,107 @@ a.hca-button {
       background-color: $color__night;
       box-shadow: $box-shadow__2;
     }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Icon + Text BUTTONS
+   ========================================================================== */
+
+/* Defaults to stacked and centered icon with word on bottom */
+.hca-button--icon-and-text {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  font-weight: bold;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+  .hca-button__icon {
+    display: block;
+    position: relative;
+    font-size: 24px;
+  }
+
+  .hca-button__text {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+ /**
+  * Modifiers
+  */
+
+/* Text on sides of icon */
+.hca-button--icon-and-text.hca-button--left-text,
+.hca-button--icon-and-text.hca-button--right-text {
+  min-width: 45px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+
+  .hca-button__icon,
+  .hca-button__text {
+    display: inline-block;
+  }
+
+  .hca-button__text {
+
+  }
+  .hca-button__icon {
+    top: 7px;
+  }
+
+}
+
+
+/* left side text */
+.hca-button--icon-and-text.hca-button--left-text {
+  // text-align: right;
+  .hca-button__icon,
+  .hca-button__text {
+    // float: left;
+  }
+  .hca-button__text {
+    // margin-right: 5px;
+  }
+
+  .hca-button__icon {
+    // right: 10px;
+  }
+
+}
+
+/* right side text */
+.hca-button--icon-and-text.hca-button--right-text {
+  // text-align: left;
+  .hca-button__icon,
+  .hca-button__text {
+    // float: right;
+  }
+  .hca-button__text {
+    // margin-left: 5px;
   }
 
 }

@@ -254,7 +254,7 @@ module.exports = function (grunt) {
         tasks: ['newer:assemble:dist', 'copy:tmp']
       },
       images: {
-        files: ['/images/**/*'],
+        files: ['<%= yeoman.app %>/images/**/*'],
         tasks: ['copy:dist']
       }
     },
