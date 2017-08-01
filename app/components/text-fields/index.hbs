@@ -1,0 +1,310 @@
+---
+layout: default.hbs
+title: Text Fields
+base_url: '../../'
+---
+
+
+
+
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
+
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Text fields usually appear in forms and allow users to input text, select text, and lookup data. Users may enter text, numbers, or mixed-format types of input. Unity leverages text fields at an accessible height for tappable areas.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+            <li class="app-toc__item"><a href="#section-interaction">Interaction</a></li>
+            <li class="app-toc__item"><a href="#section-anatomy">Anatomy</a></li>
+            <li class="app-toc__item"><a href="#section-single-line">Single-line</a></li>
+            <li class="app-toc__item"><a href="#section-multi-line">Multi-line</a></li>
+            <li class="app-toc__item"><a href="#section-placeholder-text">Placeholder Text</a></li>
+            <li class="app-toc__item"><a href="#section-passwords">Passwords</a></li>
+            <li class="app-toc__item"><a href="#section-validation">Validation</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">General Usage</h1>
+
+      {{!-- interaction section --}}
+      <section id="section-interaction" class="app-section">
+        <h2 class="hca-typography--title">Interaction</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <ul>
+                <li>Touching a text field will display the keyboard.</li>
+                <li>On desktop, selecting a text field will place the cursor in the field.</li>
+                <li>The first letter in a text field should be auto-capitalized where appropriate.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-anatomy" class="app-section">
+        <h2 class="hca-typography--title">Anatomy</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Labels</dt>
+                <dd>Labels describe the type of input requested in each field and are required.</dd>
+                <br>
+                <dt>Placeholder Text</dt>
+                <dd>Placeholder text is temporary text that suggests the type of information requested.</dd>
+                <br>
+                <dt>Helper Text</dt>
+                <dd>Helper text is optional and appears below input fields to provide additional context.</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/text-fields-anatomy-1.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+      {{!-- / font weight section --}}
+
+      <section id="section-single-line" class="app-section">
+        <h2 class="hca-typography--title">Single-line</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field. Helper text appears when user is active within the field.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/single-line-inactive.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Inactive</figcaption>
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/single-line-active.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Active</figcaption>
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/single-line-disabled.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Disabled</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      {{!-- / case section --}}
+
+      <section id="section-case" class="app-section">
+        <h2 class="hca-typography--title">Single-line with icon</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Single-line fields may have icons associated with the input fields. In such cases, icons would be applied to the left of all fields. Do not mix normal single line fields with no icons and fields with icons.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/single-line-with-icon-inactive.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Inactive</figcaption>
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/single-line-with-icon-active.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Active</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-multi-line" class="app-section">
+        <h2 class="hca-typography--title">Multi-line</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Multi-line text fields automatically break to a new line for overflow text, and will scroll vertically when the cursor reaches the lower edge.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/multi-line.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Minimum height of multi line text fields is 125px. If five or more lines of text is typed, text will scroll upwards as the user continues to type. Always allow 15px of padding at the bottom for spacing.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-required" class="app-section">
+        <h2 class="hca-typography--title">Required</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Fields are required by default, unless noted as optional. First, eliminate as many optional fields as possible. If some fields truly are necessary, but only apply to a subset of users, don’t make users find out through trial and error. Limit the form to only 1 or 2 optional fields, and clearly label them as optional.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/text-fields-required-fields-1.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-placeholder-text" class="app-section">
+        <h2 class="hca-typography--title">Placeholder text</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Placeholder text should be used sparingly and provide additional clarification about the format of the desired input. It communicates in a human tone how exactly the input should look.</p>
+              <p class="hca-typography--body-1">Do <strong>not</strong> use text that could be confused as the user's actual input.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/text-fields-placeholder-text-1.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-passwords" class="app-section">
+        <h2 class="hca-typography--title">Passwords</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Password input is disguised by default. Midline ellipses are displayed to represent each character of a password entered (such as •••••••).</p>
+
+              <strong>Enabling and disabling visibility</strong>
+              <p class="hca-typography--body-1">When the visibility icon is displayed with a text field, it indicates whether or not that field’s input is visible.</p>
+              <p class="hca-typography--body-1">A text field’s visibility may be toggled on or off using the icon:</p>
+              <dl>
+                <dt>Visibility enabled</dt>
+                <dd>The visibility icon is displayed with the password visible.</dd>
+                <br>
+                <dt>Visibility disabled</dt>
+                <dd>The invisibility icon is displayed with the password represented by midline ellipses.</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/text-fields-password-fields-1.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-validation" class="app-section">
+        <h2 class="hca-typography--title">Validation</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">When forms require in-field validation, a Grass (#26CC6D) colored checkmark will appear within the right side of the text field to show an accurate validation. When an incorrect inputs triggers an error, the user will see a Strawberry (#F45D50) color exclamation mark, in addition to a highlighted stroke and helper text.</p>
+
+              <strong>Text field input error</strong>
+              <p class="hca-typography--body-1"><strong>Helper text</strong> may be included before, during, or after a user interacts with each field on a form.</p>
+
+              <p class="hca-typography--body-1">Show error text only after user interaction with a field. If the user inputs incorrect data, helper text may transform into error text.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/input-error-1.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Required input</figcaption>
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/input-error-2.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Below multi-line character count limit</figcaption>
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/input-error-3.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Above multi-line character count limit</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- /general usage article --}}
+  </div>
+  {{!-- / Usage tab panel --}}
+
+
+
+
+
+
+
+
+  {{!-- SPECS TAB --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">Styles</h1>
+
+      <section id="section-typeface" class="app-section">
+        <h2 class="hca-typography--title">Specs</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hca-layout__container--body-content">
+              <dl>
+                <dt>Floating Label</dt>
+                <dd>Font: Open Sans Regular 14px</dd>
+                <dd>Text color: Cadet (#465561)</dd>
+                <br>
+                <dt>Placeholder text</dt>
+                <dd>Font: Open Sans Regular 16px</dd>
+                <dd>Text color: Cadet (#465561)</dd>
+                <br>
+                <dt>Helper text</dt>
+                <dd>Font: Open Sans Semi-bold 12px</dd>
+                <dd>Text color: Asphalt (#1F2532)</dd>
+                <br>
+                <dt>Component</dt>
+                <dd>Height: 90px</dd>
+                <dd>Total Height: 115px</dd>
+                <dd>Border: 1px Geyser (#D8DDE6)</dd>
+                <dd>Border-Radius: 5px</dd>
+                <dd>Background color: White (#ffffff)</dd>
+                <br>
+                <dt>Label text</dt>
+                <dd>Font size: 14px</dd>
+                <dd>Padding above: 15px</dd>
+                <dd>Padding below: 10px</dd>
+                <br>
+                <dt>Placeholder text</dt>
+                <dd>Font size: 16px</dd>
+                <dd>Padding below: 10px</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/text-fields/text-fields-specs-1.png" class="img-responsive hca-visual-example__comp" alt="Text field with label, placeholder text, and helper text." />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+  {{!-- end specs tab panel --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">Coming soon.</div>
+  {{!-- end code tab panel --}}
+</div>
+{{!-- /tab-content --}}
