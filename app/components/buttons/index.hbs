@@ -1,0 +1,228 @@
+---
+layout: default.hbs
+title: Buttons
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
+
+  <section class="app-tab-header">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--subhead hca-typography__color--asphalt">Buttons are fundamental components of any digital UI, and communicate actions that occur when users interact with them.  HCA Design System makes use of three different button types, all with different use cases.</p>
+
+          <p class="hca-typography--subhead hca-typography__color--asphalt">Choose button types wisely to enhance a user's experience by clearly communicating available actions.</p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <ul class="app-toc">
+          <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+          <li class="app-toc__item"><a href="#section-button-types">Button Types</a></li>
+          <li class="app-toc__item"><a href="#section-choosing-button-type">Choosing a Button Type</a></li>
+          <li class="app-toc__item"><a href="#section-button-placement">Button Placement</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">General Usage</h1>
+
+      <section id="section-button-types" class="app-section">
+        <h1 class="hca-typography--title">Button Types</h1>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">There are three fundamental button types in our design system.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/flat-button.png" class="img-responsive hca-visual-example__comp" alt="This is a Flat Button." />
+              <figcaption class="hca-visual-example__caption">
+                <span class="hca-typography--body-2">Flat Button</span>
+                <p class="hca-typography--body-1">A button with no background fill by default. Flat buttons fill with color on press, but do not lift in elevation.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/raised-button.png" class="img-responsive hca-visual-example__comp" alt="This is a Raised Button." />
+              <figcaption class="hca-visual-example__caption">
+                <span class="hca-typography--body-2">Raised Button</span>
+                <p class="hca-typography--body-1">A rounded corner button with a filled background that lifts and displays an elevation reaction on press.</p>
+              </figcaption>
+            </figure>
+
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/floating-action-button.png" class="img-responsive hca-visual-example__comp" alt="This is a Floating Action Button." />
+              <figcaption class="hca-visual-example__caption">
+                <span class="hca-typography--body-2">Floating Action Button</span>
+                <p class="hca-typography--body-1">A circular button that lifts and displays an elevation reaction on press.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-choosing-button-type" class="app-section">
+        <h1 class="hca-typography--title">Choosing a Button Type</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">When choosing a button type to use in your design, first consider the primary action of your view or component. It is best to make the most primary action stand out visually among all other options.</p>
+
+              <ul>
+                <p class="hca-typography--body-1">Some things to think about as you consider what type of button to use:</p>
+                <li>
+                  <div class="hca-layout__container--body-content">
+                    <span class="hca-typography--body-2">Function</span>
+                    <p class="hca-typography--body-1">Is this button the primary action or one of the most primary actions?</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="hca-layout__container--body-content">
+                    <span class="hca-typography--body-2">Dimension</span>
+                    <p class="hca-typography--body-1">When too many elements sit at the same level of elevation, they can lose visual importance. It is best to utilize buttons in a way that highlights the most important actions through elevation. Be conscious of this when choosing between a flat or raised button.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="hca-layout__container--body-content">
+                    <span class="hca-typography--body-2">Layout</span>
+                    <p class="hca-typography--body-1">Try to use one button type per container in your layout. Utilize different button types in the same container when you need to emphasize one of your actions above the other.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/button-choice-flat.png" class="img-responsive hca-visual-example__comp" alt="Flat buttons are your default button choice." />
+              <figcaption class="hca-visual-example__caption">
+                Default button choice.</figcaption>
+            </figure>
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/button-choice-raised.png" class="img-responsive hca-visual-example__comp" alt="Raised buttons are used for important or primary actions among other actions." />
+              <figcaption class="hca-visual-example__caption">
+                Important or primary action among other actions.</figcaption>
+            </figure>
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/button-choice-floating-action.png" class="img-responsive hca-visual-example__comp" alt="In the event that your entire app or view has one primary action, you can utilize a floating action button to sit above all other options in elevation, thus highlighting it above any other actions." />
+              <figcaption class="hca-visual-example__caption">
+                Primary action of entire view or app</figcaption>
+            </figure>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/button-choice-flat-example.png" class="img-responsive hca-visual-example__comp" alt="Default to using a flat button until there is a need for a more important action to highlight." />
+              <figcaption class="hca-visual-example__caption">
+                <span class="hca-typography--body-2">Flat Button</span>
+                <p class="hca-typography--body-1">Default to using a flat button until there is a need for a more important action to highlight. This card-based interface can have many buttons come into view all with separate contexts for their actions. It would be hard to call out any one button for the primary action in this scenario.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/button-choice-raised-example.png" class="img-responsive hca-visual-example__comp" alt="If/when you have multiple actions available, you can use a raised button to highlight the most important action." />
+              <figcaption class="hca-visual-example__caption">
+                <span class="hca-typography--body-2">Raised Button</span>
+                <p class="hca-typography--body-1">There are multiple actions available on this example of a stepper, but one primary action. You can emphasize primary actions with raised buttons to draw more attention to them.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/buttons/button-choice-floating-action-example.png" class="img-responsive hca-visual-example__comp" alt="In the event that your entire view has one primary action, you can utilize a floating action button to sit above all other options in elevation, thus highlighting it above any other actions." />
+              <figcaption class="hca-visual-example__caption">
+                <span class="hca-typography--body-2">Floating Action Button</span>
+                <p class="hca-typography--body-1">In the event that your entire view has one primary action, you can utilize a floating action button to sit above all other elements in elevation, thus highlighting it above all other actions.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="section-button-placement" class="app-section">
+        <h1 class="hca-typography--title">Button Placement</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">If you have multiple actions presented to a user, where one action is affirmative and one action is dismissive, always place the affirmative action to the right of the dismissive action.</p>
+              <p class="hca-typography--body-1">This pattern will appear often in dialogs.</p>
+            </div>
+          </div>
+          <div class="col-sm-7 text-center">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/buttons/button-placement-do.png" class="img-responsive hca-visual-example__comp" alt="'Discard' is the affirmative action related to this prompt. It is placed to the right of the dismissive action." />
+                  <figcaption class="hca-visual-example__caption">"Discard" is the affirmative action related to this prompt. It is placed to the right of the dismissive action.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/buttons/button-placement-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not place affirmative actions to the left of dismissive actions." />
+                  <figcaption class="hca-visual-example__caption">Do not place affirmative actions to the left of dismissive actions.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+
+
+
+
+
+
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+            <li class="app-toc__item"><a href="#section-name">List</a></li>
+            <li class="app-toc__item"><a href="#section-name">Here</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    Put your content here.
+  </div>
+
+  {{!-- CODE TAB --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">
+    Coming soon.
+  </div>
+
+</div>

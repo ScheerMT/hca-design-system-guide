@@ -13,6 +13,7 @@ $visual-example-line-size: 10px;
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
+  text-align: left; //added so we can use bootstrap text-center class on wrapper
 }
 .hca-visual-example__comp {
   display: block;
@@ -59,4 +60,11 @@ $visual-example-line-size: 10px;
   .hca-visual-example__overlay {
     background-color: rgba($color__strawberry, .15);
   }
+}
+
+/**
+ * Size modifiers for max-widths
+ */
+.hca-visual-example--mobile {
+  max-width: 320px;
 }
