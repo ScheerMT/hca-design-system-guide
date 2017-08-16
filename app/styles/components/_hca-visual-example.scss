@@ -31,6 +31,11 @@ $visual-example-line-size: 10px;
   // background-color: rgba($color__asphalt, .2);
 }
 
+.hca-visual-example__caption {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 /* Do and Don't modifiers */
 .hca-visual-example--do {
   .hca-visual-example__comp {
@@ -67,4 +72,12 @@ $visual-example-line-size: 10px;
  */
 .hca-visual-example--mobile {
   max-width: 320px;
+}
+
+.hca-visual-example--half-size {
+  .hca-visual-example__comp {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+  }
 }
