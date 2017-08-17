@@ -23,7 +23,7 @@ base_url: '../../'
         <ul class="app-toc">
           <h2 class="hca-typography--subhead">Topics on this tab:</h2>
           <li class="app-toc__item"><a href="#section-button-types">Button Types</a></li>
-          <li class="app-toc__item"><a href="#section-button-versions">Button Versions</a></li>
+          <li class="app-toc__item"><a href="#section-button-variations">Button Variations</a></li>
           {{!-- <li class="app-toc__item"><a href="#section-button-sizes">Button Sizes</a></li> --}}
           <li class="app-toc__item"><a href="#section-button-placement">Button Placement</a></li>
         </ul>
@@ -162,14 +162,16 @@ base_url: '../../'
 
 
 
-      <section id="section-button-versions" class="app-section">
-        <h1 class="hca-typography--title">Button Versions</h1>
+      <section id="section-button-variations" class="app-section">
+        <h1 class="hca-typography--title">Button Variations</h1>
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
-              <p class="hca-typography--body-1">Each of our three button types can utilize different versions based on their role in your design. By default, all buttons are in grayscale.</p>
+              <p class="hca-typography--body-1">Each of our three button types can utilize different variations based on their role in your design. By default, all buttons are in grayscale.</p>
 
-              <p class="hca-typography--body-1">There are four different versions that can be applied to any button type to help visually distinguish them or add valuable context: primary, success, warning, and danger.</p>
+              <p class="hca-typography--body-1">There are four core variations that can be applied to any button type to help visually distinguish them or add valuable context: primary, success, warning, and danger.</p>
+
+              <p class="hca-typography--support">NOTE: When creating custom variations, you must make sure you <em>at least</em> adhere to a <a href="http://webaim.org/resources/contrastchecker/" target="_blank">WCAG 2.0 AA accessibility level for visual contrast</a>.</p>
 
             </div>
           </div>
@@ -283,7 +285,7 @@ base_url: '../../'
       <div class="row">
         {{!-- <div class="col-sm-7">
           <div class="hca-layout__container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Each of our three button types can utilize different versions based on their role in your design. By default, all buttons are in grayscale. There are primary, success, warning, and danger versions that can be applied to any button type to help visually distinguish them or add valuable context.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Each of our three button types can utilize different variations based on their role in your design. By default, all buttons are in grayscale. There are primary, success, warning, and danger variations that can be applied to any button type to help visually distinguish them or add valuable context.</p>
           </div>
         </div> --}}
         <div class="col-sm-5">
@@ -300,57 +302,16 @@ base_url: '../../'
     </section>
 
     <article>
-      <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+      <h1 class="app-article-headline hca-typography--headline">Flat Buttons</h1>
 
       <section id="section-flat-button-specs" class="app-section">
-        <h1 class="hca-typography--title">Shared Button Specs</h1>
+        <h1 class="hca-typography--title">Flat Buttons</h1>
         <div class="row">
           <div class="col-sm-5">
+            <span class="hca-typography--subhead">Defaults</span>
             <div class="hca-layout__container--body-content">
-              <p class="hca-typography--body-2">Defaults</p>
-              <div class="hca-specs">
-                <table class="table">
-                  <thead>
-                    <th>Property</th>
-                    <th>Value</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Height</td>
-                      <td class="">40px</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Minimum Width</td>
-                      <td class="">90px</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Font Size</td>
-                      <td class="">16px</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Font Weight</td>
-                      <td class="">Semibold</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Padding - Left &amp; Right</td>
-                      <td class="">15px</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Padding - Top &amp; Bottom</td>
-                      <td class="">10px</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Margin - All Sides</td>
-                      <td class="">8px</td>
-                    </tr>
-                    <tr>
-                      <td class="hca-typography__color--asphalt">Border Radius - All Sides</td>
-                      <td class="">5px</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              {{!-- <div class="app-card hca-background--white">
+              <div class="app-card hca-background--white">
+                <span class="hca-typography--body-2">Sizing</span>
                 <ul class="hca-typography--body-1">
                   <li>
                     <span class="hca-typography__color--asphalt">Height:</span> 40px
@@ -358,12 +319,18 @@ base_url: '../../'
                   <li>
                     <span class="hca-typography__color--asphalt">Minimum Width:</span> 90px
                   </li>
+                </ul>
+                <span class="hca-typography--body-2">Text</span>
+                <ul class="hca-typography--body-1">
                   <li>
                     <span class="hca-typography__color--asphalt">Font Size:</span> 16px
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
                   </li>
+                </ul>
+                <span class="hca-typography--body-2">Spacing</span>
+                <ul class="hca-typography--body-1">
                   <li>
                     <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
                   </li>
@@ -374,7 +341,56 @@ base_url: '../../'
                     <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
                   </li>
                 </ul>
-              </div> --}}
+              </div>
+            </div>
+            {{!-- / defaults specs --}}
+
+            <span class="hca-typography--subhead">Variations</span>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-background--white">
+                <span class="hca-typography--body-2">Primary</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{>evening}}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Minimum Width:</span> 90px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Success / Positive</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Warning / Caution</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Top and Bottom:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Error / Danger</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Top and Bottom:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-sm-7">
