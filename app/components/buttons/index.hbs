@@ -186,7 +186,7 @@ base_url: '../../'
           </div> --}}
         </div>
 
-        <h2 class="hca-typography--subhead hca-typography__color--asphalt">Choosing a button version</h2>
+        <h2 class="hca-typography--subhead hca-typography__color--asphalt">Choosing a button variant</h2>
         <br />
         <div class="row">
           <div class="col-sm-4">
@@ -294,23 +294,20 @@ base_url: '../../'
             <li class="app-toc__item"><a href="#section-flat-button-specs">Flat Buttons</a></li>
             <li class="app-toc__item"><a href="#section-raised-button-specs">Raised Buttons</a></li>
             <li class="app-toc__item"><a href="#section-floating-action-button-specs">Floating Action Buttons</a></li>
-            <li class="app-toc__item"><a href="#section-icon-button-specs">Icon Buttons</a></li>
             <li class="app-toc__item"><a href="#section-dropdown-button-specs">Dropdown Buttons</a></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <article>
+    <article id="section-flat-button-specs">
       <h1 class="app-article-headline hca-typography--headline">Flat Buttons</h1>
-
-      <section id="section-flat-button-specs" class="app-section">
-        <h1 class="hca-typography--title">Flat Buttons</h1>
+      <section class="app-section">
         <div class="row">
           <div class="col-sm-5">
-            <span class="hca-typography--subhead">Defaults</span>
+            <h2 class="hca-typography--title">Defaults</h2>
             <div class="hca-layout__container--body-content">
-              <div class="app-card hca-background--white">
+              <div class="app-card hca-specs">
                 <span class="hca-typography--body-2">Sizing</span>
                 <ul class="hca-typography--body-1">
                   <li>
@@ -323,10 +320,10 @@ base_url: '../../'
                 <span class="hca-typography--body-2">Text</span>
                 <ul class="hca-typography--body-1">
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+                    <span class="hca-typography__color--asphalt">Font:</span> Open Sans Semibold
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 16px
                   </li>
                 </ul>
                 <span class="hca-typography--body-2">Spacing</span>
@@ -335,7 +332,146 @@ base_url: '../../'
                     <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Padding - Top and Bottom:</span> 10px
+                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {{!-- / defaults specs --}}
+          </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-flat-button-defaults.png" class="img-responsive hca-visual-example__comp" alt="Flat Button default specs" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default specs for Flat Buttons</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">Variants</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Default</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> cadet }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Primary</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> evening }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Success / Positive</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span>{{> ivy }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Caution / Warning</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> hazelnut }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Danger / Error</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> cherry }}
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-flat-button-variants.png" class="img-responsive hca-visual-example__comp" alt="Flat Button states" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default and Primary variants of Flat Buttons</figcaption> --}}
+            {{!-- </figure> --}}
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">States</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Focus / Hover</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> 10% opacity of button text color
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Pressed</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> 25% opacity of button text color
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Disabled</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> None
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text:</span> 50% opacity
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-flat-button-states.png" class="img-responsive hca-visual-example__comp" alt="Flat Button states" />
+              <br />
+              <figcaption class="hca-visual-example__caption">Default and Primary variants of Flat Buttons in their different states.</figcaption>
+            {{!-- </figure> --}}
+          </div>
+        </div>
+
+      </section>
+    </article>
+    {{!-- / flat buttons article --}}
+
+    <article id="section-raised-button-specs">
+      <h1 class="app-article-headline hca-typography--headline">Raised Buttons</h1>
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">Defaults</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Sizing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 40px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Minimum Width:</span> 90px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> white }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font:</span> Open Sans Semibold
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Spacing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
@@ -344,65 +480,212 @@ base_url: '../../'
               </div>
             </div>
             {{!-- / defaults specs --}}
-
-            <span class="hca-typography--subhead">Variations</span>
-            <div class="hca-layout__container--body-content">
-              <div class="app-card hca-background--white">
-                <span class="hca-typography--body-2">Primary</span>
-                <ul class="hca-typography--body-1">
-                  <li>
-                    <span class="hca-typography__color--asphalt">Text Color:</span> {{>evening}}
-                  </li>
-                  <li>
-                    <span class="hca-typography__color--asphalt">Minimum Width:</span> 90px
-                  </li>
-                </ul>
-                <span class="hca-typography--body-2">Success / Positive</span>
-                <ul class="hca-typography--body-1">
-                  <li>
-                    <span class="hca-typography__color--asphalt">Font Size:</span> 16px
-                  </li>
-                  <li>
-                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
-                  </li>
-                </ul>
-                <span class="hca-typography--body-2">Warning / Caution</span>
-                <ul class="hca-typography--body-1">
-                  <li>
-                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
-                  </li>
-                  <li>
-                    <span class="hca-typography__color--asphalt">Padding - Top and Bottom:</span> 10px
-                  </li>
-                  <li>
-                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
-                  </li>
-                </ul>
-                <span class="hca-typography--body-2">Error / Danger</span>
-                <ul class="hca-typography--body-1">
-                  <li>
-                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
-                  </li>
-                  <li>
-                    <span class="hca-typography__color--asphalt">Padding - Top and Bottom:</span> 10px
-                  </li>
-                  <li>
-                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
-          <div class="col-sm-7">
-            <figure class="hca-visual-example hca-visual-example--mobile">
-              <img src="{{page.base_url}}images/components/buttons/button-placement-do.png" class="img-responsive hca-visual-example__comp" alt="'Discard' is the affirmative action related to this prompt. It is placed to the right of the dismissive action." />
-              <figcaption class="hca-visual-example__caption"></figcaption>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-raised-button-defaults.png" class="img-responsive hca-visual-example__comp" alt="Raised Button default specs" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default specs for Flat Buttons</figcaption> --}}
             </figure>
           </div>
         </div>
       </section>
 
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">Variants</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Default</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> cadet }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Primary</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> evening }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Success / Positive</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span>{{> ivy }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Caution / Warning</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> hazelnut }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Danger / Error</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> cherry }}
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-raised-button-variants.png" class="img-responsive hca-visual-example__comp" alt="Flat Button states" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default and Primary variants of Flat Buttons</figcaption> --}}
+            {{!-- </figure> --}}
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">States</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Focus / Hover</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> Add #000000 at 40% opacity to background color (darken)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Shadows:</span> {{> elevation-level-1}}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Pressed</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> Add #000000 at 40% opacity to background color (darken)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Shadows:</span> {{> elevation-level-2}}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Disabled</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> {{> geyser}}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> slate}}
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-raised-button-states.png" class="img-responsive hca-visual-example__comp" alt="Flat Button states" />
+              <br />
+              <figcaption class="hca-visual-example__caption">Default and Primary variants of Raised Buttons in their different states.</figcaption>
+            {{!-- </figure> --}}
+          </div>
+        </div>
+      </section>
     </article>
+    {{!-- / raised buttons article --}}
+
+
+    <article id="section-floating-action-button-specs">
+      <h1 class="app-article-headline hca-typography--headline">Floating Action Buttons</h1>
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">Defaults</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                {{!-- <span class="hca-typography--body-2">Sizing</span> --}}
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 50px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Width:</span> 50px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Icon Color:</span> {{> white }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Shadows:</span> {{> elevation-level-3 }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {{!-- / defaults specs --}}
+          </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-floating-action-buttons.png" class="img-responsive hca-visual-example__comp" alt="Floating Action Button default specs" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default specs for Flat Buttons</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">Variants</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <p class="hca-typography--body-1">The floating action button can have any color variant due to it's unique role as a single primary action. You can utilize this to stand out among all other UI elements.</p>
+                <p class="hca-typography--support">NOTE: Only use an icon/graphic inside a floating action button.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="hca-typography--title">States</h2>
+            <div class="hca-layout__container--body-content">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Focus / Hover</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Width:</span> 55px (10% grow)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 55px (10% grow)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> Add #000000 at 40% opacity to background color (darken)
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Pressed</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Width:</span> 55px (10% grow)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 55px (10% grow)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> Add #000000 at 40% opacity to background color (darken)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Shadows:</span> {{> elevation-level-4}}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Disabled</span>
+                <p class="hca-typography--body-1">You should never have a disabled floating action button. It should only be used for a single most primary action that is always available when the button appears.</p>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-floating-action-button-states.png" class="img-responsive hca-visual-example__comp" alt="Floating Action Button states" />
+              <br />
+              <figcaption class="hca-visual-example__caption">Default and Primary variants of Floating Action Buttons in their different states.</figcaption>
+            {{!-- </figure> --}}
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- / floating action buttons article --}}
 
 
   </div>
