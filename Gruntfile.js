@@ -377,15 +377,15 @@ module.exports = function (grunt) {
     'copy:dist',
     'sass:dist',
     'eslint:dist',
-    'csslint:dist',
-    'uncss:dist',
+    // 'csslint:dist',
+    // 'uncss:dist',
     'concat:scripts',
     'concat:styles',
     'uglify:dist',
     'cssmin:dist',
     'imagemin:dist',
     'svgmin:dist',
-    'htmlmin:dist'
+    // 'htmlmin:dist'
   ]);
 
   grunt.registerTask('deploy', [
