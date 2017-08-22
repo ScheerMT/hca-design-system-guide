@@ -10,9 +10,11 @@
 $visual-example-line-size: 10px;
 .hca-visual-example {
   display: inline-block;
+  width: 100%;
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
+  text-align: left; //added so we can use bootstrap text-center class on wrapper
 }
 .hca-visual-example__comp {
   display: block;
@@ -28,6 +30,11 @@ $visual-example-line-size: 10px;
   width: 100%;
   height: 100%;
   // background-color: rgba($color__asphalt, .2);
+}
+
+.hca-visual-example__caption {
+  max-width: 465px;
+  // margin: 0 auto;
 }
 
 /* Do and Don't modifiers */
@@ -60,3 +67,26 @@ $visual-example-line-size: 10px;
     background-color: rgba($color__strawberry, .15);
   }
 }
+
+/**
+ * Size modifiers for max-widths
+ */
+.hca-visual-example--mobile {
+  max-width: 320px;
+}
+
+.hca-visual-example--half-size {
+  .hca-visual-example__comp {
+    width: 50%;
+    height: 50%;
+    // margin: 0 auto;
+  }
+}
+
+
+/**
+ * Random Spacing modifiers
+ */
+ .hca-visual-example--margin-top {
+   margin-top: 50px;
+ }

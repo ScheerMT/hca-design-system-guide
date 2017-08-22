@@ -12,7 +12,7 @@ hr {
 }
 
 .app-header {
-  background-color: $color__geyser;
+  background-color: $color__morning;
   margin-bottom: 30px;
 
   .hca-typography--display-2,
@@ -29,9 +29,10 @@ hr {
   padding: 20px;
   font-size: 26px;
   text-align: center;
+  margin-top: 50px;
 
   #hca-design-system-logo {
-    display: block;
+    display: none;
     margin: auto;
     height: 75px;
     width: 75px;
