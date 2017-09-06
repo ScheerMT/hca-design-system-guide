@@ -12,6 +12,7 @@
   cursor: pointer;
   background: transparent;
   border: none;
+  border-radius: $border-radius__default;
 
   .hca-menu-toggle__icon {
     display: block;
