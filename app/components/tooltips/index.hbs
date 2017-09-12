@@ -1,0 +1,188 @@
+---
+layout: default.hbs
+title: Tooltips
+base_url: '../../'
+---
+
+<!-- body_class: 'hca-background--white' -->
+
+
+
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
+
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">A tooltip adds supplemental information, which provides clarity to any element or piece of content that needs further explanation. Tooltips are text labels that appear when the user hovers over, focuses on, or touches an element.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Tooltips may identify an element when they are activated. They also can contain brief helper text about the element’s function, no more than 70 characters. For example, they could contain text information on actionable icons.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Tooltips may identify an element when they are activated. They also can contain brief helper text about the element’s function, no more than 70 characters. For example, they could contain text information on actionable icons.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Tooltip labels do not receive input focus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+
+      {{!-- usage section --}}
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Use tooltips for interactive icons.</p>
+              <p class="hca-typography--body-1">Tooltips don’t display rich information, which includes images and formatted text.</p>
+              <p class="hca-typography--body-1">Tooltips don’t have directional arrows. Instead, they rely on motion emanating from the source to convey direction.</p>
+            </div>
+          </div>
+          {{!-- / col-*-* text content --}}
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">                
+                <figure class="hca-visual-example hca-background--white app-l-padding-20">
+                  <img src="{{page.base_url}}images/components/tooltips/tooltips-useage-icons.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+                </figure>                                  
+              </div>
+            </div>
+          </div>
+          {{!-- /col-*-* visual examples --}}
+        </div>
+        {{!-- /row --}}
+      </section>
+      {{!-- / usage section --}}
+
+    </article>
+    {{!-- / article --}}
+  </div>
+  {{!-- / Usage tab panel --}}
+
+
+
+
+
+
+
+
+  {{!-- SPECS TAB --}}
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-4">
+        <ul class="app-toc">
+          <h2 class="hca-typography--subhead">Topics on this tab:</h2>
+          <li class="app-toc__item"><a href="#section-shared-specs">Shared Specs</a></li>
+          <li class="app-toc__item"><a href="#section-tooltips-desktop">Tooltips (Desktop)</a></li>
+          <li class="app-toc__item"><a href="#section-tooltips-mobile">Tooltips (Mobile)</a></li>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+
+    {{!-- shared specs --}}
+    <section id="section-shared-specs" class="app-section">
+        <h2 class="hca-typography--title">Shared Specs</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-card hca-background--geyser">            
+              <div class="hca-layout__container--body-content">
+                <p class="hca-typography--body-2">Text:<span class="hca-typography--body-1">Open Sans Semi-Bold 12px</span></p>
+                <p class="hca-typography--body-2">Text Color:<span class="hca-typography--body-1">White (#FFFFFF)</span></p>
+                <p class="hca-typography--body-2">Tooltip Background:<span class="hca-typography--body-1">Asphalt (#1F2532)</br>90% Opacity</span></p>
+              </div>
+            </div>  
+          </div>
+          {{!-- / col-*-* text content --}}
+        </div>
+        {{!-- /row --}}
+    </section>
+    {{!-- / shared specs section --}}
+
+
+    {{!-- tooltips desktop specs --}}
+    <section id="section-tooltips-desktop" class="app-section">
+        <h2 class="hca-typography--title">Tooltips (Desktop)</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-card hca-background--geyser">
+              <div class="hca-layout__container--body-content">
+                <p class="hca-typography--body-2">Text:<span class="hca-typography--body-1">Open Sans Semi-Bold 12px</span></p>
+                <p class="hca-typography--body-2">Text Color:<span class="hca-typography--body-1">White (#FFFFFF)</span></p>
+                <p class="hca-typography--body-2">Tooltip Background:<span class="hca-typography--body-1">Asphalt (#1F2532)</br>90% Opacity</span></p>
+                <p class="hca-typography--body-2">Tile Height:<span class="hca-typography--body-1">25px</span></p>
+                <p class="hca-typography--body-2">Tile Padding:<span class="hca-typography--body-1">10px left and right padding</span></p>
+                <p class="hca-typography--body-2">Tile Margin:<span class="hca-typography--body-1">20px top margin</span></p>
+              </div>              
+            </div>
+          </div>
+          {{!-- / col-*-* text content --}}
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6 text-center">
+                <div class="app-l-padding-top-2em">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/tooltips/tooltips-desktop.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!-- /col-*-* visual examples --}}
+        </div>
+        {{!-- /row --}}
+    </section>
+    {{!-- / tooltips desktop section --}}
+
+
+    {{!-- tooltips mobile specs --}}
+    <section id="section-tooltips-mobile" class="app-section">
+        <h2 class="hca-typography--title">Tooltips (Mobile)</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-card hca-background--geyser">
+              <div class="hca-layout__container--body-content">
+                <p class="hca-typography--body-2">Text:<span class="hca-typography--body-1">Open Sans Semi-Bold 12px</span></p>
+                <p class="hca-typography--body-2">Text Color:<span class="hca-typography--body-1">White (#FFFFFF)</span></p>
+                <p class="hca-typography--body-2">Tooltip Background:<span class="hca-typography--body-1">Asphalt (#1F2532)</br>90% Opacity</span></p>
+                <p class="hca-typography--body-2">Tile Height:<span class="hca-typography--body-1">40px</span></p>
+                <p class="hca-typography--body-2">Tile Padding:<span class="hca-typography--body-1">20px left and right padding</span></p>
+                <p class="hca-typography--body-2">Tile Margin:<span class="hca-typography--body-1">20px top margin</span></p>
+              </div>              
+            </div>
+          </div>
+          {{!-- / col-*-* text content --}}
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6 text-center">
+                <div class="app-l-padding-top-2em">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/tooltips/tooltips-mobile.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+                  </figure>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!-- /col-*-* visual examples --}}
+        </div>
+        {{!-- /row --}}
+    </section>
+    {{!-- / tooltips mobile section --}}
+   
+
+  </div>
+  {{!-- end specs tab panel --}}
+
+  <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">Coming soon.</div>
+  {{!-- end code tab panel --}}
+
+</div>
+{{!-- /tab-content --}}
