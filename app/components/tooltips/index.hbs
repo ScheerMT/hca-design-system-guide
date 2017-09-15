@@ -1,0 +1,211 @@
+---
+layout: no-tabs.hbs
+title: Tooltips
+base_url: '../../'
+---
+
+
+
+
+<section class="app-tab-header">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="hca-layout__container--body-content">
+        <p class="hca-typography--subhead hca-typography__color--asphalt">Tooltips are text labels that can appear when a user interacts with an element. A tooltip adds supplemental information, which provides clarity to any element or piece of content that needs further explanation. </p>
+      </div>
+    </div>
+    <div class="col-sm-4 col-sm-offset-1">
+      <ul class="app-toc">
+        <h2 class="hca-typography--subhead">Contents:</h2>
+        <li class="app-toc__item"><a href="#section-usage">Usage</a></li>
+        <li class="app-toc__item"><a href="#section-specs">Specs</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<article id="section-usage">
+  <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+
+
+  <section class="app-section">
+    <div class="row app-section">
+      <div class="col-sm-6">
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--body-1">When a tooltip is activated, it either identifies the element or contains brief helper text about the element's function.</p>
+          <p class="hca-typography--body-1">Tooltip text should stay concise and avoid line breaking.</p>
+          <p class="hca-typography--body-1">Tooltips don’t have directional arrows. Instead, they rely on motion emanating from the source to convey direction.</p>
+        </div>
+        <div class="hca-layout__container--body-content">
+          <span class="hca-typography--body-2">Summoned by:</span>
+          <ul>
+            <li>Hover (Desktop)</li>
+            <li>Focus (Keyboard/Assistive devices)</li>
+            <li>Touch</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4 col-sm-offset-1">
+        <figure class="hca-visual-example">
+          <img src="{{page.base_url}}images/components/tooltips/tooltip-generic-example.png" class="img-responsive hca-visual-example__comp" alt="Basic example of a tooltip" />
+        </figure>
+      </div>
+    </div>
+
+    {{!-- <span class="hca-typography--title">Examples</span> --}}
+    <div class="row">
+      <div class="col-sm-8">
+        <figure class="hca-visual-example hca-visual-example--do">
+          <img src="{{page.base_url}}images/components/tooltips/tooltips-usage-do.png" class="img-responsive hca-visual-example__comp" alt="A common example of a tooltip would be text information about an actionable icon." />
+          <figcaption class="hca-visual-example__caption hca-typography--caption">A common example of a tooltip would be text information about an actionable icon.</figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-4">
+        <figure class="hca-visual-example hca-visual-example--dont">
+          <img src="{{page.base_url}}images/components/tooltips/tooltips-usage-dont.png" class="img-responsive hca-visual-example__comp" alt="Tooltips do not display rich information. This includes images and formatted text." />
+          <figcaption class="hca-visual-example__caption hca-typography--caption">Tooltips do not display rich information. This includes images and formatted text.</figcaption>
+        </figure>
+
+      </div>
+    </div>
+
+  </section>
+</article>
+{{!-- / article --}}
+
+
+
+
+
+
+
+
+
+
+
+  <article id="section-specs">
+    <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+
+    {{!-- tooltips desktop specs --}}
+    <section class="app-section">
+        <h2 class="hca-typography--title">Tooltips (Desktop)</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-card hca-specs">
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Component</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 26px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding Top and Bottom:</span> 7px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding Left and Right:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin Top:</span> 15px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 2px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Color:</span> {{> white }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {{!-- / col-*-* text content --}}
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6 text-center">
+                <div class="app-l-padding-top-2em">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/tooltips/specs-tooltip-desktop.png" class="img-responsive hca-visual-example__comp" alt="Desktop tooltips specs." />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!-- /col-*-* visual examples --}}
+        </div>
+        {{!-- /row --}}
+    </section>
+    {{!-- / tooltips desktop section --}}
+
+
+    {{!-- tooltips mobile specs --}}
+    <section class="app-section">
+        <h2 class="hca-typography--title">Tooltips (Mobile)</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-card hca-specs">
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Component</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 34px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding Top and Bottom:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding Left and Right:</span> 20px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin Top:</span> 20px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 2px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Color:</span> {{> white }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {{!-- / col-*-* text content --}}
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6 text-center">
+                <div class="app-l-padding-top-2em">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/tooltips/specs-tooltip-mobile.png" class="img-responsive hca-visual-example__comp" alt="Mobile tooltips specs" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!-- /col-*-* visual examples --}}
+        </div>
+        {{!-- /row --}}
+    </section>
+    {{!-- / tooltips mobile section --}}
+  </article>
