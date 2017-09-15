@@ -15,12 +15,25 @@ html {
 }
 
 a {
-  color: $color__night;
+  color: $color__link;
   text-decoration: none;
-  // font-weight: 600;
 
   &:hover {
-    background-color: $color__morning;
+    color: $color__link--hover;
+    text-decoration: none;
+  }
+}
+
+.hca-link {
+  border-bottom: 1px solid transparent;
+  color: $color__link;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $color__link-bg--hover;
+    border-color: $color__link--hover;
+    color: $color__link--hover;
+    text-decoration: none;
   }
 }
 

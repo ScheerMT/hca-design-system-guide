@@ -101,7 +101,7 @@
 
 .hca-typography--subhead {
   font-size: 18px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   line-height: 27px;
 }
 
@@ -156,10 +156,71 @@
  /**
   * Color modifiers
   */
-  .hca-typography__color--asphalt {
-    color: $color__asphalt !important;
-  }
-
-  .hca-typography__color--cadet {
-    color: $color__cadet !important;
+  .hca-typography__color {
+    &--asphalt {
+      color: $color__asphalt !important;
+    }
+    &--cadet {
+      color: $color__cadet !important;
+    }
+    &--slate {
+      color: $color__slate !important;
+    }
+    &--geyser {
+      color: $color__geyser !important;
+    }
+    &--steam {
+      color: $color__steam !important;
+    }
+    &--white {
+      color: $color__white !important;
+    }
+    &--night {
+      color: $color__night !important;
+    }
+    &--evening {
+      color: $color__evening !important;
+    }
+    &--noon {
+      color: $color__noon !important;
+    }
+    &--morning {
+      color: $color__morning !important;
+    }
+    &--pine {
+      color: $color__pine !important;
+    }
+    &--ivy {
+      color: $color__ivy !important;
+    }
+    &--grass {
+      color: $color__grass !important;
+    }
+    &--mint {
+      color: $color__mint !important;
+    }
+    &--mocha {
+      color: $color__mocha !important;
+    }
+    &--hazelnut {
+      color: $color__hazelnut !important;
+    }
+    &--butterscotch {
+      color: $color__butterscotch !important;
+    }
+    &--vanilla {
+      color: $color__vanilla !important;
+    }
+    &--cranberry {
+      color: $color__cranberry !important;
+    }
+    &--cherry {
+      color: $color__cherry !important;
+    }
+    &--strawberry {
+      color: $color__strawberry !important;
+    }
+    &--watermelon {
+      color: $color__watermelon !important;
+    }
   }

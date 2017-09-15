@@ -8,6 +8,7 @@
   height: 100vh;
   background-color: $color__white;
   // border: 1px solid red;
+  overflow-y: scroll;
 
   @include level-3;
 
@@ -32,4 +33,6 @@
 
 .hca-layout--has-drawer .hca-menu-toggle {
   color: $color__asphalt;
+  background-color: $color__white;
+  box-shadow: $box-shadow__1;
 }
