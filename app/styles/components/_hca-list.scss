@@ -39,8 +39,8 @@ $hca-list--vertical-margin: 10px;
   }
 
   &--nested {
-    margin-left: $hca-list--horiztonal-padding/2;
-    padding-left: $hca-list--horiztonal-padding/2;
+    margin-left: $hca-list--horiztonal-padding;
+    padding-left: $hca-list--horiztonal-padding;
   }
 
   &--double-nested {
