@@ -136,7 +136,7 @@
    ========================================================================== */
 
 /**
- * Weight modifiers
+ * Weight and style modifiers
  */
  .hca-typography__weight--light {
    font-weight: lighter !important;
@@ -152,6 +152,11 @@
    font-weight: bold !important;
    font-weight: 600 !important;
  }
+
+ .hca-typography--italic {
+   font-style: italic !important;
+ }
+
 
  /**
   * Color modifiers

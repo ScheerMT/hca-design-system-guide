@@ -1,6 +1,7 @@
 $hca-button-horizontal-padding: 15px;
 .hca-button,
 a.hca-button {
+  position: relative;
   display: inline-block;
   min-width: 90px;
   height: 40px;
@@ -33,6 +34,16 @@ a.hca-button {
     background-color: rgba($color__cadet, .25);
   }
 
+  //disabled flat button
+  &--disabled {
+    color: rgba($color__cadet, .5) !important;
+    cursor: default !important;
+    pointer-events: none;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
 
   &--large {
     height: 55px;
@@ -55,6 +66,7 @@ a.hca-button {
       box-shadow: $box-shadow__2;
     }
   }
+  // end hca-button
 
 
 
@@ -134,55 +146,43 @@ a.hca-button {
   */
 
 /* Text on sides of icon */
-.hca-button--icon-and-text.hca-button--left-text,
-.hca-button--icon-and-text.hca-button--right-text {
-  min-width: 45px;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  text-align: left;
+// .hca-button--icon-and-text.hca-button--left-text,
+// .hca-button--icon-and-text.hca-button--right-text {
+//   min-width: 45px;
+//   width: 100%;
+//   height: 40px;
+//   line-height: 40px;
+//   text-align: left;
+//
+//   .hca-button__icon,
+//   .hca-button__text {
+//     display: inline-block;
+//   }
+//
+//   .hca-button__text {
+//
+//   }
+//   .hca-button__icon {
+//     top: 7px;
+//   }
+//
+// }
 
-  .hca-button__icon,
-  .hca-button__text {
-    display: inline-block;
+
+//new solution for icons on left or right of button
+.hca-button.hca-button--has-icon-right {
+  padding-right: 30px;
+  .material-icons {
+    position: absolute;
+    bottom: 7px;
+    right: 5px;
   }
-
-  .hca-button__text {
-
-  }
-  .hca-button__icon {
-    top: 7px;
-  }
-
 }
-
-
-/* left side text */
-.hca-button--icon-and-text.hca-button--left-text {
-  // text-align: right;
-  .hca-button__icon,
-  .hca-button__text {
-    // float: left;
+.hca-button.hca-button--has-icon-left {
+  padding-left: 30px;
+  .material-icons {
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
   }
-  .hca-button__text {
-    // margin-right: 5px;
-  }
-
-  .hca-button__icon {
-    // right: 10px;
-  }
-
-}
-
-/* right side text */
-.hca-button--icon-and-text.hca-button--right-text {
-  // text-align: left;
-  .hca-button__icon,
-  .hca-button__text {
-    // float: right;
-  }
-  .hca-button__text {
-    // margin-left: 5px;
-  }
-
 }

@@ -1,5 +1,8 @@
 .hca-background {
 
+  //
+  //Solid Backgrounds
+  //
   &--white {
     background-color: $color__white !important;
   }
@@ -67,4 +70,64 @@
     background-color: $color__watermelon !important;
   }
 
+  //
+  //Gradient backgrounds
+  //
+  &--white-gradient {
+    background: $color__white;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, transparent, $color__white);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, transparent, $color__white); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &--morning-gradient {
+    background: $color__morning;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, transparent, $color__morning);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, transparent, $color__morning); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &--mint-gradient {
+    background: $color__mint;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, transparent, $color__mint);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, transparent, $color__mint); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &--vanilla-gradient {
+    background: $color__vanilla;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, transparent, $color__vanilla);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, transparent, $color__vanilla); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  &--watermelon-gradient {
+    background: $color__watermelon;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, transparent, $color__watermelon);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, transparent, $color__watermelon); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+
+
+  &--cadet-gradient {
+    background: $color__cadet;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color__asphalt, $color__cadet);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color__asphalt, $color__cadet); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--evening-gradient {
+    background: $color__evening;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color__night, $color__evening);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color__night, $color__evening); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--ivy-gradient {
+    background: $color__ivy;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color__pine, $color__ivy);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color__pine, $color__ivy); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--hazelnut-gradient {
+    background: $color__hazelnut;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color__mocha, $color__hazelnut);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color__mocha, $color__hazelnut); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  &--cherry-gradient {
+    background: $color__cherry;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $color__cranberry, $color__cherry);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $color__cranberry, $color__cherry); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 }
