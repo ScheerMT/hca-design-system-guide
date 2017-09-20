@@ -25,10 +25,20 @@ hr {
 .app-hca {
   font-family: "Times New Roman";
   font-weight: 300;
+  font-size: 27px; //hack to make it line up better with words next to it.
 }
 
 .app-drawer-nav {
 
+  .hca-list__item.app-drawer-nav__item--active,
+  .hca-list__item--nested.app-drawer-nav__item--active {
+    color: $color__evening;
+  }
+
+  .hca-list__item--nested.app-drawer-nav__item--active {
+    font-weight: 600;
+    border-left: 2px solid $color__evening;
+  }
 }
 
 .app-section {
@@ -51,6 +61,7 @@ hr {
 
 .app-nav-footer-cc {
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 
@@ -213,4 +224,24 @@ hr {
   @media (min-height: 700px) {
     display: block;
   }
+}
+
+
+.app-alert {
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  border-left: 3px solid $color__cadet;
+
+
+  &--warning {
+    background-color: $color__vanilla;
+    color: $color__mocha;
+    border-color: $color__butterscotch;
+
+    .material-icons {
+      color: $color__hazelnut;
+      font-size: 30px;
+    }
+  }
+
 }

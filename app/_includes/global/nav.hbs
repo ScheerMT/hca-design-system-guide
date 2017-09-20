@@ -10,43 +10,43 @@
 
   <hr />
 
-  <nav role="navigation" aria-label="Page Navigation" class="hca-list app-drawer-nav">
+  <nav role="navigation" aria-label="Page Navigation" class="hca-list app-drawer-nav js-app-drawer-nav">
 
-    <a href="{{page.base_url}}" class="hca-list__item">Get Started</a>
+    <a href="{{page.base_url}}" class="hca-list__item js-app-drawer-nav__item">Get Started</a>
 
     <dl>
       <dt>
-        <a href="#hca-drawer-nav__item--essentials" class="hca-list__item" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--essentials">Essentials <span class="material-icons">keyboard_arrow_up</span></a>
+        <a href="#hca-drawer-nav__item--essentials" class="hca-list__item js-app-drawer-nav__expansion-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--essentials">Essentials <span class="material-icons">keyboard_arrow_up</span></a>
       </dt>
-      <div class="collapse in" id="hca-drawer-nav__item--essentials">
+      <div class="collapse " id="hca-drawer-nav__item--essentials">
         <dd>
-          <a href="{{page.base_url}}essentials/color" class="hca-list__item hca-list__item--nested">Color</a>
+          <a href="{{page.base_url}}essentials/color" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Color</a>
         </dd>
         <dd>
-          <a href="{{page.base_url}}essentials/typography" class="hca-list__item hca-list__item--nested">Typography</a>
+          <a href="{{page.base_url}}essentials/typography" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Typography</a>
         </dd>
         <dd>
-          <a href="{{page.base_url}}essentials/iconography" class="hca-list__item hca-list__item--nested">Iconography</a>
+          <a href="{{page.base_url}}essentials/iconography" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Iconography</a>
         </dd>
         <dd>
-          <a href="{{page.base_url}}essentials/elevation" class="hca-list__item hca-list__item--nested">Elevation</a>
+          <a href="{{page.base_url}}essentials/elevation" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Elevation</a>
         </dd>
       </div>
     </dl>
 
     <dl>
       <dt>
-        <a href="#hca-drawer-nav__item--components" class="hca-list__item" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--components">Components<span class="material-icons">keyboard_arrow_up</span></a>
+        <a href="#hca-drawer-nav__item--components" class="hca-list__item js-app-drawer-nav__expansion-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="hca-drawer-nav__item--components">Components<span class="material-icons">keyboard_arrow_up</span></a>
       </dt>
-      <div class="collapse in" id="hca-drawer-nav__item--components">
+      <div class="collapse" id="hca-drawer-nav__item--components">
         <dd>
-          <a href="{{page.base_url}}components/buttons" class="hca-list__item hca-list__item--nested">Buttons</a>
+          <a href="{{page.base_url}}components/buttons" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Buttons</a>
         </dd>
         <dd>
-          <a href="{{page.base_url}}components/text-fields" class="hca-list__item hca-list__item--nested">Text Fields</a>
+          <a href="{{page.base_url}}components/text-fields" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Text Fields</a>
         </dd>
         <dd>
-          <a href="{{page.base_url}}components/tooltips" class="hca-list__item hca-list__item--nested">Tooltips</a>
+          <a href="{{page.base_url}}components/tooltips" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Tooltips</a>
         </dd>
       </div>
     </dl>
@@ -57,12 +57,12 @@
       </dt>
       <div class="collapse" id="hca-drawer-nav__item--patterns">
         <dd>
-          <a href="#" class="hca-list__item hca-list__item--nested">Coming Soon.</a>
+          <a href="#" class="hca-list__item hca-list__item--nested js-app-drawer-nav__item">Coming Soon.</a>
         </dd>
       </div>
     </dl> --}}
 
-    {{!-- <a href="#" class="hca-list__item">Downloads</a> --}}
+    {{!-- <a href="#" class="hca-list__item js-app-drawer-nav__item">Downloads</a> --}}
 
   </nav>
   {{!-- //hca-navigation --}}
@@ -70,7 +70,7 @@
   <hr />
 
   <div class="app-nav-footer-cc">
-    <p class="hca-typography--caption">HCA Design System is created and maintained by HCA IT&S User Experience team. &copy; 2017</p>
+    <p class="hca-typography--caption">HCA Design System is created and maintained by HCA IT&amp;S User Experience team. &copy; 2017</p>
   </div>
 
 </div>
