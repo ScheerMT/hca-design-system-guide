@@ -1,0 +1,136 @@
+/**
+ * Custom CSS being used in WYSIWYG editor of Forum. Just using this as
+ * copy/paste backup.
+ *
+ *
+ */
+
+ b { font-weight: 700; }
+
+input { min-width: 90px; height: 40px; line-height: 40px; border-radius: 5px; font-size: 16px; background: #fff !important; box-shadow: none; border: 1px solid #D8DDE6; padding-left: 15px; padding-right: 15px; }
+
+input[type=submit] { font-weight: 600; }
+
+input[type=submit].toolbar { text-shadow: none; }
+
+select { height: 40px; border-radius: 5px; line-height: 40px; min-width: 90px; }
+
+.field-title { font-size: 14px; margin-bottom: 10px; font-weight: 400; }
+
+#search-box { margin-bottom: 30px; }
+
+#search-box input#search-input { max-width: 500px; width: 98%; text-align: left; border-width: 1px; border-radius: 5px; }
+
+#search-box:before { display: block; content: "Search Forum"; text-align: left; margin-bottom: 10px; font-size: 14px; color: #465561; }
+
+
+#topic-search-box { display: block; float: none; margin-bottom: 20px; }
+
+#topic-search-box:before { display: block; content: "Search Topic"; margin-bottom: 10px; font-size: 14px; color: #465561; }
+
+#search-box-dropdown { max-width: 500px; padding: 20px; }
+#search-box-dropdown input[type=submit] { background: #1E71CD !important; color: #fff !important; border-radius: 5px !important; border: none !important;  }
+
+.verbose-search-box input[type=submit] {background: #1E71CD !important; color: #fff; }
+
+.dropdown table,
+.dropdown ul { border-radius: 5px; }
+
+.footer-table { display: none; }
+
+#description-box { max-width: 560px; font-size: 18px; }
+
+.drop-shadow { box-shadow: 0 2px 4px 0 rgba(31, 37, 50, 0.2); }
+
+
+.action-link,
+#nabble-user-header a,
+.breadcrumbs { display: inline-block; height: 40px; line-height: 40px; margin: 8px !important; padding-left: 15px; padding-right: 15px; border-radius: 5px; font-weight: 600; font-size: 16px; transition: background .2s ease-in-out; }
+
+.action-link:hover,
+.action-link:focus,
+#nabble-user-header a:hover,
+#nabble-user-header a:focus,
+.breadcrumbs:hover { background-color: rgba(6, 61, 122, .2); }
+
+.action-link a,
+#nabble-user-header a,
+.breadcrumbs a { text-decoration: none; }
+
+#nabblemore { text-transform: capitalize; font-weight: 600; background: #465561 !important; color: #fff !important; }
+
+
+#post-title { font-size: 22px; font-weight: 600; color: #1F2532; padding-bottom: 5px; border-bottom: 1px solid #D8DDE6; }
+
+.post-author { color: #1F2532 !important; background: #D8DDE6; border-radius: 2px; padding: 2px 5px; }
+
+.post-snippet { color: #465561 !important; }
+
+.clickable-row { transition: background .2s ease-in-out; }
+
+.clickable-row:hover { background-color: #D8DDE6; }
+
+.important { color: #063D7A !important; }
+
+.nabble .top-bar { padding-bottom: 30px; }
+
+.forum-footer { display: none; }
+
+.full-row { background: #fff; }
+
+input[type=submit].action-button,
+input[type=button].action-button { min-width: 90px; height: 40px; font-weight: 600 !important; text-align: center; background: #fff !important; color: #1F2532 !important; padding-left: 15px; padding-right: 15px; border-radius: 5px; border 1px solid #D8DDE6; }
+
+button,
+button.toolbar { height: 40px; line-height: 40px; border-radius: 5px; font-weight: 600 !important; text-align: center; background: #fff !important; color: #1F2532 !important; text-shadow: none !important;  }
+
+input[value="Post Message"].action-button { background: #1E71CD !important; color: #fff !important; }
+
+textarea { min-height: 125px; border-radius: 5px; background: #fff; padding: 10px 15px; color: #1F2532 !important; font-size: 16px; font-weight: 400; border: 1px solid #D8DDE6; margin-bottom: 10px; }
+
+.field-box { margin-bottom: 30px !important; }
+
+.title-row { background: #FFF4E2 !important; border-left: 1px solid #D8DDE6; border-right: 1px solid #D8DDE6; border-top: 1px solid #D8DDE6; color: #6F4704 !important; }
+
+.title-row + div { background: #fff !important; padding: 15px; }
+
+#list-contents { border: 1px solid #D8DDE6; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+
+#list-contents .clickable-row,
+#threaded-contents .clickable-row { padding: 10px 15px; border-bottom: 1px solid #D8DDE6; }
+
+#list-contents .clickable-row:first-of-type,
+#threaded-contents .clickable-row:first-of-type { background-color: #FFF4E2 !important; padding-top: 25px; padding-bottom: 25px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+
+#threaded-contents .clickable-row { border: 1px solid
+#D8DDE6; border-radius: 5px; margin-bottom: 5px !important }
+
+#threaded-contents .connect-outer .clickable-row { background-color: #f5f7f9 !important; padding: 10px 15px; }
+
+#threaded-contents .clickable-row:hover { background: #D8DDE6 !important; }
+
+.full-row { padding-bottom: 15px !important; padding-top: 15px !important; border: 1px solid #D8DDE6 !important;}
+
+#threaded-contents .full-row { margin-bottom: 5px !important; border-radius: 5px !important; }
+
+.classic-body { background: #fff !important; }
+
+.signature { font-size: 14px !important; padding-top: 15px; }
+
+
+#list-contents .full-row:first-of-type {  background-color: #FFF4E2 !important; }
+
+#list-contents .full-row:first-of-type .message-text { font-size: 18px !important; }
+
+.search-results-header { padding: 20px; border-bottom: 2px solid #D8DDE6 !important; font-size: 18px !important; margin-bottom: 0px !important; }
+
+.search-results-header ~ div[style="margin-bottom:1.5em"] { background-color: #fff !important; padding: 15px; margin-bottom: 0px !important; border-bottom: 1px solid #D8DDE6 !important; }
+
+.search-results-header ~ div[style="margin-bottom:1.5em"] ~ div.shaded-bg-color { display: none; }
+
+.macro_search_page .shaded-bg-color.rounded,
+#topic-search-box { padding: 15px; border-radius: 5px; }
+
+#topic-search-box { background-color: #D8DDE6 !important; border-radius: 5px; padding: 15px !important; margin-bottom: 30px !important; }
+
+#topic-search-box #search-input { max-width: 500px; width: 98%; }
