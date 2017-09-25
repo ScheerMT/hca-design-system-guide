@@ -113,7 +113,7 @@ base_url: '../../'
 <div class="tab-content">
 
   {{!-- USAGE TAB --}}
-  <div role="tabpanel" class="tab-pane active" id="hca-styleguide-usage-tab">
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
   
   <section class="app-tab-header">
     <div class="row">
@@ -137,7 +137,7 @@ base_url: '../../'
   </div>
   
   {{!-- STYLES TAB --}}
-  <div role="tabpanel" class="tab-pane" id="hca-styleguide-styles-tab">
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
   
     <section class="app-tab-header">
       <div class="row">
@@ -161,7 +161,7 @@ base_url: '../../'
   </div>
   
   {{!-- CODE TAB --}}
-  <div role="tabpanel" class="tab-pane" id="hca-styleguide-code-tab">
+  <div role="tabpanel" class="tab-pane" id="app-code-tab">
     Coming soon.
   </div>
 
