@@ -14,11 +14,10 @@ base_url: '../../'
       <div class="row">
         <div class="col-sm-7">
           <div class="hca-layout__container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Tabs are a common and easy way to switch between different views or content.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Tabs are a common and easy way to switch between related views or content.</p>
             <p class="hca-typography--body-1">They can be utilized as app-level navigation that switches between entire views, or content-level navigation that changes content or data sets within a single view.</p>
             <p class="hca-typography--body-1">Tabs should always be presented in a single row.</p>
             <p class="hca-typography--body-1">Since swipe gestures can be used to navigate tabs, avoid pairing swipable content with tabbed navigation.</p>
-
           </div>
         </div>
         <div class="col-sm-5">
@@ -32,29 +31,165 @@ base_url: '../../'
       </div>
     </section>
 
+    <div class="app-section">
+      <div class="row">
+        <div class="col-sm-3">
+          <span class="hca-typography--body-2">App-level tabs</span>
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/tabs/bottom-nav-tabs.png" class="img-responsive hca-visual-example__comp" alt="App-level navigation tabs" />
+          </figure>
+        </div>
+        <div class="col-sm-9">
+          <span class="hca-typography--body-2">Content-level tabs (Large screen only)</span>
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/tabs/content-level-tabs.png" class="img-responsive hca-visual-example__comp" alt="Content-level tabs" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
 
     <article id="section-anatomy-and-types">
       <h1 class="app-article-headline hca-typography--headline">Anatomy and Types</h1>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="hca-layout__container--body-content">
-            <span class="hca-typography--title">Types</span>
-            <ul class="hca-typography--body-1">
-              <li>Fixed</li>
-              <li>Scrollable</li>
-            </ul>
+      <div class="app-section">
+        <h2 class="hca-typography--title">Anatomy</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="hca-layout__container--body-content">
+              <ul class="hca-typography--body-1">
+                <li>Tab Label</li>
+                <li>Active Indicator Line</li>
+                <li>Optional Icon</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/anatomy.png" class="img-responsive hca-visual-example__comp" alt="Anatomy of a tab" />
+            </figure>
           </div>
         </div>
-        <div class="col-sm-8">
+      </div>
 
+      <div class="app-section">
+        <h2 class="hca-typography--title">Types</h2>
+        <div class="hca-layout__container--body-content">
+          <ul class="hca-typography--body-1">
+            <li>Fixed</li>
+            <li>Scrollable</li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <h3 class="hca-typography--body-2">Fixed Tabs</h3>
+              <p class="hca-typography--body-1">Fixed tabs take a fixed position in the UI, either to the top or the bottom.</p>
+              <p class="hca-typography--body-1">Fixed tabs should be equal width, calculated either as the view width divided by the number of tabs, or based on the widest tab label. Tab labels are vertically and horizontally centered.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-sm-offset-1">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/tabs/fixed-tabs-mobile.png" class="img-responsive hca-visual-example__comp" alt="Fixed tabs" />
+              <figcaption class="hca-visual-example__caption">Fixed tabs</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <h3 class="hca-typography--body-2">Scrollable Tabs</h3>
+              <p class="hca-typography--body-1">Scrollable tabs can overflow the view horizontally and scroll to reveal more tabs. These tabs' width can size according to their label length, up to a max width of 250px.</p>
+              <p class="hca-typography--body-1">They are best used for browsing contexts in touch interfaces when users don’t need to directly compare the tab labels.</p>
+              <p class="hca-typography--support">NOTE: Scrollable tabs should always have the control/indicators showing in the direction that there are more tabs.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-sm-offset-1">
+            <figure class="hca-visual-example hca-visual-example--mobile">
+              <img src="{{page.base_url}}images/components/tabs/scrollable-tabs-middle.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
+              <figcaption class="hca-visual-example__caption">Scrollable tabs</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </article>
 
     <article id="section-usage">
       <h1 class="app-article-headline hca-typography--headline">Usage</h1>
-      <div class="hca-layout__container--body-content">
-
+      <div class="app-section">
+        <h2 class="hca-typography--title">Tab Layout</h2>
+        <br />
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <h3 class="hca-typography--body-2">Single Row</h3>
+              <p class="hca-typography--body-1">As mentioned above, tabs should only be presented in a single row. The content they control should always be directly under the row of relative tabs.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row app-section">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/tabs/scrollable-tabs-begin.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
+                  <figcaption class="hca-visual-example__caption">Present tabs as a single row that can overflow if needed.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/tabs/nested-tabs-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not nest tabs." />
+                  <figcaption class="hca-visual-example__caption">Do not nest tabs inside other tabs.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <h3 class="hca-typography--body-2">App-level Placement</h3>
+              <p class="hca-typography--body-1">Tabs should most often be placed at the app-level, either on top or bottom of the view, to sit outside all of the main content of each view.</p>
+            </div>
+          </div>
+          <div class="col-sm-7 col-sm-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/main-navigation-tabs.png" class="img-responsive hca-visual-example__comp" alt="Tabs being used as main navigation at the top and bottom of an app" />
+              <figcaption class="hca-visual-example__caption">Tabs being used as main navigation at the bottom or top of an app.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <h3 class="hca-typography--body-2">Content-level Placement</h3>
+              <p class="hca-typography--body-1">On large screens, you can utilize tabs within the flow of content to quickly switch between relative topics.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/content-tabs-desktop-do.png" class="img-responsive hca-visual-example__comp" alt="Tabs placed within the flow of content." />
+              <figcaption class="hca-visual-example__caption">Tabs placed within the flow of content.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--do">
+              <img src="{{page.base_url}}images/components/tabs/dropdown-tabs-mobile.png" class="img-responsive hca-visual-example__comp" alt="Content-level tabs should convert to menus on small screens." />
+              <figcaption class="hca-visual-example__caption">Content-level tabs convert to menus on small screens.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/tabs/content-tabs-scrollable-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not use scrollable tabs at the content level on small screens." />
+              <figcaption class="hca-visual-example__caption">Do not use scrollable tabs at the content level on small screens.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/tabs/content-tabs-fixed-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not used fixed tabs at the content level on small screens." />
+              <figcaption class="hca-visual-example__caption">Do not used fixed tabs at the content level on small screens.</figcaption>
+            </figure>
+          </div>
+        </div>
       </div>
     </article>
 

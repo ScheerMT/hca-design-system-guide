@@ -49,7 +49,7 @@ hr {
   padding: 20px;
   font-size: 26px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 57px; //hacky value to make bottom line aligned with app-header line
 
   #hca-design-system-logo {
     display: none;
@@ -73,6 +73,7 @@ hr {
 
 
 $app-tab-stroke: 2px;
+$app-tab-inactive-color: rgba($color__asphalt, .7);
 .app-tabs {
   border-bottom: 0;
   // font-size: 14px;
@@ -80,8 +81,8 @@ $app-tab-stroke: 2px;
   li,
   .app-tabs__tab {
     text-align: center;
-    min-width: 160px;
-    color: $color__asphalt;
+    min-width: 62px;
+    color: $app-tab-inactive-color;
     margin-bottom: 0;
 
     //active tab
@@ -104,20 +105,24 @@ $app-tab-stroke: 2px;
     //default links in tabs
     a {
       margin-right: 0;
-      color: $color__cadet;
-      padding: 10px 10px;
+      color: $app-tab-inactive-color;
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 10px;
       border-radius: 0;
       border-top: none;
       border-right: none;
       border-left: none;
       border-bottom: $app-tab-stroke solid transparent;
+      text-align: center;
 
       &:hover,
       &:focus,
       &:active {
-        color: $color__asphalt;
+        color: $color__cadet;
         background-color: transparent;
-        border-bottom: $app-tab-stroke solid $color__cadet;
+        border-bottom: $app-tab-stroke solid $app-tab-inactive-color;
       }
     }
 
@@ -125,16 +130,25 @@ $app-tab-stroke: 2px;
 
   //justified tabs only on mobile.
   //this is opposite of bootstrap's nav-justified class
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     width: 100%;
+    min-width: 300px;
+    margin-left: -20px;
+    display: table;
+
 
     li,
     .app-tabs__tab {
-      min-width: 75px;
+      min-width: 62px;
       float: none;
       display: table-cell;
-      width: 1%;
+      width: 100px;
       text-align: center;
+
+      a {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
 
