@@ -115,7 +115,7 @@ base_url: '../../'
 
     <article id="section-usage">
       <h1 class="app-article-headline hca-typography--headline">Usage</h1>
-      <div class="app-section">
+      <section class="app-section">
         <h2 class="hca-typography--title">Tab Layout</h2>
         <br />
         <div class="row app-section">
@@ -146,7 +146,7 @@ base_url: '../../'
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
               <h3 class="hca-typography--body-2">App-level Placement</h3>
-              <p class="hca-typography--body-1">Tabs should most often be placed at the app-level, either on top or bottom of the view, to sit outside all of the main content of each view.</p>
+              <p class="hca-typography--body-1">Tabs can often be placed at the app-level, either on top or bottom of the view, to sit outside all of the main content of each view.</p>
             </div>
           </div>
           <div class="col-sm-7 col-sm-offset-1">
@@ -161,6 +161,7 @@ base_url: '../../'
             <div class="hca-layout__container--body-content">
               <h3 class="hca-typography--body-2">Content-level Placement</h3>
               <p class="hca-typography--body-1">On large screens, you can utilize tabs within the flow of content to quickly switch between relative topics.</p>
+              <p class="hca-typography--body-1">On small screens, tabs convert to menus when they are in the flow of content.</p>
             </div>
           </div>
           <div class="col-sm-8">
@@ -190,7 +191,37 @@ base_url: '../../'
             </figure>
           </div>
         </div>
-      </div>
+      </section>
+      {{!-- / tab layout section --}}
+      <section class="app-section">
+        <h2 class="hca-typography--title">Tab Labels</h2>
+        <br />
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Tab labels may be text-only, or icons combined with text.</p>
+              <p class="hca-typography--support">NOTE: In efforts to keep things understandable and accessible to all users, we do not encourage icon-only tab labels.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row app-section">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-do.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
+                  <figcaption class="hca-visual-example__caption">When using icons in tab labels, always include a text label.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not nest tabs." />
+                  <figcaption class="hca-visual-example__caption">Do not use only icons as labels for tabs.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / Labels section --}}
     </article>
 
   </div>
