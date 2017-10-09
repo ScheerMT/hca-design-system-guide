@@ -19,10 +19,11 @@ $('.hca-menu-toggle').on('click', function(){
   $('body').toggleClass('hca-layout--has-drawer');
 
   if($('.hca-layout__drawer').hasClass('hca-layout__drawer--is-closed')) {
+    $('.hca-menu-toggle').attr('title', 'Menu');
     $('.hca-menu-toggle__icon').html('menu');
     $('.hca-menu-toggle__text').html('Menu');
-
   } else {
+    $('.hca-menu-toggle').attr('title', 'Close');
     $('.hca-menu-toggle__icon').html('close');
     $('.hca-menu-toggle__text').html('Close');
   }
@@ -51,10 +52,10 @@ window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not a
 
 
 ///////////////////////////////////////////////////////////////////////////////
-//function to check if screen is less than 1024px and run tasks
+//function to check if screen is less than 1200px and run tasks
 ///////////////////////////////////////////////////////////////////////////////
 var smallScreenTasks = function() {
-  if($(window).width() < 1024) {
+  if($(window).width() < 1200) {
     $('body').removeClass('hca-layout--has-drawer');
     $('.hca-layout__drawer').addClass('hca-layout__drawer--is-closed');
     $('.hca-menu-toggle__icon').html('menu');

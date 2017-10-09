@@ -19,9 +19,10 @@
 
 //offset margin of drawer sliding out until screen is large enough to have
 // 300 px of margin on left side by default
-@media (min-width: $screen__tablet) and (max-width: 1700px) {
+@media (min-width: 1200px) and (max-width: 1700px) {
   .hca-layout--has-drawer .hca-layout__container {
     margin-left: $hca-drawer-width;
-    max-width: calc(100% - 300px);
+    width: calc(100% - 300px);
+    // width: 100%;
   }
 }

@@ -24,7 +24,9 @@ base_url: '../../'
           <ul class="app-toc">
             <h2 class="hca-typography--subhead">Contents:</h2>
             <li class="app-toc__item"><a href="#section-anatomy-and-types">Anatomy and Types</a></li>
-            <li class="app-toc__item"><a href="#section-usage">Usage</a></li>
+            <li class="app-toc__item"><a href="#section-usage-layout">Usage: Layout</a></li>
+            <li class="app-toc__item"><a href="#section-usage-labels">Usage: Labels</a></li>
+            <li class="app-toc__item"><a href="#section-usage-content">Usage: Content</a></li>
             <li class="app-toc__item"><a href="#section-interaction-and-behavior">Interaction and Behavior</a></li>
           </ul>
         </div>
@@ -100,7 +102,7 @@ base_url: '../../'
               <h3 class="hca-typography--body-2">Scrollable Tabs</h3>
               <p class="hca-typography--body-1">Scrollable tabs can overflow the view horizontally and scroll to reveal more tabs. These tabs' width can size according to their label length, up to a max width of 250px.</p>
               <p class="hca-typography--body-1">They are best used for browsing contexts in touch interfaces when users don’t need to directly compare the tab labels.</p>
-              <p class="hca-typography--support">NOTE: Scrollable tabs should always have the control/indicators showing in the direction that there are more tabs.</p>
+              <p class="hca-typography--support">NOTE: Scrollable tabs should always have the controls/overflow indicators showing in any direction that there are more tabs available.</p>
             </div>
           </div>
           <div class="col-sm-6 col-sm-offset-1">
@@ -113,9 +115,10 @@ base_url: '../../'
       </div>
     </article>
 
-    <article id="section-usage">
+    <article>
       <h1 class="app-article-headline hca-typography--headline">Usage</h1>
-      <section class="app-section">
+      <br />
+      <section id="section-usage-layout" class="app-section">
         <h2 class="hca-typography--title">Tab Layout</h2>
         <br />
         <div class="row app-section">
@@ -193,36 +196,147 @@ base_url: '../../'
         </div>
       </section>
       {{!-- / tab layout section --}}
-      <section class="app-section">
+      <section id="section-usage-labels" class="app-section">
         <h2 class="hca-typography--title">Tab Labels</h2>
-        <br />
+        <div class="row app-section">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Tab labels should be concise and provide meaningful distinctions that logically organizes associated content.</p>
+              <p class="hca-typography--body-1">Tab labels may be all text, or text combined with an icon.</p>
+              <p class="hca-typography--support">NOTE: In efforts to keep our UI understandable and accessible to all users, we do not encourage icon-only tab labels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-do.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
+              <figcaption class="hca-visual-example__caption">When using icons in tab labels, always include a text label.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not nest tabs." />
+              <figcaption class="hca-visual-example__caption">Do not only use icons as labels for tabs.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/tabs/mixed-tab-labels-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not mix label styles in one tab row." />
+              <figcaption class="hca-visual-example__caption">Do not mix label styles in one tab row.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/two-line-label.png" class="img-responsive hca-visual-example__comp" alt="Tab labels may break to two lines if needed." />
+              <figcaption class="hca-visual-example__caption">Tab labels may break to two lines if needed.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--do">
+              <img src="{{page.base_url}}images/components/tabs/line-break-ellipsis-tab-label.png" class="img-responsive hca-visual-example__comp" alt="Labels should ellipsis once they have broken to two lines and exceeded the tab width." />
+              <figcaption class="hca-visual-example__caption">Labels should ellipsis once they have broken to two lines and exceeded the tab width.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/tabs/ellipsis-single-line-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not ellipsis single line labels." />
+              <figcaption class="hca-visual-example__caption">Do not ellipsis single line labels.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      {{!-- / Labels section --}}
+
+      <section id="section-usage-content" class="app-section">
+        <h2 class="hca-typography--title">Tab Content</h2>
         <div class="row app-section">
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
-              <p class="hca-typography--body-1">Tab labels may be text-only, or icons combined with text.</p>
-              <p class="hca-typography--support">NOTE: In efforts to keep things understandable and accessible to all users, we do not encourage icon-only tab labels.</p>
+              <p class="hca-typography--body-1">All content within a set of tabs should be related under a larger organizing principle, with each tab’s content mutually exclusive of the others'.</p>
+              <p class="hca-typography--body-1">Avoid the need for cross-tab comparison of content. Significant cross-tab comparison may indicate the content would benefit from a different organization or presentation that places the content closer together.</p>
             </div>
           </div>
           <div class="col-sm-8">
             <div class="row app-section">
               <div class="col-sm-6">
                 <figure class="hca-visual-example hca-visual-example--do">
-                  <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-do.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
-                  <figcaption class="hca-visual-example__caption">When using icons in tab labels, always include a text label.</figcaption>
+                  <img src="{{page.base_url}}images/components/tabs/content-do.png" class="img-responsive hca-visual-example__comp" alt="Each tab is a report type related to larger principle of 'Your Reports'" />
+                  <figcaption class="hca-visual-example__caption">Each tab is a report type related to a larger principle of "Your Reports".</figcaption>
                 </figure>
               </div>
               <div class="col-sm-6">
                 <figure class="hca-visual-example hca-visual-example--dont">
-                  <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not nest tabs." />
-                  <figcaption class="hca-visual-example__caption">Do not use only icons as labels for tabs.</figcaption>
+                  <img src="{{page.base_url}}images/components/tabs/content-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not create tabbed views in which the tabs are unrelated to a larger single principle." />
+                  <figcaption class="hca-visual-example__caption">Do not create tabbed views in which the tabs are not related to a larger principle.</figcaption>
                 </figure>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {{!-- / Labels section --}}
     </article>
+    {{!-- / Usage article --}}
+
+    <article id="section-interaction-and-behavior">
+      <h1 class="app-article-headline hca-typography--headline">Interaction and Behavior</h1>
+      <div class="app-section">
+        <h2 class="hca-typography--title">Active vs Inactive</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Active tabs display a 2px indicator line between the active label and the content it is related to.</p>
+              <p class="hca-typography--body-1">Inactive tab labels appear at 70% opacity of the active label color, and become 100% opaque when activated. This is the same for the icon color.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row app-section">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/tabs/active-vs-inactive-text-tabs.png" class="img-responsive hca-visual-example__comp" alt="Active text tab versus inactive text tabs." />
+                  <figcaption class="hca-visual-example__caption">Active text tab versus inactive text tabs.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/tabs/active-vs-inactive-icon-tabs.png" class="img-responsive hca-visual-example__comp" alt="Active icon tab versus inactive icon tabs." />
+                  <figcaption class="hca-visual-example__caption">Active icon tab versus inactive icon tabs.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-section">
+        <h2 class="hca-typography--title">Scrollable Tabs</h2>
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--body-1">Scroll indicators and controls appear any time there are more tabs available to scroll to on either side, and remain visible until there are no more tabs available to scroll to in that direction.</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/scrollable-tabs-begin.png" class="img-responsive hca-visual-example__comp" alt="Default state of scrollable tabs before any scrolling has occurred." />
+              <figcaption class="hca-visual-example__caption">Default state of scrollable tabs before any scrolling has occurred.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/scrollable-tabs-middle.png" class="img-responsive hca-visual-example__comp" alt="Tabs in the middle of being scrolled, with more tabs in both directions." />
+              <figcaption class="hca-visual-example__caption">Tabs in the middle of being scrolled, with more tabs in both directions.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/scrollable-tabs-end.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs after scrolling to the end of available options." />
+              <figcaption class="hca-visual-example__caption">Scrollable tabs after scrolling to the end of available options.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </article>
+    {{!-- / interaction and behavior article --}}
 
   </div>
 
