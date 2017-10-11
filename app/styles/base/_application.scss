@@ -73,10 +73,11 @@ hr {
 
 
 $app-tab-stroke: 2px;
-$app-tab-inactive-color: rgba($color__asphalt, .7);
+$app-tab-active-color: $color__asphalt;
+$app-tab-inactive-color: rgba($app-tab-active-color, .7);
 .app-tabs {
   border-bottom: 0;
-  // font-size: 14px;
+  font-size: 14px;
 
   li,
   .app-tabs__tab {
@@ -92,12 +93,12 @@ $app-tab-inactive-color: rgba($color__asphalt, .7);
       a:hover,
       a:active,
       a:focus {
-        color: $color__asphalt;
+        color: $app-tab-active-color;
         background-color: transparent;
         font-weight: 600;
         border-top: none;
         border-right: none;
-        border-bottom: $app-tab-stroke solid $color__asphalt;
+        border-bottom: $app-tab-stroke solid $app-tab-active-color;
         border-left: none;
       }
     }
@@ -258,4 +259,13 @@ $app-tab-inactive-color: rgba($color__asphalt, .7);
     }
   }
 
+}
+
+
+.app-spec-list {
+  margin-left: 20px;
+  &__item {
+    list-style: initial;
+    margin-left: 10px;
+  }
 }

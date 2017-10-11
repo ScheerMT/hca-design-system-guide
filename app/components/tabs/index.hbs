@@ -21,14 +21,16 @@ base_url: '../../'
           </div>
         </div>
         <div class="col-sm-5">
-          <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
-            <li class="app-toc__item"><a href="#section-anatomy-and-types">Anatomy and Types</a></li>
-            <li class="app-toc__item"><a href="#section-usage-layout">Usage: Layout</a></li>
-            <li class="app-toc__item"><a href="#section-usage-labels">Usage: Labels</a></li>
-            <li class="app-toc__item"><a href="#section-usage-content">Usage: Content</a></li>
-            <li class="app-toc__item"><a href="#section-interaction-and-behavior">Interaction and Behavior</a></li>
-          </ul>
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-anatomy-and-types">Anatomy and Types</a></li>
+              <li class="app-toc__item"><a href="#section-usage-content">Usage: Content</a></li>
+              <li class="app-toc__item"><a href="#section-usage-layout">Usage: Layout</a></li>
+              <li class="app-toc__item"><a href="#section-usage-labels">Usage: Labels</a></li>
+              <li class="app-toc__item"><a href="#section-interaction-and-behavior">Interaction and Behavior</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
@@ -36,7 +38,7 @@ base_url: '../../'
     <div class="app-section">
       <div class="row">
         <div class="col-sm-3">
-          <span class="hca-typography--body-2">App-level tabs</span>
+          <h4 class="hca-typography--body-2">App-level tabs</h4>
           <figure class="hca-visual-example">
             <img src="{{page.base_url}}images/components/tabs/bottom-nav-tabs.png" class="img-responsive hca-visual-example__comp" alt="App-level navigation tabs" />
           </figure>
@@ -52,9 +54,9 @@ base_url: '../../'
 
 
     <article id="section-anatomy-and-types">
-      <h1 class="app-article-headline hca-typography--headline">Anatomy and Types</h1>
+      <h2 class="app-article-headline hca-typography--headline">Anatomy and Types</h2>
       <div class="app-section">
-        <h2 class="hca-typography--title">Anatomy</h2>
+        <h3 class="hca-typography--title">Anatomy</h3>
         <div class="row">
           <div class="col-sm-3">
             <div class="hca-layout__container--body-content">
@@ -74,7 +76,7 @@ base_url: '../../'
       </div>
 
       <div class="app-section">
-        <h2 class="hca-typography--title">Types</h2>
+        <h3 class="hca-typography--title">Types</h3>
         <div class="hca-layout__container--body-content">
           <ul class="hca-typography--body-1">
             <li>Fixed</li>
@@ -84,7 +86,7 @@ base_url: '../../'
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
-              <h3 class="hca-typography--body-2">Fixed Tabs</h3>
+              <h4 class="hca-typography--body-2">Fixed Tabs</h4>
               <p class="hca-typography--body-1">Fixed tabs take a fixed position in the UI, either to the top or the bottom.</p>
               <p class="hca-typography--body-1">Fixed tabs should be equal width, calculated either as the view width divided by the number of tabs, or based on the widest tab label. Tab labels are vertically and horizontally centered.</p>
             </div>
@@ -116,16 +118,44 @@ base_url: '../../'
     </article>
 
     <article>
-      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+      <h2 class="app-article-headline hca-typography--headline">Usage</h2>
       <br />
+      <section id="section-usage-content" class="app-section">
+        <h3 class="hca-typography--title">Tab Content</h3>
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">All content within a set of tabs should be related under a larger organizing principle, with each tab’s content mutually exclusive of the others'.</p>
+              <p class="hca-typography--body-1">Avoid the need for cross-tab comparison of content. Significant cross-tab comparison may indicate the content would benefit from a different organization or presentation that places the content closer together.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row app-section">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/tabs/content-do.png" class="img-responsive hca-visual-example__comp" alt="Each tab is a report type related to larger principle of 'Your Reports'" />
+                  <figcaption class="hca-visual-example__caption">Each tab is a report type related to a larger principle of "Your Reports".</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/tabs/content-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not create tabbed views in which the tabs are unrelated to a larger single principle." />
+                  <figcaption class="hca-visual-example__caption">Do not create tabbed views in which the tabs are not related to a larger principle.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{!-- / tab content --}}
       <section id="section-usage-layout" class="app-section">
-        <h2 class="hca-typography--title">Tab Layout</h2>
+        <h3 class="hca-typography--title">Tab Layout</h3>
         <br />
         <div class="row app-section">
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
-              <h3 class="hca-typography--body-2">Single Row</h3>
-              <p class="hca-typography--body-1">As mentioned above, tabs should only be presented in a single row. The content they control should always be directly under the row of relative tabs.</p>
+              <h4 class="hca-typography--body-2">Single Row</h4>
+              <p class="hca-typography--body-1">As mentioned above, tabs should only be presented in a single row. The content they control should always be directly under or above the row of relative tabs, separated by the active indicator line.</p>
             </div>
           </div>
           <div class="col-sm-8">
@@ -148,7 +178,7 @@ base_url: '../../'
         <div class="row app-section">
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
-              <h3 class="hca-typography--body-2">App-level Placement</h3>
+              <h4 class="hca-typography--body-2">App-level Placement</h4>
               <p class="hca-typography--body-1">Tabs can often be placed at the app-level, either on top or bottom of the view, to sit outside all of the main content of each view.</p>
             </div>
           </div>
@@ -162,14 +192,14 @@ base_url: '../../'
         <div class="row app-section">
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
-              <h3 class="hca-typography--body-2">Content-level Placement</h3>
+              <h4 class="hca-typography--body-2">Content-level Placement</h4>
               <p class="hca-typography--body-1">On large screens, you can utilize tabs within the flow of content to quickly switch between relative topics.</p>
               <p class="hca-typography--body-1">On small screens, tabs convert to menus when they are in the flow of content.</p>
             </div>
           </div>
           <div class="col-sm-8">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/tabs/content-tabs-desktop-do.png" class="img-responsive hca-visual-example__comp" alt="Tabs placed within the flow of content." />
+              <img src="{{page.base_url}}images/components/tabs/content-level-tabs.png" class="img-responsive hca-visual-example__comp" alt="Tabs placed within the flow of content." />
               <figcaption class="hca-visual-example__caption">Tabs placed within the flow of content.</figcaption>
             </figure>
           </div>
@@ -197,7 +227,7 @@ base_url: '../../'
       </section>
       {{!-- / tab layout section --}}
       <section id="section-usage-labels" class="app-section">
-        <h2 class="hca-typography--title">Tab Labels</h2>
+        <h3 class="hca-typography--title">Tab Labels</h3>
         <div class="row app-section">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
@@ -207,9 +237,33 @@ base_url: '../../'
             </div>
           </div>
         </div>
+
+        <h4 class="hca-typography--body-2">Text-only Labels</h4>
         <div class="row app-section">
           <div class="col-sm-4">
-            <figure class="hca-visual-example">
+            <figure class="hca-visual-example hca-visual-example--do">
+              <img src="{{page.base_url}}images/components/tabs/two-line-label.png" class="img-responsive hca-visual-example__comp" alt="Tab labels may break to two lines if needed." />
+              <figcaption class="hca-visual-example__caption">Tab labels may break to two lines if needed.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--do">
+              <img src="{{page.base_url}}images/components/tabs/line-break-ellipsis-tab-label.png" class="img-responsive hca-visual-example__comp" alt="Labels should ellipsis once they have broken to two lines and exceed the tab width." />
+              <figcaption class="hca-visual-example__caption">Labels should ellipsis once they have broken to two lines and exceed the tab width.</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/tabs/ellipsis-single-line-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not ellipsis single line labels." />
+              <figcaption class="hca-visual-example__caption">Do not ellipsis single line labels.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <h4 class="hca-typography--body-2">Icons + Labels</h4>
+        <div class="row app-section">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example hca-visual-example--do">
               <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-do.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
               <figcaption class="hca-visual-example__caption">When using icons in tab labels, always include a text label.</figcaption>
             </figure>
@@ -227,63 +281,15 @@ base_url: '../../'
             </figure>
           </div>
         </div>
-        <div class="row app-section">
-          <div class="col-sm-4">
-            <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/tabs/two-line-label.png" class="img-responsive hca-visual-example__comp" alt="Tab labels may break to two lines if needed." />
-              <figcaption class="hca-visual-example__caption">Tab labels may break to two lines if needed.</figcaption>
-            </figure>
-          </div>
-          <div class="col-sm-4">
-            <figure class="hca-visual-example hca-visual-example--do">
-              <img src="{{page.base_url}}images/components/tabs/line-break-ellipsis-tab-label.png" class="img-responsive hca-visual-example__comp" alt="Labels should ellipsis once they have broken to two lines and exceeded the tab width." />
-              <figcaption class="hca-visual-example__caption">Labels should ellipsis once they have broken to two lines and exceeded the tab width.</figcaption>
-            </figure>
-          </div>
-          <div class="col-sm-4">
-            <figure class="hca-visual-example hca-visual-example--dont">
-              <img src="{{page.base_url}}images/components/tabs/ellipsis-single-line-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not ellipsis single line labels." />
-              <figcaption class="hca-visual-example__caption">Do not ellipsis single line labels.</figcaption>
-            </figure>
-          </div>
-        </div>
       </section>
       {{!-- / Labels section --}}
-
-      <section id="section-usage-content" class="app-section">
-        <h2 class="hca-typography--title">Tab Content</h2>
-        <div class="row app-section">
-          <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
-              <p class="hca-typography--body-1">All content within a set of tabs should be related under a larger organizing principle, with each tab’s content mutually exclusive of the others'.</p>
-              <p class="hca-typography--body-1">Avoid the need for cross-tab comparison of content. Significant cross-tab comparison may indicate the content would benefit from a different organization or presentation that places the content closer together.</p>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="row app-section">
-              <div class="col-sm-6">
-                <figure class="hca-visual-example hca-visual-example--do">
-                  <img src="{{page.base_url}}images/components/tabs/content-do.png" class="img-responsive hca-visual-example__comp" alt="Each tab is a report type related to larger principle of 'Your Reports'" />
-                  <figcaption class="hca-visual-example__caption">Each tab is a report type related to a larger principle of "Your Reports".</figcaption>
-                </figure>
-              </div>
-              <div class="col-sm-6">
-                <figure class="hca-visual-example hca-visual-example--dont">
-                  <img src="{{page.base_url}}images/components/tabs/content-dont.png" class="img-responsive hca-visual-example__comp" alt="Do not create tabbed views in which the tabs are unrelated to a larger single principle." />
-                  <figcaption class="hca-visual-example__caption">Do not create tabbed views in which the tabs are not related to a larger principle.</figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </article>
     {{!-- / Usage article --}}
 
     <article id="section-interaction-and-behavior">
-      <h1 class="app-article-headline hca-typography--headline">Interaction and Behavior</h1>
+      <h2 class="app-article-headline hca-typography--headline">Interaction and Behavior</h2>
       <div class="app-section">
-        <h2 class="hca-typography--title">Active vs Inactive</h2>
+        <h3 class="hca-typography--title">Active vs Inactive</h3>
         <div class="row">
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
@@ -310,7 +316,7 @@ base_url: '../../'
         </div>
       </div>
       <div class="app-section">
-        <h2 class="hca-typography--title">Scrollable Tabs</h2>
+        <h3 class="hca-typography--title">Scrollable Tabs</h3>
         <div class="hca-layout__container--body-content">
           <p class="hca-typography--body-1">Scroll indicators and controls appear any time there are more tabs available to scroll to on either side, and remain visible until there are no more tabs available to scroll to in that direction.</p>
         </div>
@@ -351,15 +357,201 @@ base_url: '../../'
           </div>
         </div>
         <div class="col-sm-5">
-          <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
-            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-            <li class="app-toc__item"><a href="#section-name">List</a></li>
-            <li class="app-toc__item"><a href="#section-name">Here</a></li>
-          </ul>
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-text-only-tabs-specs">Text-only Tabs</a></li>
+              <li class="app-toc__item"><a href="#section-icon-and-text-tabs-specs">Icon + Text Tabs</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
+
+    <article id="section-anatomy-and-types">
+      <h2 class="app-article-headline hca-typography--headline">Text-only Tabs</h2>
+      <div class="app-section">
+        <h3 class="hca-typography--title">Scrollable Tabs (Small and Large Screens)</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="app-card hca-specs">
+              <span class="hca-typography--body-2">Sizing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 50px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Minimum Tab Width:</span> 62px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Maximum Tab Width:</span> 250px
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Tab Spacing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Labels:</span> Vertically and horizontally centered
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Overflow Indicators/Controls:</span> Vertically and horizontally centered
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Indicator Line</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 2px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 100% of active tab width
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> Active Tab Label color
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Inactive Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Text Color:</span> Active Tab Label color at 70% opacity
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Overflow Indicators/Controls</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 22px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 22px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
+                </li>
+              </ul>
+
+            </div>
+            {{!-- / text-only scrollable specs --}}
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-text-only-scrollable.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs specs" />
+            </figure>
+          </div>
+        </div>
+
+        <h3 class="hca-typography--title">Fixed Tabs</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="app-card hca-specs">
+              <span class="hca-typography--body-2">Sizing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 50px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">All tabs equal width</li>
+                    <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Tab Spacing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Labels:</span> Vertically and horizontally centered
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Minimum Padding - Left and Right:</span> 10px
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Indicator Line</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 2px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 100% of active tab width
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> Active Tab Label color
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Inactive Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Text Color:</span> Active Tab Label color at 70% opacity
+                </li>
+              </ul>
+            </div>
+            {{!-- / text-only fixed specs --}}
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-text-only-fixed.png" class="img-responsive hca-visual-example__comp" alt="Fixed tabs specs" />
+            </figure>
+          </div>
+        </div>
+
+
+      </div>
+    </article>
 
   </div>
 
