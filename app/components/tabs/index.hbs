@@ -351,11 +351,6 @@ base_url: '../../'
 
     <section class="app-tab-header">
       <div class="row">
-        <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
-          </div>
-        </div>
         <div class="col-sm-5">
           <nav>
             <ul class="app-toc">
@@ -368,110 +363,12 @@ base_url: '../../'
       </div>
     </section>
 
-    <article id="section-anatomy-and-types">
-      <h2 class="app-article-headline hca-typography--headline">Text-only Tabs</h2>
+    <article id="section-text-only-tabs-specs">
+      <h2 class="app-article-headline hca-typography--headline">Text-only Tab Specs</h2>
       <div class="app-section">
-        <h3 class="hca-typography--title">Scrollable Tabs (Small and Large Screens)</h3>
+        <h3 class="hca-typography--title">Fixed / Equal Width</h3>
         <div class="row">
-          <div class="col-sm-5">
-            <div class="app-card hca-specs">
-              <span class="hca-typography--body-2">Sizing</span>
-              <ul class="hca-typography--body-1">
-                <li>
-                  <span class="hca-typography__color--asphalt">Height:</span> 50px
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Minimum Tab Width:</span> 62px
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Maximum Tab Width:</span> 250px
-                </li>
-              </ul>
-              <span class="hca-typography--body-2">Tab Spacing</span>
-              <ul class="hca-typography--body-1">
-                <li>
-                  <span class="hca-typography__color--asphalt">Labels:</span> Vertically and horizontally centered
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Overflow Indicators/Controls:</span> Vertically and horizontally centered
-                </li>
-              </ul>
-              <span class="hca-typography--body-2">Active Tab Label</span>
-              <ul class="hca-typography--body-1">
-                <li>
-                  <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
-                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
-                </li>
-              </ul>
-              <span class="hca-typography--body-2">Active Indicator Line</span>
-              <ul class="hca-typography--body-1">
-                <li>
-                  <span class="hca-typography__color--asphalt">Height:</span> 2px
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Width:</span> 100% of active tab width
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Color:</span> Active Tab Label color
-                </li>
-              </ul>
-              <span class="hca-typography--body-2">Inactive Tab Label</span>
-              <ul class="hca-typography--body-1">
-                <li>
-                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
-                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Text Color:</span> Active Tab Label color at 70% opacity
-                </li>
-              </ul>
-              <span class="hca-typography--body-2">Overflow Indicators/Controls</span>
-              <ul class="hca-typography--body-1">
-                <li>
-                  <span class="hca-typography__color--asphalt">Height:</span> 22px
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Width:</span> 22px
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
-                </li>
-              </ul>
-
-            </div>
-            {{!-- / text-only scrollable specs --}}
-          </div>
-          <div class="col-sm-7">
-            <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/tabs/specs-text-only-scrollable.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs specs" />
-            </figure>
-          </div>
-        </div>
-
-        <h3 class="hca-typography--title">Fixed Tabs</h3>
-        <div class="row">
-          <div class="col-sm-5">
+          <div class="col-md-5">
             <div class="app-card hca-specs">
               <span class="hca-typography--body-2">Sizing</span>
               <ul class="hca-typography--body-1">
@@ -485,6 +382,13 @@ base_url: '../../'
                     <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
                   </ul>
                 </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Label Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  </ul>
+                </li>
               </ul>
               <span class="hca-typography--body-2">Tab Spacing</span>
               <ul class="hca-typography--body-1">
@@ -492,20 +396,13 @@ base_url: '../../'
                   <span class="hca-typography__color--asphalt">Labels:</span> Vertically and horizontally centered
                 </li>
                 <li>
-                  <span class="hca-typography__color--asphalt">Minimum Padding - Left and Right:</span> 10px
+                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
                 </li>
               </ul>
               <span class="hca-typography--body-2">Active Tab Label</span>
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
-                </li>
-                <li>
-                  <span class="hca-typography__color--asphalt">Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
-                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
-                  </ul>
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
@@ -529,27 +426,330 @@ base_url: '../../'
                   <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
                 </li>
                 <li>
-                  <span class="hca-typography__color--asphalt">Font Size:</span>
+                  <span class="hca-typography__color--asphalt">Text Color:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-6 col-md-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-fixed-text-only-light.png" class="img-responsive hca-visual-example__comp" alt="Specs for fixed tabs with text-only labels" />
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-fixed-text-only-dark.png" class="img-responsive hca-visual-example__comp" alt="Specs for fixed tabs with text-only labels" />
+            </figure>
+          </div>
+        </div>
+        {{!-- / text-only fixed specs --}}
+
+
+
+
+        <h3 class="hca-typography--title">Scrollable (Small and Large Screens)</h3>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="app-card hca-specs">
+              <span class="hca-typography--body-2">Sizing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 50px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Minimum Tab Width:</span> 62px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Maximum Tab Width:</span> 250px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Label Font Size:</span>
                   <ul class="app-spec-list">
                     <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
                     <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
                   </ul>
                 </li>
+              </ul>
+              <span class="hca-typography--body-2">Tab Spacing</span>
+              <ul class="hca-typography--body-1">
                 <li>
-                  <span class="hca-typography__color--asphalt">Text Color:</span> Active Tab Label color at 70% opacity
+                  <span class="hca-typography__color--asphalt">Labels:</span> Vertically and horizontally centered
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
                 </li>
               </ul>
+              <span class="hca-typography--body-2">Active Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Indicator Line</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 2px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 100% of active tab width
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> Active Tab Label color
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Inactive Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Text Color:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Overflow Indicators/Controls</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 22px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 22px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Placement:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">Vertically centered</li>
+                    <li class="app-spec-list__item">10px from edge of tabs on both sides</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
+                </li>
+              </ul>
+
             </div>
-            {{!-- / text-only fixed specs --}}
           </div>
-          <div class="col-sm-7">
+          <div class="col-md-7">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/tabs/specs-text-only-fixed.png" class="img-responsive hca-visual-example__comp" alt="Fixed tabs specs" />
+              <img src="{{page.base_url}}images/components/tabs/specs-text-only-scrollable.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs specs" />
             </figure>
           </div>
         </div>
+        {{!-- / text-only scrollable specs --}}
+      </div>
+    </article>
+
+    <article id="section-icon-and-text-tabs-specs">
+      <h2 class="app-article-headline hca-typography--headline">Icon + Text Tab Specs</h2>
+      <div class="app-section">
+        <h3 class="hca-typography--title">Fixed / Equal Width</h3>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="app-card hca-specs">
+              <span class="hca-typography--body-2">Sizing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 56px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">All tabs equal width</li>
+                    <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Height:</span> 20px (width can vary)
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Label Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px (14px line height)</li>
+                    <li class="app-spec-list__item">Icon tab labels do not line break.</li>
+                    <li class="app-spec-list__item">Use ellipsis for labels that need to overflow.</li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Tab Spacing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon + Label:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">5px margin between icon and label</li>
+                    <li class="app-spec-list__item">Horizontally and vertically centered</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon + Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Indicator Line</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 2px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 100% of active tab width
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> Active Tab Label color
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Inactive Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon + Text Color:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-7 col-md-6 col-md-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-icon-text-fixed-3.png" class="img-responsive hca-visual-example__comp" alt="Specs for fixed tabs with icons and text labels" />
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-icon-text-fixed-2.png" class="img-responsive hca-visual-example__comp" alt="Specs for fixed tabs with icons and text labels" />
+            </figure>
+          </div>
+        </div>
+        {{!-- / icon+text fixed specs --}}
 
 
+
+
+        <h3 class="hca-typography--title">Scrollable (Small and Large Screens)</h3>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="app-card hca-specs">
+              <span class="hca-typography--body-2">Sizing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 56px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Minimum Tab Width:</span> 62px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Maximum Tab Width:</span> 250px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Height:</span> 20px (width can vary)
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Label Font Size:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">14px (14px line height)</li>
+                    <li class="app-spec-list__item">Icon tab labels do not line break.</li>
+                    <li class="app-spec-list__item">Use ellipsis for labels that need to overflow.</li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Tab Spacing</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon + Label:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">5px margin between icon and label</li>
+                    <li class="app-spec-list__item">Horizontally and vertically centered</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon + Text Color:</span> System color or app highlight color that is at least AA accessible in contrast to its background
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Active Indicator Line</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 2px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 100% of active tab width
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> Active Tab Label color
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Inactive Tab Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon + Text Color:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Overflow Indicators/Controls</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 22px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Width:</span> 22px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Placement:</span>
+                  <ul class="app-spec-list">
+                    <li class="app-spec-list__item">Vertically centered</li>
+                    <li class="app-spec-list__item">10px from edge of tabs on both sides</li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/tabs/specs-icon-text-scrollable.png" class="img-responsive hca-visual-example__comp" alt="Specs for scrollable tabs with icons and text" />
+            </figure>
+          </div>
+        </div>
+        {{!-- / icon+text scrollable specs --}}
       </div>
     </article>
 
