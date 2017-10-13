@@ -103,7 +103,7 @@ base_url: '../../'
             <div class="hca-layout__container--body-content">
               <h3 class="hca-typography--body-2">Scrollable Tabs</h3>
               <p class="hca-typography--body-1">Scrollable tabs can overflow the view horizontally and scroll to reveal more tabs. These tabs' width can size according to their label length, up to a max width of 250px.</p>
-              <p class="hca-typography--body-1">They are best used for browsing contexts in touch interfaces when users don’t need to directly compare the tab labels.</p>
+              <p class="hca-typography--body-1">They are best used for browsing contexts in touch interfaces when users do not need to directly compare the tab labels.</p>
               <p class="hca-typography--support">NOTE: Scrollable tabs should always have the controls/overflow indicators showing in any direction that there are more tabs available.</p>
             </div>
           </div>
@@ -294,7 +294,7 @@ base_url: '../../'
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
               <p class="hca-typography--body-1">Active tabs display a 2px indicator line between the active label and the content it is related to.</p>
-              <p class="hca-typography--body-1">Inactive tab labels appear at 70% opacity of the active label color, and become 100% opaque when activated. This is the same for the icon color.</p>
+              <p class="hca-typography--body-1">Inactive tab labels and icons appear at 70% opacity of either {{>white}} or {{>asphalt}} (determine based on background color), and become 100% opaque when activated. Active tab labels and icons may also convert to a AA accessible highlight color.</p>
             </div>
           </div>
           <div class="col-sm-8">
@@ -355,17 +355,19 @@ base_url: '../../'
           <nav>
             <ul class="app-toc">
               <h2 class="hca-typography--subhead">Contents:</h2>
-              <li class="app-toc__item"><a href="#section-text-only-tabs-specs">Text-only Tabs</a></li>
-              <li class="app-toc__item"><a href="#section-icon-and-text-tabs-specs">Icon + Text Tabs</a></li>
+              <li class="app-toc__item"><a href="#section-text-only-fixed-tabs-specs">Text-only Fixed Tabs</a></li>
+              <li class="app-toc__item"><a href="#section-text-only-scrollable-tabs-specs">Text-only Scrollable Tabs</a></li>
+              <li class="app-toc__item"><a href="#section-icon-and-text-fixed-tabs-specs">Icon + Text Fixed Tabs</a></li>
+              <li class="app-toc__item"><a href="#section-icon-and-text-scrollable-tabs-specs">Icon + Text Scrollable Tabs</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    <article id="section-text-only-tabs-specs">
+    <article>
       <h2 class="app-article-headline hca-typography--headline">Text-only Tab Specs</h2>
-      <div class="app-section">
+      <section id="section-text-only-fixed-tabs-specs" class="app-section">
         <h3 class="hca-typography--title">Fixed / Equal Width</h3>
         <div class="row">
           <div class="col-md-5">
@@ -380,6 +382,8 @@ base_url: '../../'
                   <ul class="app-spec-list">
                     <li class="app-spec-list__item">All tabs equal width</li>
                     <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
+                    <li class="app-spec-list__item">62px minimum width</li>
+                    <li class="app-spec-list__item">250px maximum width</li>
                   </ul>
                 </li>
                 <li>
@@ -444,11 +448,13 @@ base_url: '../../'
             </figure>
           </div>
         </div>
+      </section>
         {{!-- / text-only fixed specs --}}
 
 
 
 
+      <section id="section-text-only-scrollable-tabs-specs" class="app-section">
         <h3 class="hca-typography--title">Scrollable (Small and Large Screens)</h3>
         <div class="row">
           <div class="col-md-5">
@@ -537,7 +543,6 @@ base_url: '../../'
                   <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
                 </li>
               </ul>
-
             </div>
           </div>
           <div class="col-md-7">
@@ -546,13 +551,13 @@ base_url: '../../'
             </figure>
           </div>
         </div>
-        {{!-- / text-only scrollable specs --}}
-      </div>
+      </section>
+      {{!-- / text-only scrollable specs --}}
     </article>
 
-    <article id="section-icon-and-text-tabs-specs">
+    <article>
       <h2 class="app-article-headline hca-typography--headline">Icon + Text Tab Specs</h2>
-      <div class="app-section">
+      <section id="section-icon-and-text-fixed-tabs-specs" class="app-section">
         <h3 class="hca-typography--title">Fixed / Equal Width</h3>
         <div class="row">
           <div class="col-md-5">
@@ -567,6 +572,8 @@ base_url: '../../'
                   <ul class="app-spec-list">
                     <li class="app-spec-list__item">All tabs equal width</li>
                     <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
+                    <li class="app-spec-list__item">62px minimum width</li>
+                    <li class="app-spec-list__item">250px maximum width</li>
                   </ul>
                 </li>
                 <li>
@@ -639,11 +646,10 @@ base_url: '../../'
             </figure>
           </div>
         </div>
-        {{!-- / icon+text fixed specs --}}
+      </section>
+      {{!-- / icon+text fixed specs --}}
 
-
-
-
+      <section id="section-icon-and-text-scrollable-tabs-specs" class="app-section">
         <h3 class="hca-typography--title">Scrollable (Small and Large Screens)</h3>
         <div class="row">
           <div class="col-md-5">
@@ -740,7 +746,6 @@ base_url: '../../'
                   <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
                 </li>
               </ul>
-
             </div>
           </div>
           <div class="col-md-7">
@@ -749,11 +754,12 @@ base_url: '../../'
             </figure>
           </div>
         </div>
-        {{!-- / icon+text scrollable specs --}}
-      </div>
+      </section>
+      {{!-- / icon+text scrollable specs --}}
     </article>
 
   </div>
+  {{!-- / STYLES tab panel --}}
 
   {{!-- CODE TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-code-tab">
