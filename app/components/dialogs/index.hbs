@@ -1,0 +1,107 @@
+---
+layout: default.hbs
+title: Dialogs
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+  <section class="app-tab-header">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--subhead hca-typography__color--asphalt">Dialogs can inform users about a specific task, contain critical information, require decisions from the user, or even involve multiple tasks.</p>
+          <p class="hca-typography--body-1">Dialogs retain focus at the highest level of <a href="{{page.base_url}}essentials/elevation" target="_blank">elevation</a> until they are dismissed or their required action is taken.</p>
+          <p class="hca-typography--body-1">They can contain text and UI controls. </p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <ul class="app-toc">
+          <h2 class="hca-typography--subhead">Contents:</h2>
+          <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+          <li class="app-toc__item"><a href="#section-name">List</a></li>
+          <li class="app-toc__item"><a href="#section-name">Here</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <article>
+    <h1 class="app-article-headline hca-typography--headline">Anatomy and Types</h1>
+
+    <section id="section-anatomy" class="app-section">
+      {{!-- <h2 class="hca-typography--title">Anatomy of a Dialog</h2> --}}
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Optional Title</span>
+            <p class="hca-typography--body-1">Dialogs may have an optional title that concisely describes the type of decision being made. </p>
+            <p class="hca-typography--support">NOTE: Titles must always be visible in their entirety. They should not overflow or ellipsis.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Content</span>
+            <p class="hca-typography--body-1">Dialog content typically consists of text and/or UI control elements. It is focused on a specific task, such as confirming item deletion or choosing a setting.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Action Bar</span>
+            <p class="hca-typography--body-1">Dialogs should always have an action bar that has at least one action that acknowledges/dismisses the dialog, but can contain affirmative and dismissive actions.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/dialogs/anatomy.png" class="img-responsive hca-visual-example__comp" alt="Anatomy of a Dialog" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Anatomy of a Dialog</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </article>
+  </div>
+  {{!-- / usage tab panel --}}
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Contents:</h2>
+            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+            <li class="app-toc__item"><a href="#section-name">List</a></li>
+            <li class="app-toc__item"><a href="#section-name">Here</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    Put your content here.
+  </div>
+
+  {{!-- CODE TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-code-tab">
+    Coming soon.
+  </div>
+
+</div>
+
+
+{{!-- Pagination Navigation --}}
+<nav class="app-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/buttons/" class="hca-button hca-button--has-icon-left">Back to Buttons <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}components/tabs/" class="hca-button hca-button--has-icon-right hca-typography__color--night">Next: Tabs <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>
