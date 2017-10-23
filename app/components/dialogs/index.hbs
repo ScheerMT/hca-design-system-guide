@@ -13,31 +13,46 @@ base_url: '../../'
   <section class="app-tab-header">
     <div class="row">
       <div class="col-sm-7">
-        <div class="hca-layout__container--body-content">
+        <div class="hca-layout__container--body-content hca-typography--subhead hca-typography__color--asphalt">
           <p class="hca-typography--subhead hca-typography__color--asphalt">Dialogs can inform users about a specific task, contain critical information, require decisions from the user, or even involve multiple tasks.</p>
           <p class="hca-typography--body-1">Dialogs retain focus at the highest level of <a href="{{page.base_url}}essentials/elevation" target="_blank">elevation</a> until they are dismissed or their required action is taken.</p>
-          <p class="hca-typography--body-1">They can contain text and UI controls. </p>
+          <p class="hca-typography--body-1">They may contain text and UI controls. </p>
         </div>
       </div>
-      <div class="col-sm-5">
+      <div class="col-sm-4">
         <ul class="app-toc">
           <h2 class="hca-typography--subhead">Contents:</h2>
-          <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-          <li class="app-toc__item"><a href="#section-name">List</a></li>
-          <li class="app-toc__item"><a href="#section-name">Here</a></li>
+          <li class="app-toc__item"><a href="#section-anatomy">Anatomy</a></li>
+          <li class="app-toc__item"><a href="#section-alerts">Alerts</a></li>
+          <li class="app-toc__item"><a href="#section-name">Simple Dialogs</a></li>
+          <li class="app-toc__item"><a href="#section-name">Simple Dialogs</a></li>
         </ul>
+        <br /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <figure class="hca-visual-example hca-visual-example--mobile">
+          <img src="{{page.base_url}}images/components/dialogs/device-dialog-example.png" class="img-responsive hca-visual-example__comp" alt="Small screen dialog example" />
+          <figcaption class="hca-visual-example__caption hca-typography--caption">A dialog on a small screen</figcaption>
+        </figure>
+      </div>
+      <div class="col-sm-9">
+        <figure class="hca-visual-example">
+          <img src="{{page.base_url}}images/components/dialogs/large-device-dialog-example.png" class="img-responsive hca-visual-example__comp" alt="Large screen dialog example" />
+          <figcaption class="hca-visual-example__caption hca-typography--caption">A dialog on a large screen</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
 
-  <article>
+  <article id="section-anatomy">
     <h1 class="app-article-headline hca-typography--headline">Anatomy and Types</h1>
-
-    <section id="section-anatomy" class="app-section">
+    <section id="section-anatomy-and-types" class="app-section">
       {{!-- <h2 class="hca-typography--title">Anatomy of a Dialog</h2> --}}
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-6">
           <div class="hca-layout__container--body-content">
             <span class="hca-typography--body-2">Optional Title</span>
             <p class="hca-typography--body-1">Dialogs may have an optional title that concisely describes the type of decision being made. </p>
@@ -61,6 +76,88 @@ base_url: '../../'
       </div>
     </section>
   </article>
+
+  <article id="section-alerts">
+    <section class="app-section">
+      <h2 class="hca-typography--title">Alerts</h2>
+      <div class="row app-section">
+        <div class="col-sm-6">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">Alerts are urgent interruptions, requiring user acknowledgement, that inform the user about a situation.</p>
+            <p class="hca-typography--support">NOTE: Alert dialogs have a different use case than Snackbars. Snackbars present optional information after an action, such as confirming the deletion of data. They often allow a user to undo an action that was just taken.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-section">
+        <h3 class="hca-typography--body-2">Alerts without title bars</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Most alerts do not need titles.</p>
+              <p class="hca-typography--body-1">They should summarize a decision concisely by either:
+                <ul class="app-list app-list--bulleted">
+                  <li class="app-list__item">Asking a question (i.e. "Delete this item?")</li>
+                  <li class="app-list__item">Making a statement related to the action buttons</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/dialogs/alert-no-title.png" class="img-responsive hca-visual-example__comp" alt="Visual example of an Alert with no title" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">The affirmative action "Discard" describes the outcome of the user's decision.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/dialogs/alert-no-title-dont.png" class="img-responsive hca-visual-example__comp" alt="Visual example of what NOT to do with an alert" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">The dismissive action "No" is unclear as to what happens after a user selects it. "Cancel" or "Go back" would be more descriptive.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-section">
+        <h3 class="hca-typography--body-2">Alerts with title bars</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Use title bar alerts only for high-risk situations, such as the potential loss of connectivity. Users should be able to understand the choices based on the title and button text alone.</p>
+              <p class="hca-typography--body-1">If a title is required:
+                <ul class="app-list app-list--bulleted">
+                  <li class="app-list__item">Use a clear question or statement with an explanation in the content area, such as "Send health record unencrypted?"</li>
+                  <li class="app-list__item">Avoid apologies, ambiguity, or questions, such as “Warning!” or “Are you sure?”</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/dialogs/alert-with-title.png" class="img-responsive hca-visual-example__comp" alt="Good example of dialog with title" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">This dialog poses a specific question, concisely elaborates on its impact, and provides clear actions.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/dialogs/alert-with-title-dont.png" class="img-responsive hca-visual-example__comp" alt="Bad example of dialog with title" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">This dialog poses an ambiguous question and its scope of impact is unclear.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+
   </div>
   {{!-- / usage tab panel --}}
 

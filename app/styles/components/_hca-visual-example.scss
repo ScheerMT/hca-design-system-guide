@@ -40,13 +40,17 @@ $visual-example-line-size: 10px;
 /* Do and Don't modifiers */
 .hca-visual-example--do {
   .hca-visual-example__comp {
-    padding-bottom: 5px;
-    border-bottom: $visual-example-line-size solid $color__grass;
+    padding-top: 5px;
+    border-top: $visual-example-line-size solid $color__grass;
   }
-  .hca-visual-example__caption:before {
+  &:before {
     display: block;
     content: '\2714  Do';
   }
+  // .hca-visual-example__caption:before {
+  //   display: block;
+  //   content: '\2714  Do';
+  // }
 
   .hca-visual-example__overlay {
     background-color: rgba($color__grass, .15);
@@ -55,13 +59,17 @@ $visual-example-line-size: 10px;
 
 .hca-visual-example--dont {
   .hca-visual-example__comp {
-    padding-bottom: 5px;
-    border-bottom: $visual-example-line-size dashed $color__strawberry;
+    padding-top: 5px;
+    border-top: $visual-example-line-size dashed $color__strawberry;
   }
-  .hca-visual-example__caption:before {
+  &:before {
     display: block;
     content: '\2717  Dont.';
   }
+  // .hca-visual-example__caption:before {
+  //   display: block;
+  //   content: '\2717  Dont.';
+  // }
 
   .hca-visual-example__overlay {
     background-color: rgba($color__strawberry, .15);
