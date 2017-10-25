@@ -30,6 +30,11 @@ hr {
 
 .app-drawer-nav {
 
+  a,
+  a:hover {
+    border-bottom: none;
+  }
+
   .hca-list__item.app-drawer-nav__item--active,
   .hca-list__item--nested.app-drawer-nav__item--active {
     color: $color__evening;

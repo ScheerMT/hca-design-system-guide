@@ -123,12 +123,14 @@ base_url: '../../'
         </div>
       </div>
       <div class="col-sm-5">
-        <ul class="app-toc">
-          <h2 class="hca-typography--subhead">Contents:</h2>
-          <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-          <li class="app-toc__item"><a href="#section-name">List</a></li>
-          <li class="app-toc__item"><a href="#section-name">Here</a></li>
-        </ul>
+        <nav>
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Contents:</h2>
+            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+            <li class="app-toc__item"><a href="#section-name">List</a></li>
+            <li class="app-toc__item"><a href="#section-name">Here</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </section>
@@ -147,12 +149,14 @@ base_url: '../../'
           </div>
         </div>
         <div class="col-sm-5">
-          <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
-            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-            <li class="app-toc__item"><a href="#section-name">List</a></li>
-            <li class="app-toc__item"><a href="#section-name">Here</a></li>
-          </ul>
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="app-toc__item"><a href="#section-name">List</a></li>
+              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
