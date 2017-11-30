@@ -30,6 +30,11 @@ hr {
 
 .app-drawer-nav {
 
+  a,
+  a:hover {
+    border-bottom: none;
+  }
+
   .hca-list__item.app-drawer-nav__item--active,
   .hca-list__item--nested.app-drawer-nav__item--active {
     color: $color__evening;
@@ -267,5 +272,15 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
   &__item {
     list-style: initial;
     margin-left: 10px;
+  }
+}
+
+
+.app-list--bulleted {
+  padding-left: 40px;
+  margin-bottom: 20px;
+  .app-list__item {
+    list-style: initial;
+    margin-bottom: 5px;
   }
 }
