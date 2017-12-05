@@ -1,13 +1,28 @@
 ---
-layout: default.hbs
+layout: no-tabs.hbs
 title: Snackbars
 base_url: '../../'
 ---
 
 <!-- body_class: 'hca-background--white' -->
 
-
-
+<section class="app-tab-header">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="hca-layout__container--body-content">
+        <p class="hca-typography--subhead hca-typography__color--asphalt">Snackbars provide brief feedback about an operation, conveyed through a message at the bottom of the screen.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <ul class="app-toc">
+        <h2 class="hca-typography--subhead">Contents:</h2>
+        <li class="app-toc__item"><a href="#section-guidelines">Guidelines</a></li>
+        <li class="app-toc__item"><a href="#section-specs-large-screen">Specs: Large Screen</a></li>
+        <li class="app-toc__item"><a href="#section-specs-small-screen">Specs: Small Screen</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <!-- Tab panes - tab controls in _layouts/default.hbs -->
 <div class="tab-content">
@@ -17,39 +32,24 @@ base_url: '../../'
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
 
-    <section class="app-tab-header">
-      <div class="row">
-        <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Snackbars provide brief feedback about an operation, conveyed through a message at the bottom of the screen.</p>
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Snackbars contain a single line of text (except on mobile where a max of two lines is acceptable), directly related to the operation performed. They may contain a text action, but no icons.</p>
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Only one snackbar should be displayed at a time. Each snackbar may contain a single action, neither of which may be “Dismiss” or “Cancel.”</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <article>
-      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+    <article id="section-guidelines">
+      <h1 class="app-article-headline hca-typography--headline">Guidelines</h1>
 
       {{!-- usage section --}}
       <section class="app-section">
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
-              <p class="hca-typography--body-1">Show only one snackbar on screen at a time.</p>
+              <p class="hca-typography--body-1">Snackbars contain a single line of text (except on mobile where a max of two lines is acceptable), directly related to the operation performed. They may contain a text action, but no icons.</p>
+              <p class="hca-typography--body-1">Only one snackbar should be displayed at a time.</p>
               <p class="hca-typography--body-1">Snackbars sit at an elevation level above most elements on the screen. They are equal in elevation to the floating action button. However, they are lower in elevation than dialogs, bottom sheets, and navigation drawers.</p>
             </div>
           </div>
           {{!-- / col-*-* text content --}}
-          <div class="col-sm-7">
-            <div class="row">
-              <div class="col-sm-6">
-                <figure class="hca-visual-example">
-                  <img src="{{page.base_url}}images/components/snackbars/snackbars-usage-example.png" class="img-responsive hca-visual-example__comp" alt=""/>
-                </figure>
-              </div>
-            </div>
+          <div class="col-sm-4 col-sm-offset-2">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/snackbars/snackbars-usage-example.png" class="img-responsive hca-visual-example__comp" alt=""/>
+            </figure>
           </div>
           {{!-- /col-*-* visual examples --}}
         </div>
@@ -59,6 +59,193 @@ base_url: '../../'
 
     </article>
     {{!-- / article --}}
+
+    <hr />
+
+    <article id="section-specs">
+      <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+
+      {{!-- snackbars tablet desktop specs --}}
+      <section id="section-specs-large-screen" class="app-section">
+          <h2 class="hca-typography--title">Large Screens (Tablet/Desktop)</h2>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Snackbar</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 50px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Width:</span>
+                    <ul class="app-spec-list">
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Minimum width:</span> 290px
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Maximum width:</span> 575px
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 25px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Message Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> white }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Alignment:</span> Left aligned, vertically centered
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Action Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span>
+                    <ul class="app-spec-list">
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Default/Neutral:</span> {{> morning }}
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Positive/Success:</span> {{> grass }}
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Warning/Yield:</span> {{> butterscotch }}
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Danger/Error:</span> {{> watermelon }}
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {{!-- / col-*-* text content --}}
+            <div class="col-sm-7">
+              <div class="row">
+                <div class="col-sm-7">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/snackbars/snackbars-tablet-desktop-small.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+                  </figure>
+                </div>
+              </div>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/snackbars/snackbars-tablet-desktop-large.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              </figure>
+            </div>
+            {{!-- /col-*-* visual examples --}}
+          </div>
+          {{!-- /row --}}
+      </section>
+      {{!-- / snackbars tablet desktop section --}}
+
+
+      {{!-- snackbars mobile specs --}}
+      <section id="section-specs-small-screen" class="app-section">
+          <h2 class="hca-typography--title">Small Screens (Mobile Devices)</h2>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="app-card hca-specs">
+                <span class="hca-typography--body-2">Snackbar</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 70px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Width:</span> 100% of view width
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 25px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Radius - All Corners: </span>5px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Message Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Line Height:</span> 18px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> white }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Alignment:</span> Left aligned, vertically centered
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Action Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span>
+                    <ul class="app-spec-list">
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Default/Neutral:</span> {{> morning }}
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Positive/Success:</span> {{> grass }}
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Warning/Yield:</span> {{> butterscotch }}
+                      </li>
+                      <li class="app-spec-list__item">
+                        <span class="hca-typography__color--asphalt">Danger/Error:</span> {{> watermelon }}
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {{!-- / col-*-* text content --}}
+            <div class="col-sm-5 col-sm-offset-1">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/snackbars/snackbars-mobile-single-line.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              </figure>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/snackbars/snackbars-mobile-multi-line.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
+              </figure>
+            </div>
+            {{!-- /col-*-* visual examples --}}
+          </div>
+          {{!-- /row --}}
+      </section>
+      {{!-- / snackbars mobile section --}}
+    </article>
+    {{!-- / specs article --}}
   </div>
   {{!-- / Usage tab panel --}}
 
@@ -70,7 +257,7 @@ base_url: '../../'
 
 
   {{!-- SPECS TAB --}}
-  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+  {{!-- <div role="tabpanel" class="tab-pane" id="app-styles-tab">
 
     <section class="app-tab-header">
       <div class="row">
@@ -86,164 +273,10 @@ base_url: '../../'
     </section>
 
 
-    {{!-- shared specs --}}
-    <section id="section-shared-specs" class="app-section">
-        <h2 class="hca-typography--title">Shared Specs</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="app-card hca-specs">
-              <div class="hca-layout__container--body-content">
-                <!-- Sanckbar -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Left padding: 25px</span>
-                  <span class="hca-typography--body-1">Right padding: 25px</span>
-                  <span class="hca-typography--body-1">Background: Asphalt (#1F2532)</span>
-                </p>
-                <!-- Snackbar Text -->
-                <p class="hca-typography--body-2">Snackbar text
-                  <span class="hca-typography--body-1">Open Sans semi-bold: 12px</span>
-                  <span class="hca-typography--body-1">Color: White (#FFFFFF)</span>
-                  <span class="hca-typography--body-1">Alignment: Left</span>
-                </p>
-                <!-- Action Text -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Open Sans semi-bold: 12px</span>
-                  <span class="hca-typography--body-1">Color: Grass (#26CC6D)</span>
-                  <span class="hca-typography--body-1">Alignment: Right</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          {{!-- / col-*-* text content --}}
-        </div>
-        {{!-- /row --}}
-    </section>
-    {{!-- / shared specs section --}}
-
-
-    {{!-- snackbars tablet desktop specs --}}
-    <section id="section-snackbars-tablet-desktop" class="app-section">
-        <h2 class="hca-typography--title">Tablet / Desktop</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="app-card hca-specs">
-              <div class="hca-layout__container--body-content">
-                <!-- Sanckbar -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Height: 50px</span>
-                  <span class="hca-typography--body-1">Min width: 290px</span>
-                  <span class="hca-typography--body-1">Max width: 575px</span>
-                  <span class="hca-typography--body-1">Border radius: 5px</span>
-                  <span class="hca-typography--body-1">Left padding: 25px</span>
-                  <span class="hca-typography--body-1">Right padding: 25px</span>
-                  <span class="hca-typography--body-1">Background: Asphalt (#1F2532)</span>
-                </p>
-                <!-- Snackbar Text -->
-                <p class="hca-typography--body-2">Snackbar text
-                  <span class="hca-typography--body-1">Open Sans semi-bold: 12px</span>
-                  <span class="hca-typography--body-1">Color: White (#FFFFFF)</span>
-                  <span class="hca-typography--body-1">Alignment: Left</span>
-                </p>
-                <!-- Action Text -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Open Sans semi-bold: 12px</span>
-                  <span class="hca-typography--body-1">Color: Butterscotch (#FFB63D)</span>
-                  <span class="hca-typography--body-1">Alignment: Right</span>
-                </p>
-                <!-- Snackbar Positioning -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Centered or left-aligned</span>
-                  <span class="hca-typography--body-1">Padding: 50px</span>
-                </p>
-                <!-- Action Text Colors -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Morning (#E9F3FE)</span>
-                  <span class="hca-typography--body-1">Grass (#26CC6D)</span>
-                  <span class="hca-typography--body-1">Butterscotch (#FFB63D)</span>
-                  <span class="hca-typography--body-1">Watermelon (#FEE7E5)</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          {{!-- / col-*-* text content --}}
-          <div class="col-sm-8">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="app-l-padding-top-2em">
-                  <figure class="hca-visual-example">
-                    <img src="{{page.base_url}}images/components/snackbars/snackbars-tablet-desktop-small.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
-                  </figure>
-                  <figure class="hca-visual-example">
-                    <img src="{{page.base_url}}images/components/snackbars/snackbars-tablet-desktop-large.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{!-- /col-*-* visual examples --}}
-        </div>
-        {{!-- /row --}}
-    </section>
-    {{!-- / snackbars tablet desktop section --}}
-
-
-    {{!-- snackbars mobile specs --}}
-    <section id="section-snackbars-mobile" class="app-section">
-        <h2 class="hca-typography--title">Mobile</h2>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="app-card hca-specs">
-              <div class="hca-layout__container--body-content">
-                <!-- Sanckbar -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Single line height: 50px</span>
-                  <span class="hca-typography--body-1">Multi-line height: 70px</span>
-                  <span class="hca-typography--body-1">Width: Spans width of device</span>
-                  <span class="hca-typography--body-1">Left padding: 25px</span>
-                  <span class="hca-typography--body-1">Right padding: 25px</span>
-                  <span class="hca-typography--body-1">Background: Asphalt (#1F2532)</span>
-                </p>
-                <!-- Snackbar Text -->
-                <p class="hca-typography--body-2">Snackbar text
-                  <span class="hca-typography--body-1">Open Sans semi-bold: 12px</span>
-                  <span class="hca-typography--body-1">Color: White (#FFFFFF)</span>
-                  <span class="hca-typography--body-1">Alignment: Left</span>
-                </p>
-                <!-- Action Text -->
-                <p class="hca-typography--body-2">Snackbar
-                  <span class="hca-typography--body-1">Open Sans semi-bold: 12px</span>
-                  <span class="hca-typography--body-1">Color: Grass (#26CC6D)</span>
-                  <span class="hca-typography--body-1">Alignment: Right</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          {{!-- / col-*-* text content --}}
-          <div class="col-sm-8">
-            <div class="row">
-              <div class="col-sm-6 text-center">
-                <div class="app-l-padding-top-2em">
-                  <figure class="hca-visual-example">
-                    <img src="{{page.base_url}}images/components/snackbars/snackbars-mobile-single-line.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
-                  </figure>
-                  <figure class="hca-visual-example">
-                    <img src="{{page.base_url}}images/components/snackbars/snackbars-mobile-multi-line.png" class="img-responsive hca-visual-example__comp" alt="A message should be communicated completely without color." />
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          {{!-- /col-*-* visual examples --}}
-        </div>
-        {{!-- /row --}}
-    </section>
-    {{!-- / snackbars mobile section --}}
-
-
-  </div>
+  </div> --}}
   {{!-- end specs tab panel --}}
 
-  <div role="tabpanel" class="tab-pane" id="app-code-tab">Coming soon.</div>
+  {{!-- <div role="tabpanel" class="tab-pane" id="app-code-tab">Coming soon.</div> --}}
   {{!-- end code tab panel --}}
 
 </div>
