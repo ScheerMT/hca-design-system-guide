@@ -10,30 +10,65 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
-  <section class="app-tab-header">
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="hca-layout__container--body-content">
-          <p class="hca-typography--subhead hca-typography__color--asphalt">A card serves as an entry point to more detailed information.</p>
-          <p class="hca-typography--body-1">Cards may contain a photo, text, and a link about a single subject. They may display content containing elements of varying size, such as photos with captions of variable length.</p>
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">A card serves as an entry point to more detailed information.</p>
+            <p class="hca-typography--body-1">Cards may contain a photo, text, and a link about a single subject. They may display content containing elements of varying size, such as photos with captions of variable length.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-card-usage">Usage</a></li>
+              <li class="app-toc__item"><a href="#section-card-content">Content</a></li>
+              <li class="app-toc__item"><a href="#section-card-behavior">Behavior</a></li>
+              <li class="app-toc__item"><a href="#section-card-actions">Actions</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="col-sm-5">
-        <nav>
-          <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
-            <li class="app-toc__item"><a href="#section-card-usage">Usage</a></li>
-            <li class="app-toc__item"><a href="#section-card-content">Content</a></li>
-            <li class="app-toc__item"><a href="#section-card-behavior">Behavior</a></li>
-            <li class="app-toc__item"><a href="#section-card-actions">Actions</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
+    </section>
 
-    Put your content here.
+    <article id="section-card-usage">
+      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+      <section id="section-anatomy-and-types">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards are a convenient means of displaying content composed of different elements. They’re also well-suited for showcasing elements whose size or supported actions vary, like photos with captions of variable length.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-sm-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/card-usage-example.png" class="img-responsive hca-visual-example__comp" alt="A card" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">A card</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <hr />
+
   </div>
+
+  {{!-- <div class="row">
+    <div class="col-sm-6">
+      <figure class="hca-visual-example">
+        <img src="{{page.base_url}}images/components/dialogs/device-dialog-example.png" class="img-responsive hca-visual-example__comp" alt="A standard dialog" />
+        <figcaption class="hca-visual-example__caption hca-typography--caption">A standard dialog</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6">
+      <figure class="hca-visual-example">
+        <img src="{{page.base_url}}images/components/dialogs/full-screen-dialog.png" class="img-responsive hca-visual-example__comp" alt="A full screen dialog" />
+        <figcaption class="hca-visual-example__caption hca-typography--caption">A full-screen dialog</figcaption>
+      </figure>
+    </div>
+  </div> --}}
 
   {{!-- STYLES TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
