@@ -34,41 +34,294 @@ base_url: '../../'
 
     <article id="section-card-usage">
       <h1 class="app-article-headline hca-typography--headline">Usage</h1>
-      <section id="section-anatomy-and-types">
+
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
               <p class="hca-typography--body-1">Cards are a convenient means of displaying content composed of different elements. They’re also well-suited for showcasing elements whose size or supported actions vary, like photos with captions of variable length.</p>
             </div>
           </div>
-          <div class="col-sm-4 col-sm-offset-1">
+          <div class="col-sm-3 col-sm-offset-2">
             <figure class="hca-visual-example">
               <img src="{{page.base_url}}images/components/cards/card-usage-example.png" class="img-responsive hca-visual-example__comp" alt="A card" />
-              <figcaption class="hca-visual-example__caption hca-typography--caption">A card</figcaption>
             </figure>
           </div>
         </div>
-      </section>
+
+        <h2 class="hca-typography--title">When to use</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Use cards when displaying content that:
+                <ul class="app-list app-list--bulleted">
+                  <li class="app-list__item">As a collection, comprises multiple data types, such as images and text</li>
+                  <li class="app-list__item">Does not require direct comparison (a user is not directly comparing images or text)</li>
+                  <li class="app-list__item">Supports content of highly variable length, such as comments</li>
+                  <li class="app-list__item">Contains interactive content, such as rating buttons or comments</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-2">
+            <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/card-collection.png" class="img-responsive hca-visual-example__comp" alt="Example of a card collection" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Example of a card collection</figcaption>
+          </figure>
+          </div>
+        </div>
+
+        <h4 class="hca-typography--body-2">Lists vs. Cards</h4>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Avoid overuse of cards when presenting content to your users. Homogeneous content that does not have many actions may be easier for the user to scan when presented as a list. Cards can add unnecessary visual clutter.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/cards/scannable-list-do.png" class="img-responsive hca-visual-example__comp" alt="Examle of a " />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">A quickly scannable list, instead of cards, is an appropriate way to represent homogeneous content that doesn't have many actions.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/cards/scannable-list-dont.png" class="img-responsive hca-visual-example__comp" alt="Example of a card collection" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">The use of cards here distracts the user from being able to quickly scan. These list items are also not dismissable, so having them on separate cards is confusing.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
     </article>
+    {{!-- / Usage Article --}}
 
     <hr />
 
+    <article id="section-card-content">
+      <h1 class="app-article-headline hca-typography--headline">Content</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards provide context and an entry point to more robust information and views. Their content and quantity can vary greatly. Cards within a card collection can each contain a unique data set, such as a checklist with an action.</p>
+
+              <p class="hca-typography--support">NOTE: Don't overload cards with extraneous information or actions.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h4 class="hca-typography--body-2">Content hierarchy</h4>
+              <p class="hca-typography--body-1">Use hierarchy within the card to direct users’ attention to the most important information. For example, place primary content at the top of the card, or use typography to emphasize primary content.</p>
+              <p class="hca-typography--body-1">Images can reinforce other content in a card. Quality and contextual imagery conveys emotion and builds trust with users. However, their size and placement within the card depends on whether images are the primary content or are being used to supplement other content on the card.</p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/content-intro.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption>
+            </figure>
+          </div>
+        </div>
+        <h4 class="hca-typography--body-2">Background images</h4>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Text is most legible when placed on a solid color background with a sufficient contrast ratio to the text. Text placed on image backgrounds should preserve text legibility.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/cards/text-on-image-do.png" class="img-responsive hca-visual-example__comp" alt="Preserve text legibility by leveraging color overlays on an image." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Preserve text legibility by leveraging color overlays on an image.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/cards/text-on-image-dont.png" class="img-responsive hca-visual-example__comp" alt="Using full contrast images skews the legibility of text, and makes it difficult to read." />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Using full contrast images skews the legibility of text, and makes it difficult to read.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="hca-typography--title">Content Blocks</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards can be constructed using blocks of content that include:
+                <ul class="app-list app-list--bulleted">
+                  <li class="app-list__item">Title/subheader block</li>
+                  <li class="app-list__item">Rich media block</li>
+                  <li class="app-list__item">Content/supplemental content block</li>
+                  <li class="app-list__item">Action bar</li>
+                </ul>
+              </p>
+              <p class="hca-typography--body-1">These blocks can be organized in many ways to present different types of content.</p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-2">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/content-blocks-small-card.png" class="img-responsive hca-visual-example__comp" alt="" />
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/content-blocks-media-title.png" class="img-responsive hca-visual-example__comp" alt="" />
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/content-blocks-map.png" class="img-responsive hca-visual-example__comp" alt="" />
+            </figure>
+          </div>
+        </div>
+    </article>
+    {{!-- / Content Article --}}
+
+    <hr />
+
+    <article id="section-card-behavior">
+      <h1 class="app-article-headline hca-typography--headline">Behavior</h1>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards can have a responsive width and variable height.</p>
+              <p class="hca-typography--support">NOTE: Cards do not flip over to reveal information on the back.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h4 class="hca-typography--body-2">Supported Gestures</h4>
+              <p class="hca-typography--body-1">Card gestures should be consistently implemented within a card collection.</p>
+              <p class="hca-typography--body-1">The swipe gesture may be used on a per-card basis. Limit swipe gestures within a view so that they don’t overlap with one another. For example, a swipeable card should not contain a swipeable image carousel, so that only a single action occurs when the card is swiped.</p>
+              <p class="hca-typography--body-1">The pick-up-and-move gesture may be used if it is important for the user to be able to sort cards within a collection, but consider if filtering or sorting would better organize the content.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h4 class="hca-typography--body-2">Card collection filtering and sorting</h4>
+              <p class="hca-typography--body-1">Card collections can be programmatically sorted or filtered by date, file size, alphabetical order, or other parameters.</p>
+              <p class="hca-typography--body-1">The first item in the collection is positioned at the top left.</p>
+              <p class="hca-typography--body-1">The order proceeds left to right and top to bottom.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/card-sort-order.png" class="img-responsive hca-visual-example__comp" alt="Sort order for cards" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Card sort order from left to right, top to bottom</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <h2 class="hca-typography--title">Card focus</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">When traversing through focus points on a card, all focusable elements are visited before moving to the next card.</p>
+              <p class="hca-typography--body-1">For interfaces that depend on focus traversal for navigation (D-pad and keyboard), cards should have either a primary action or open a new view containing primary and supplemental actions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/primary-action-focused.png" class="img-responsive hca-visual-example__comp" alt="Example of focus traversal on a card" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Primary action selected during focus traversal</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6">
+            <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/dropdown-focus-expand.png" class="img-responsive hca-visual-example__comp" alt="Expanded supporting text made visible, with the focus then placed on a supplemental action." />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Expanded supporting text made visible, with the focus then placed on a supplemental action.</figcaption>
+          </figure>
+          </div>
+        </div>
+
+
+
+
+    </article>
+    {{!-- / Behavior Article --}}
+
+
+    <hr />
+
+    <article id="section-card-actions">
+      <h1 class="app-article-headline hca-typography--headline">Actions</h1>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">The primary action in a card is typically the card itself.</p>
+            <p class="hca-typography--body-1">Supplemental actions can vary from card to card in a collection, depending on the content type and expected outcome; for example, playing a video versus expanding collapsed content. Position actions consistently within cards that are a part of a collection.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <h4 class="hca-typography--body-2">Supplemental Actions</h4>
+            <p class="hca-typography--body-1">Supplemental actions within the card are explicitly called out using icons, text, and UI controls. They are typically placed at the bottom of the card.</p>
+            <p class="hca-typography--body-1">Limit supplemental actions to two actions, in addition to an overflow menu.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/single-action-card.png" class="img-responsive hca-visual-example__comp" alt="A card whose action area is the entire card itself" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">A card whose action area is the entire card itself</figcaption>
+          </figure>
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/double-action-card.png" class="img-responsive hca-visual-example__comp" alt="A card whose action area is the entire card itself" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">A card with two action areas</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <h2 class="hca-typography--title">UI Controls</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">UI controls, like a slider, placed inline with primary content can modify the view of the primary content. For example, a slider to choose an amount, stars to rate content, or a segmented button to select a date range.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/ui-controls.png" class="img-responsive hca-visual-example__comp" alt="Example of UI controls within a card" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">A card containing UI controls among the primary content.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <h2 class="hca-typography--title">Additional Actions</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">Cards can make use of the overflow (or "more") menu icon to support additional actions related to the content of the card.</p>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/overflow-menu-card.png" class="img-responsive hca-visual-example__comp" alt="Example of UI controls within a card" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">A card utilizing an overflow menu for supplemental actions</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">Remember that cards serve as a quick entry point to more information. This means that cards need to avoid presenting too many actions or links to a user. Card content should not contain inline links to other content, rather, they should provide one or two main actions that lead the user to more detailed content.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+          <figure class="hca-visual-example hca-visual-example--dont">
+            <img src="{{page.base_url}}images/components/cards/card-actions-dont.png" class="img-responsive hca-visual-example__comp" alt="Example of UI controls within a card" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Cards should avoid inline links among their content. This removes focus from the primary action(s).</figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </article>
+    {{!-- / Actions Article --}}
+
+
+
   </div>
 
-  {{!-- <div class="row">
-    <div class="col-sm-6">
-      <figure class="hca-visual-example">
-        <img src="{{page.base_url}}images/components/dialogs/device-dialog-example.png" class="img-responsive hca-visual-example__comp" alt="A standard dialog" />
-        <figcaption class="hca-visual-example__caption hca-typography--caption">A standard dialog</figcaption>
-      </figure>
-    </div>
-    <div class="col-sm-6">
-      <figure class="hca-visual-example">
-        <img src="{{page.base_url}}images/components/dialogs/full-screen-dialog.png" class="img-responsive hca-visual-example__comp" alt="A full screen dialog" />
-        <figcaption class="hca-visual-example__caption hca-typography--caption">A full-screen dialog</figcaption>
-      </figure>
-    </div>
-  </div> --}}
 
   {{!-- STYLES TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
