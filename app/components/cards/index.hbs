@@ -10,55 +10,661 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
-  <section class="app-tab-header">
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="hca-layout__container--body-content">
-          <p class="hca-typography--subhead hca-typography__color--asphalt">A card serves as an entry point to more detailed information.</p>
-          <p class="hca-typography--body-1">Cards may contain a photo, text, and a link about a single subject. They may display content containing elements of varying size, such as photos with captions of variable length.</p>
-        </div>
-      </div>
-      <div class="col-sm-5">
-        <nav>
-          <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
-            <li class="app-toc__item"><a href="#section-card-usage">Usage</a></li>
-            <li class="app-toc__item"><a href="#section-card-content">Content</a></li>
-            <li class="app-toc__item"><a href="#section-card-behavior">Behavior</a></li>
-            <li class="app-toc__item"><a href="#section-card-actions">Actions</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
-
-    Put your content here.
-  </div>
-
-  {{!-- STYLES TAB --}}
-  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
-
     <section class="app-tab-header">
       <div class="row">
         <div class="col-sm-7">
           <div class="hca-layout__container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">A card serves as an entry point to more detailed information.</p>
           </div>
         </div>
         <div class="col-sm-5">
           <nav>
             <ul class="app-toc">
               <h2 class="hca-typography--subhead">Contents:</h2>
-              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-              <li class="app-toc__item"><a href="#section-name">List</a></li>
-              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+              <li class="app-toc__item"><a href="#section-card-usage">Usage</a></li>
+              <li class="app-toc__item"><a href="#section-card-content">Content</a></li>
+              <li class="app-toc__item"><a href="#section-card-behavior">Behavior</a></li>
+              <li class="app-toc__item"><a href="#section-card-actions">Actions</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    Put your content here.
+    <article id="section-card-usage">
+      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards are a convenient means of displaying content composed of different elements. They’re also well-suited for showcasing elements whose size or supported actions vary, like photos with captions of variable length.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-2">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/card-usage-example.png" class="img-responsive hca-visual-example__comp" alt="A card" />
+            </figure>
+          </div>
+        </div>
+
+        <h2 class="hca-typography--title">When to use</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Use cards when displaying content that:
+                <ul class="app-list app-list--bulleted">
+                  <li class="app-list__item">As a collection, comprises multiple data types, such as images and text</li>
+                  <li class="app-list__item">Does not require direct comparison (a user is not directly comparing images or text)</li>
+                  <li class="app-list__item">Supports content of highly variable length, such as comments</li>
+                  <li class="app-list__item">Contains interactive content, such as rating buttons or comments</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-2">
+            <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/card-collection.png" class="img-responsive hca-visual-example__comp" alt="Example of a card collection" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Example of a card collection</figcaption>
+          </figure>
+          </div>
+        </div>
+
+        <h4 class="hca-typography--body-2">Lists vs. Cards</h4>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Avoid overuse of cards when presenting content to your users. Homogeneous content that does not have many actions may be easier for the user to scan when presented as a <a href="{{page.base_url}}components/lists">list</a>. Cards can add unnecessary visual clutter.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--do">
+                  <img src="{{page.base_url}}images/components/cards/scannable-list-do.png" class="img-responsive hca-visual-example__comp" alt="Examle of a " />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">A quickly scannable list, instead of cards, is an appropriate way to represent homogeneous content that doesn't have many actions.</figcaption>
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example hca-visual-example--dont">
+                  <img src="{{page.base_url}}images/components/cards/scannable-list-dont.png" class="img-responsive hca-visual-example__comp" alt="Example of a card collection" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">The use of cards here distracts the user from being able to quickly scan. These list items are also not dismissable, so having them on separate cards is confusing.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+    {{!-- / Usage Article --}}
+
+    <hr />
+
+    <article id="section-card-content">
+      <h1 class="app-article-headline hca-typography--headline">Content</h1>
+        <div class="row app-section">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards provide context and an entry point to more robust information and views. Their content and quantity can vary greatly. Cards within a card collection can each contain a unique data set, such as a checklist with an action.</p>
+
+              <p class="hca-typography--support">NOTE: Don't overload cards with extraneous information or actions.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h4 class="hca-typography--body-2">Content hierarchy</h4>
+              <p class="hca-typography--body-1">Use hierarchy within the card to direct users’ attention to the most important information. For example, place primary content at the top of the card, or use typography to emphasize primary content.</p>
+              <p class="hca-typography--body-1">Images can reinforce other content in a card. Quality and contextual imagery conveys emotion and builds trust with users. However, their size and placement within the card depends on whether images are the primary content or are being used to supplement other content on the card.</p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/content-intro.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="app-section">
+          <h4 class="hca-typography--body-2">Background images</h4>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="hca-layout__container--body-content">
+                <p class="hca-typography--body-1">Text is most legible when placed on a solid color background with a sufficient contrast ratio to the text. Text placed on image backgrounds should preserve text legibility.</p>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="row">
+                <div class="col-sm-6">
+                  <figure class="hca-visual-example hca-visual-example--do">
+                    <img src="{{page.base_url}}images/components/cards/text-on-image-do.png" class="img-responsive hca-visual-example__comp" alt="Preserve text legibility by leveraging color overlays on an image." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">Preserve text legibility by leveraging color overlays on an image.</figcaption>
+                  </figure>
+                </div>
+                <div class="col-sm-6">
+                  <figure class="hca-visual-example hca-visual-example--dont">
+                    <img src="{{page.base_url}}images/components/cards/text-on-image-dont.png" class="img-responsive hca-visual-example__comp" alt="Using full contrast images skews the legibility of text, and makes it difficult to read." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">Using full contrast images skews the legibility of text, and makes it difficult to read.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-section">
+          <h2 class="hca-typography--title">Content Blocks</h2>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="hca-layout__container--body-content">
+                <p class="hca-typography--body-1">Cards can be constructed using blocks of content that include:
+                  <ul class="app-list app-list--bulleted">
+                    <li class="app-list__item">Title/subheader block</li>
+                    <li class="app-list__item">Rich media block</li>
+                    <li class="app-list__item">Content/supplemental content block</li>
+                    <li class="app-list__item">Action bar</li>
+                  </ul>
+                </p>
+                <p class="hca-typography--body-1">These blocks can be organized in many ways to present different types of content.</p>
+              </div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-2">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/content-blocks-small-card.png" class="img-responsive hca-visual-example__comp" alt="" />
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/content-blocks-media-title.png" class="img-responsive hca-visual-example__comp" alt="" />
+              </figure>
+            </div>
+            <div class="col-sm-4">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/content-blocks-map.png" class="img-responsive hca-visual-example__comp" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+    </article>
+    {{!-- / Content Article --}}
+
+    <hr />
+
+    <article id="section-card-behavior">
+      <h1 class="app-article-headline hca-typography--headline">Behavior</h1>
+        <div class="row app-section">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards can have a responsive width and variable height.</p>
+              <p class="hca-typography--support">NOTE: Cards do not flip over to reveal information on the back.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h4 class="hca-typography--body-2">Supported Gestures</h4>
+              <p class="hca-typography--body-1">Card gestures should be consistently implemented within a card collection.</p>
+              <p class="hca-typography--body-1">The swipe gesture may be used on a per-card basis. Limit swipe gestures within a view so that they don’t overlap with one another. For example, a swipeable card should not contain a swipeable image carousel, so that only a single action occurs when the card is swiped.</p>
+              <p class="hca-typography--body-1">The pick-up-and-move gesture may be used if it is important for the user to be able to sort cards within a collection, but consider if filtering or sorting would better organize the content.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h4 class="hca-typography--body-2">Card collection filtering and sorting</h4>
+              <p class="hca-typography--body-1">Card collections can be programmatically sorted or filtered by date, file size, alphabetical order, or other parameters.</p>
+              <p class="hca-typography--body-1">The first item in the collection is positioned at the top left.</p>
+              <p class="hca-typography--body-1">The order proceeds left to right and top to bottom.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/card-sort-order.png" class="img-responsive hca-visual-example__comp" alt="Sort order for cards" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Card sort order from left to right, top to bottom</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="app-section">
+          <h2 class="hca-typography--title">Card focus</h2>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="hca-layout__container--body-content">
+                <p class="hca-typography--body-1">When traversing through focus points on a card, all focusable elements are visited before moving to the next card.</p>
+                <p class="hca-typography--body-1">For interfaces that depend on focus traversal for navigation (D-pad and keyboard), cards should have either a primary action or open a new view containing primary and supplemental actions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-2">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/primary-action-focused.png" class="img-responsive hca-visual-example__comp" alt="Example of focus traversal on a card" />
+                <figcaption class="hca-visual-example__caption hca-typography--caption">Primary action selected during focus traversal</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6">
+              <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/dropdown-focus-expand.png" class="img-responsive hca-visual-example__comp" alt="Expanded supporting text made visible, with the focus then placed on a supplemental action." />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Expanded supporting text made visible, with the focus then placed on a supplemental action.</figcaption>
+            </figure>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </article>
+    {{!-- / Behavior Article --}}
+
+
+    <hr />
+
+    <article id="section-card-actions">
+      <h1 class="app-article-headline hca-typography--headline">Actions</h1>
+      <div class="row app-section">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">The primary action in a card is typically the card itself.</p>
+            <p class="hca-typography--body-1">Supplemental actions can vary from card to card in a collection, depending on the content type and expected outcome; for example, playing a video versus expanding collapsed content. Position actions consistently within cards that are a part of a collection.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <h4 class="hca-typography--body-2">Supplemental Actions</h4>
+            <p class="hca-typography--body-1">Supplemental actions within the card are explicitly called out using icons, text, and UI controls. They are typically placed at the bottom of the card.</p>
+            <p class="hca-typography--body-1">Limit supplemental actions to two actions, in addition to an overflow menu.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/single-action-card.png" class="img-responsive hca-visual-example__comp" alt="A card whose action area is the entire card itself" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">A card whose action area is the entire card itself</figcaption>
+          </figure>
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/double-action-card.png" class="img-responsive hca-visual-example__comp" alt="A card whose action area is the entire card itself" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">A card with two action areas</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="app-section">
+        <h2 class="hca-typography--title">UI Controls</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">UI controls, like a slider, placed inline with primary content can modify the view of the primary content. For example, a slider to choose an amount, stars to rate content, or a segmented button to select a date range.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/ui-controls.png" class="img-responsive hca-visual-example__comp" alt="Example of UI controls within a card" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">A card containing UI controls among the primary content.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-section">
+        <h2 class="hca-typography--title">Additional Actions</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Cards can make use of the overflow (or "more") menu icon to support additional actions related to the content of the card.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/cards/overflow-menu-card.png" class="img-responsive hca-visual-example__comp" alt="Example of UI controls within a card" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">A card utilizing an overflow menu for supplemental actions</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Remember that cards serve as a quick entry point to more information. This means that cards need to avoid presenting too many actions or links to a user. Card content should not contain inline links to other content, rather, they should provide one or two main actions that lead the user to more detailed content.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 col-sm-offset-1">
+            <figure class="hca-visual-example hca-visual-example--dont">
+              <img src="{{page.base_url}}images/components/cards/card-actions-dont.png" class="img-responsive hca-visual-example__comp" alt="Example of UI controls within a card" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Cards should avoid inline links among their content. This removes focus from the primary action(s).</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+    </article>
+    {{!-- / Actions Article --}}
+
+
+
+  </div>
+
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-specs-cards">Card Specs</a></li>
+              <li class="app-toc__item"><a href="#section-specs-title-blocks">Title Block Variants</a></li>
+              <li class="app-toc__item"><a href="#section-specs-action-bars">Action Bar Variants</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <article id="section-specs-cards" class="app-section">
+      <h2 class="hca-typography--title">Card Specs</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="app-card hca-specs">
+            <span class="hca-typography--body-2">Card Body</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Margin - Bottom:</span> 10px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Resting Elevation:</span> {{> elevation-level-1}}
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Focus/Hover Elevation:</span> {{> elevation-level-2}}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Title Block</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Padding:</span>
+                <ul class="app-spec-list">
+                  <li class="app-spec-list__item">Top: 15px</li>
+                  <li class="app-spec-list__item">Left and Right: 20px</li>
+                  <li class="app-spec-list__item">Bottom: 10px</li>
+                </ul>
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Title</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Line Height:</span> 32px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Color:</span> {{> asphalt }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Subhead</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Line Height:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Color:</span> {{> cadet }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Content Block</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">In the middle of a card:</span>
+                <ul class="app-spec-list">
+                  <li class="app-spec-list__item">Padding - Top and Bottom: 10px</li>
+                  <li class="app-spec-list__item">Padding - Right and Left: 20px</li>
+                </ul>
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">At the bottom of a card:</span>
+                <ul class="app-spec-list">
+                  <li class="app-spec-list__item">Padding - Top: 10px</li>
+                  <li class="app-spec-list__item">Padding - Right, Bottom, and Left: 20px</li>
+                </ul>
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Text Content</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Line Height:</span> 26px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Color:</span> {{> cadet }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Action Bar</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span>
+                <ul class="app-spec-list">
+                  <li class="app-spec-list__item">60px - inline buttons</li>
+                  <li class="app-spec-list__item">110px - stacked buttons</li>
+                </ul>
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Padding - All Sides:</span> 10px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Button spacing:</span> 10px between buttons
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-full-card.png" class="img-responsive hca-visual-example__comp" alt="A full card with specs" />
+                {{!-- <figcaption class="hca-visual-example__caption"></figcaption> --}}
+              </figure>
+            </div>
+          </div>
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/specs-elevation.png" class="img-responsive hca-visual-example__comp" alt="Elevation specs for a card" />
+            {{!-- <figcaption class="hca-visual-example__caption">Card elevation specs</figcaption> --}}
+          </figure>
+        </div>
+      </div>
+    </article>
+    {{!-- /FULL CARD SPECS --}}
+
+    <article id="section-specs-title-blocks" class="app-section">
+      <h2 class="hca-typography--title">Title Block Variants</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="app-card hca-specs">
+            <span class="hca-typography--body-2">Title Block (all variants)</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Padding:</span>
+                <ul class="app-spec-list">
+                  <li class="app-spec-list__item">Top: 15px</li>
+                  <li class="app-spec-list__item">Left and Right: 20px</li>
+                  <li class="app-spec-list__item">Bottom: 10px</li>
+                </ul>
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Card Title</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Line Height:</span> 32px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Color:</span> {{> asphalt }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Card Title (when paired with an avatar)</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Line Height:</span> 26px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Color:</span> {{> asphalt }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Avatar</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Width:</span> 30px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 30px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Padding - Right:</span> 10px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Alignment:</span> Vertically centered within title tile
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Subhead (all variants)</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Line Height:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Color:</span> {{> cadet }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Overflow/More Icon</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Vertical Icon Height:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Horizontal Icon Width:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Positioning:</span> 20px from top and right of card
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-title-subhead.png" class="img-responsive hca-visual-example__comp" alt="Card title and subhead specs" />
+                <figcaption class="hca-visual-example__caption">Card title and subhead, used both at the top of a card or in the middle among the content</figcaption>
+              </figure>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-avatar-title-subhead.png" class="img-responsive hca-visual-example__comp" alt="Card title, subhead, and avatar specs" />
+                <figcaption class="hca-visual-example__caption">Card title and subhead paired with an avatar, used both at the top of a card or in the middle among the content</figcaption>
+              </figure>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-title-only.png" class="img-responsive hca-visual-example__comp" alt="Card title specs" />
+                <figcaption class="hca-visual-example__caption">Card title, used both at the top of a card or in the middle among the content</figcaption>
+              </figure>
+            </div>
+          </div>
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/specs-title-more-icon.png" class="img-responsive hca-visual-example__comp" alt="Specs for including a more menu icon in a card title" />
+            <figcaption class="hca-visual-example__caption">When including an overflow or "more" menu in a card title, it uses the same spacing for all types of title block.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+    {{!-- /TITLE BLOCK SPECS --}}
+
+    <article id="section-specs-title-blocks" class="app-section">
+      <h2 class="hca-typography--title">Action Bar Variants</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="app-card hca-specs">
+            <span class="hca-typography--body-2">Action Bar (all variants)</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 60px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Padding - All Sides:</span> 10px
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Button/Icon Spacing</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Margin between buttons/icons:</span>
+                <ul class="app-spec-list">
+                  <li class="app-spec-list__item">Inline: 10px</li>
+                  <li class="app-spec-list__item">Stacked: 10px</li>
+                </ul>
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Icon Actions/Buttons</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Actionable area:</span> 40px by 40px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Icon Max Height:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Icon Max Width:</span> 22px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Icon Alignment:</span> Vertically and horizontally centered to actionable area
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-action-bar-inline.png" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption">Multiple inline actions should have a space of 10px between each action. They can be left or right aligned.</figcaption>
+              </figure>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-action-bar-stacked.png" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption">If action text is long, actions can become stacked</figcaption>
+              </figure>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/cards/specs-action-bar-icons.png" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption">If there are multiple icon actions, they should be presented inline with 10px space between each actionable area.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    {{!-- /ACTION BAR SPECS --}}
+
+
   </div>
 
   {{!-- CODE TAB --}}
