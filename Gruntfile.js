@@ -326,7 +326,7 @@ module.exports = function (grunt) {
         //distribute from the dist folder
         src: '<%= yeoman.dist %>',
         //distribute to this directory
-        dest: 'unity-static.hcaprototype.com/html/',
+        dest: 'hcadesignsystem.com/html/',
         //exclude the .git directory from distribution
         exclusions: ['<%= yeoman.dist %>/.git'],
         //keep: ['/important/images/at/server/*.jpg']
