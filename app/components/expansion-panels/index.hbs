@@ -1,0 +1,234 @@
+---
+layout: no-tabs.hbs
+title: Expansion Panels
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+  <section class="app-tab-header">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--subhead hca-typography__color--asphalt">An expansion panel is a lightweight container that can either stand alone or connect to a larger surface, such as a card.</p>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <nav>
+          <ul class="app-toc">
+            <h2 class="hca-typography--subhead">Contents:</h2>
+            <li class="app-toc__item"><a href="#section-usage">Usage</a></li>
+            <li class="app-toc__item"><a href="#section-specs">Specs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+    Put your content here.
+  </div>
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="app-toc__item"><a href="#section-name">List</a></li>
+              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <article id="section-usage">
+      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+
+      <section class="app-section">
+        <div class="row app-section">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Expansion panels are best suited for mobile devices with small screens to organize content in a way that saves space and enhances the reader's ability to quickly locate key pieces of information.</p>
+              <p class="hca-typography--body-1">The expanded panel itself should only contain secondary information.  Primary information should never be hidden - in expansion panels or otherwise. Do not use expansion panels to clean up large amounts of information or save page space.  Instead, use them to organize information and provide small areas for editable content.</p>
+            </div>
+            <div class="col-sm-7">
+              <div class="row">
+                <div class="col-sm-6">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/tooltips/tooltips-usage-do.png" class="img-responsive hca-visual-example__comp" alt="A common example of a tooltip would be text information about an actionable icon." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">A common example of a tooltip would be text information about an actionable icon.</figcaption>
+                  </figure>
+                </div>
+                <div class="col-sm-6">
+                  <figure class="hca-visual-example">
+                    <img src="{{page.base_url}}images/components/tooltips/tooltips-usage-dont.png" class="img-responsive hca-visual-example__comp" alt="Tooltips do not display rich information. This includes images and formatted text." />
+                    <figcaption class="hca-visual-example__caption hca-typography--caption">Tooltips do not display rich information. This includes images and formatted text.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+    </article>
+    {{!-- / article --}}
+
+
+    <article id="section-specs">
+      <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+
+      {{!-- tooltips desktop specs --}}
+      <section class="app-section">
+          <h2 class="hca-typography--title">Tooltips (Desktop)</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="app-card hca-specs">
+                <div class="hca-layout__container--body-content">
+                  <span class="hca-typography--body-2">Component</span>
+                  <ul class="hca-typography--body-1">
+                    <li>
+                      <span class="hca-typography__color--asphalt">Height:</span> 26px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Padding Top and Bottom:</span> 7px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Padding Left and Right:</span> 10px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Margin Top:</span> 15px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 2px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
+                    </li>
+                  </ul>
+                  <span class="hca-typography--body-2">Text</span>
+                  <ul class="hca-typography--body-1">
+                    <li>
+                      <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Font Color:</span> {{> white }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {{!-- / col-*-* text content --}}
+            <div class="col-sm-8">
+              <div class="row">
+                <div class="col-sm-6 text-center">
+                  <div class="app-l-padding-top-2em">
+                    <figure class="hca-visual-example">
+                      <img src="{{page.base_url}}images/components/tooltips/specs-tooltip-desktop.png" class="img-responsive hca-visual-example__comp" alt="Desktop tooltips specs." />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{!-- /col-*-* visual examples --}}
+          </div>
+          {{!-- /row --}}
+      </section>
+      {{!-- / tooltips desktop section --}}
+
+
+      {{!-- tooltips mobile specs --}}
+      <section class="app-section">
+          <h2 class="hca-typography--title">Tooltips (Mobile)</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="app-card hca-specs">
+                <div class="hca-layout__container--body-content">
+                  <span class="hca-typography--body-2">Component</span>
+                  <ul class="hca-typography--body-1">
+                    <li>
+                      <span class="hca-typography__color--asphalt">Height:</span> 34px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Padding Top and Bottom:</span> 10px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Padding Left and Right:</span> 20px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Margin Top:</span> 20px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 2px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
+                    </li>
+                  </ul>
+                  <span class="hca-typography--body-2">Text</span>
+                  <ul class="hca-typography--body-1">
+                    <li>
+                      <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                    </li>
+                    <li>
+                      <span class="hca-typography__color--asphalt">Font Color:</span> {{> white }}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            {{!-- / col-*-* text content --}}
+            <div class="col-sm-8">
+              <div class="row">
+                <div class="col-sm-6 text-center">
+                  <div class="app-l-padding-top-2em">
+                    <figure class="hca-visual-example">
+                      <img src="{{page.base_url}}images/components/tooltips/specs-tooltip-mobile.png" class="img-responsive hca-visual-example__comp" alt="Mobile tooltips specs" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{!-- /col-*-* visual examples --}}
+          </div>
+          {{!-- /row --}}
+      </section>
+      {{!-- / tooltips mobile section --}}
+    </article>
+  </div>
+
+  {{!-- CODE TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-code-tab">
+    Coming soon.
+  </div>
+
+</div>
+
+
+{{!-- Pagination Navigation --}}
+<nav class="app-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/dividers/" class="hca-button hca-button--has-icon-left">Back to Dividers <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}components/lists" class="hca-button hca-button--has-icon-right hca-typography__color--evening">Next: Lists <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>
