@@ -1,0 +1,149 @@
+---
+layout: default.hbs
+title: Menus
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Menus display a list of choices on a temporary component.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">They appear upon interaction with a button, action, or other control. They display a list of choices with one choice per line.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Menu items may be disabled if not applicable to a certain context. Contextual menus dynamically change their available menu items based on the current state of the app.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Types</span>
+            <ul class="hca-typography--body-1">
+              <li>Simple menus (small screens)</li>
+              <li>Cascading menus (large screens)</li>
+            </ul>
+            <span class="hca-typography--body-2">Elevation</span>
+            <p class="hca-typography--body-1">Menus appear above other in-app elements with an elevation setting of <a href="{{page.base_url}}essentials/elevation">Level 1</a></p>
+            <span class="hca-typography--body-2">Behavior</span>
+            <p class="hca-typography--body-1">Scrollable</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-usage">Usage</a></li>
+              <li class="app-toc__item"><a href="#section-behavior">Behavior</a></li>
+              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <article id="section-usage">
+      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">A menu is a temporary component that appears upon interaction with a button, action, pointer, or other control. It contains at least two menu items.</p>
+              <p class="hca-typography--body-1">Each menu item consists of a discrete option or action that can affect the app, the view, or selected elements within a view.</p>
+              <p class="hca-typography--body-1">Menus should not be used as a primary method for navigation within an app.</p>
+
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Menu Labels</span>
+                <p class="hca-typography--body-1">The label of a button or control should concisely and accurately reflect the items within the menu. Menu bars typically use single words as labels, like “file,” “format,” and “edit.” Other contexts may require longer labels.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-4">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/usage.png" class="img-responsive hca-visual-example__comp" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="hca-typography--title">Contextual Menus</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Contextual menus dynamically change their available menu items based on the current state of the application.</p>
+              <p class="hca-typography--body-1">Menu items that are irrelevant to the current context may be removed.</p>
+              <p class="hca-typography--body-1">Menu items which are relevant but, need certain conditions to be met may be disabled. For example, the Copy menu option becomes enabled when text is selected.</p>
+
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Single Menu-item States</span>
+                <p class="hca-typography--body-1">Some app states may result in a contextual menu with only a single menu item. For example, when highlighting text on a web page, Native devices often display only the Copy menu item, as users cannot cut or paste text.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/contextual-menu-resting.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">Before interaction</figcaption>
+                </figure>
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/contextual-menu-active.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">An active/open menu</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- / article --}}
+  </div>
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="app-toc__item"><a href="#section-name">List</a></li>
+              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    Put your content here.
+  </div>
+
+  {{!-- CODE TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-code-tab">
+    Coming soon.
+  </div>
+
+</div>
+
+
+{{!-- Pagination Navigation --}}
+<nav class="app-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/lists/" class="hca-button hca-button--has-icon-left">Back to Lists <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}components/snackbars/" class="hca-button hca-button--has-icon-right hca-typography__color--evening">Next: Snackbars <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>
