@@ -28,7 +28,7 @@ $hca-list--vertical-margin: 10px;
 
   &--nested,
   &--double-nested {
-    width: calc(100% - 10px); //offsets nested margin left
+    width: calc(100% - 20px); //offsets nested margin left
     color: $color__cadet;
     height: 35px;
     line-height: 35px;

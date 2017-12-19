@@ -36,7 +36,7 @@ base_url: '../../'
               <h2 class="hca-typography--subhead">Contents:</h2>
               <li class="app-toc__item"><a href="#section-usage">Usage</a></li>
               <li class="app-toc__item"><a href="#section-behavior">Behavior</a></li>
-              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+              <li class="app-toc__item"><a href="#section-menu-items">Menu Items</a></li>
             </ul>
           </nav>
         </div>
@@ -100,8 +100,161 @@ base_url: '../../'
           </div>
         </div>
       </section>
+
+      <section class="app-section">
+        <h2 class="hca-typography--title">Cascading Menus (Large screen only)</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">For menus that cascade, position the menus vertically and horizontally based on their proximity to screen edges.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/cascading-menus.png" class="img-responsive hca-visual-example__comp" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </article>
-    {{!-- / article --}}
+    {{!-- /  USAGE article --}}
+
+    <hr />
+
+    <article id="section-usage">
+      <h1 class="app-article-headline hca-typography--headline">Behavior</h1>
+      <section class="app-section">
+        <h2 class="hca-typography--title">Location</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Menus appear higher on the z-index than the UI element that activates it.</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="hca-typography--title">Dismissing Menus</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Dismiss a menu by tapping outside of the menu, or by tapping the emitting button (if visible).</p>
+              <p class="hca-typography--body-1">Selecting a menu item should also dismiss the menu. An exception is when a menu allows for multiple items to be chosen, for example, by using checkmarks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- /  BEHAVIOR article --}}
+
+    <hr />
+
+    <article id="section-menu-items">
+      <h1 class="app-article-headline hca-typography--headline">Menu Items</h1>
+      <section class="app-section">
+
+
+        <h2 class="hca-typography--title">Single-line Display</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Each menu item is limited to a single line of text (a single word or short phrase) that describes the action it will perform when selected.</p>
+              <p class="hca-typography--body-1">Menu items that are irrelevant to the current context may be removed.</p>
+              <p class="hca-typography--body-1">Menu items which are relevant but, need certain conditions to be met may be disabled.</p>
+
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Menu items may also contain:</span>
+                <ul class="app-list app-list--bulleted">
+                  <li class="app-list__item">Icons and helper text, like keyboard shortcuts</li>
+                  <li class="app-list__item">Controls like checkmarks to indicate multiple selected items or states (See List controls)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/menu-with-helper-text.png" class="img-responsive hca-visual-example__comp" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/menu-with-selected-options.png" class="img-responsive hca-visual-example__comp" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h2 class="hca-typography--title">Menu Ordering</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Menus with <span class="hca-typography__weight--semibold">static content</span> should have the most frequently used menu items placed at the top of the menu.</p>
+              <p class="hca-typography--body-1">Menus with <span class="hca-typography__weight--semibold">dynamic content</span> may have other behavior, such as placing previously chosen options at the top of the menu. The order can change based on user actions.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/menu-ordering.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  <figcaption class="hca-visual-example__caption hca-typography--caption">For example: Rating has been previously selected as a filtering option.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h2 class="hca-typography--title">Menu Nesting</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Menu items can reveal nested submenus. Ideally, limit nesting to one level deep, as it can be difficult to navigate multiple nested submenus.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/menu-nesting.png" class="img-responsive hca-visual-example__comp" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h2 class="hca-typography--title">Disabled Actions</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Displaying actions as disabled, rather than removing them, lets the user know they exist under the right conditions. A menu item may be enabled or disabled based on the current state of the application.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/components/menus/disabled-actions.png" class="img-responsive hca-visual-example__comp" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- /menu items article --}}
   </div>
 
   {{!-- STYLES TAB --}}
@@ -109,25 +262,128 @@ base_url: '../../'
 
     <section class="app-tab-header">
       <div class="row">
-        <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
-          </div>
-        </div>
         <div class="col-sm-5">
           <nav>
             <ul class="app-toc">
               <h2 class="hca-typography--subhead">Contents:</h2>
-              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-              <li class="app-toc__item"><a href="#section-name">List</a></li>
-              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+              <li class="app-toc__item"><a href="#specs-menus">Single Menu</a></li>
+              <li class="app-toc__item"><a href="#specs-nested-menus">Cascading Menus</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    Put your content here.
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">Specs</h1>
+      <section class="app-section">
+        <h2 id="specs-menus" class="hca-typography--title">Menus</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="app-card hca-specs">
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Menu Container</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Min Width:</span> 115px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Top and Bottom:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Box Shadows:</span> {{> elevation-level-1 }}
+                  </li>
+                </ul>
+
+                <span class="hca-typography--body-2">Menu Items</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Row Height:</span> 40px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 20px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Line Height:</span> 22px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> cadet }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Alignment:</span> Vertically centered, left aligned
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Row Focus/Hover Background Color:</span> {{> steam }}
+                  </li>
+                </ul>
+
+                <span class="hca-typography--body-2">Icon (Left side of text)</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Size:</span> 30px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Right:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Alignment:</span> Vertically centered, left aligned
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 ">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/menus/specs-single-menu.png" class="img-responsive hca-visual-example__comp" alt="" />
+            </figure>
+          </div>
+        </div>
+        <h2 id="specs-nested-menus" class="hca-typography--title">Cascading and Nested Menus</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="app-card hca-specs">
+              <div class="hca-layout__container--body-content">
+                <span class="hca-typography--body-2">Menu Container</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Container Overlap:</span> 10px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Caret Icon (Right of text)</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Caret Container:</span> 22px by 22px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Caret Color:</span> {{> slate }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left:</span> 10px
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/menus/specs-nesting.png" class="img-responsive hca-visual-example__comp" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
   </div>
 
   {{!-- CODE TAB --}}
