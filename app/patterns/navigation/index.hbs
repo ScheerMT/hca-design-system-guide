@@ -1,0 +1,257 @@
+---
+layout: no-tabs.hbs
+title: Navigation
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Organize your navigation structure according to the content and tasks you want users to see.</p>
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Focus attention on important destinations by displaying them in tabs or in the side navigation, and de-emphasize inessential content by displaying it in less prominent locations.</p>
+          </div>
+        </div>
+        {{!-- <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-expandable-search">Expandable Search</a></li>
+              <li class="app-toc__item"><a href="#section-persistent-search">Persistent Search</a></li>
+            </ul>
+          </nav>
+        </div> --}}
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Navigation Patterns:</span>
+            <ul class="hca-typography--body-1">
+              <li>Tabs</li>
+              <li>Bottom navigation bar</li>
+              <li>Full page navigation (small screens)</li>
+            </ul>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Navigational Structures:</span>
+            <ul class="hca-typography--body-1">
+              <li>Flat navigation</li>
+              <li>Hierarchical navigation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <span class="hca-typography--body-2">Navigational Should:</span>
+            <ul class="hca-typography--body-1">
+              <li>Communicate relationships and context</li>
+              <li>Illuminate actions</li>
+              <li>Focus attention</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <article>
+      <h1 class="app-article-headline hca-typography--headline">When creating navigation</h1>
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="hca-layout__container--body-content">
+              <h2 class="hca-typography--title">Take inventory</h2>
+              <p class="hca-typography--body-1">Identify your app’s and website’s users and their potential roles, such as patient, visitor, business owner, or physician. Identify the most common tasks they may want to perform.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h2 class="hca-typography--title">Prioritize</h2>
+              <p class="hca-typography--body-1">Assign priority levels of high, medium, or low to common user tasks. Give prominence in the UI to paths and destinations with high priority levels and frequent use.</p>
+              <p class="hca-typography--body-1">Adjust priority levels as user needs change over time.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h2 class="hca-typography--title">Sequence</h2>
+              <p class="hca-typography--body-1">Identify the different paths that users take through your app or website and use those paths to define your navigation. People should always know where they are in your app and how to get to their next destination. Regardless of navigation style, it’s essential that the path through content is logical, predictable, and easy to follow. In general on mobile, give people one path to each screen.</p>
+              <p class="hca-typography--body-1">List frequent destinations prominently in your navigation</p>
+              <p class="hca-typography--body-1">Group related tasks together and use those groupings to structure your navigation</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="app-section">
+        <h3 class="hca-typography--title">Navigational Menu Icon</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Utilize a triple stack (hamburger) menu icon when condensing your navigation. A menu icon should always be accompanied with the text “Menu” below or beside. The menu icon will exist on the top left of your website and is not adjacent to any other icon.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-sm-offset-2">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/patterns/navigation/menu-icon.png" class="img-responsive hca-visual-example__comp" alt="" />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h3 class="hca-typography--title">Full Page Navigation (Small Screens)</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Full page navigation allows for the most space to support complex navigation structures on mobile. Full page navigation will cover the view of the entire website so the user is focused on navigation. Full page navigations will be accompanied with the word “close” in the top left where the menu icon once was on the screen. When there are multiple levels of navigation you may nest options beneath a parent utilizing the expansion panel rules. Full page navigation can also include a search bar and a bottom navigation bar.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/menu-icon.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Inactive</figcaption> --}}
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/essentials/iconography/close-icon.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Active</figcaption> --}}
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h3 class="hca-typography--title">Breadcrumbs</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">A breadcrumb indicates the hierarchy path (parent­-child relationships) of the page a user is on, rather than the order of the user’s browsing history. Breadcrumbs are especially useful when a user links directly to a page that is nested in a hierarchy but needs to go to a parent page. They give users context for where they are inside the application or site.</p>
+              <p class="hca-typography--body-1">Breadcrumbs are commonly used in conjunction with a tree for navigating between nested pages. The full hierarchy path is listed on a second or third level page. When the user is on a page deeper than three levels, the breadcrumb displays only the last two links. The rest of the hierarchy path is truncated, as shown in the following figure.</p>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/patterns/navigation/breadcrumbs-1.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Inactive</figcaption> --}}
+                </figure>
+              </div>
+              <div class="col-sm-6">
+                <figure class="hca-visual-example">
+                  <img src="{{page.base_url}}images/patterns/navigation/breadcrumbs-2.png" class="img-responsive hca-visual-example__comp" alt="" />
+                  {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Active</figcaption> --}}
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h3 class="hca-typography--title">Trees</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Organize pages in a tree to indicate hierarchy. Use a tree if your app has layered navigation that can’t be represented in a simple tab set. A tree helps users navigate to pages and quickly find a nested child page without loading each page while navigating to the final destination page. Be sure to carefully study the mental models of users when deciding how to group pages in your tree.</p>
+              <p class="hca-typography--body-1">You can use a tree in conjunction with breadcrumbs to further help users navigate the hierarchy.</p>
+              <p class="hca-typography--body-1">Trees can technically have unlimited nesting, but we recommend avoiding excessive nesting. Flatter trees are generally easier to navigate. Every item in the list doesn’t have to have a corresponding page. Instead, you can use label groups to organize related pages without providing an unnecessary landing page.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-sm-offset-2">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/patterns/navigation/trees.png" class="img-responsive hca-visual-example__comp" alt="" />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="hca-layout__container--body-content">
+              <h2 class="hca-typography--title">Hover, Action, and Focus States</h2>
+              <p class="hca-typography--body-1">Items in navigation should have different actionable states to assist those who navigate websites with their keyboard. These states should be easily identifiable to those with visual impairments. Do not solely distinguish action states with color.</p>
+            </div>
+            <div class="hca-layout__container--body-content">
+              <h2 class="hca-typography--title">Menu List Ordering</h2>
+              <p class="hca-typography--body-1">It is best practice to prioritize highly frequented locations of your site in the navigation. Ordering dropdowns by popularity opposed to alphabetical order provides users a more relatable experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h3 class="hca-typography--title">Adaptive Navigation</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">On some mobile experiences, your navigation structure may lend itself to be adapted opposed to responsive. If this is the case, try prioritizing the most critical information while the rest may be hidden under a few layers of navigation.</p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-sm-offset-2">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/patterns/navigation/adaptive.png" class="img-responsive hca-visual-example__comp" alt="" />
+              {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption"></figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="app-toc__item"><a href="#section-name">List</a></li>
+              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    Put your content here.
+  </div>
+
+  {{!-- CODE TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-code-tab">
+    Coming soon.
+  </div>
+
+</div>
+
+
+{{!-- Pagination Navigation --}}
+<nav class="app-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/tooltips/" class="hca-button hca-button--has-icon-left">Back to Tooltips <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}patterns/search" class="hca-button hca-button--has-icon-right hca-typography__color--evening">Next: Search <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>
