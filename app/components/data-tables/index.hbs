@@ -10,27 +10,131 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
-  <section class="app-tab-header">
-    <div class="row">
-      <div class="col-sm-7">
-        <div class="hca-layout__container--body-content">
-          <p class="hca-typography--subhead hca-typography__color--asphalt">Data tables display sets of data.</p>
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Data tables display sets of data.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-usage">Usage and Structure</a></li>
+              <li class="app-toc__item"><a href="#section-interaction">Interaction</a></li>
+              <li class="app-toc__item"><a href="#section-name">Tables Within Cards</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="col-sm-5">
-        <nav>
-          <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
-            <li class="app-toc__item"><a href="#section-name">Usage and Structure</a></li>
-            <li class="app-toc__item"><a href="#section-name">Interaction</a></li>
-            <li class="app-toc__item"><a href="#section-name">Tables Within Cards</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </section>
+    </section>
 
-    Put your content here.
+    <article id="section-usage">
+      <section class="app-section">
+        <h2 class="hca-typography--title">Usage</h2>
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--body-1">Data tables may be embedded on a page or within a card.</p>
+
+          <p class="hca-typography--body-1">They can include:</p>
+          <ul class="app-list app-list--bulleted">
+            <li class="app-list__item">A corresponding visualization</li>
+            <li class="app-list__item">The ability to filter and manipulate data</li>
+          </ul>
+          <p class="hca-typography--body-1">Data tables on cards may display navigation and data manipulation tools at the top and bottom.</p>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h2 class="hca-typography--title">Structure</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">A data table contains a header row at the top that lists column names, followed by rows for data.</p>
+              <p class="hca-typography--body-1">Checkboxes should accompany each row if the user needs to select or manipulate data.</p>
+
+              <p class="hca-typography--body-1">Data tables may include:</p>
+              <ul class="app-list app-list--bulleted">
+                <li class="app-list__item">Three or more columns of data</li>
+                <li class="app-list__item">A corresponding visualization</li>
+                <li class="app-list__item">The ability for users to query and manipulate data</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/structure.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">A data table</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+    </article>
+    {{!-- / USAGE article --}}
+
+    <hr />
+
+    <article id="section-interaction">
+      <h2 class="hca-typography--headline">Interaction</h2>
+      <br />
+      <section class="app-section">
+        <h2 class="hca-typography--title">Row Hover (large screen)</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Display a background in a table row if a user hovers over any part of that row. If there are separate hover states on individual table cells, display both the hover state of the cell and row at the same time.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/row-hover.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Hovering over a row</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+      <section class="app-section">
+        <h2 class="hca-typography--title">Row Selection</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">When a row is selected, display a background color on the row.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/row-selection.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Selected table rows</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+      <section class="app-section">
+        <h2 class="hca-typography--title">Column Sorting</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">If column sorting is enabled, sort the most important data by default and display a sorted state in the column header. If the user clicks on a column that is already sorted, reverse the sort order and rotate the sort icon.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/sorted-column.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Table with a column sorted in descending order</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+    </article>
+    {{!-- / INTERACTION article --}}
+
+
+
+
   </div>
 
   {{!-- STYLES TAB --}}
