@@ -1,0 +1,367 @@
+---
+layout: default.hbs
+title: Data Tables
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+    <section class="app-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Data tables display sets of data.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="app-toc">
+              <h2 class="hca-typography--subhead">Contents:</h2>
+              <li class="app-toc__item"><a href="#section-usage">Usage and Structure</a></li>
+              <li class="app-toc__item"><a href="#section-interaction">Interaction</a></li>
+              <li class="app-toc__item"><a href="#section-tables-in-cards">Tables Within Cards</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <article id="section-usage">
+      <section class="app-section">
+        <h2 class="app-article-headline hca-typography--headline">Usage</h2>
+        <div class="hca-layout__container--body-content">
+          <p class="hca-typography--body-1">Data tables may be embedded on a page or within a card.</p>
+
+          <p class="hca-typography--body-1">They can include:</p>
+          <ul class="app-list app-list--bulleted">
+            <li class="app-list__item">A corresponding visualization</li>
+            <li class="app-list__item">The ability to filter and manipulate data</li>
+          </ul>
+          <p class="hca-typography--body-1">Data tables on cards may display navigation and data manipulation tools at the top and bottom.</p>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <h2 class="hca-typography--title">Structure</h2>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">A data table contains a <span class="hca-typography__weight--semibold">header row</span> at the top that lists column names, followed by rows for data.</p>
+              <p class="hca-typography--body-1">Checkboxes should accompany each row if the user needs to select or manipulate data.</p>
+
+              <p class="hca-typography--body-1">Data tables may include:</p>
+              <ul class="app-list app-list--bulleted">
+                <li class="app-list__item">Three or more columns of data</li>
+                <li class="app-list__item">A corresponding visualization</li>
+                <li class="app-list__item">The ability for users to query and manipulate data</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/structure.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">A data table</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+    </article>
+    {{!-- / USAGE article --}}
+
+    <hr />
+
+    <article id="section-interaction">
+      <h2 class="app-article-headline hca-typography--headline">Interaction</h2>
+      <br />
+      <section class="app-section">
+        <h3 class="hca-typography--title">Row Hover (large screen)</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Display a background in a table row if a user hovers over any part of that row. If there are separate hover states on individual table cells, display both the hover state of the cell and row at the same time.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/row-hover.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Hovering over a row</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+      <section class="app-section">
+        <h3 class="hca-typography--title">Row Selection</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">When a row is selected, display a background color on the row.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/row-selection.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Selected table rows</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+      <section class="app-section">
+        <h3 class="hca-typography--title">Column Sorting</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">If column sorting is enabled, sort the most important data by default and display a sorted state in the column header. If the user clicks on a column that is already sorted, reverse the sort order and rotate the sort icon.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/sorted-column.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Table with a column sorted in descending order</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+
+      <section class="app-section">
+        <h3 class="hca-typography--title">Column Name Hover (Large Screen)</h3>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">If there is a need to provide definitions to column headers, display a tooltip on hover. If sorting is enabled, display a light sort icon upon hover, which indicates that the column is sortable.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/column-hover.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Hovering over a column name</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+    </article>
+    {{!-- / INTERACTION article --}}
+
+    <hr />
+
+    <article id="section-tables-in-cards">
+      <h2 class="app-article-headline hca-typography--headline">Tables Within Cards</h2>
+      <section class="app-section">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hca-layout__container--body-content">
+              <p class="hca-typography--body-1">Tables may be embedded within a card, with table navigation and data manipulation tools displayed at the top and bottom.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/data-tables/table-card.png" class="img-responsive hca-visual-example__comp" alt="" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Table card with header and footer</figcaption>
+            </figure>
+          </div>
+        </div>
+        {{!-- / row --}}
+      </section>
+    </article>
+
+
+
+
+  </div>
+
+  {{!-- STYLES TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <h2 class="app-article-headline hca-typography--headline">Specs</h2>
+
+    <section class="app-section">
+      <h3 class="hca-typography--title">Vertical Spacing</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/data-tables/specs-vertical-spacing.png" class="img-responsive hca-visual-example__comp" alt="" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="app-card hca-specs">
+        <div class="row">
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">1. Card header</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 70px
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">2. Data row header</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 48px
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">3. Data row</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 48px
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">4. Last row (data or card footer)</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 60px
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="app-section">
+      <h3 class="hca-typography--title">Padding and Placement</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/data-tables/specs-padding-and-placement.png" class="img-responsive hca-visual-example__comp" alt="" />
+          </figure>
+        </div>
+      </div>
+      <div class="app-card hca-specs">
+        <div class="row">
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">Table Headline</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 26px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Text Color:</span> {{> asphalt }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Padding between columns</span>
+            <p class="hca-typography--body-1">Use a minimum of 50px of padding in between columns. The widest item in the column (including data and column name) should create the column border.</p>
+          </div>
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">Column Headings</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Text Color:</span> {{> cadet }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Active Column Headings</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold (600)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Text Color:</span> {{> asphalt }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">Table Content</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Font Weight:</span> Regular (400)
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Text Color:</span> {{> asphalt }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <span class="hca-typography--body-2">Table Footer</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Height:</span> 60px
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Footer Labels</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Text Color:</span> {{> cadet }}
+              </li>
+            </ul>
+            <span class="hca-typography--body-2">Footer Actions/Icons</span>
+            <ul class="hca-typography--body-1">
+              <li>
+                <span class="hca-typography__color--asphalt">Icon Size/Container:</span> 20px
+              </li>
+              <li>
+                <span class="hca-typography__color--asphalt">Icon Color:</span> {{> slate }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="app-section">
+      <h3 class="hca-typography--title">Checkboxes</h3>
+      <div class="row">
+        <div class="col-sm-12">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/data-tables/specs-checkbox.png" class="img-responsive hca-visual-example__comp" alt="" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="app-card hca-specs">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="hca-typography--body-2">Checkboxes</span>
+            <p class="hca-typography--body-1">Checkbox icons have a width and height of 22px. They have 20px margin on the right and align to the left title key line.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {{!-- CODE TAB --}}
+  <div role="tabpanel" class="tab-pane" id="app-code-tab">
+    Coming soon.
+  </div>
+
+</div>
+
+
+{{!-- Pagination Navigation --}}
+<nav class="app-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/chips/" class="hca-button hca-button--has-icon-left">Back to Chips <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}components/dialogs/" class="hca-button hca-button--has-icon-right hca-typography__color--evening">Next: Dialogs <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>
