@@ -20,7 +20,7 @@ base_url: '../../'
         <div class="col-sm-5">
           <nav>
             <ul class="app-toc">
-              <h2 class="hca-typography--subhead">Contents:</h2>
+              <span class="hca-typography--subhead">Contents:</span>
               <li class="app-toc__item"><a href="#section-card-usage">Usage</a></li>
               <li class="app-toc__item"><a href="#section-card-content">Content</a></li>
               <li class="app-toc__item"><a href="#section-card-behavior">Behavior</a></li>
@@ -32,7 +32,7 @@ base_url: '../../'
     </section>
 
     <article id="section-card-usage">
-      <h1 class="app-article-headline hca-typography--headline">Usage</h1>
+      <h2 class="app-article-headline hca-typography--headline">Usage</h2>
 
         <div class="row">
           <div class="col-sm-5">
@@ -47,7 +47,7 @@ base_url: '../../'
           </div>
         </div>
 
-        <h2 class="hca-typography--title">When to use</h2>
+        <h3 class="hca-typography--title">When to use</h3>
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
@@ -99,7 +99,7 @@ base_url: '../../'
     <hr />
 
     <article id="section-card-content">
-      <h1 class="app-article-headline hca-typography--headline">Content</h1>
+      <h2 class="app-article-headline hca-typography--headline">Content</h2>
         <div class="row app-section">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
@@ -148,7 +148,7 @@ base_url: '../../'
         </div>
 
         <div class="app-section">
-          <h2 class="hca-typography--title">Content Blocks</h2>
+          <h3 class="hca-typography--title">Content Blocks</h3>
           <div class="row">
             <div class="col-sm-5">
               <div class="hca-layout__container--body-content">
@@ -188,63 +188,59 @@ base_url: '../../'
     <hr />
 
     <article id="section-card-behavior">
-      <h1 class="app-article-headline hca-typography--headline">Behavior</h1>
-        <div class="row app-section">
+      <h2 class="app-article-headline hca-typography--headline">Behavior</h2>
+      <div class="row app-section">
+        <div class="col-sm-5">
+          <div class="hca-layout__container--body-content">
+            <p class="hca-typography--body-1">Cards can have a responsive width and variable height.</p>
+            <p class="hca-typography--support">NOTE: Cards do not flip over to reveal information on the back.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <h4 class="hca-typography--body-2">Supported Gestures</h4>
+            <p class="hca-typography--body-1">Card gestures should be consistently implemented within a card collection.</p>
+            <p class="hca-typography--body-1">The swipe gesture may be used on a per-card basis. Limit swipe gestures within a view so that they don’t overlap with one another. For example, a swipeable card should not contain a swipeable image carousel, so that only a single action occurs when the card is swiped.</p>
+            <p class="hca-typography--body-1">The pick-up-and-move gesture may be used if it is important for the user to be able to sort cards within a collection, but consider if filtering or sorting would better organize the content.</p>
+          </div>
+          <div class="hca-layout__container--body-content">
+            <h4 class="hca-typography--body-2">Card collection filtering and sorting</h4>
+            <p class="hca-typography--body-1">Card collections can be programmatically sorted or filtered by date, file size, alphabetical order, or other parameters.</p>
+            <p class="hca-typography--body-1">The first item in the collection is positioned at the top left.</p>
+            <p class="hca-typography--body-1">The order proceeds left to right and top to bottom.</p>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/card-sort-order.png" class="img-responsive hca-visual-example__comp" alt="Sort order for cards" />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Card sort order from left to right, top to bottom</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="app-section">
+        <h3 class="hca-typography--title">Card focus</h3>
+        <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
-              <p class="hca-typography--body-1">Cards can have a responsive width and variable height.</p>
-              <p class="hca-typography--support">NOTE: Cards do not flip over to reveal information on the back.</p>
-            </div>
-            <div class="hca-layout__container--body-content">
-              <h4 class="hca-typography--body-2">Supported Gestures</h4>
-              <p class="hca-typography--body-1">Card gestures should be consistently implemented within a card collection.</p>
-              <p class="hca-typography--body-1">The swipe gesture may be used on a per-card basis. Limit swipe gestures within a view so that they don’t overlap with one another. For example, a swipeable card should not contain a swipeable image carousel, so that only a single action occurs when the card is swiped.</p>
-              <p class="hca-typography--body-1">The pick-up-and-move gesture may be used if it is important for the user to be able to sort cards within a collection, but consider if filtering or sorting would better organize the content.</p>
-            </div>
-            <div class="hca-layout__container--body-content">
-              <h4 class="hca-typography--body-2">Card collection filtering and sorting</h4>
-              <p class="hca-typography--body-1">Card collections can be programmatically sorted or filtered by date, file size, alphabetical order, or other parameters.</p>
-              <p class="hca-typography--body-1">The first item in the collection is positioned at the top left.</p>
-              <p class="hca-typography--body-1">The order proceeds left to right and top to bottom.</p>
+              <p class="hca-typography--body-1">When traversing through focus points on a card, all focusable elements are visited before moving to the next card.</p>
+              <p class="hca-typography--body-1">For interfaces that depend on focus traversal for navigation (D-pad and keyboard), cards should have either a primary action or open a new view containing primary and supplemental actions.</p>
             </div>
           </div>
-          <div class="col-sm-7">
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-2">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/cards/card-sort-order.png" class="img-responsive hca-visual-example__comp" alt="Sort order for cards" />
-              <figcaption class="hca-visual-example__caption hca-typography--caption">Card sort order from left to right, top to bottom</figcaption>
+              <img src="{{page.base_url}}images/components/cards/primary-action-focused.png" class="img-responsive hca-visual-example__comp" alt="Example of focus traversal on a card" />
+              <figcaption class="hca-visual-example__caption hca-typography--caption">Primary action selected during focus traversal</figcaption>
             </figure>
           </div>
-        </div>
-
-        <div class="app-section">
-          <h2 class="hca-typography--title">Card focus</h2>
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="hca-layout__container--body-content">
-                <p class="hca-typography--body-1">When traversing through focus points on a card, all focusable elements are visited before moving to the next card.</p>
-                <p class="hca-typography--body-1">For interfaces that depend on focus traversal for navigation (D-pad and keyboard), cards should have either a primary action or open a new view containing primary and supplemental actions.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-sm-offset-2">
-              <figure class="hca-visual-example">
-                <img src="{{page.base_url}}images/components/cards/primary-action-focused.png" class="img-responsive hca-visual-example__comp" alt="Example of focus traversal on a card" />
-                <figcaption class="hca-visual-example__caption hca-typography--caption">Primary action selected during focus traversal</figcaption>
-              </figure>
-            </div>
-            <div class="col-sm-6">
-              <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/cards/dropdown-focus-expand.png" class="img-responsive hca-visual-example__comp" alt="Expanded supporting text made visible, with the focus then placed on a supplemental action." />
-              <figcaption class="hca-visual-example__caption hca-typography--caption">Expanded supporting text made visible, with the focus then placed on a supplemental action.</figcaption>
-            </figure>
-            </div>
+          <div class="col-sm-6">
+            <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/cards/dropdown-focus-expand.png" class="img-responsive hca-visual-example__comp" alt="Expanded supporting text made visible, with the focus then placed on a supplemental action." />
+            <figcaption class="hca-visual-example__caption hca-typography--caption">Expanded supporting text made visible, with the focus then placed on a supplemental action.</figcaption>
+          </figure>
           </div>
         </div>
-
-
-
-
+      </div>
     </article>
     {{!-- / Behavior Article --}}
 
@@ -252,7 +248,7 @@ base_url: '../../'
     <hr />
 
     <article id="section-card-actions">
-      <h1 class="app-article-headline hca-typography--headline">Actions</h1>
+      <h2 class="app-article-headline hca-typography--headline">Actions</h2>
       <div class="row app-section">
         <div class="col-sm-5">
           <div class="hca-layout__container--body-content">
@@ -278,7 +274,7 @@ base_url: '../../'
       </div>
 
       <div class="app-section">
-        <h2 class="hca-typography--title">UI Controls</h2>
+        <h3 class="hca-typography--title">UI Controls</h3>
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
@@ -295,7 +291,7 @@ base_url: '../../'
       </div>
 
       <div class="app-section">
-        <h2 class="hca-typography--title">Additional Actions</h2>
+        <h3 class="hca-typography--title">Additional Actions</h3>
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
@@ -340,7 +336,7 @@ base_url: '../../'
         <div class="col-sm-5">
           <nav>
             <ul class="app-toc">
-              <h2 class="hca-typography--subhead">Contents:</h2>
+              <span class="hca-typography--subhead">Contents:</span>
               <li class="app-toc__item"><a href="#section-specs-cards">Card Specs</a></li>
               <li class="app-toc__item"><a href="#section-specs-title-blocks">Title Block Variants</a></li>
               <li class="app-toc__item"><a href="#section-specs-action-bars">Action Bar Variants</a></li>
@@ -351,11 +347,11 @@ base_url: '../../'
     </section>
 
     <article id="section-specs-cards" class="app-section">
-      <h2 class="hca-typography--title">Card Specs</h2>
+      <h3 class="hca-typography--title">Card Specs</h3>
       <div class="row">
         <div class="col-sm-5">
           <div class="app-card hca-specs">
-            <span class="hca-typography--body-2">Card Body</span>
+            <h4 class="hca-typography--body-2">Card Body</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
@@ -373,7 +369,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Focus/Hover Elevation:</span> {{> elevation-level-2}}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Title Block</span>
+            <h4 class="hca-typography--body-2">Title Block</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Padding:</span>
@@ -384,7 +380,7 @@ base_url: '../../'
                 </ul>
               </li>
             </ul>
-            <span class="hca-typography--body-2">Title</span>
+            <h4 class="hca-typography--body-2">Title</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Font Size:</span> 22px
@@ -399,7 +395,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Font Color:</span> {{> asphalt }}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Subhead</span>
+            <h4 class="hca-typography--body-2">Subhead</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Font Size:</span> 14px
@@ -414,24 +410,24 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Font Color:</span> {{> cadet }}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Content Block</span>
+            <h4 class="hca-typography--body-2">Content Block</h4>
             <ul class="hca-typography--body-1">
               <li>
-                <span class="hca-typography__color--asphalt">In the middle of a card:</span>
+                <h5 class="hca-typography__color--asphalt">In the middle of a card:</h5>
                 <ul class="app-spec-list">
                   <li class="app-spec-list__item">Padding - Top and Bottom: 10px</li>
                   <li class="app-spec-list__item">Padding - Right and Left: 20px</li>
                 </ul>
               </li>
               <li>
-                <span class="hca-typography__color--asphalt">At the bottom of a card:</span>
+                <h5 class="hca-typography__color--asphalt">At the bottom of a card:</h5>
                 <ul class="app-spec-list">
                   <li class="app-spec-list__item">Padding - Top: 10px</li>
                   <li class="app-spec-list__item">Padding - Right, Bottom, and Left: 20px</li>
                 </ul>
               </li>
             </ul>
-            <span class="hca-typography--body-2">Text Content</span>
+            <h4 class="hca-typography--body-2">Text Content</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Font Size:</span> 16px
@@ -446,7 +442,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Font Color:</span> {{> cadet }}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Action Bar</span>
+            <h4 class="hca-typography--body-2">Action Bar</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Height:</span>
@@ -483,14 +479,14 @@ base_url: '../../'
     {{!-- /FULL CARD SPECS --}}
 
     <article id="section-specs-title-blocks" class="app-section">
-      <h2 class="hca-typography--title">Title Block Variants</h2>
+      <h3 class="hca-typography--title">Title Block Variants</h3>
       <div class="row">
         <div class="col-sm-5">
           <div class="app-card hca-specs">
-            <span class="hca-typography--body-2">Title Block (all variants)</span>
+            <h4 class="hca-typography--body-2">Title Block (all variants)</h4>
             <ul class="hca-typography--body-1">
               <li>
-                <span class="hca-typography__color--asphalt">Padding:</span>
+                <h5 class="hca-typography__color--asphalt">Padding:</h5>
                 <ul class="app-spec-list">
                   <li class="app-spec-list__item">Top: 15px</li>
                   <li class="app-spec-list__item">Left and Right: 20px</li>
@@ -498,7 +494,7 @@ base_url: '../../'
                 </ul>
               </li>
             </ul>
-            <span class="hca-typography--body-2">Card Title</span>
+            <h4 class="hca-typography--body-2">Card Title</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Font Size:</span> 22px
@@ -513,7 +509,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Font Color:</span> {{> asphalt }}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Card Title (when paired with an avatar)</span>
+            <h4 class="hca-typography--body-2">Card Title (when paired with an avatar)</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Font Size:</span> 16px
@@ -528,7 +524,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Font Color:</span> {{> asphalt }}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Avatar</span>
+            <h4 class="hca-typography--body-2">Avatar</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Width:</span> 30px
@@ -543,7 +539,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Alignment:</span> Vertically centered within title tile
               </li>
             </ul>
-            <span class="hca-typography--body-2">Subhead (all variants)</span>
+            <h4 class="hca-typography--body-2">Subhead (all variants)</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Font Size:</span> 14px
@@ -558,7 +554,7 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Font Color:</span> {{> cadet }}
               </li>
             </ul>
-            <span class="hca-typography--body-2">Overflow/More Icon</span>
+            <h4 class="hca-typography--body-2">Overflow/More Icon</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Vertical Icon Height:</span> 22px
@@ -602,11 +598,11 @@ base_url: '../../'
     {{!-- /TITLE BLOCK SPECS --}}
 
     <article id="section-specs-title-blocks" class="app-section">
-      <h2 class="hca-typography--title">Action Bar Variants</h2>
+      <h3 class="hca-typography--title">Action Bar Variants</h3>
       <div class="row">
         <div class="col-sm-5">
           <div class="app-card hca-specs">
-            <span class="hca-typography--body-2">Action Bar (all variants)</span>
+            <h4 class="hca-typography--body-2">Action Bar (all variants)</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Height:</span> 60px
@@ -615,17 +611,17 @@ base_url: '../../'
                 <span class="hca-typography__color--asphalt">Padding - All Sides:</span> 10px
               </li>
             </ul>
-            <span class="hca-typography--body-2">Button/Icon Spacing</span>
+            <h4 class="hca-typography--body-2">Button/Icon Spacing</h4>
             <ul class="hca-typography--body-1">
               <li>
-                <span class="hca-typography__color--asphalt">Margin between buttons/icons:</span>
+                <h5 class="hca-typography__color--asphalt">Margin between buttons/icons:</h5>
                 <ul class="app-spec-list">
                   <li class="app-spec-list__item">Inline: 10px</li>
                   <li class="app-spec-list__item">Stacked: 10px</li>
                 </ul>
               </li>
             </ul>
-            <span class="hca-typography--body-2">Icon Actions/Buttons</span>
+            <h4 class="hca-typography--body-2">Icon Actions/Buttons</h4>
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Actionable area:</span> 40px by 40px
