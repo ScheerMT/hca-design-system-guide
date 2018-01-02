@@ -124,8 +124,8 @@ base_url: '../../'
       </div>
       <div class="col-sm-5">
         <nav>
+          <span class="hca-typography--subhead">Contents:</span>
           <ul class="app-toc">
-            <h2 class="hca-typography--subhead">Contents:</h2>
             <li class="app-toc__item"><a href="#section-name">Topic</a></li>
             <li class="app-toc__item"><a href="#section-name">List</a></li>
             <li class="app-toc__item"><a href="#section-name">Here</a></li>
@@ -151,7 +151,7 @@ base_url: '../../'
         <div class="col-sm-5">
           <nav>
             <ul class="app-toc">
-              <h2 class="hca-typography--subhead">Contents:</h2>
+              <span class="hca-typography--subhead">Contents:</span>
               <li class="app-toc__item"><a href="#section-name">Topic</a></li>
               <li class="app-toc__item"><a href="#section-name">List</a></li>
               <li class="app-toc__item"><a href="#section-name">Here</a></li>
