@@ -21,8 +21,8 @@ base_url: '../../'
       </div>
       <div class="col-sm-4">
         <nav>
+          <span class="hca-typography--subhead">Contents:</span>
           <ul class="app-toc">
-            <span class="hca-typography--subhead">Contents:</span>
             <li class="app-toc__item"><a href="#section-behavior">Behavior</a></li>
             <li class="app-toc__item"><a href="#section-anatomy">Anatomy</a></li>
             <li class="app-toc__item"><a href="#section-alerts">Alerts</a></li>
@@ -50,9 +50,9 @@ base_url: '../../'
     </div>
   </section>
 
-  <article id="section-anatomy">
+  <article id="section-behavior">
     <h2 class="app-article-headline hca-typography--headline">Behavior</h2>
-    <section id="section-anatomy-and-types" class="">
+    <section class="">
       <div class="row">
         <div class="col-sm-5">
           <div class="hca-layout__container--body-content">
@@ -67,12 +67,11 @@ base_url: '../../'
           <div class="hca-layout__container--body-content">
             <h4 class="hca-typography--body-2">Dialog prominence</h4>
             <p class="hca-typography--body-1">Dialogs should never be obscured by other elements or appear partially on screen. Dialogs always retain focus until dismissed or a required action has been taken, such as choosing a setting.</p>
-            <p class="hca-typography--body-1">Dialogs should avoid:
-              <ul class="app-list app-list--bulleted">
-                <li class="app-list__item">Opening dialogs from within a dialog</li>
-                <li class="app-list__item">Containing scrolling content</li>
-              </ul>
-            </p>
+            <p class="hca-typography--body-1">Dialogs should avoid:</p>
+            <ul class="app-list app-list--bulleted">
+              <li class="app-list__item">Opening dialogs from within a dialog</li>
+              <li class="app-list__item">Containing scrolling content</li>
+            </ul>
           </div>
           <div class="hca-layout__container--body-content">
             <h4 class="hca-typography--body-2">Full-screen dialog exception</h4>
@@ -104,7 +103,7 @@ base_url: '../../'
 
   <article id="section-anatomy">
     <h2 class="app-article-headline hca-typography--headline">Anatomy and Types</h2>
-    <section id="section-anatomy-and-types" class="">
+    <section class="">
       <h3 class="hca-typography--title">Anatomy of a Dialog</h3>
       <div class="row">
         <div class="col-sm-6">
@@ -153,12 +152,11 @@ base_url: '../../'
           <div class="col-sm-4">
             <div class="hca-layout__container--body-content">
               <p class="hca-typography--body-1">Most alerts do not need titles.</p>
-              <p class="hca-typography--body-1">They should summarize a decision concisely by either:
-                <ul class="app-list app-list--bulleted">
-                  <li class="app-list__item">Asking a question (i.e. "Delete this item?")</li>
-                  <li class="app-list__item">Making a statement related to the action buttons</li>
-                </ul>
-              </p>
+              <p class="hca-typography--body-1">They should summarize a decision concisely by either:</p>
+              <ul class="app-list app-list--bulleted">
+                <li class="app-list__item">Asking a question (i.e. "Delete this item?")</li>
+                <li class="app-list__item">Making a statement related to the action buttons</li>
+              </ul>
             </div>
           </div>
           <div class="col-sm-8">
@@ -186,12 +184,11 @@ base_url: '../../'
           <div class="col-sm-5">
             <div class="hca-layout__container--body-content">
               <p class="hca-typography--body-1">Use title bar alerts only for high-risk situations, such as the potential loss of connectivity. Users should be able to understand the choices based on the title and button text alone.</p>
-              <p class="hca-typography--body-1">If a title is required:
-                <ul class="app-list app-list--bulleted">
-                  <li class="app-list__item">Use a clear question or statement with an explanation in the content area, such as "Send health record unencrypted?"</li>
-                  <li class="app-list__item">Avoid apologies, ambiguity, or questions, such as “Warning!” or “Are you sure?”</li>
-                </ul>
-              </p>
+              <p class="hca-typography--body-1">If a title is required:</p>
+              <ul class="app-list app-list--bulleted">
+                <li class="app-list__item">Use a clear question or statement with an explanation in the content area, such as "Send health record unencrypted?"</li>
+                <li class="app-list__item">Avoid apologies, ambiguity, or questions, such as “Warning!” or “Are you sure?”</li>
+              </ul>
             </div>
           </div>
           <div class="col-sm-7">
@@ -316,14 +313,13 @@ base_url: '../../'
             <h4 class="hca-typography--body-2">Usage</h4>
             <p class="hca-typography--body-1">Full-screen dialogs group a series of tasks (such as creating a calendar entry) before they may be committed or discarded. No selections are saved until the affirmative action is touched. Touching "Close" discards all changes and exits the dialog.</p>
             <p class="hca-typography--body-1">Full-screen dialogs enable complex layouts and temporarily reset the app’s perceived elevation to a higher baseline. They allow tasks to launch menus or simple dialogs as part of a complex operation.</p>
-            <p class="hca-typography--body-1">Full-screen dialogs may be used for content or tasks that meet any of these criteria:
-              <ul class="app-list app-list--bulleted">
-                <li class="app-list__item">The dialog includes components (like pickers or form fields) that require an input method editor (IME), such as a keyboard</li>
-                <li class="app-list__item">When changes are not saved in real time</li>
-                <li class="app-list__item">When there is no draft capability in the app</li>
-                <li class="app-list__item">When performing batch operations or queuing changes prior to submitting them</li>
-              </ul>
-            </p>
+            <p class="hca-typography--body-1">Full-screen dialogs may be used for content or tasks that meet any of these criteria:</p>
+            <ul class="app-list app-list--bulleted">
+              <li class="app-list__item">The dialog includes components (like pickers or form fields) that require an input method editor (IME), such as a keyboard</li>
+              <li class="app-list__item">When changes are not saved in real time</li>
+              <li class="app-list__item">When there is no draft capability in the app</li>
+              <li class="app-list__item">When performing batch operations or queuing changes prior to submitting them</li>
+            </ul>
           </div>
         </div>
         <div class="col-sm-7">
@@ -357,12 +353,11 @@ base_url: '../../'
           <div class="hca-layout__container--body-content">
             <h4 class="hca-typography--body-2">Discard</h4>
             <p class="hca-typography--body-1">The discard action (the “Close” at the top left of the screen) closes the full-screen dialog and discards any changes.</p>
-            <p class="hca-typography--body-1">Full-screen dialogs may be used for content or tasks that meet any of these criteria:
-              <ul class="app-list app-list--bulleted">
-                <li class="app-list__item">If no changes have been made, the dialog closes and no discard confirmation is required</li>
-                <li class="app-list__item">If the user has made any changes, they are prompted to confirm the discard action</li>
-              </ul>
-            </p>
+            <p class="hca-typography--body-1">Full-screen dialogs may be used for content or tasks that meet any of these criteria:</p>
+            <ul class="app-list app-list--bulleted">
+              <li class="app-list__item">If no changes have been made, the dialog closes and no discard confirmation is required</li>
+              <li class="app-list__item">If the user has made any changes, they are prompted to confirm the discard action</li>
+            </ul>
           </div>
         </div>
         <div class="col-sm-7">
@@ -422,8 +417,8 @@ base_url: '../../'
         </div> --}}
         <div class="col-sm-5">
           <nav>
+            <span class="hca-typography--subhead">Specs on this tab:</span>
             <ul class="app-toc">
-              <h2 class="hca-typography--subhead">Specs on this tab:</h2>
               <li class="app-toc__item"><a href="#specs-standard-dialogs">Standard Dialogs</a></li>
               <li class="app-toc__item"><a href="#specs-full-screen-dialogs">Full-screen Dialogs</a></li>
             </ul>
