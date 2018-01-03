@@ -107,6 +107,7 @@ var activateNavItem = function() {
     // if href matches current pages path add active class to that anchor element
     if(navItemHref.indexOf(urlPathToMatch) > -1) {
       //if element has a parent with class "collapse"
+
       if(drawerNavItem.closest('.collapse')) {
         //get only the parent .collapse element (plugin class)
         var navItemSection = drawerNavItem.closest('.collapse');
