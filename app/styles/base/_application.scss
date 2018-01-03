@@ -23,10 +23,16 @@ hr {
   }
 }
 
-.app-hca {
-  font-family: "Times New Roman";
-  font-weight: 300;
-  font-size: 27px; //hack to make it line up better with words next to it.
+.app-logo {
+  display: block;
+  margin: 10px 0px;
+  border: 0;
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    border: 0;
+  }
 }
 
 .app-drawer-nav {
