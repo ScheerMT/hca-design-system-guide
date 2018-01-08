@@ -9,7 +9,7 @@
     {{> styles }}
   </head>
 
-  <body class="{{ page.body_class }} hca-layout--has-app-bar hca-layout--has-drawer">
+  <body class="{{ page.body_class }} site-layout--has-app-bar site-layout--has-drawer">
 
     {{!-- fixed menu toggle button --}}
     <button class="hca-menu-toggle">
@@ -24,18 +24,18 @@
 
     {{> nav }}
 
-    <header class="app-header hca-js-app-header">
-      <div class="container hca-layout__container">
+    <header class="site-header hca-js-site-header">
+      <div class="container site-container">
         <span class="hca-typography--caption">HCA Design System (Beta)</span>
         <h1 class="hca-typography--display-2">{{page.title}}</h1>
-        {{!-- <div class="hca-layout__container--body-content">
+        {{!-- <div class="site-container--body-content">
           <p class="hca-typography--body-1">{{page.intro}}</p>
         </div> --}}
 
       </div>
     </header>
 
-    <main class="container hca-layout__container">
+    <main class="container site-container">
       {{> body }}
     </main>
 

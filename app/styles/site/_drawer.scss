@@ -1,4 +1,4 @@
-.hca-layout__drawer {
+.site-drawer {
   display: block;
   position: fixed;
   top: 0;
@@ -21,7 +21,7 @@
 }
 
 
-.hca-layout__drawer--is-closed {
+.site-drawer--is-closed {
   transform: translateX(-300px);
 
   //everything smaller than tablet gets full screen open drawer
@@ -31,7 +31,8 @@
 }
 
 
-.hca-layout--has-drawer .hca-menu-toggle {
+.site-layout--has-drawer .hca-menu-toggle,
+.site--landing-page .hca-menu-toggle {
   color: $color__asphalt;
   background-color: $color__white;
   box-shadow: $box-shadow__1;

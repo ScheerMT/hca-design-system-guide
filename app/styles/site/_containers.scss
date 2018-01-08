@@ -1,4 +1,4 @@
-.hca-layout__container {
+.site-container {
   display: block;
   margin: 0 auto;
   padding-right: 30px;
@@ -8,21 +8,25 @@
 
 
 //container for content needing to abide by line length rules
-.hca-layout__container--body-content {
+.site-container--body-content {
   max-width: 465px;
   margin-bottom: 30px;
 }
 
-.hca-layout--has-app-bar .app-header {
+.site-layout--has-app-bar .site-header {
   padding-top: $hca-app-bar-height + 30px;
 }
 
 //offset margin of drawer sliding out until screen is large enough to have
 // 300 px of margin on left side by default
 @media (min-width: 1200px) and (max-width: 1700px) {
-  .hca-layout--has-drawer .hca-layout__container {
-    margin-left: $hca-drawer-width;
-    width: calc(100% - 300px);
-    // width: 100%;
+
+  .site-layout--has-drawer {
+    //targets that need to move over when the nav-drawer is open
+    .site-container {
+      margin-left: $hca-drawer-width;
+      width: calc(100% - 300px);
+    }
   }
+
 }

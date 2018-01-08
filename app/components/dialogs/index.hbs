@@ -10,10 +10,10 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
-  <section class="app-tab-header">
+  <section class="site-tab-header">
     <div class="row">
       <div class="col-sm-7">
-        <div class="hca-layout__container--body-content hca-typography--subhead hca-typography__color--asphalt">
+        <div class="site-container--body-content hca-typography--subhead hca-typography__color--asphalt">
           <p class="hca-typography--subhead hca-typography__color--asphalt">Dialogs can inform users about a specific task, contain critical information, require decisions from the user, or even involve multiple tasks.</p>
           <p class="hca-typography--body-1">Dialogs retain focus at the highest level of <a href="{{page.base_url}}essentials/elevation" target="_blank">elevation</a> until they are dismissed or their required action is taken.</p>
           <p class="hca-typography--body-1">They may contain text and UI controls. </p>
@@ -22,13 +22,13 @@ base_url: '../../'
       <div class="col-sm-4">
         <nav>
           <span class="hca-typography--subhead">Contents:</span>
-          <ul class="app-toc">
-            <li class="app-toc__item"><a href="#section-behavior">Behavior</a></li>
-            <li class="app-toc__item"><a href="#section-anatomy">Anatomy</a></li>
-            <li class="app-toc__item"><a href="#section-alerts">Alerts</a></li>
-            <li class="app-toc__item"><a href="#section-simple-dialogs">Simple Dialogs</a></li>
-            <li class="app-toc__item"><a href="#section-confirmation-dialogs">Confirmation Dialogs</a></li>
-            <li class="app-toc__item"><a href="#section-full-screen-dialogs">Full-screen Dialogs</a></li>
+          <ul class="site-toc">
+            <li class="site-toc__item"><a href="#section-behavior">Behavior</a></li>
+            <li class="site-toc__item"><a href="#section-anatomy">Anatomy</a></li>
+            <li class="site-toc__item"><a href="#section-alerts">Alerts</a></li>
+            <li class="site-toc__item"><a href="#section-simple-dialogs">Simple Dialogs</a></li>
+            <li class="site-toc__item"><a href="#section-confirmation-dialogs">Confirmation Dialogs</a></li>
+            <li class="site-toc__item"><a href="#section-full-screen-dialogs">Full-screen Dialogs</a></li>
           </ul>
         </nav>
         <br /><br />
@@ -51,29 +51,29 @@ base_url: '../../'
   </section>
 
   <article id="section-behavior">
-    <h2 class="app-article-headline hca-typography--headline">Behavior</h2>
+    <h2 class="site-article-headline hca-typography--headline">Behavior</h2>
     <section class="">
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Beyond standard dialogs</h4>
             <p class="hca-typography--body-1">Dialogs are a sub-type of modal windows, and the examples covered here are for standard dialogs. (Other modal window constructions aren’t covered here because they have too much variation, such as branded buttons for purchasing flows, non-standard UI form elements, or unique layouts.)</p>
 
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Reduce interruption</h4>
             <p class="hca-typography--body-1">Use dialogs sparingly because they are interruptive. Their sudden appearance forces users to stop their current task and focus on the dialog content. Not every choice, setting, or detail warrants interruption. Alternatives to dialogs include menus or inline expansion, both of which maintain the current context.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Dialog prominence</h4>
             <p class="hca-typography--body-1">Dialogs should never be obscured by other elements or appear partially on screen. Dialogs always retain focus until dismissed or a required action has been taken, such as choosing a setting.</p>
             <p class="hca-typography--body-1">Dialogs should avoid:</p>
-            <ul class="app-list app-list--bulleted">
-              <li class="app-list__item">Opening dialogs from within a dialog</li>
-              <li class="app-list__item">Containing scrolling content</li>
+            <ul class="site-list site-list--bulleted">
+              <li class="site-list__item">Opening dialogs from within a dialog</li>
+              <li class="site-list__item">Containing scrolling content</li>
             </ul>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Full-screen dialog exception</h4>
             <p class="hca-typography--body-1">Full-screen dialogs may open additional dialogs, such as pickers, because their design accommodates additional layers of elevation without significantly increasing the app’s perceived z-depth or visual noise.</p>
           </div>
@@ -102,21 +102,21 @@ base_url: '../../'
 
 
   <article id="section-anatomy">
-    <h2 class="app-article-headline hca-typography--headline">Anatomy and Types</h2>
+    <h2 class="site-article-headline hca-typography--headline">Anatomy and Types</h2>
     <section class="">
       <h3 class="hca-typography--title">Anatomy of a Dialog</h3>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Optional Title</h4>
             <p class="hca-typography--body-1">Dialogs may have an optional title that concisely describes the type of decision being made. </p>
             <p class="hca-typography--support">NOTE: Titles must always be visible in their entirety. They should not overflow or ellipsis.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Content</h4>
             <p class="hca-typography--body-1">Dialog content typically consists of text and/or UI control elements. It is focused on a specific task, such as confirming item deletion or choosing a setting.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Action Bar</h4>
             <p class="hca-typography--body-1">Dialogs should always have an action bar that has at least one action that acknowledges/dismisses the dialog, but can contain both affirmative and dismissive actions.</p>
             <p class="hca-typography--support">NOTE: As with all actions presented to a user, affirmative actions are placed directly to the right of dismissive actions. If the actions are stacked, affirmative actions are always placed directly above dismissive actions.</p>
@@ -135,27 +135,27 @@ base_url: '../../'
   <hr />
 
   <article id="section-alerts">
-    <section class="app-section">
+    <section class="site-section">
       <h3 class="hca-typography--title">Alert Dialogs</h3>
-      <div class="row app-section">
+      <div class="row site-section">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--body-1">Alerts are urgent interruptions, requiring user acknowledgement, that inform the user about a situation.</p>
             <p class="hca-typography--support">NOTE: Alert dialogs have a different use case than Snackbars. Snackbars present optional information after an action, such as confirming the deletion of data. They often allow a user to undo an action that was just taken.</p>
           </div>
         </div>
       </div>
 
-      <div class="app-section">
+      <div class="site-section">
         <h3 class="hca-typography--body-2">Alerts without title bars</h3>
         <div class="row">
           <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Most alerts do not need titles.</p>
               <p class="hca-typography--body-1">They should summarize a decision concisely by either:</p>
-              <ul class="app-list app-list--bulleted">
-                <li class="app-list__item">Asking a question (i.e. "Delete this item?")</li>
-                <li class="app-list__item">Making a statement related to the action buttons</li>
+              <ul class="site-list site-list--bulleted">
+                <li class="site-list__item">Asking a question (i.e. "Delete this item?")</li>
+                <li class="site-list__item">Making a statement related to the action buttons</li>
               </ul>
             </div>
           </div>
@@ -182,12 +182,12 @@ base_url: '../../'
         <h3 class="hca-typography--body-2">Alerts with title bars</h3>
         <div class="row">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Use title bar alerts only for high-risk situations, such as the potential loss of connectivity. Users should be able to understand the choices based on the title and button text alone.</p>
               <p class="hca-typography--body-1">If a title is required:</p>
-              <ul class="app-list app-list--bulleted">
-                <li class="app-list__item">Use a clear question or statement with an explanation in the content area, such as "Send health record unencrypted?"</li>
-                <li class="app-list__item">Avoid apologies, ambiguity, or questions, such as “Warning!” or “Are you sure?”</li>
+              <ul class="site-list site-list--bulleted">
+                <li class="site-list__item">Use a clear question or statement with an explanation in the content area, such as "Send health record unencrypted?"</li>
+                <li class="site-list__item">Avoid apologies, ambiguity, or questions, such as “Warning!” or “Are you sure?”</li>
               </ul>
             </div>
           </div>
@@ -216,11 +216,11 @@ base_url: '../../'
   <hr />
 
   <article id="section-simple-dialogs">
-    <section class="app-section">
+    <section class="site-section">
       <h3 class="hca-typography--title">Simple Dialogs</h3>
-      <div class="row app-section">
+      <div class="row site-section">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--body-1">Simple Dialogs are called "simple" simply because they only take one action to move on from.</p>
             <p class="hca-typography--body-1">They present multiple options to the user, and close immediately upon the user making their selection. They should only be utilized in scenarios where the user is making a single selection from multiple options, and there is no further exploration to be made about these options.</p>
             <p class="hca-typography--support">NOTE: Simple Dialogs may have a "cancel" button as to provide a clear option for the user to dismiss, but they should not have any confirmation button. The user's selection immediately confirms their choice or executes the action.</p>
@@ -238,7 +238,7 @@ base_url: '../../'
         <h4 class="hca-typography--body-2">Text options with varying heights</h4>
         <div class="row">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Simple dialogs may present options in a text-only format. These options can vary in height, allowing for line breaking.</p>
               <p class="hca-typography--body-1">It is still best to stay as concise as possible with these options. Try to avoid breaking more than three lines of text.</p>
             </div>
@@ -262,11 +262,11 @@ base_url: '../../'
       <h3 class="hca-typography--title">Confirmation Dialogs</h3>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--body-1">Confirmation Dialogs require the user to confirm their choice before a selection is committed. For example, users can listen to possible notification sounds and then tap "Done" to confirm the choice and close the dialog.</p>
             <p class="hca-typography--body-1">Tapping "Cancel" cancels the action, discards any changes, and closes the dialog.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Avoid dialogs launching dialogs</h4>
             <p class="hca-typography--body-1">Confirmation dialogs should avoid launching additional simple dialogs as they add complexity and increase the elevation.</p>
             <p class="hca-typography--body-1">If more steps are needed to complete the task, consider using full-screen dialogs instead.</p>
@@ -281,7 +281,7 @@ base_url: '../../'
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Stacked actions</h4>
             <p class="hca-typography--body-1">Confirmation button text should stay as concise as possible.</p>
             <p class="hca-typography--body-1">If the button width needs to exceed the width available next to the dismissive button, the buttons may become stacked with the confirmation action above the dismissive action.</p>
@@ -301,24 +301,24 @@ base_url: '../../'
   <hr />
 
   <article id="section-full-screen-dialogs">
-    <section class="app-section">
+    <section class="site-section">
       <h3 class="hca-typography--title">Full-screen Dialogs (Small screen only)</h3>
 
-      <div class="hca-layout__container--body-content">
+      <div class="site-container--body-content">
         <p class="hca-typography--support">NOTE: Due to limited space, full-screen dialogs may be more appropriate for mobile devices than dialogs used on devices with larger screens.</p>
       </div>
-      <div class="row app-section">
+      <div class="row site-section">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Usage</h4>
             <p class="hca-typography--body-1">Full-screen dialogs group a series of tasks (such as creating a calendar entry) before they may be committed or discarded. No selections are saved until the affirmative action is touched. Touching "Close" discards all changes and exits the dialog.</p>
             <p class="hca-typography--body-1">Full-screen dialogs enable complex layouts and temporarily reset the app’s perceived elevation to a higher baseline. They allow tasks to launch menus or simple dialogs as part of a complex operation.</p>
             <p class="hca-typography--body-1">Full-screen dialogs may be used for content or tasks that meet any of these criteria:</p>
-            <ul class="app-list app-list--bulleted">
-              <li class="app-list__item">The dialog includes components (like pickers or form fields) that require an input method editor (IME), such as a keyboard</li>
-              <li class="app-list__item">When changes are not saved in real time</li>
-              <li class="app-list__item">When there is no draft capability in the app</li>
-              <li class="app-list__item">When performing batch operations or queuing changes prior to submitting them</li>
+            <ul class="site-list site-list--bulleted">
+              <li class="site-list__item">The dialog includes components (like pickers or form fields) that require an input method editor (IME), such as a keyboard</li>
+              <li class="site-list__item">When changes are not saved in real time</li>
+              <li class="site-list__item">When there is no draft capability in the app</li>
+              <li class="site-list__item">When performing batch operations or queuing changes prior to submitting them</li>
             </ul>
           </div>
         </div>
@@ -339,24 +339,24 @@ base_url: '../../'
           </div>
         </div>
       </div>
-      <div class="row app-section">
+      <div class="row site-section">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Actions</h4>
             <p class="hca-typography--body-1">Place confirmation and dismissive actions for full-screen dialogs at the top of the screen.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Confirmation</h4>
             <p class="hca-typography--body-1">The confirmation action in the top right of the screen uses descriptive verbs, such as: save, add, send, share, update or create. Don’t use vague words for confirming action, such as: done, ok or close.</p>
             <p class="hca-typography--support">NOTE: The confirmation action should be disabled until all mandatory fields in the dialog are met.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Discard</h4>
             <p class="hca-typography--body-1">The discard action (the “Close” at the top left of the screen) closes the full-screen dialog and discards any changes.</p>
             <p class="hca-typography--body-1">Full-screen dialogs may be used for content or tasks that meet any of these criteria:</p>
-            <ul class="app-list app-list--bulleted">
-              <li class="app-list__item">If no changes have been made, the dialog closes and no discard confirmation is required</li>
-              <li class="app-list__item">If the user has made any changes, they are prompted to confirm the discard action</li>
+            <ul class="site-list site-list--bulleted">
+              <li class="site-list__item">If no changes have been made, the dialog closes and no discard confirmation is required</li>
+              <li class="site-list__item">If the user has made any changes, they are prompted to confirm the discard action</li>
             </ul>
           </div>
         </div>
@@ -372,9 +372,9 @@ base_url: '../../'
         </div>
       </div>
 
-      <div class="row app-section">
+      <div class="row site-section">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <h4 class="hca-typography--body-2">Titles</h4>
             <p class="hca-typography--body-1">Full-screen dialog titles don’t use dynamic type.</p>
             <p class="hca-typography--body-1">Titles should be succinct. They can wrap to a second line if necessary, and should then be truncated.</p>
@@ -408,19 +408,19 @@ base_url: '../../'
   {{!-- STYLES TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         {{!-- <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
           </div>
         </div> --}}
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Specs on this tab:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#specs-standard-dialogs">Standard Dialogs</a></li>
-              <li class="app-toc__item"><a href="#specs-full-screen-dialogs">Full-screen Dialogs</a></li>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#specs-standard-dialogs">Standard Dialogs</a></li>
+              <li class="site-toc__item"><a href="#specs-full-screen-dialogs">Full-screen Dialogs</a></li>
             </ul>
           </nav>
         </div>
@@ -435,12 +435,12 @@ base_url: '../../'
       </div> --}}
     </section>
 
-    <article id="specs-standard-dialogs" class="app-section">
+    <article id="specs-standard-dialogs" class="site-section">
       <h3 class="hca-typography--title">Standard Dialogs</h3>
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Placement and Sizing</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -479,7 +479,7 @@ base_url: '../../'
       {{!-- /row --}}
       <div class="row">
         <div class="col-sm-5">
-          <div class="app-card hca-specs">
+          <div class="site-card hca-specs">
             <span class="hca-typography--body-2">Title and Content Area</span>
             <ul class="hca-typography--body-1">
               <li>
@@ -523,9 +523,9 @@ base_url: '../../'
             <ul class="hca-typography--body-1">
               <li>
                 <span class="hca-typography__color--asphalt">Height:</span>
-                <ul class="app-spec-list">
-                  <li class="app-spec-list__item">60px - inline buttons</li>
-                  <li class="app-spec-list__item">110px - stacked buttons</li>
+                <ul class="site-spec-list">
+                  <li class="site-spec-list__item">60px - inline buttons</li>
+                  <li class="site-spec-list__item">110px - stacked buttons</li>
                 </ul>
               </li>
               <li>
@@ -564,8 +564,8 @@ base_url: '../../'
       <h3 class="hca-typography--title">Full-screen Dialogs</h3>
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Header App Bar</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -650,7 +650,7 @@ base_url: '../../'
 
 
 {{!-- Pagination Navigation --}}
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/data-tables/" class="hca-button hca-button--has-icon-left">Back to Data Tables <span class="material-icons">keyboard_arrow_left</span></a>

@@ -1,48 +1,59 @@
 ---
-layout: no-tabs.hbs
+layout: landing-page.hbs
 title: Welcome
-body_class: 'index'
+body_class: 'site--landing-page'
 base_url: ''
 ---
 
-<div class="row">
-  <div class="col-sm-6">
-    <div class="hca-layout__container--body-content">
-      <div class="app-alert app-alert--warning">
-        <div class="row">
-          <div class="col-xs-2 col-sm-1">
-            <span class="material-icons">warning</span>
-          </div>
-          <div class="col-xs-10 col-sm-11">
-            <p>This is an internal-use-only Beta release that is subject to change.</p>
-          </div>
-        </div>
-      </div>
-      <p class="hca-typography--subhead hca-typography__color--asphalt">The HCA Design System is created and maintained by the Innovation and Experience team at HCA IT&amp;S.</p>
+<br /><br />
 
-      <p class="hca-typography--body-1 hca-typography__color--asphalt">Inspired and influenced by other design systems such as Google’s <a href="https://material.io/guidelines/" target="_blank">Material Design</a>, Apple's <a href="https://developer.apple.com/design/" target="_blank">Human Interface Guidelines</a>, and IBM's <a href="http://carbondesignsystem.com/" target="_blank">Carbon Design System</a>, it establishes a shared theory and mindset not just for designers, but for everyone involved in the creation of HCA digital products. This shared understanding enables seamless collaboration. </p>
-    </div>
-
-    <div class="hca-layout__container--body-content">
-      <span class="hca-typography--body-2">Consistent. Familiar. Purposeful.</span>
-      <p class="hca-typography--body-1">Each component is given purposeful visual and functional intent. This enables a consistent and familiar experience for anyone that encounters HCA digitally.</p>
-      <p class="hca-typography--body-1">Familiarity creates comfort and trust. In turn, trust helps establish a continuum of care.</p>
-    </div>
-
-    <div class="hca-layout__container--body-content">
-      <div class="hca-icon-badge">
-        <span class="material-icons">accessibility</span>
-      </div>
-      <span class="hca-typography--body-2">Commitment to Accessibility</span>
-      <p class="hca-typography--body-1">Each person who has an experience with HCA has distinct needs. Based on industry accessibility standards, we strive to create a visual system that is inclusive to every individual.</p>
-    </div>
-
-    <a href="{{page.base_url}}essentials/color" class="hca-button hca-button--raised hca-button--evening hca-button--large">Get Started</a>
-    <br /><br /><br /><br /><br />
+<div class="row site-section">
+  <div class="col-sm-2 col-sm-offset-2">
+    <img src="{{page.base_url}}images/site/rocket.png" class="site-homepage-icon" alt="" />
   </div>
-
-  {{!-- <div class="col-sm-6">
-    <h2 class="hca-typography--title">Sketch UI Components</h2>
-    <a class="hca-button hca-button--raised">Download</a>
-  </div> --}}
+  <div class="col-sm-6">
+    <div class="site-container--body-content">
+      <h2 class="hca-typography--headline">Getting Started</h2>
+      <p class="hca-typography--body-1 hca-typography__color--asphalt">This website will serve as the "map" of our design system. As the world of HCA Design System grows, you can count on hcadesignsystem.com to be your source of truth, and to point you in the right direction.</p>
+      <a href="{{page.base_url}}essentials/color" class="hca-button hca-button--raised hca-button--evening">Read Guidelines</a>
+      <a href="{{page.base_url}}essentials/color" class="hca-button">Download Sketch UI Kit</a>
+    </div>
+  </div>
 </div>
+
+<div class="row site-section">
+  <div class="col-sm-2 col-sm-offset-2">
+    <img src="{{page.base_url}}images/site/lightbulb.png" class="site-homepage-icon" alt="" />
+  </div>
+  <div class="col-sm-6">
+    <div class="site-container--body-content">
+      <h2 class="hca-typography--headline">Collaboration Enabled</h2>
+      <p class="hca-typography--body-1 hca-typography__color--asphalt">Inspired and influenced by other design systems such as Google’s <a href="https://material.io/guidelines/" target="_blank">Material Design</a>, Apple's <a href="https://developer.apple.com/design/" target="_blank">Human Interface Guidelines</a>, and IBM's <a href="http://carbondesignsystem.com/" target="_blank">Carbon Design System</a>, HCA Design System establishes a shared theory and mindset not just for designers, but for everyone involved in the creation of HCA digital products. This shared understanding enables seamless collaboration. </p>
+    </div>
+  </div>
+</div>
+<div class="row site-section">
+  <div class="col-sm-2 col-sm-offset-2">
+    <img src="{{page.base_url}}images/site/target.png" class="site-homepage-icon" alt="" />
+  </div>
+  <div class="col-sm-6">
+    <div class="site-container--body-content">
+      <h2 class="hca-typography--headline">Consistent. Familiar. Purposeful.</h2>
+      <p class="hca-typography--body-1">Each component is given purposeful visual and functional intent. This enables a consistent and familiar experience for anyone that encounters HCA digitally.</p>
+    </div>
+  </div>
+</div>
+<div class="row site-section">
+  <div class="col-sm-2 col-sm-offset-2">
+    <img src="{{page.base_url}}images/site/mountain.png" class="site-homepage-icon" alt="" />
+  </div>
+  <div class="col-sm-6">
+    <div class="site-container--body-content">
+      <h2 class="hca-typography--headline">Commitment to Accessibility</h2>
+      <p class="hca-typography--body-1">Each person who has an experience with HCA has distinct needs. Based on <a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> accessibility standards, we strive to create a visual system that is inclusive to every individual.</p>
+    </div>
+  </div>
+</div>
+
+
+<br /><br /><br /><br /><br />

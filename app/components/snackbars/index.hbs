@@ -5,19 +5,19 @@ base_url: '../../'
 ---
 
 
-<section class="app-tab-header">
+<section class="site-tab-header">
   <div class="row">
     <div class="col-sm-8">
-      <div class="hca-layout__container--body-content">
+      <div class="site-container--body-content">
         <p class="hca-typography--subhead hca-typography__color--asphalt">Snackbars provide brief feedback about an operation, conveyed through a message at the bottom of the screen.</p>
       </div>
     </div>
     <div class="col-sm-4">
       <span class="hca-typography--subhead">Contents:</span>
-      <ul class="app-toc">
-        <li class="app-toc__item"><a href="#section-guidelines">Guidelines</a></li>
-        <li class="app-toc__item"><a href="#section-specs-large-screen">Specs: Large Screen</a></li>
-        <li class="app-toc__item"><a href="#section-specs-small-screen">Specs: Small Screen</a></li>
+      <ul class="site-toc">
+        <li class="site-toc__item"><a href="#section-guidelines">Guidelines</a></li>
+        <li class="site-toc__item"><a href="#section-specs-large-screen">Specs: Large Screen</a></li>
+        <li class="site-toc__item"><a href="#section-specs-small-screen">Specs: Small Screen</a></li>
       </ul>
     </div>
   </div>
@@ -32,13 +32,13 @@ base_url: '../../'
 
 
     <article id="section-guidelines">
-      <h2 class="app-article-headline hca-typography--headline">Guidelines</h2>
+      <h2 class="site-article-headline hca-typography--headline">Guidelines</h2>
 
       {{!-- usage section --}}
-      <section class="app-section">
+      <section class="site-section">
         <div class="row">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Snackbars contain a single line of text (except on mobile where a max of two lines is acceptable), directly related to the operation performed. They may contain a text action, but no icons.</p>
               <p class="hca-typography--body-1">Only one snackbar should be displayed at a time.</p>
               <p class="hca-typography--body-1">Snackbars sit at an elevation level above most elements on the screen. They are equal in elevation to the floating action button. However, they are lower in elevation than dialogs, bottom sheets, and navigation drawers.</p>
@@ -62,14 +62,14 @@ base_url: '../../'
     <hr />
 
     <article id="section-specs">
-      <h2 class="app-article-headline hca-typography--headline">Specs</h2>
+      <h2 class="site-article-headline hca-typography--headline">Specs</h2>
 
       {{!-- snackbars tablet desktop specs --}}
-      <section id="section-specs-large-screen" class="app-section">
+      <section id="section-specs-large-screen" class="site-section">
           <h3 class="hca-typography--title">Large Screens (Tablet/Desktop)</h3>
           <div class="row">
             <div class="col-sm-5">
-              <div class="app-card hca-specs">
+              <div class="site-card hca-specs">
                 <span class="hca-typography--body-2">Snackbar</span>
                 <ul class="hca-typography--body-1">
                   <li>
@@ -77,11 +77,11 @@ base_url: '../../'
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Width:</span>
-                    <ul class="app-spec-list">
-                      <li class="app-spec-list__item">
+                    <ul class="site-spec-list">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Minimum width:</span> 290px
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Maximum width:</span> 575px
                       </li>
                     </ul>
@@ -121,17 +121,17 @@ base_url: '../../'
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Text Color:</span>
-                    <ul class="app-spec-list">
-                      <li class="app-spec-list__item">
+                    <ul class="site-spec-list">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Default/Neutral:</span> {{> morning }}
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Positive/Success:</span> {{> grass }}
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Warning/Yield:</span> {{> butterscotch }}
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Danger/Error:</span> {{> watermelon }}
                       </li>
                     </ul>
@@ -160,11 +160,11 @@ base_url: '../../'
 
 
       {{!-- snackbars mobile specs --}}
-      <section id="section-specs-small-screen" class="app-section">
+      <section id="section-specs-small-screen" class="site-section">
           <h3 class="hca-typography--title">Small Screens (Mobile Devices)</h3>
           <div class="row">
             <div class="col-sm-5">
-              <div class="app-card hca-specs">
+              <div class="site-card hca-specs">
                 <span class="hca-typography--body-2">Snackbar</span>
                 <ul class="hca-typography--body-1">
                   <li>
@@ -211,17 +211,17 @@ base_url: '../../'
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Text Color:</span>
-                    <ul class="app-spec-list">
-                      <li class="app-spec-list__item">
+                    <ul class="site-spec-list">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Default/Neutral:</span> {{> morning }}
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Positive/Success:</span> {{> grass }}
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Warning/Yield:</span> {{> butterscotch }}
                       </li>
-                      <li class="app-spec-list__item">
+                      <li class="site-spec-list__item">
                         <span class="hca-typography__color--asphalt">Danger/Error:</span> {{> watermelon }}
                       </li>
                     </ul>
@@ -258,14 +258,14 @@ base_url: '../../'
   {{!-- SPECS TAB --}}
   {{!-- <div role="tabpanel" class="tab-pane" id="app-styles-tab">
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-4">
-        <ul class="app-toc">
+        <ul class="site-toc">
           <h2 class="hca-typography--subhead">Topics on this tab:</h2>
-          <li class="app-toc__item"><a href="#section-shared-specs">Shared Specs</a></li>
-          <li class="app-toc__item"><a href="#section-snackbars-tablet-desktop">Tablet / Desktop</a></li>
-          <li class="app-toc__item"><a href="#section-snackbars-mobile">Mobile</a></li>
+          <li class="site-toc__item"><a href="#section-shared-specs">Shared Specs</a></li>
+          <li class="site-toc__item"><a href="#section-snackbars-tablet-desktop">Tablet / Desktop</a></li>
+          <li class="site-toc__item"><a href="#section-snackbars-mobile">Mobile</a></li>
         </ul>
       </div>
       </div>
@@ -282,7 +282,7 @@ base_url: '../../'
 {{!-- /tab-content --}}
 
 {{!-- Pagination Navigation --}}
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/menus/" class="hca-button hca-button--has-icon-left">Back to Menus <span class="material-icons">keyboard_arrow_left</span></a>

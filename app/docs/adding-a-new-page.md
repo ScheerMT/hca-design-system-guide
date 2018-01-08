@@ -115,20 +115,20 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
   
-  <section class="app-tab-header">
+  <section class="site-tab-header">
     <div class="row">
       <div class="col-sm-7">
-        <div class="hca-layout__container--body-content">
+        <div class="site-container--body-content">
           <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
         </div>
       </div>
       <div class="col-sm-5">
         <nav>
           <span class="hca-typography--subhead">Contents:</span>
-          <ul class="app-toc">
-            <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-            <li class="app-toc__item"><a href="#section-name">List</a></li>
-            <li class="app-toc__item"><a href="#section-name">Here</a></li>
+          <ul class="site-toc">
+            <li class="site-toc__item"><a href="#section-name">Topic</a></li>
+            <li class="site-toc__item"><a href="#section-name">List</a></li>
+            <li class="site-toc__item"><a href="#section-name">Here</a></li>
           </ul>
         </nav>
       </div>
@@ -141,20 +141,20 @@ base_url: '../../'
   {{!-- STYLES TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
   
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
           </div>
         </div>
         <div class="col-sm-5">
           <nav>
-            <ul class="app-toc">
+            <ul class="site-toc">
               <span class="hca-typography--subhead">Contents:</span>
-              <li class="app-toc__item"><a href="#section-name">Topic</a></li>
-              <li class="app-toc__item"><a href="#section-name">List</a></li>
-              <li class="app-toc__item"><a href="#section-name">Here</a></li>
+              <li class="site-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="site-toc__item"><a href="#section-name">List</a></li>
+              <li class="site-toc__item"><a href="#section-name">Here</a></li>
             </ul>
           </nav>
         </div>
@@ -173,7 +173,7 @@ base_url: '../../'
 
 
 {{!-- Pagination Navigation --}}
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/text-fields/" class="hca-button hca-button--has-icon-left">Back to [Topic Name] <span class="material-icons">keyboard_arrow_left</span></a>
@@ -197,7 +197,7 @@ base_url: '../../'
 ![Step 3](http://www.hcaprototypes.com/images/hca-design-system-docs/3-tabs.png "your tabs are automatically included from default layout")
 
 #### Step 4
-![Step 4](http://www.hcaprototypes.com/images/hca-design-system-docs/4-app-tab-header.png "copy code for tab header from other pages")
+![Step 4](http://www.hcaprototypes.com/images/hca-design-system-docs/4-site-tab-header.png "copy code for tab header from other pages")
 
 #### Step 5
 ![Step 5](http://www.hcaprototypes.com/images/hca-design-system-docs/5-article-title.png "tabs can have articles. articles can have sections")
