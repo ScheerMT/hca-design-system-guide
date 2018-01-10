@@ -4,7 +4,6 @@
 
 body {
   background-color: $color__steam;
-  padding-bottom: 40px;
 }
 
 hr {
@@ -26,6 +25,7 @@ hr {
 .site-logo {
   display: block;
   max-width: 300px;
+  width: 100%;
   margin: 10px auto;
   border: 0;
   &:hover,
@@ -62,6 +62,11 @@ hr {
   font-size: 26px;
   text-align: center;
   margin-top: 60px; //hacky value to make bottom line aligned with site-header line
+}
+
+.site-landing-page-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .site-nav-footer-cc {

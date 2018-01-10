@@ -1,6 +1,9 @@
 # hca-design-system-guide
 HCA Design System Guidelines Site
 
+This site should serve as the "map" of HCA Design System. It is the source of truth
+that you can count on to point you in the right direction in the world of HCA Design System. 
+
 ## Dependencies
 1. Node.js & NPM
 2. Yarn
