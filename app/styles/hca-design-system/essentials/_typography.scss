@@ -23,9 +23,10 @@
  * Color Defaults
  */
 .hca-typography--display-1,
-.hca-typography--headline,
 .hca-typography--title,
-.hca-typography--body-2 {
+.hca-typography--body-2,
+.hca-typography--support,
+.hca-typography--tag {
   color: $color__asphalt;
 }
 
@@ -44,7 +45,8 @@
 
 .hca-typography--title,
 .hca-typography--body-2,
-.hca-typography--support{
+.hca-typography--support,
+.hca-typography--tag {
   font-weight: 600;
 }
 
@@ -111,6 +113,12 @@
 .hca-typography--caption {
   font-size: 14px;
   line-height: 22px;
+}
+
+.hca-typography--tag {
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .hca-typography--support {
