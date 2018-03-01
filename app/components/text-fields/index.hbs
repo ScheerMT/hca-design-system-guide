@@ -16,23 +16,23 @@ base_url: '../../'
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--subhead hca-typography__color--asphalt">Text fields usually appear in forms and allow users to input text, select text, and lookup data. Users may enter text, numbers, or mixed-format types of input.</p>
           </div>
         </div>
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Contents:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#section-anatomy">Anatomy</a></li>
-              <li class="app-toc__item"><a href="#section-types">Types</a></li>
-              <li class="app-toc__item"><a href="#section-general-states">General Interaction States</a></li>
-              <li class="app-toc__item"><a href="#section-feedback-states">Feedback Interaction States</a></li>
-              <li class="app-toc__item"><a href="#section-required-vs-optional">Required vs Optional Fields</a></li>
-              <li class="app-toc__item"><a href="#section-password-fields">Password Fields</a></li>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-anatomy">Anatomy</a></li>
+              <li class="site-toc__item"><a href="#section-types">Types</a></li>
+              <li class="site-toc__item"><a href="#section-general-states">General Interaction States</a></li>
+              <li class="site-toc__item"><a href="#section-feedback-states">Feedback Interaction States</a></li>
+              <li class="site-toc__item"><a href="#section-required-vs-optional">Required vs Optional Fields</a></li>
+              <li class="site-toc__item"><a href="#section-password-fields">Password Fields</a></li>
             </ul>
           </nav>
         </div>
@@ -40,41 +40,41 @@ base_url: '../../'
     </section>
 
     <article>
-      <h2 class="app-article-headline hca-typography--headline">Anatomy and Types</h2>
+      <h2 class="site-article-headline hca-typography--headline">Anatomy and Types</h2>
 
-      <section id="section-anatomy" class="app-section">
+      <section id="section-anatomy" class="site-section">
         <h3 class="hca-typography--title">Anatomy of a Text Field</h3>
         <div class="row">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Label</h4>
               <p class="hca-typography--body-1">Labels describe the type of input requested in each field in a concise manner.</p>
               <p class="hca-typography--support">NOTE: HCA Design System requires a visible label for every text field.</p>
             </div>
 
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Placeholder Text</h4>
               <p class="hca-typography--body-1">Placeholder text is temporary text that appears inside the text field and suggests the type of information requested.</p>
               <p class="hca-typography--support">NOTE: Placeholder text should only be used as a last resort if helper text is already being used and does not suffice for clarifying context to your input.</p>
             </div>
 
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Feedback Icon</h4>
               <p class="hca-typography--body-1">Feedback icons should appear when validating or giving feedback to the user  about their input. This is commonly in the form of success and error feedback, and is best to be done in real-time while the user is interacting with the field.</p>
             </div>
 
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Helper Text</h4>
               <p class="hca-typography--body-1">Helper text is optional and appears below text fields to provide additional context. Helper text can be dynamic text such as real-time feedback or validation of error/success.</p>
             </div>
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/text-field-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Text field with label, placeholder text, and helper text with no feedback icon." />
+              <img src="{{page.base_url}}images/components/text-fields/text-field-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Text field with label, placeholder text, and helper text with no feedback icon." />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Text field prior to feedback icon appearing</figcaption>
             </figure>
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/text-field-single-line-with-icon.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Text field with label, placeholder text, and helper text with feedback icon." />
+              <img src="{{page.base_url}}images/components/text-fields/text-field-single-line-with-icon.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Text field with label, placeholder text, and helper text with feedback icon." />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Feedback icons can appear/disappear dynamically as needed</figcaption>
             </figure>
           </div>
@@ -82,25 +82,25 @@ base_url: '../../'
       </section>
       {{!-- / anatomy section --}}
 
-      <section id="section-types" class="app-section">
+      <section id="section-types" class="site-section">
         <h3 class="hca-typography--title">Types of Text Fields</h3>
         <div class="row">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Single Line</h4>
               <p class="hca-typography--body-1">Single line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the text field.</p>
             </div>
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/text-field-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="text field with label, placeholder text, and helper text." />
+              <img src="{{page.base_url}}images/components/text-fields/text-field-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="text field with label, placeholder text, and helper text." />
               <figcaption class="hca-visual-example__caption hca-typography--caption">A single line text field</figcaption>
             </figure>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Multi Line</h4>
               <p class="hca-typography--body-1">Multi line text fields automatically break to a new line for overflow text, and will scroll vertically when the cursor reaches the lower edge.</p>
               <p class="hca-typography--support">NOTE: To ensure accessibility, never remove or override any native functionality to resize a multi line text field.</p>
@@ -108,7 +108,7 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/multi-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Multi line text field with label, placeholder text, and helper text." />
+              <img src="{{page.base_url}}images/components/text-fields/multi-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Multi line text field with label, placeholder text, and helper text." />
               <figcaption class="hca-visual-example__caption hca-typography--caption">A multi line text field</figcaption>
             </figure>
           </div>
@@ -121,31 +121,31 @@ base_url: '../../'
     {{!-- /anatomy and types --}}
 
     <article>
-      <h2 class="app-article-headline hca-typography--headline">Interaction States</h2>
-      <section id="section-general-states" class="app-section">
+      <h2 class="site-article-headline hca-typography--headline">Interaction States</h2>
+      <section id="section-general-states" class="site-section">
         <h3 class="hca-typography--title">General Interaction States</h3>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Inactive</h4>
               <p class="hca-typography--body-1">Inactive text fields are the default state prior to any user interaction.</p>
             </div>
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-inactive-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Inactive single line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-inactive-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Inactive single line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Inactive single line text field</figcaption>
             </figure>
 
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-inactive-multi-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Inactive multi line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-inactive-multi-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Inactive multi line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Inactive multi line text field</figcaption>
             </figure>
           </div>
         </div>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Focused/Active</h4>
               <p class="hca-typography--body-1">The focused or active state occurs while a user is focused on or interacting with the text field.</p>
               <p class="hca-typography--body-1">The border of the field gets a {{> noon }} color while focused/active.</p>
@@ -153,18 +153,18 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-active-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Active single line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-active-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Active single line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Active single line text field</figcaption>
             </figure>
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-active-multi-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Active multi line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-active-multi-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Active multi line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Active multi line text field</figcaption>
             </figure>
           </div>
         </div>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Disabled</h4>
               <p class="hca-typography--body-1">Disabled fields may occur when the user needs to complete a task before filling out the field, or if they do not have the permissions to make changes to the field.</p>
               <p class="hca-typography--body-1">The background of a disabled field is {{> geyser }} and placeholder text (if there is any) is {{> slate }}.</p>
@@ -172,25 +172,25 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-disabled-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Disabled single line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-disabled-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Disabled single line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Disabled single line text field</figcaption>
             </figure>
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-disabled-multi-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Disabled multi line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-disabled-multi-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Disabled multi line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Disabled multi line text field</figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <section id="section-feedback-states" class="app-section">
+      <section id="section-feedback-states" class="site-section">
         <h3 class="hca-typography--title">Feedback Interaction States</h3>
-        <div class="hca-layout__container--body-content">
+        <div class="site-container--body-content">
           <p class="hca-typography--body-1 hca-typography__color--asphalt">When validating a field for success, error, or any other feedback, it is best to display this feedback in real-time while the user is still interacting with the fields/form.</p>
         </div>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <span class="hca-typography--body-2">Success/Positive</span>
               <p class="hca-typography--body-1">Add a {{> grass }} colored checkmark icon in the right of the field upon succeeding.</p>
               <p class="hca-typography--body-1">Use {{> pine }} colored helper text for an optional success message.</p>
@@ -198,15 +198,15 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-feedback-success-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Success feedback on a single line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-feedback-success-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Success feedback on a single line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Success feedback on a single line text field.</figcaption>
             </figure>
           </div>
         </div>
 
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Error/Danger</h4>
               <p class="hca-typography--body-1">Add a {{> strawberry }} colored error icon in the right of the field upon erroring.</p>
               <span class="hca-typography--body-1">The stroke or border color of the field should change to {{> strawberry }} and increase to a thickness of 2px.</span>
@@ -217,20 +217,20 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-feedback-error-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Error feedback on a single line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-feedback-error-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Error feedback on a single line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Error feedback on a single line text field.</figcaption>
             </figure>
 
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-feedback-error-multi-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Error feedback on a multi line text field." />
+              <img src="{{page.base_url}}images/components/text-fields/states-feedback-error-multi-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Error feedback on a multi line text field." />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Error feedback on a multi line text field.</figcaption>
             </figure>
           </div>
         </div>
 
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Warning/Yield</h4>
               <p class="hca-typography--body-1">Add a {{> butterscotch }} colored warning icon in the right of the field upon warning.</p>
               <p class="hca-typography--body-1">Use {{> mocha }} colored helper text for a descriptive warning message.</p>
@@ -238,7 +238,7 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/states-feedback-warning-single-line.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Warning feedback on a single line text field" />
+              <img src="{{page.base_url}}images/components/text-fields/states-feedback-warning-single-line.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Warning feedback on a single line text field" />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Warning feedback on a single line text field.</figcaption>
             </figure>
           </div>
@@ -250,17 +250,17 @@ base_url: '../../'
 
 
     <article>
-      <h2 class="app-article-headline hca-typography--headline">Usage</h2>
-      <section id="section-required-vs-optional" class="app-section">
+      <h2 class="site-article-headline hca-typography--headline">Usage</h2>
+      <section id="section-required-vs-optional" class="site-section">
         <h3 class="hca-typography--title">Required vs Optional Fields</h3>
         <br />
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                   <figure class="hca-visual-example">
-                    <img src="{{page.base_url}}images/components/text-fields/usage-optional-fields.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Middle Name is the only optional field." />
+                    <img src="{{page.base_url}}images/components/text-fields/usage-optional-fields.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Middle Name is the only optional field." />
                     <figcaption class="hca-visual-example__caption hca-typography--caption">Middle Name is the only optional field.</figcaption>
                   </figure>
                 </div>
@@ -269,11 +269,11 @@ base_url: '../../'
             </div>
           </div>
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                   <figure class="hca-visual-example">
-                    <img src="{{page.base_url}}images/components/text-fields/usage-required-fields.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Date of Birth is the only required field." />
+                    <img src="{{page.base_url}}images/components/text-fields/usage-required-fields.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Date of Birth is the only required field." />
                     <figcaption class="hca-visual-example__caption hca-typography--caption">Date of Birth is the only required field.</figcaption>
                   </figure>
                 </div>
@@ -284,11 +284,11 @@ base_url: '../../'
           </div>
         </div>
       </section>
-      <section id="section-password-fields" class="app-section">
+      <section id="section-password-fields" class="site-section">
         <h2 class="hca-typography--title">Password Fields</h2>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-6">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Password inputs should be disguised by default. Midline ellipses are used to represent each character of the password being entered. (••••••••)</p>
               <span class="hca-typography--body-2">Show/Hide Password</span>
               <p class="hca-typography--body-1">If you choose to enable/disable visibility for the password being entered, you may use the visibility-off and visibility-on icon paired with "Show" or "Hide" to indicate the action the user will be taking if they interact with it.</p>
@@ -297,7 +297,7 @@ base_url: '../../'
           </div>
           <div class="col-sm-4 col-sm-offset-1">
             <figure class="hca-visual-example">
-              <img src="{{page.base_url}}images/components/text-fields/usage-password-show-hide.png" class="img-responsive hca-visual-example__comp app-card hca-background--white" alt="Password visibility going from it's default hidden state to being shown." />
+              <img src="{{page.base_url}}images/components/text-fields/usage-password-show-hide.png" class="img-responsive hca-visual-example__comp site-card hca-background--white" alt="Password visibility going from it's default hidden state to being shown." />
               <figcaption class="hca-visual-example__caption hca-typography--caption">Password visibility going from its default hidden state to being shown.</figcaption>
             </figure>
           </div>
@@ -315,30 +315,30 @@ base_url: '../../'
   {{!-- SPECS TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Contents:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#section-specs-single-line">Single Line Fields</a></li>
-              <li class="app-toc__item"><a href="#section-specs-multi-line">Multi Line Fields</a></li>
-              <li class="app-toc__item"><a href="#section-specs-general-interaction">General Interaction States</a></li>
-              <li class="app-toc__item"><a href="#section-specs-feedback-interaction">Feedback Interaction States</a></li>
-              <li class="app-toc__item"><a href="#section-specs-password-interaction">Password Hide/Show</a></li>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-specs-single-line">Single Line Fields</a></li>
+              <li class="site-toc__item"><a href="#section-specs-multi-line">Multi Line Fields</a></li>
+              <li class="site-toc__item"><a href="#section-specs-general-interaction">General Interaction States</a></li>
+              <li class="site-toc__item"><a href="#section-specs-feedback-interaction">Feedback Interaction States</a></li>
+              <li class="site-toc__item"><a href="#section-specs-password-interaction">Password Hide/Show</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    <article id="section-specs-single-line" class="app-section">
-      <h2 class="app-article-headline hca-typography--headline">Specs</h2>
+    <article id="section-specs-single-line" class="site-section">
+      <h2 class="site-article-headline hca-typography--headline">Specs</h2>
       <h3 class="hca-typography--title">Single Line Fields</h3>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Label</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -446,12 +446,12 @@ base_url: '../../'
     </article>
 
 
-    <article id="section-specs-multi-line" class="app-section">
+    <article id="section-specs-multi-line" class="site-section">
       <h3 class="hca-typography--title">Multi Line Fields</h3>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Label</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -557,16 +557,16 @@ base_url: '../../'
       </div>
     </article>
 
-    <article id="section-specs-general-interaction" class="app-section">
+    <article id="section-specs-general-interaction" class="site-section">
       <h3 class="hca-typography--title">General Interaction States</h3>
-      <div class="hca-layout__container--body-content">
+      <div class="site-container--body-content">
         <p class="hca-typography--body-1">The specs below demonstrate only the changes from the specs of the default states above.</p>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <span class="hca-typography--body-2">Active/Focused</span>
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Border Color:</span> {{> noon }}
@@ -584,9 +584,9 @@ base_url: '../../'
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <span class="hca-typography--body-2">Disabled</span>
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Icon:</span> {{> grass }}
@@ -608,16 +608,16 @@ base_url: '../../'
     </article>
     {{!-- / general interaction states --}}
 
-    <article id="section-specs-feedback-interaction" class="app-section">
+    <article id="section-specs-feedback-interaction" class="site-section">
       <h3 class="hca-typography--title">Feedback Interaction States</h3>
-      <div class="hca-layout__container--body-content">
+      <div class="site-container--body-content">
         <p class="hca-typography--body-1">The specs below demonstrate only the changes from the specs of the default states above.</p>
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <span class="hca-typography--body-2">Error/Danger</span>
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Border:</span> 2px {{> strawberry }}
@@ -645,9 +645,9 @@ base_url: '../../'
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <span class="hca-typography--body-2">Success/Positive</span>
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Icon:</span> {{> grass }}
@@ -668,9 +668,9 @@ base_url: '../../'
       </div>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <span class="hca-typography--body-2">Warning/Yield</span>
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Icon:</span> {{> butterscotch }}
@@ -692,12 +692,12 @@ base_url: '../../'
     </article>
     {{!-- / feedback interaction states --}}
 
-    <article id="section-specs-password-interaction" class="app-section">
+    <article id="section-specs-password-interaction" class="site-section">
       <h3 class="hca-typography--title">Password Visibility Interaction</h3>
       <div class="row">
         <div class="col-sm-6">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
                 {{!-- <span class="hca-typography--body-2">General</span> --}}
               <ul class="hca-typography--body-1">
                 <li>
@@ -752,7 +752,7 @@ base_url: '../../'
 
 
 
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/tabs/" class="hca-button hca-button--has-icon-left">Back to Tabs <span class="material-icons">keyboard_arrow_left</span></a>

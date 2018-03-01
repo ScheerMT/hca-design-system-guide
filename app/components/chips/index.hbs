@@ -10,19 +10,19 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
-  <section class="app-tab-header">
+  <section class="site-tab-header">
     <div class="row">
       <div class="col-sm-7">
-        <div class="hca-layout__container--body-content">
+        <div class="site-container--body-content">
           <p class="hca-typography--subhead hca-typography__color--asphalt">Chips represent complex entities in small blocks, such as a contact or a filter.</p>
         </div>
       </div>
       <div class="col-sm-5">
         <nav>
           <span class="hca-typography--subhead">Contents:</span>
-          <ul class="app-toc">
-            <li class="app-toc__item"><a href="#section-usage">Usage and Behavior</a></li>
-            <li class="app-toc__item"><a href="#section-types">Types of Chips</a></li>
+          <ul class="site-toc">
+            <li class="site-toc__item"><a href="#section-usage">Usage and Behavior</a></li>
+            <li class="site-toc__item"><a href="#section-types">Types of Chips</a></li>
           </ul>
         </nav>
       </div>
@@ -30,16 +30,16 @@ base_url: '../../'
   </section>
 
   <article id="section-usage">
-    <h2 class="app-article-headline hca-typography--headline">Usage and Behavior</h2>
+    <h2 class="site-article-headline hca-typography--headline">Usage and Behavior</h2>
 
-    <section class="app-section">
+    <section class="site-section">
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--body-1">A chip may contain entities such as a photo, text, rules, an icon, or a contact.</p>
             <p class="hca-typography--body-1">Contact chips may represent contact information in a compact way.</p>
           </div>
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <span class="hca-typography--body-2">Behavior</span>
             <p class="hca-typography--body-1">Chips may be deleted if they display a delete icon.</p>
           </div>
@@ -64,11 +64,11 @@ base_url: '../../'
     </section>
   </article>
 
-  <article id="section-types" class="app-section">
-    <h2 class="app-article-headline hca-typography--headline">Types of Chips</h2>
-    <div class="row app-section">
+  <article id="section-types" class="site-section">
+    <h2 class="site-article-headline hca-typography--headline">Types of Chips</h2>
+    <div class="row site-section">
       <div class="col-sm-5">
-        <div class="hca-layout__container--body-content">
+        <div class="site-container--body-content">
           <p class="hca-typography--body-1">A chip may contain an icon, photo, short title, and brief information.</p>
         </div>
       </div>
@@ -105,27 +105,27 @@ base_url: '../../'
   {{!-- STYLES TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Contents:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#section-deletable">Deletable Chip</a></li>
-              <li class="app-toc__item"><a href="#section-non-deletable">Non-deletable Chip</a></li>
-              <li class="app-toc__item"><a href="#section-non-deletable">Chip with Avatar</a></li>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-deletable">Deletable Chip</a></li>
+              <li class="site-toc__item"><a href="#section-non-deletable">Non-deletable Chip</a></li>
+              <li class="site-toc__item"><a href="#section-non-deletable">Chip with Avatar</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    <section id="section-deletable" class="app-section">
+    <section id="section-deletable" class="site-section">
       <h3 class="hca-typography--title">Deletable Chips</h3>
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Chip</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -133,16 +133,16 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Padding:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Right: 10px</li>
-                    <li class="app-spec-list__item">Left: 15px</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Right: 10px</li>
+                    <li class="site-spec-list__item">Left: 15px</li>
                   </ul>
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Background Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Resting: {{> geyser }} at 50% opacity</li>
-                    <li class="app-spec-list__item">Focused: {{> asphalt }} at 80% opacity</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Resting: {{> geyser }} at 50% opacity</li>
+                    <li class="site-spec-list__item">Focused: {{> asphalt }} at 80% opacity</li>
                   </ul>
                 </li>
                 <li>
@@ -159,9 +159,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Resting: {{> asphalt }} </li>
-                    <li class="app-spec-list__item">Focused: {{> white }}</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Resting: {{> asphalt }} </li>
+                    <li class="site-spec-list__item">Focused: {{> white }}</li>
                   </ul>
                 </li>
                 <li>
@@ -200,12 +200,12 @@ base_url: '../../'
     </section>
 
 
-    <section id="section-non-deletable" class="app-section">
+    <section id="section-non-deletable" class="site-section">
       <h3 class="hca-typography--title">Non-Deletable Chips</h3>
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Chip</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -216,9 +216,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Background Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Resting: {{> geyser }} at 50% opacity</li>
-                    <li class="app-spec-list__item">Focused: {{> asphalt }} at 80% opacity</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Resting: {{> geyser }} at 50% opacity</li>
+                    <li class="site-spec-list__item">Focused: {{> asphalt }} at 80% opacity</li>
                   </ul>
                 </li>
                 <li>
@@ -235,9 +235,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Resting: {{> asphalt }} </li>
-                    <li class="app-spec-list__item">Focused: {{> white }}</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Resting: {{> asphalt }} </li>
+                    <li class="site-spec-list__item">Focused: {{> white }}</li>
                   </ul>
                 </li>
                 <li>
@@ -260,12 +260,12 @@ base_url: '../../'
       {{!-- /row --}}
     </section>
 
-    <section id="section-avatar" class="app-section">
+    <section id="section-avatar" class="site-section">
       <h3 class="hca-typography--title">Chips with Avatar/Icon</h3>
       <div class="row">
         <div class="col-sm-5">
-          <div class="hca-layout__container--body-content">
-            <div class="app-card hca-specs">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Chip</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -276,9 +276,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Background Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Resting: {{> geyser }} at 50% opacity</li>
-                    <li class="app-spec-list__item">Focused: {{> asphalt }} at 80% opacity</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Resting: {{> geyser }} at 50% opacity</li>
+                    <li class="site-spec-list__item">Focused: {{> asphalt }} at 80% opacity</li>
                   </ul>
                 </li>
                 <li>
@@ -295,9 +295,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Resting: {{> asphalt }} </li>
-                    <li class="app-spec-list__item">Focused: {{> white }}</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Resting: {{> asphalt }} </li>
+                    <li class="site-spec-list__item">Focused: {{> white }}</li>
                   </ul>
                 </li>
                 <li>
@@ -367,7 +367,7 @@ base_url: '../../'
 
 
 {{!-- Pagination Navigation --}}
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/cards/" class="hca-button hca-button--has-icon-left">Back to Cards <span class="material-icons">keyboard_arrow_left</span></a>

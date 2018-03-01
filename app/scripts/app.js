@@ -15,10 +15,10 @@ $( document ).ready(function() {
 //fuction for menu toggle
 ///////////////////////////////////////////////////////////////////////////////
 $('.hca-menu-toggle').on('click', function(){
-  $('.hca-layout__drawer').toggleClass('hca-layout__drawer--is-closed');
-  $('body').toggleClass('hca-layout--has-drawer');
+  $('.site-drawer').toggleClass('site-drawer--is-closed');
+  $('body').toggleClass('site-layout--has-drawer');
 
-  if($('.hca-layout__drawer').hasClass('hca-layout__drawer--is-closed')) {
+  if($('.site-drawer').hasClass('site-drawer--is-closed')) {
     $('.hca-menu-toggle').attr('title', 'Menu');
     $('.hca-menu-toggle__icon').html('menu');
     $('.hca-menu-toggle__text').html('Menu');
@@ -56,8 +56,8 @@ window.setTimeout(offsetAnchor, 1); // The delay of 1 is arbitrary and may not a
 ///////////////////////////////////////////////////////////////////////////////
 var smallScreenTasks = function() {
   if($(window).width() < 1200) {
-    $('body').removeClass('hca-layout--has-drawer');
-    $('.hca-layout__drawer').addClass('hca-layout__drawer--is-closed');
+    $('body').removeClass('site-layout--has-drawer');
+    $('.site-drawer').addClass('site-drawer--is-closed');
     $('.hca-menu-toggle__icon').html('menu');
     $('.hca-menu-toggle__text').html('Menu');
   }
@@ -80,7 +80,7 @@ var addTheme = function() {
   var colorScheme = Math.floor(Math.random() * 5);
 
   $('.hca-js-app-bar').addClass(colors[colorScheme][0,0]); //adds first color in array to app-bar
-  $('.hca-js-app-header').addClass(colors[colorScheme][0,1]); //adds second color in array to app-header
+  $('.hca-js-site-header').addClass(colors[colorScheme][0,1]); //adds second color in array to site-header
 }
 
 
@@ -92,9 +92,9 @@ var activateNavItem = function() {
   //get url path to match and remove trailing "/"
   var urlPathToMatch = window.location.pathname.replace(/\/$/, "");
   // get nav drawer for scope
-  var drawerNav = document.querySelector('.js-app-drawer-nav');
+  var drawerNav = document.querySelector('.js-site-drawer-nav');
   //get nav items in nav drawer
-  var drawerNavItems = drawerNav.querySelectorAll('.js-app-drawer-nav__item');
+  var drawerNavItems = drawerNav.querySelectorAll('.js-site-drawer-nav__item');
 
   // check every item in the nav drawer
   i = 0;
@@ -121,7 +121,7 @@ var activateNavItem = function() {
         $(matchingElement).removeClass('collapsed');
       }
       //add active class to nav item
-      drawerNavItem.classList.add('app-drawer-nav__item--active');
+      drawerNavItem.classList.add('site-drawer-nav__item--active');
       return;
     } else {
       //else move on to the next item in nav drawer

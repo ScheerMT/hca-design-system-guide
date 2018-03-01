@@ -10,10 +10,10 @@ base_url: '../../'
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--subhead hca-typography__color--asphalt">Tabs are a common and easy way to switch between related views or content.</p>
             <p class="hca-typography--body-1">They can be utilized as app-level navigation that switches between entire views, or content-level navigation that changes content or data sets within a single view.</p>
             <p class="hca-typography--body-1">Tabs should always be presented in a single row.</p>
@@ -23,19 +23,19 @@ base_url: '../../'
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Contents:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#section-anatomy-and-types">Anatomy and Types</a></li>
-              <li class="app-toc__item"><a href="#section-usage-content">Usage: Content</a></li>
-              <li class="app-toc__item"><a href="#section-usage-layout">Usage: Layout</a></li>
-              <li class="app-toc__item"><a href="#section-usage-labels">Usage: Labels</a></li>
-              <li class="app-toc__item"><a href="#section-interaction-and-behavior">Interaction and Behavior</a></li>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-anatomy-and-types">Anatomy and Types</a></li>
+              <li class="site-toc__item"><a href="#section-usage-content">Usage: Content</a></li>
+              <li class="site-toc__item"><a href="#section-usage-layout">Usage: Layout</a></li>
+              <li class="site-toc__item"><a href="#section-usage-labels">Usage: Labels</a></li>
+              <li class="site-toc__item"><a href="#section-interaction-and-behavior">Interaction and Behavior</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    <div class="app-section">
+    <div class="site-section">
       <div class="row">
         <div class="col-sm-3">
           <h4 class="hca-typography--body-2">App-level tabs</h4>
@@ -54,12 +54,12 @@ base_url: '../../'
 
 
     <article id="section-anatomy-and-types">
-      <h2 class="app-article-headline hca-typography--headline">Anatomy and Types</h2>
-      <div class="app-section">
+      <h2 class="site-article-headline hca-typography--headline">Anatomy and Types</h2>
+      <div class="site-section">
         <h3 class="hca-typography--title">Anatomy</h3>
         <div class="row">
           <div class="col-sm-3">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <ul class="hca-typography--body-1">
                 <li>Tab Label</li>
                 <li>Active Indicator Line</li>
@@ -75,9 +75,9 @@ base_url: '../../'
         </div>
       </div>
 
-      <div class="app-section">
+      <div class="site-section">
         <h3 class="hca-typography--title">Types</h3>
-        <div class="hca-layout__container--body-content">
+        <div class="site-container--body-content">
           <ul class="hca-typography--body-1">
             <li>Fixed</li>
             <li>Scrollable</li>
@@ -85,7 +85,7 @@ base_url: '../../'
         </div>
         <div class="row">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Fixed Tabs</h4>
               <p class="hca-typography--body-1">Fixed tabs take a fixed position in the UI, either to the top or the bottom.</p>
               <p class="hca-typography--body-1">Fixed tabs should be equal width, calculated either as the view width divided by the number of tabs, or based on the widest tab label. Tab labels are vertically and horizontally centered.</p>
@@ -100,7 +100,7 @@ base_url: '../../'
         </div>
         <div class="row">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Scrollable Tabs</h4>
               <p class="hca-typography--body-1">Scrollable tabs can overflow the view horizontally and scroll to reveal more tabs. These tabs' width can size according to their label length, up to a max width of 250px.</p>
               <p class="hca-typography--body-1">They are best used for browsing contexts in touch interfaces when users do not need to directly compare the tab labels.</p>
@@ -118,19 +118,19 @@ base_url: '../../'
     </article>
 
     <article>
-      <h2 class="app-article-headline hca-typography--headline">Usage</h2>
+      <h2 class="site-article-headline hca-typography--headline">Usage</h2>
       <br />
-      <section id="section-usage-content" class="app-section">
+      <section id="section-usage-content" class="site-section">
         <h3 class="hca-typography--title">Tab Content</h3>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">All content within a set of tabs should be related under a larger organizing principle, with each tab’s content mutually exclusive of the others'.</p>
               <p class="hca-typography--body-1">Avoid the need for cross-tab comparison of content. Significant cross-tab comparison may indicate the content would benefit from a different organization or presentation that places the content closer together.</p>
             </div>
           </div>
           <div class="col-sm-8">
-            <div class="row app-section">
+            <div class="row site-section">
               <div class="col-sm-6">
                 <figure class="hca-visual-example hca-visual-example--do">
                   <img src="{{page.base_url}}images/components/tabs/content-do.png" class="img-responsive hca-visual-example__comp" alt="Each tab is a report type related to larger principle of 'Your Reports'" />
@@ -148,18 +148,18 @@ base_url: '../../'
         </div>
       </section>
       {{!-- / tab content --}}
-      <section id="section-usage-layout" class="app-section">
+      <section id="section-usage-layout" class="site-section">
         <h3 class="hca-typography--title">Tab Layout</h3>
         <br />
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Single Row</h4>
               <p class="hca-typography--body-1">As mentioned above, tabs should only be presented in a single row. The content they control should always be directly under or above the row of relative tabs, separated by the active indicator line.</p>
             </div>
           </div>
           <div class="col-sm-8">
-            <div class="row app-section">
+            <div class="row site-section">
               <div class="col-sm-6">
                 <figure class="hca-visual-example hca-visual-example--do">
                   <img src="{{page.base_url}}images/components/tabs/scrollable-tabs-begin.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
@@ -175,9 +175,9 @@ base_url: '../../'
             </div>
           </div>
         </div>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">App-level Placement</h4>
               <p class="hca-typography--body-1">Tabs can often be placed at the app-level, either on top or bottom of the view, to sit outside all of the main content of each view.</p>
             </div>
@@ -189,9 +189,9 @@ base_url: '../../'
             </figure>
           </div>
         </div>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Content-level Placement</h4>
               <p class="hca-typography--body-1">On large screens, you can utilize tabs within the flow of content to quickly switch between relative topics.</p>
               <p class="hca-typography--body-1">On small screens, tabs convert to menus when they are in the flow of content.</p>
@@ -226,11 +226,11 @@ base_url: '../../'
         </div>
       </section>
       {{!-- / tab layout section --}}
-      <section id="section-usage-labels" class="app-section">
+      <section id="section-usage-labels" class="site-section">
         <h3 class="hca-typography--title">Tab Labels</h3>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Tab labels should be concise and provide meaningful distinctions that logically organizes associated content.</p>
               <p class="hca-typography--body-1">Tab labels may be all text, or text combined with an icon.</p>
               <p class="hca-typography--support">NOTE: In efforts to keep our UI understandable and accessible to all users, we do not encourage icon-only tab labels.</p>
@@ -239,7 +239,7 @@ base_url: '../../'
         </div>
 
         <h4 class="hca-typography--body-2">Text-only Labels</h4>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-4">
             <figure class="hca-visual-example hca-visual-example--do">
               <img src="{{page.base_url}}images/components/tabs/two-line-label.png" class="img-responsive hca-visual-example__comp" alt="Tab labels may break to two lines if needed." />
@@ -261,7 +261,7 @@ base_url: '../../'
         </div>
 
         <h4 class="hca-typography--body-2">Icons + Labels</h4>
-        <div class="row app-section">
+        <div class="row site-section">
           <div class="col-sm-4">
             <figure class="hca-visual-example hca-visual-example--do">
               <img src="{{page.base_url}}images/components/tabs/icon-tab-labels-do.png" class="img-responsive hca-visual-example__comp" alt="Scrollable tabs" />
@@ -287,18 +287,18 @@ base_url: '../../'
     {{!-- / Usage article --}}
 
     <article id="section-interaction-and-behavior">
-      <h2 class="app-article-headline hca-typography--headline">Interaction and Behavior</h2>
-      <div class="app-section">
+      <h2 class="site-article-headline hca-typography--headline">Interaction and Behavior</h2>
+      <div class="site-section">
         <h3 class="hca-typography--title">Active vs Inactive</h3>
         <div class="row">
           <div class="col-sm-4">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <p class="hca-typography--body-1">Active tabs display a 2px indicator line between the active label and the content it is related to.</p>
               <p class="hca-typography--body-1">Inactive tab labels and icons appear at 70% opacity of either {{>white}} or {{>asphalt}} (determine based on background color), and become 100% opaque when activated. Active tab labels and icons may also convert to a AA accessible highlight color.</p>
             </div>
           </div>
           <div class="col-sm-8">
-            <div class="row app-section">
+            <div class="row site-section">
               <div class="col-sm-6">
                 <figure class="hca-visual-example">
                   <img src="{{page.base_url}}images/components/tabs/active-vs-inactive-text-tabs.png" class="img-responsive hca-visual-example__comp" alt="Active text tab versus inactive text tabs." />
@@ -315,9 +315,9 @@ base_url: '../../'
           </div>
         </div>
       </div>
-      <div class="app-section">
+      <div class="site-section">
         <h3 class="hca-typography--title">Scrollable Tabs</h3>
-        <div class="hca-layout__container--body-content">
+        <div class="site-container--body-content">
           <p class="hca-typography--body-1">Scroll indicators and controls appear any time there are more tabs available to scroll to on either side, and remain visible until there are no more tabs available to scroll to in that direction.</p>
         </div>
         <div class="row">
@@ -349,16 +349,16 @@ base_url: '../../'
   {{!-- STYLES TAB --}}
   <div role="tabpanel" class="tab-pane" id="app-styles-tab">
 
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Contents:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#section-text-only-fixed-tabs-specs">Text-only Fixed Tabs</a></li>
-              <li class="app-toc__item"><a href="#section-text-only-scrollable-tabs-specs">Text-only Scrollable Tabs</a></li>
-              <li class="app-toc__item"><a href="#section-icon-and-text-fixed-tabs-specs">Icon + Text Fixed Tabs</a></li>
-              <li class="app-toc__item"><a href="#section-icon-and-text-scrollable-tabs-specs">Icon + Text Scrollable Tabs</a></li>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-text-only-fixed-tabs-specs">Text-only Fixed Tabs</a></li>
+              <li class="site-toc__item"><a href="#section-text-only-scrollable-tabs-specs">Text-only Scrollable Tabs</a></li>
+              <li class="site-toc__item"><a href="#section-icon-and-text-fixed-tabs-specs">Icon + Text Fixed Tabs</a></li>
+              <li class="site-toc__item"><a href="#section-icon-and-text-scrollable-tabs-specs">Icon + Text Scrollable Tabs</a></li>
             </ul>
           </nav>
         </div>
@@ -366,12 +366,12 @@ base_url: '../../'
     </section>
 
     <article>
-      <h2 class="app-article-headline hca-typography--headline">Text-only Tab Specs</h2>
-      <section id="section-text-only-fixed-tabs-specs" class="app-section">
+      <h2 class="site-article-headline hca-typography--headline">Text-only Tab Specs</h2>
+      <section id="section-text-only-fixed-tabs-specs" class="site-section">
         <h3 class="hca-typography--title">Fixed / Equal Width</h3>
         <div class="row">
           <div class="col-md-5">
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Sizing</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -379,18 +379,18 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Width:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">All tabs equal width</li>
-                    <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
-                    <li class="app-spec-list__item">62px minimum width</li>
-                    <li class="app-spec-list__item">250px maximum width</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">All tabs equal width</li>
+                    <li class="site-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
+                    <li class="site-spec-list__item">62px minimum width</li>
+                    <li class="site-spec-list__item">250px maximum width</li>
                   </ul>
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Label Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
-                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="site-spec-list__item">12px for double-line label (14px line height)</li>
                   </ul>
                 </li>
               </ul>
@@ -431,9 +431,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
-                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="site-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
                   </ul>
                 </li>
               </ul>
@@ -454,11 +454,11 @@ base_url: '../../'
 
 
 
-      <section id="section-text-only-scrollable-tabs-specs" class="app-section">
+      <section id="section-text-only-scrollable-tabs-specs" class="site-section">
         <h3 class="hca-typography--title">Scrollable (Small and Large Screens)</h3>
         <div class="row">
           <div class="col-md-5">
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Sizing</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -472,9 +472,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Label Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px for single-line label (14px line height)</li>
-                    <li class="app-spec-list__item">12px for double-line label (14px line height)</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">14px for single-line label (14px line height)</li>
+                    <li class="site-spec-list__item">12px for double-line label (14px line height)</li>
                   </ul>
                 </li>
               </ul>
@@ -515,9 +515,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
-                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="site-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
                   </ul>
                 </li>
               </ul>
@@ -531,9 +531,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Placement:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Vertically centered</li>
-                    <li class="app-spec-list__item">10px from edge of tabs on both sides</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Vertically centered</li>
+                    <li class="site-spec-list__item">10px from edge of tabs on both sides</li>
                   </ul>
                 </li>
                 <li>
@@ -556,12 +556,12 @@ base_url: '../../'
     </article>
 
     <article>
-      <h2 class="app-article-headline hca-typography--headline">Icon + Text Tab Specs</h2>
-      <section id="section-icon-and-text-fixed-tabs-specs" class="app-section">
+      <h2 class="site-article-headline hca-typography--headline">Icon + Text Tab Specs</h2>
+      <section id="section-icon-and-text-fixed-tabs-specs" class="site-section">
         <h3 class="hca-typography--title">Fixed / Equal Width</h3>
         <div class="row">
           <div class="col-md-5">
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Sizing</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -569,11 +569,11 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Width:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">All tabs equal width</li>
-                    <li class="app-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
-                    <li class="app-spec-list__item">62px minimum width</li>
-                    <li class="app-spec-list__item">250px maximum width</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">All tabs equal width</li>
+                    <li class="site-spec-list__item">Calculate as the view width divided by number of tabs, or base it off of the widest label.</li>
+                    <li class="site-spec-list__item">62px minimum width</li>
+                    <li class="site-spec-list__item">250px maximum width</li>
                   </ul>
                 </li>
                 <li>
@@ -581,10 +581,10 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Label Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px (14px line height)</li>
-                    <li class="app-spec-list__item">Icon tab labels do not line break.</li>
-                    <li class="app-spec-list__item">Use ellipsis for labels that need to overflow.</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">14px (14px line height)</li>
+                    <li class="site-spec-list__item">Icon tab labels do not line break.</li>
+                    <li class="site-spec-list__item">Use ellipsis for labels that need to overflow.</li>
                   </ul>
                 </li>
               </ul>
@@ -592,9 +592,9 @@ base_url: '../../'
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Icon + Label:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">5px margin between icon and label</li>
-                    <li class="app-spec-list__item">Horizontally and vertically centered</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">5px margin between icon and label</li>
+                    <li class="site-spec-list__item">Horizontally and vertically centered</li>
                   </ul>
                 </li>
                 <li>
@@ -629,9 +629,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Icon + Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
-                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="site-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
                   </ul>
                 </li>
               </ul>
@@ -649,11 +649,11 @@ base_url: '../../'
       </section>
       {{!-- / icon+text fixed specs --}}
 
-      <section id="section-icon-and-text-scrollable-tabs-specs" class="app-section">
+      <section id="section-icon-and-text-scrollable-tabs-specs" class="site-section">
         <h3 class="hca-typography--title">Scrollable (Small and Large Screens)</h3>
         <div class="row">
           <div class="col-md-5">
-            <div class="app-card hca-specs">
+            <div class="site-card hca-specs">
               <span class="hca-typography--body-2">Sizing</span>
               <ul class="hca-typography--body-1">
                 <li>
@@ -670,10 +670,10 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Label Font Size:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">14px (14px line height)</li>
-                    <li class="app-spec-list__item">Icon tab labels do not line break.</li>
-                    <li class="app-spec-list__item">Use ellipsis for labels that need to overflow.</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">14px (14px line height)</li>
+                    <li class="site-spec-list__item">Icon tab labels do not line break.</li>
+                    <li class="site-spec-list__item">Use ellipsis for labels that need to overflow.</li>
                   </ul>
                 </li>
               </ul>
@@ -681,9 +681,9 @@ base_url: '../../'
               <ul class="hca-typography--body-1">
                 <li>
                   <span class="hca-typography__color--asphalt">Icon + Label:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">5px margin between icon and label</li>
-                    <li class="app-spec-list__item">Horizontally and vertically centered</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">5px margin between icon and label</li>
+                    <li class="site-spec-list__item">Horizontally and vertically centered</li>
                   </ul>
                 </li>
                 <li>
@@ -718,9 +718,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Icon + Text Color:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
-                    <li class="app-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">{{> white }} at 70% opacity on dark backgrounds</li>
+                    <li class="site-spec-list__item">{{> asphalt }} at 70% opacity on light backgrounds</li>
                   </ul>
                 </li>
               </ul>
@@ -734,9 +734,9 @@ base_url: '../../'
                 </li>
                 <li>
                   <span class="hca-typography__color--asphalt">Placement:</span>
-                  <ul class="app-spec-list">
-                    <li class="app-spec-list__item">Vertically centered</li>
-                    <li class="app-spec-list__item">10px from edge of tabs on both sides</li>
+                  <ul class="site-spec-list">
+                    <li class="site-spec-list__item">Vertically centered</li>
+                    <li class="site-spec-list__item">10px from edge of tabs on both sides</li>
                   </ul>
                 </li>
                 <li>
@@ -770,7 +770,7 @@ base_url: '../../'
 
 
 {{!-- Pagination Navigation --}}
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/snackbars/" class="hca-button hca-button--has-icon-left">Back to Snackbars <span class="material-icons">keyboard_arrow_left</span></a>

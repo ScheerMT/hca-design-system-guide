@@ -4,7 +4,6 @@
 
 body {
   background-color: $color__steam;
-  padding-bottom: 40px;
 }
 
 hr {
@@ -13,7 +12,7 @@ hr {
   margin-bottom: 50px;
 }
 
-.app-header {
+.site-header {
   background-color: $color__morning;
   margin-bottom: 30px;
 
@@ -23,9 +22,11 @@ hr {
   }
 }
 
-.app-logo {
+.site-logo {
   display: block;
-  margin: 10px 0px;
+  max-width: 300px;
+  width: 100%;
+  margin: 10px auto;
   border: 0;
   &:hover,
   &:focus,
@@ -35,43 +36,40 @@ hr {
   }
 }
 
-.app-drawer-nav {
-
+.site-drawer-nav {
   a,
   a:hover {
     border-bottom: none;
   }
 
-  .hca-list__item.app-drawer-nav__item--active,
-  .hca-list__item--nested.app-drawer-nav__item--active {
+  .hca-list__item.site-drawer-nav__item--active,
+  .hca-list__item--nested.site-drawer-nav__item--active {
     color: $color__evening;
   }
 
-  .hca-list__item--nested.app-drawer-nav__item--active {
+  .hca-list__item--nested.site-drawer-nav__item--active {
     font-weight: 600;
     border-left: 2px solid $color__evening;
   }
 }
 
-.app-section {
+.site-section {
   margin-bottom: 50px;
 }
 
-.app-styleguide-brand {
+.site-nav-header {
   padding: 20px;
   font-size: 26px;
   text-align: center;
-  margin-top: 57px; //hacky value to make bottom line aligned with app-header line
-
-  #hca-design-system-logo {
-    display: none;
-    margin: auto;
-    height: 75px;
-    width: 75px;
-  }
+  margin-top: 60px; //hacky value to make bottom line aligned with site-header line
 }
 
-.app-nav-footer-cc {
+.site-landing-page-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.site-nav-footer-cc {
   padding: 20px;
   margin-bottom: 50px;
 }
@@ -84,18 +82,18 @@ hr {
 
 
 
-$app-tab-stroke: 2px;
-$app-tab-active-color: $color__asphalt;
-$app-tab-inactive-color: rgba($app-tab-active-color, .7);
-.app-tabs {
+$site-tab-stroke: 2px;
+$site-tab-active-color: $color__asphalt;
+$site-tab-inactive-color: rgba($site-tab-active-color, .7);
+.site-tabs {
   border-bottom: 0;
   font-size: 14px;
 
   li,
-  .app-tabs__tab {
+  .site-tabs__tab {
     text-align: center;
     min-width: 62px;
-    color: $app-tab-inactive-color;
+    color: $site-tab-inactive-color;
     margin-bottom: 0;
 
     //active tab
@@ -105,12 +103,12 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
       a:hover,
       a:active,
       a:focus {
-        color: $app-tab-active-color;
+        color: $site-tab-active-color;
         background-color: transparent;
         font-weight: 600;
         border-top: none;
         border-right: none;
-        border-bottom: $app-tab-stroke solid $app-tab-active-color;
+        border-bottom: $site-tab-stroke solid $site-tab-active-color;
         border-left: none;
       }
     }
@@ -118,7 +116,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
     //default links in tabs
     a {
       margin-right: 0;
-      color: $app-tab-inactive-color;
+      color: $site-tab-inactive-color;
       width: 100px;
       height: 50px;
       line-height: 50px;
@@ -127,7 +125,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
       border-top: none;
       border-right: none;
       border-left: none;
-      border-bottom: $app-tab-stroke solid transparent;
+      border-bottom: $site-tab-stroke solid transparent;
       text-align: center;
 
       &:hover,
@@ -135,7 +133,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
       &:active {
         color: $color__cadet;
         background-color: transparent;
-        border-bottom: $app-tab-stroke solid $app-tab-inactive-color;
+        border-bottom: $site-tab-stroke solid $site-tab-inactive-color;
       }
     }
 
@@ -151,7 +149,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
 
 
     li,
-    .app-tabs__tab {
+    .site-tabs__tab {
       min-width: 62px;
       float: none;
       display: table-cell;
@@ -166,27 +164,23 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
   }
 
 }
-// end app-tabs customized bootstrap tabs
+// end site-tabs customized bootstrap tabs
 
-// .tab-content {
-//   padding-top: 30px;
-// }
-
-.app-tab-header {
+.site-tab-header {
   margin-bottom: 50px;
 }
 
-.app-toc {
+.site-toc {
   padding-left: 15px;
   border-left: 3px solid $color__cadet;
 }
-.app-toc__item {
+.site-toc__item {
   font-weight: 600;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.app-article-headline {
+.site-article-headline {
   &:after {
     display: block;
     content: '';
@@ -199,33 +193,17 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
 }
 
 
-.app-type-specs--type-list {
+.site-type-specs--type-list {
   display: block;
   width: 100%;
   overflow-x: scroll;
   white-space: nowrap;
 
   margin-bottom: 30px;
-
-  // .hca-typography--display-4,
-  // .hca-typography--display-3,
-  // .hca-typography--display-2,
-  // .hca-typography--display-1,
-  // .hca-typography--headline,
-  // .hca-typography--title,
-  // .hca-typography--subhead,
-  // .hca-typography--body-2,
-  // .hca-typography--body-1,
-  // .hca-typography--caption,
-  // .hca-typography--support {
-  //   line-height: 1;
-  //   margin-bottom: 0;
-  //   padding-bottom: 15px;
-  // }
 }
 
 
-.app-card {
+.site-card {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -237,7 +215,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
 }
 
 
-.app-pagination {
+.site-pagination {
   display: none;
   position: fixed;
   bottom: 0;
@@ -254,7 +232,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
 }
 
 
-.app-alert {
+.site-alert {
   padding: 15px 10px;
   margin-bottom: 30px;
   border-left: 3px solid $color__cadet;
@@ -274,7 +252,7 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
 }
 
 
-.app-spec-list {
+.site-spec-list {
   margin-left: 20px;
   &__item {
     list-style: initial;
@@ -283,11 +261,92 @@ $app-tab-inactive-color: rgba($app-tab-active-color, .7);
 }
 
 
-.app-list--bulleted {
+.site-list--bulleted {
   padding-left: 40px;
   margin-bottom: 20px;
-  .app-list__item {
+  .site-list__item {
     list-style: initial;
     margin-bottom: 5px;
   }
+}
+
+
+
+//
+//Modifier class for landing page style differences
+//
+.site--landing-page {
+
+  #site-header-hca-logo {
+    width: 80px;
+  }
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    background: url("/images/site/homepage-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  cover;
+    color: $color__white;
+    text-align: center;
+
+    // tablet and larger
+    @media (min-width: $screen__tablet) {
+      min-height: 500px;
+    }
+
+
+    &__title-text {
+      display: block;
+      font-size: 36px;
+      font-weight: 300;
+
+      //tablet and larger
+      @media (min-width: $screen__tablet) {
+        font-size: 56px;
+      }
+    }
+
+    hr {
+      border-color: $color__white;
+      max-width: 600px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__body-text {
+      margin-right: auto;
+      margin-bottom: 50px;
+      margin-left: auto;
+    }
+
+    &__disclaimer {
+      display: flex;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__disclaimer-icon {
+      font-size: 35px;
+      margin-top: auto;
+      margin-right: 10px;
+      margin-bottom: auto;
+    }
+
+  }
+  //  end. site-header
+
+  .site-homepage-icon {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    width: 100%;
+  }
+
+
 }

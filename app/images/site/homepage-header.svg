@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1266px" height="622px" viewBox="0 0 1266 622" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1266" height="622"></rect>
+    </defs>
+    <g id="Cover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#F5F7F9" xlink:href="#path-1"></use>
+            <g id="Group-4" mask="url(#mask-2)">
+                <g transform="translate(-572.000000, -701.000000)">
+                    <rect id="Rectangle-5" fill="#012784" x="571" y="775" width="1267" height="551"></rect>
+                    <g id="Group" stroke-width="1" fill="none" transform="translate(1247.283212, 798.949877) rotate(-172.000000) translate(-1247.283212, -798.949877) translate(78.283212, 156.949877)">
+                        <path d="M583.176118,273.380063 C852.749412,140.068835 1041.6579,99.7808396 1252.31169,74.9809505 C1462.96548,50.1810614 1630.24938,43.9810891 1822.31607,143.180646 C2014.38276,242.380202 2286.99355,248.580174 2305.58065,372.57962 C2324.16775,496.579066 2256.01505,707.378123 2094.92686,856.177458 C1933.83866,1004.97679 1791.33757,1203.37591 1692.20637,1209.57588 C1593.07518,1215.77585 1540.29352,1178.57602 1489.2381,1184.77599 C1438.18268,1190.97596 1388.61709,1234.37577 1289.48589,1221.97582 C1190.35469,1209.57588 992.092302,1178.57602 880.569706,1104.17635 C769.047111,1029.77668 688.503014,942.97707 614.154617,949.177042 C539.80622,955.377014 273.391131,967.776959 118.498637,973.976931 C-36.3938569,980.176903 25.5631406,756.977901 186.651334,601.978594 C347.739528,446.979287 313.602824,406.691291 583.176118,273.380063 Z" id="Path-13" fill-opacity="0.599999964" fill="#1643B0" style="mix-blend-mode: lighten;" transform="translate(1168.870721, 641.835025) rotate(3.000000) translate(-1168.870721, -641.835025) "></path>
+                        <path d="M612.823127,292.030717 C868.751013,165.46751 1048.09723,127.218834 1248.08803,103.674279 C1448.07883,80.1297239 1606.89506,74.2435852 1789.23962,168.421805 C1971.58417,262.600024 2230.3958,268.486163 2248.04205,386.208937 C2265.68829,503.931711 2200.98539,704.060427 2048.05124,845.327756 C1895.1171,986.595085 1759.8292,1174.95152 1665.71588,1180.83766 C1571.60257,1186.7238 1521.49263,1151.40697 1473.02157,1157.29311 C1424.5505,1163.17925 1377.49384,1204.38222 1283.38053,1192.60994 C1189.26721,1180.83766 1001.04057,1151.40697 895.163084,1080.7733 C789.2856,1010.13964 712.818528,927.733698 642.233539,933.619836 C571.648549,939.505975 318.719004,951.278252 171.666943,957.164391 C24.614882,963.05053 83.4357064,751.149536 236.36985,603.996069 C389.303994,456.842601 356.89524,418.593925 612.823127,292.030717 Z" id="Path-13" fill="#1643B0"></path>
+                        <path d="M651.065525,295.078761 C887.585331,178.164432 1053.33097,142.831744 1238.15564,121.08217 C1422.9803,99.3325959 1569.75283,93.8952024 1738.26944,180.893498 C1906.78605,267.891794 2145.97091,273.329187 2162.27897,382.077057 C2178.58702,490.824926 2118.79081,675.696305 1977.4543,806.193748 C1836.11779,936.691191 1711.08934,1110.68778 1624.11303,1116.12518 C1537.13672,1121.56257 1490.82683,1088.93821 1446.03153,1094.3756 C1401.23623,1099.813 1357.74807,1137.87475 1270.77176,1126.99996 C1183.79544,1116.12518 1009.84282,1088.93821 911.994465,1023.68949 C814.146113,958.440765 743.477858,882.317257 678.245623,887.75465 C613.013388,893.192044 379.264547,904.066831 243.364058,909.504224 C107.463568,914.941618 161.823764,719.195452 303.160273,583.260615 C444.496782,447.325778 414.545719,411.993091 651.065525,295.078761 Z" id="Path-13" fill-opacity="0.200000018" fill="#1643B0" style="mix-blend-mode: multiply;"></path>
+                        <path d="M725.40045,307.279717 C944.323597,199.137095 1097.73805,166.455306 1268.81209,146.337533 C1439.88612,126.219759 1575.73903,121.190316 1731.7183,201.661409 C1887.69756,282.132501 2109.08749,287.161944 2124.18226,387.75081 C2139.27702,488.339675 2083.92954,659.340746 1953.10822,780.047385 C1822.2869,900.754023 1706.56035,1061.69621 1626.05492,1066.72565 C1545.5495,1071.75509 1502.68498,1041.57843 1461.22237,1046.60788 C1419.75976,1051.63732 1379.50705,1086.84342 1299.00162,1076.78454 C1218.4962,1066.72565 1057.48534,1041.57843 966.916734,981.225115 C876.348127,920.871796 810.937467,850.45959 750.558397,855.489034 C690.179326,860.518477 473.820989,870.577363 348.031258,875.606807 C222.241527,880.63625 272.55742,699.576292 403.37874,573.840211 C534.20006,448.104129 506.477304,415.422339 725.40045,307.279717 Z" id="Path-13" fill-opacity="0.200000018" fill="#1643B0" style="mix-blend-mode: multiply;"></path>
+                        <path d="M853.41067,309.351721 C1034.16459,209.103635 1160.83126,178.807654 1302.07855,160.158502 C1443.32585,141.50935 1555.49282,136.847062 1684.27712,211.443671 C1813.06142,286.04028 1995.85204,290.702568 2008.31503,383.94833 C2020.77803,477.194092 1975.08038,635.711887 1867.06774,747.606801 C1759.0551,859.501715 1663.50546,1008.69493 1597.03614,1013.35722 C1530.56683,1018.01951 1495.17574,990.045781 1460.94213,994.708069 C1426.70852,999.370357 1393.47386,1032.00637 1327.00455,1022.6818 C1260.53523,1013.35722 1127.5966,990.045781 1052.81862,934.098324 C978.040638,878.150867 924.034318,812.878834 874.182332,817.541122 C824.330345,822.20341 645.694058,831.527986 541.835752,836.190274 C437.977446,840.852562 479.520768,673.010191 587.533407,556.452989 C695.546045,439.895787 672.656749,409.599806 853.41067,309.351721 Z" id="Path-13" fill-opacity="0.200000018" fill="#1643B0" style="mix-blend-mode: multiply;" transform="translate(1246.129826, 586.424439) rotate(2.000000) translate(-1246.129826, -586.424439) "></path>
+                        <path d="M975.119909,298.503612 C1128.57313,213.418049 1236.10832,187.704335 1356.02192,171.875867 C1475.93552,156.047399 1571.16102,152.090282 1680.494,215.404154 C1789.82699,278.718027 1945.00929,282.675144 1955.5899,361.817484 C1966.17051,440.959824 1927.37494,575.501802 1835.6763,670.472611 C1743.97767,765.443419 1662.85965,892.071163 1606.42972,896.02828 C1549.9998,899.985397 1519.9541,876.242695 1490.89107,880.199812 C1461.82803,884.156929 1433.61307,911.856748 1377.18314,903.942514 C1320.75321,896.02828 1207.89336,876.242695 1144.40969,828.757291 C1080.92602,781.271887 1035.07671,725.872249 992.754262,729.829366 C950.431816,733.786483 798.776386,741.700717 710.604624,745.657834 C622.432863,749.614951 657.701567,607.158738 749.400199,508.230813 C841.098832,409.302888 821.666687,383.589174 975.119909,298.503612 Z" id="Path-13" fill-opacity="0.300000012" fill="#1643B0" style="mix-blend-mode: multiply;" transform="translate(1308.523573, 533.669081) rotate(7.000000) translate(-1308.523573, -533.669081) "></path>
+                        <path d="M1016.13722,343.689744 C1162.19745,262.703389 1264.55187,238.228496 1378.68834,223.162604 C1492.8248,208.096711 1583.46258,204.330238 1687.52818,264.593808 C1791.59377,324.857378 1939.29979,328.623852 1949.37065,403.953315 C1959.44151,479.282777 1922.51501,607.342864 1835.23419,697.73822 C1747.95336,788.133575 1670.7434,908.660716 1617.03213,912.427189 C1563.32085,916.193662 1534.72268,893.594824 1507.05983,897.361297 C1479.39698,901.12777 1452.54134,927.493082 1398.83006,919.960136 C1345.11879,912.427189 1237.69623,893.594824 1177.27105,848.397146 C1116.84586,803.199468 1073.20545,750.468844 1032.92199,754.235317 C992.638535,758.00179 848.289479,765.534737 764.36561,769.30121 C680.44174,773.067683 714.011288,637.47465 801.292112,543.312821 C888.572937,449.150992 870.076984,424.6761 1016.13722,343.689744 Z" id="Path-13-Copy" fill-opacity="0.5" fill="#1643B0" style="mix-blend-mode: multiply;" transform="translate(1333.478339, 567.525538) rotate(13.000000) translate(-1333.478339, -567.525538) "></path>
+                        <path d="M1025.49976,379.10728 C1189.2995,303.011936 1304.08521,280.015157 1432.08393,265.85914 C1560.08265,251.703122 1661.72869,248.164118 1778.4334,304.788188 C1895.13812,361.412258 2060.78352,364.951262 2072.07753,435.73135 C2083.37153,506.511437 2041.96018,626.837586 1944.07881,711.773691 C1846.19743,796.709796 1759.61006,909.957936 1699.37537,913.49694 C1639.14068,917.035945 1607.06917,895.801918 1576.04657,899.340923 C1545.02397,902.879927 1514.90663,927.652958 1454.67194,920.574949 C1394.43724,913.49694 1273.96786,895.801918 1206.20383,853.333866 C1138.43981,810.865813 1089.49912,761.319752 1044.3231,764.858756 C999.147081,768.397761 837.266347,775.47577 743.149641,779.014774 C649.032936,782.553778 686.679618,655.149621 784.560992,566.674511" id="Path-13-Copy" fill-opacity="0.5" fill="#1643B0" style="mix-blend-mode: multiply;" transform="translate(1381.383024, 589.424949) rotate(13.000000) translate(-1381.383024, -589.424949) "></path>
+                    </g>
+                    <g id="Group-3" stroke-width="1" fill="none" transform="translate(454.000000, 699.000000)">
+                        <rect id="Rectangle-3-Copy" fill="#F5F7F9" style="mix-blend-mode: overlay;" x="376" y="491" width="19.7504065" height="19.7338262"></rect>
+                        <rect id="Rectangle-3-Copy-15" fill="#F5F7F9" style="mix-blend-mode: overlay;" x="1297" y="562" width="19.7504065" height="19.7338262"></rect>
+                        <rect id="Rectangle-3-Copy-16" fill="#F5F7F9" style="mix-blend-mode: overlay;" transform="translate(1184.875203, 429.866913) rotate(30.000000) translate(-1184.875203, -429.866913) " x="1167.3752" y="412.381604" width="35" height="34.9706179"></rect>
+                        <rect id="Rectangle-3-Copy-2" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="504.21626" y="590.622921" width="19.7504065" height="19.7338262"></rect>
+                        <rect id="Rectangle-3-Copy-3" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="898" y="522" width="19.7504065" height="19.7338262"></rect>
+                        <rect id="Rectangle-3-Copy-17" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="1328" y="293" width="19.7504065" height="19.7338262"></rect>
+                        <rect id="Rectangle-3-Copy-6" fill="#F5F7F9" style="mix-blend-mode: overlay;" x="932.91626" y="13.9297597" width="19.7504065" height="19.7338262"></rect>
+                        <rect id="Rectangle-3-Copy-7" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="1251.24634" y="128.850277" width="12.7796748" height="12.7689464"></rect>
+                        <rect id="Rectangle-3-Copy-8" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="1234.9813" y="378.425139" width="12.7796748" height="12.7689464"></rect>
+                        <rect id="Rectangle-3-Copy-9" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="937.563415" y="481.737523" width="12.7796748" height="12.7689464"></rect>
+                        <rect id="Rectangle-3-Copy-10" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="336" y="534" width="12.7796748" height="12.7689464"></rect>
+                        <rect id="Rectangle-3-Copy-14" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="133" y="454" width="12.7796748" height="12.7689464"></rect>
+                        <rect id="Rectangle-3-Copy-11" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="184.72439" y="385.390018" width="12.7796748" height="12.7689464"></rect>
+                        <rect id="Rectangle-3-Copy-5" fill="#F5F7F9" style="mix-blend-mode: overlay;" opacity="0.300000012" x="1362.77805" y="401.641405" width="19.7504065" height="19.7338262"></rect>
+                        <polygon id="Triangle-Copy-2" fill="#FFFFFF" style="mix-blend-mode: overlay;" opacity="0.300000012" points="586.122358 523.526802 597.15935 539.778189 575.085366 539.778189"></polygon>
+                        <polygon id="Triangle-Copy-3" fill="#FFFFFF" style="mix-blend-mode: overlay;" points="1279.03699 344 1290.07398 360.251386 1268 360.251386"></polygon>
+                        <polygon id="Triangle-Copy-9" fill="#FFFFFF" style="mix-blend-mode: overlay;" points="246.036992 568 257.073984 584.251386 235 584.251386"></polygon>
+                        <polygon id="Triangle-Copy-5" fill="#FFFFFF" style="mix-blend-mode: overlay;" opacity="0.300000012" points="826.612602 611.748614 837.649593 628 815.57561 628"></polygon>
+                        <polygon id="Triangle-Copy-6" fill="#FFFFFF" style="mix-blend-mode: overlay;" opacity="0.300000012" points="781.302846 558.351201 799.310569 585.049908 763.295122 585.049908"></polygon>
+                        <polygon id="Triangle-Copy-7" fill="#FFFFFF" style="mix-blend-mode: overlay;" opacity="0.300000012" points="1213.00772 470 1231.01545 496.698706 1195 496.698706"></polygon>
+                        <polygon id="Triangle-Copy-10" fill="#FFFFFF" style="mix-blend-mode: overlay;" opacity="0.300000012" points="1021.00772 580 1039.01545 606.698706 1003 606.698706"></polygon>
+                        <polygon id="Triangle-Copy-4" fill="#FFFFFF" style="mix-blend-mode: overlay;" points="1190.25244 109.116451 1201.28943 125.367837 1179.21545 125.367837"></polygon>
+                        <g id="Stroke-912-+-Stroke-913-Copy" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(268.373171, 451.556377)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-2" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(276.505691, 537.456562)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-3" style="mix-blend-mode: overlay;" transform="translate(514.672358, 545.582255)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-5" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(737.735772, 528.170055)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-7" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(1125.000000, 452.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-12" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(1368.000000, 265.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-13" style="mix-blend-mode: overlay;" transform="translate(1306.500000, 164.500000) rotate(50.000000) translate(-1306.500000, -164.500000) translate(1302.000000, 160.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-9" style="mix-blend-mode: overlay;" transform="translate(1348.000000, 470.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L19.7504065,19.7338262" id="Stroke-912"></path>
+                            <path d="M19.7504065,0 L0,19.7338262" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-11" style="mix-blend-mode: overlay;" transform="translate(146.000000, 528.000000) rotate(30.000000) translate(-146.000000, -528.000000) translate(136.000000, 518.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L19.7504065,19.7338262" id="Stroke-912"></path>
+                            <path d="M19.7504065,0 L0,19.7338262" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-10" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(994.491057, 76.613678)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <g id="Stroke-912-+-Stroke-913-Copy-6" opacity="0.300000012" style="mix-blend-mode: overlay;" transform="translate(700.558537, 603.622921)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <ellipse id="Oval-2-Copy-6" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="198.665854" cy="470.12939" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy-8" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="424.052846" cy="559.512015" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy-9" fill="#FFFFFF" style="mix-blend-mode: overlay;" cx="1073.49268" cy="525.848429" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy-10" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="994.491057" cy="501.471349" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy-12" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="1066.52195" cy="95.1866913" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy-7" fill="#FFFFFF" style="mix-blend-mode: overlay;" cx="212.970732" cy="507.96488" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy-13" fill="#FFFFFF" style="mix-blend-mode: overlay;" cx="152.970732" cy="359.96488" rx="6.97073171" ry="6.96487985"></ellipse>
+                        <ellipse id="Oval-2-Copy" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="102.818293" cy="367.397412" rx="16.845935" ry="16.831793"></ellipse>
+                        <ellipse id="Oval-2-Copy-3" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="645.373577" cy="576.343808" rx="16.845935" ry="16.831793"></ellipse>
+                        <ellipse id="Oval-2-Copy-4" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="1179.79634" cy="542.680222" rx="16.845935" ry="16.831793"></ellipse>
+                        <ellipse id="Oval-2-Copy-5" fill="#FFFFFF" style="mix-blend-mode: overlay;" cx="1290.16626" cy="238.547135" rx="16.845935" ry="16.831793"></ellipse>
+                        <g id="Stroke-912-+-Stroke-913-Copy-8" style="mix-blend-mode: overlay;" transform="translate(1155.979675, 361.012939)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path d="M0,0 L8.13252033,8.12569316" id="Stroke-912"></path>
+                            <path d="M8.13252033,0 L0,8.12569316" id="Stroke-913"></path>
+                        </g>
+                        <ellipse id="Oval-2-Copy-11" fill-opacity="0.300000012" fill="#F5F7F9" style="mix-blend-mode: overlay;" cx="1180.37724" cy="350.565619" rx="6.97073171" ry="6.96487985"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

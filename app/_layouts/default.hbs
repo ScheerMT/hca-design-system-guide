@@ -9,7 +9,7 @@
     {{> styles }}
   </head>
 
-  <body class="{{ page.body_class }} hca-layout--has-app-bar hca-layout--has-drawer">
+  <body class="{{ page.body_class }} site-layout--has-app-bar site-layout--has-drawer">
 
     {{!-- fixed menu toggle button --}}
     <button class="hca-menu-toggle" title="Close">
@@ -24,26 +24,26 @@
 
     {{> nav }}
 
-    <header class="app-header hca-js-app-header">
-      <div class="container hca-layout__container">
+    <header class="site-header hca-js-site-header">
+      <div class="container site-container">
         <span class="hca-typography--caption">HCA Design System (Beta)</span>
         <h1 class="hca-typography--display-2">{{page.title}}</h1>
-        {{!-- <div class="hca-layout__container--body-content">
+        {{!-- <div class="site-container--body-content">
           <p class="hca-typography--body-1">{{page.intro}}</p>
         </div> --}}
 
         <!-- Standard page tabs -->
-        <ul class="nav nav-tabs app-tabs" role="tablist">
-          <li role="presentation" class="app-tabs__tab active"><a href="#app-guidelines-tab" aria-controls="app-guidelines-tab" role="tab" data-toggle="tab">Guidelines</a></li>
-          <li role="presentation" class="app-tabs__tab"><a href="#app-styles-tab" aria-controls="app-styles-tab" role="tab" data-toggle="tab">Specs</a></li>
-          <li role="presentation" class="app-tabs__tab"><a href="#app-code-tab" aria-controls="app-code-tab" role="tab" data-toggle="tab">Code</a></li>
+        <ul class="nav nav-tabs site-tabs" role="tablist">
+          <li role="presentation" class="site-tabs__tab active"><a href="#app-guidelines-tab" aria-controls="app-guidelines-tab" role="tab" data-toggle="tab">Guidelines</a></li>
+          <li role="presentation" class="site-tabs__tab"><a href="#app-styles-tab" aria-controls="app-styles-tab" role="tab" data-toggle="tab">Specs</a></li>
+          {{!-- <li role="presentation" class="site-tabs__tab"><a href="#app-code-tab" aria-controls="app-code-tab" role="tab" data-toggle="tab">Code</a></li> --}}
         </ul>
 
       </div>
     </header>
 
-    <main class="container hca-layout__container">
-      {{> body }}
+    <main class="container site-container">
+      {{ body }}
     </main>
 
 

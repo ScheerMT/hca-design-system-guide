@@ -8,10 +8,10 @@ base_url: '../../'
 <div class="tab-content">
   {{!-- USAGE TAB --}}
   <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
-    <section class="app-tab-header">
+    <section class="site-tab-header">
       <div class="row">
         <div class="col-sm-7">
-          <div class="hca-layout__container--body-content">
+          <div class="site-container--body-content">
             <p class="hca-typography--subhead hca-typography__color--asphalt">
               HCA Design System uses shadows to visualize elevation within a digital experience. These elevation states help provide a visual hierarchy to the many elements and components your experience may include. They give important visual cues for object depth and directional movement.</p>
 
@@ -21,18 +21,18 @@ base_url: '../../'
         <div class="col-sm-5">
           <nav>
             <span class="hca-typography--subhead">Contents:</span>
-            <ul class="app-toc">
-              <li class="app-toc__item"><a href="#section-elevation-specs">Elevation Specs</a></li>
-              <li class="app-toc__item"><a href="#section-elevation-usage">Elevation Usage</a></li>
-              {{!-- <li class="app-toc__item"><a href="#section-elevation-and-interaction">Interaction</a></li> --}}
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-elevation-specs">Elevation Specs</a></li>
+              <li class="site-toc__item"><a href="#section-elevation-usage">Elevation Usage</a></li>
+              {{!-- <li class="site-toc__item"><a href="#section-elevation-and-interaction">Interaction</a></li> --}}
             </ul>
           </nav>
         </div>
       </div>
     </section>
 
-    <article id="section-elevation-specs" class="app-section">
-      <h2 class="app-article-headline hca-typography--headline">Elevation Specs</h2>
+    <article id="section-elevation-specs" class="site-section">
+      <h2 class="site-article-headline hca-typography--headline">Elevation Specs</h2>
       <div class="row">
         <div class="col-sm-4">
           <figure class="hca-visual-example">
@@ -83,8 +83,8 @@ base_url: '../../'
     </article>
 
     <article id="section-elevation-usage">
-      <section class="app-section">
-        <h2 class="app-article-headline hca-typography--headline">Elevation Usage</h2>
+      <section class="site-section">
+        <h2 class="site-article-headline hca-typography--headline">Elevation Usage</h2>
         <div class="row">
           <div class="col-sm-5">
             <div class="hca-typography__container--body-content">
@@ -95,7 +95,7 @@ base_url: '../../'
         <h3 class="hca-typography--title">Level 4: Top Elevation</h3>
         <div class="row">
           <div class="col-sm-5">
-            <div class="hca-layout__container--body-content">
+            <div class="site-container--body-content">
               <h4 class="hca-typography--body-2">Elements/Components you may see at this level:</h4>
               <ul>
                 <li>Dialogs</li>
@@ -104,7 +104,7 @@ base_url: '../../'
               </ul>
 
               <br /><br />
-              <div class="app-card hca-specs">
+              <div class="site-card hca-specs">
                 <h4 class="hca-typography--body-2">Spec</h4>
                 <p class="hca-typography--body-1">{{> elevation-level-4}}</p>
               </div>
@@ -118,11 +118,11 @@ base_url: '../../'
           </div>
         </div>
 
-        <div class="app-section">
+        <div class="site-section">
           <h3 class="hca-typography--title">Level 3: Upper Elevation</h3>
           <div class="row">
             <div class="col-sm-5">
-              <div class="hca-layout__container--body-content">
+              <div class="site-container--body-content">
                 <h4 class="hca-typography--body-2">Elements/Components you may see at this level:</h4>
                 <ul>
                   <li>App Bar</li>
@@ -131,7 +131,7 @@ base_url: '../../'
                 </ul>
 
                 <br /><br />
-                <div class="app-card hca-specs">
+                <div class="site-card hca-specs">
                   <h4 class="hca-typography--body-2">Spec</h4>
                   <p class="hca-typography--body-1">{{> elevation-level-3}}</p>
                 </div>
@@ -146,11 +146,11 @@ base_url: '../../'
           </div>
         </div>
 
-        <div class="app-section">
+        <div class="site-section">
           <h3 class="hca-typography--title">Level 2: Mid Elevation</h3>
           <div class="row">
             <div class="col-sm-6">
-              <div class="hca-layout__container--body-content">
+              <div class="site-container--body-content">
                 <h4 class="hca-typography--body-2">Elements/Components you may see at this level:</h4>
                 <ul>
                   <li>Card (on Focus/Hover)</li>
@@ -158,7 +158,7 @@ base_url: '../../'
                 </ul>
 
                 <br /><br />
-                <div class="app-card hca-specs">
+                <div class="site-card hca-specs">
                   <h4 class="hca-typography--body-2">Spec</h4>
                   <p class="hca-typography--body-1">{{> elevation-level-2}}</p>
                 </div>
@@ -173,11 +173,11 @@ base_url: '../../'
           </div>
         </div>
 
-        <div class="app-section">
+        <div class="site-section">
           <h3 class="hca-typography--title">Level 1: Low Elevation</h3>
           <div class="row">
             <div class="col-sm-6">
-              <div class="hca-layout__container--body-content">
+              <div class="site-container--body-content">
                 <h4 class="hca-typography--body-2">Elements/Components you may see at this level:</h4>
                 <ul>
                   <li>Card (Resting state)</li>
@@ -186,7 +186,7 @@ base_url: '../../'
                 </ul>
 
                 <br /><br />
-                <div class="app-card hca-specs">
+                <div class="site-card hca-specs">
                   <h4 class="hca-typography--body-2">Spec</h4>
                   <p class="hca-typography--body-1">{{> elevation-level-1}}</p>
                 </div>
@@ -201,11 +201,11 @@ base_url: '../../'
           </div>
         </div>
 
-        <div class="app-section">
+        <div class="site-section">
           <h3 class="hca-typography--title">Level 0: No Elevation</h3>
           <div class="row">
             <div class="col-sm-6">
-              <div class="hca-layout__container--body-content">
+              <div class="site-container--body-content">
                 <h4 class="hca-typography--body-2">Elements/Components you may see at this level:</h4>
                 <ul>
                   <li>Text</li>
@@ -216,7 +216,7 @@ base_url: '../../'
                 </ul>
 
                 <br /><br />
-                <div class="app-card hca-specs">
+                <div class="site-card hca-specs">
                   <h4 class="hca-typography--body-2">Spec</h4>
                   <p class="hca-typography--body-1">No Shadow</p>
                 </div>
@@ -234,8 +234,8 @@ base_url: '../../'
       {{!-- / elevation-levels section --}}
 
       {{!-- elevation-and-interaction section --}}
-      {{!-- <section id="section-elevation-and-interaction" class="app-section">
-        <h1 class="app-article-headline hca-typography--headline">Interaction</h1>
+      {{!-- <section id="section-elevation-and-interaction" class="site-section">
+        <h1 class="site-article-headline hca-typography--headline">Interaction</h1>
         <div class="row">
           <div class="col-sm-4">
             <h2 class="hca-typography--title">Buttons</h2>
@@ -271,7 +271,7 @@ base_url: '../../'
 
 
 
-<nav class="app-pagination">
+<nav class="site-pagination">
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}essentials/iconography/" class="hca-button hca-button--has-icon-left">Back to Iconography <span class="material-icons">keyboard_arrow_left</span></a>

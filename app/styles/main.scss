@@ -8,40 +8,42 @@
 //
 // Base/Global
 //
-@import 'base/variables';
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/utilities';
-@import 'base/application';
-@import 'base/typography';
+@import 'variables';
+@import 'mixins';
+@import 'syntax';
+@import 'site/reset';
+@import 'site/utilities';
 
 // Syntax highlighting (has no dependencies)
 @import 'syntax';
 
 
 //
-// Layout
+// Site-specific Styles
 //
-@import 'layout/containers';
-@import 'layout/drawer';
+@import 'site/containers';
+@import 'site/drawer';
+@import 'site/general';
 
+
+
+
+
+//
+// Essentials
+//
+@import 'hca-design-system/essentials/typography';
 
 //
 // Components
 //
-@import 'components/hca-visual-example';
-@import 'components/hca-list';
-@import 'components/hca-app-bar';
-@import 'components/hca-menu-toggle';
-@import 'components/menus';
-@import 'components/hca-buttons';
-@import 'components/hca-icon-badge';
-@import 'components/hca-specs';
-@import 'components/tables';
-@import 'components/hca-color-swatch';
-
-
-//
-// App
-//
-@import 'app/utilities';
+@import 'hca-design-system/components/hca-visual-example';
+@import 'hca-design-system/components/hca-list';
+@import 'hca-design-system/components/hca-app-bar';
+@import 'hca-design-system/components/hca-menu-toggle';
+@import 'hca-design-system/components/menus';
+@import 'hca-design-system/components/hca-buttons';
+@import 'hca-design-system/components/hca-icon-badge';
+@import 'hca-design-system/components/hca-specs';
+@import 'hca-design-system/components/tables';
+@import 'hca-design-system/components/hca-color-swatch';
