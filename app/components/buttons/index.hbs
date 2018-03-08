@@ -289,7 +289,9 @@ base_url: '../../'
             <ul class="site-toc">
               <li class="site-toc__item"><a href="#section-flat-button-specs">Flat Buttons</a></li>
               <li class="site-toc__item"><a href="#section-raised-button-specs">Raised Buttons</a></li>
+              <li class="site-toc__item"><a href="#section-outline-button-specs">Outline Buttons</a></li>
               <li class="site-toc__item"><a href="#section-floating-action-button-specs">Floating Action Buttons</a></li>
+              <li class="site-toc__item"><a href="#section-buttons-with-icons-specs">Buttons with Icons</a></li>
               <li class="site-toc__item"><a href="#section-large-button-specs">Large Buttons</a></li>
             </ul>
           </nav>
@@ -612,6 +614,162 @@ base_url: '../../'
     </article>
     {{!-- / raised buttons article --}}
 
+    <article id="section-outline-button-specs">
+      <h2 class="site-article-headline hca-typography--headline">Outline Buttons</h2>
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="hca-typography--title">Defaults</h3>
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <span class="hca-typography--body-2">Sizing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 40px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Minimum Width:</span> 90px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Maximum Width:</span> 300px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> cadet }}
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Borders</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Width:</span> 2px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Color:</span> {{> cadet }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Spacing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 8px
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {{!-- / defaults specs --}}
+          </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-outline-button-defaults.png" class="img-responsive hca-visual-example__comp" alt="Outline Button default specs" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default specs for Flat Buttons</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="hca-typography--title">Variants</h3>
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <span class="hca-typography--body-2">Default</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Color:</span> {{> cadet }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Primary</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Color:</span> {{> evening }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Success / Positive</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Color:</span>{{> ivy }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Caution / Warning</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Color:</span> {{> hazelnut }}
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Danger / Error</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Border Color:</span> {{> cherry }}
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-outline-button-variants.png" class="img-responsive hca-visual-example__comp" alt="Outline Button states" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default and Primary variants of Flat Buttons</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="hca-typography--title">States</h3>
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <span class="hca-typography--body-2">Focus / Hover</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> 10% opacity of button text/border color
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Pressed</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> 25% opacity of button text/border color
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Disabled</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Fill:</span> None
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Text and Border:</span> 50% opacity
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-outline-button-states.png" class="img-responsive hca-visual-example__comp" alt="Outline Button states" />
+              <br />
+              <figcaption class="hca-visual-example__caption">Default and Primary variants of Outline Buttons in their different states.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- / outline buttons article --}}
+
 
     <article id="section-floating-action-button-specs">
       <h2 class="site-article-headline hca-typography--headline">Floating Action Buttons</h2>
@@ -631,6 +789,9 @@ base_url: '../../'
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 50%
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Icon Height:</span> 24px
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Icon Color:</span> {{> white }}
