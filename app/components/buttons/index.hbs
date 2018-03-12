@@ -290,8 +290,8 @@ base_url: '../../'
               <li class="site-toc__item"><a href="#section-flat-button-specs">Flat Buttons</a></li>
               <li class="site-toc__item"><a href="#section-raised-button-specs">Raised Buttons</a></li>
               <li class="site-toc__item"><a href="#section-outline-button-specs">Outline Buttons</a></li>
-              <li class="site-toc__item"><a href="#section-floating-action-button-specs">Floating Action Buttons</a></li>
               <li class="site-toc__item"><a href="#section-buttons-with-icons-specs">Buttons with Icons</a></li>
+              <li class="site-toc__item"><a href="#section-floating-action-button-specs">Floating Action Buttons</a></li>
               <li class="site-toc__item"><a href="#section-large-button-specs">Large Buttons</a></li>
             </ul>
           </nav>
@@ -337,6 +337,12 @@ base_url: '../../'
                   </li>
                   <li>
                     <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Background</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> Transparent
                   </li>
                 </ul>
                 <span class="hca-typography--body-2">Text</span>
@@ -442,7 +448,7 @@ base_url: '../../'
                     <span class="hca-typography__color--asphalt">Background Fill:</span> None
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Text:</span> 50% opacity
+                    <span class="hca-typography__color--asphalt">Text Color: {{> slate }}
                   </li>
                 </ul>
               </div>
@@ -637,6 +643,12 @@ base_url: '../../'
                     <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 5px
                   </li>
                 </ul>
+                <span class="hca-typography--body-2">Background</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Background Color:</span> Transparent
+                  </li>
+                </ul>
                 <span class="hca-typography--body-2">Text</span>
                 <ul class="hca-typography--body-1">
                   <li>
@@ -673,7 +685,7 @@ base_url: '../../'
           </div>
           <div class="col-sm-7 text-center">
             <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
-              <img src="{{page.base_url}}images/components/buttons/specs-outline-button-defaults.png" class="img-responsive hca-visual-example__comp" alt="Outline Button default specs" />
+              <img src="{{page.base_url}}images/components/buttons/specs-outline-button.png" class="img-responsive hca-visual-example__comp" alt="Outline Button default specs" />
               {{!-- <figcaption class="hca-visual-example__caption">Default specs for Flat Buttons</figcaption> --}}
             </figure>
           </div>
@@ -721,12 +733,13 @@ base_url: '../../'
         </div>
           <div class="col-sm-7 text-center">
             <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
-              <img src="{{page.base_url}}images/components/buttons/specs-outline-button-variants.png" class="img-responsive hca-visual-example__comp" alt="Outline Button states" />
+              <img src="{{page.base_url}}images/components/buttons/specs-outline-buttons-variants.png" class="img-responsive hca-visual-example__comp" alt="Outline Button variants" />
               {{!-- <figcaption class="hca-visual-example__caption">Default and Primary variants of Flat Buttons</figcaption> --}}
             </figure>
           </div>
         </div>
       </section>
+
 
       <section class="site-section">
         <div class="row">
@@ -752,7 +765,7 @@ base_url: '../../'
                     <span class="hca-typography__color--asphalt">Background Fill:</span> None
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Text and Border:</span> 50% opacity
+                    <span class="hca-typography__color--asphalt">Text and Border:</span> {{> slate }}
                   </li>
                 </ul>
               </div>
@@ -769,6 +782,58 @@ base_url: '../../'
       </section>
     </article>
     {{!-- / outline buttons article --}}
+
+    <article id="section-buttons-with-icons-specs">
+      <h2 class="site-article-headline hca-typography--headline">Buttons with Icons</h2>
+      <div class="site-container--body-content">
+        <p class="hca-typography--body-1">Icons can be used inside any type of button. They can appear to the left or the right of the button text, or with no text at all.</p>
+      </div>
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <span class="hca-typography--body-2">Icon Sizing and Spacing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Size:</span> 24px by 24px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Alignment:</span> Centered vertically and horizontally.
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margins:</span> No margin by default
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Icon on the Left</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Alignment:</span> Left aligned
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin Right:</span> 10px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Icon on the Right</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Alignment:</span> Right aligned
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin Left:</span> 10px
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/buttons/specs-buttons-with-icons.png" class="img-responsive hca-visual-example__comp" alt="Floating Action Button default specs" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
 
 
     <article id="section-floating-action-button-specs">
