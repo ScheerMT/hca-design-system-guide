@@ -36,6 +36,7 @@ hr {
   }
 }
 
+
 .site-drawer-nav {
   a,
   a:hover {
@@ -53,12 +54,54 @@ hr {
   }
 }
 
+.site-drawer-hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.site-resource-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+
+  &__link {
+    align-self: center;
+    font-size: 14px;
+    height: 36px;
+    width: 36px;
+    border: none;
+
+    //reset link styles for these links.
+    &:hover,
+    &:focus,
+    &:active {
+      background: none;
+      border: none;
+
+      svg {
+        fill: $color__asphalt;
+      }
+    }
+
+    svg {
+      fill: $color__slate;
+      height: 36px;
+      width: 36px;
+    }
+  }
+}
+
 .site-section {
   margin-bottom: 50px;
 }
 
 .site-nav-header {
   padding: 20px;
+  // padding-right: 20px;
+  // padding-bottom: 20px;
+  // padding-left: 20px;
   font-size: 26px;
   text-align: center;
   margin-top: 60px; //hacky value to make bottom line aligned with site-header line
