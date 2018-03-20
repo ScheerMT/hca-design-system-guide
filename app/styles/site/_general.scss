@@ -304,12 +304,24 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
 }
 
 
-.site-list--bulleted {
+.site-list--bulleted,
+.site-list--ordered {
   padding-left: 40px;
   margin-bottom: 20px;
   .site-list__item {
-    list-style: initial;
     margin-bottom: 5px;
+  }
+}
+
+.site-list--bulleted {
+  .site-list__item {
+    list-style: initial;
+  }
+}
+
+.site-list--ordered {
+  .site-list__item {
+    list-style: decimal;
   }
 }
 
