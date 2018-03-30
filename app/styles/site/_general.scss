@@ -216,6 +216,10 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
 .site-toc {
   padding-left: 15px;
   border-left: 3px solid $color__cadet;
+
+  a {
+    border: none;
+  }
 }
 .site-toc__item {
   font-weight: 600;

@@ -14,31 +14,20 @@ html {
   width: 100%;
 }
 
-a {
-  color: $color__link;
-  text-decoration: none;
-  border-bottom: 2px solid $color__link;
-
-  &:hover {
-    color: $color__link--hover;
-    background-color: $color__link-bg--hover;
-    text-decoration: none;
-    // border-bottom: 1px solid $color__link;
-  }
-}
-
+a,
 .hca-link {
-  border-bottom: 1px solid transparent;
-  color: $color__link;
+  color: $color__night;
   text-decoration: none;
+  border-bottom: 2px solid $color__noon;
 
   &:hover {
-    background-color: $color__link-bg--hover;
-    border-color: $color__link--hover;
-    color: $color__link--hover;
+    color: $color__night;
+    background-color: $color__morning;
     text-decoration: none;
+    border-color: $color__noon;
   }
 }
+
 
 nav, ul, li {
   margin: 0;
