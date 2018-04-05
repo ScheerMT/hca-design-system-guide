@@ -291,8 +291,10 @@ base_url: '../../'
               <li class="site-toc__item"><a href="#section-raised-button-specs">Raised Buttons</a></li>
               <li class="site-toc__item"><a href="#section-outline-button-specs">Outline Buttons</a></li>
               <li class="site-toc__item"><a href="#section-buttons-with-icons-specs">Buttons with Icons</a></li>
+              <li class="site-toc__item"><a href="#section-dropdown-buttons-specs">Dropdown Buttons</a></li>
               <li class="site-toc__item"><a href="#section-floating-action-button-specs">Floating Action Buttons</a></li>
               <li class="site-toc__item"><a href="#section-large-button-specs">Large Buttons</a></li>
+              <li class="site-toc__item"><a href="#section-small-button-specs">Small Buttons</a></li>
             </ul>
           </nav>
         </div>
@@ -733,7 +735,7 @@ base_url: '../../'
         </div>
           <div class="col-sm-7 text-center">
             <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
-              <img src="{{page.base_url}}images/components/buttons/specs-outline-buttons-variants.png" class="img-responsive hca-visual-example__comp" alt="Outline Button variants" />
+              <img src="{{page.base_url}}images/components/buttons/specs-outline-button-variants.png" class="img-responsive hca-visual-example__comp" alt="Outline Button variants" />
               {{!-- <figcaption class="hca-visual-example__caption">Default and Primary variants of Flat Buttons</figcaption> --}}
             </figure>
           </div>
@@ -835,6 +837,43 @@ base_url: '../../'
       </section>
     </article>
 
+
+    <article id="section-dropdown-buttons-specs">
+      <h2 class="site-article-headline hca-typography--headline">Dropdown Buttons</h2>
+      <div class="site-container--body-content">
+        <p class="hca-typography--body-1">Dropdown Buttons are buttons that activate a <a href="{{page.base_url}}components/menus/" target="_blank">Menu</a> component upon interaction. The menu can appear on any side of the button that best suits your UI.</p>
+      </div>
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <span class="hca-typography--body-2">Menu Placement</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Horizontal Offset:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Vertical Overlap of Button:</span> 5px
+                  </li>
+                </ul>
+                <p class="hca-typography--support">See <a href="{{page.base_url}}components/menus/" target="_blank">Menu</a> docs for menu specs.</p>
+              </div>
+            </div>
+            {{!-- / defaults specs --}}
+          </div>
+          <div class="col-sm-8 text-center">
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/buttons/specs-dropdown-buttons.png" class="img-responsive hca-visual-example__comp" alt="dropdown button specs" />
+            </figure>
+            <figure class="hca-visual-example">
+              <img src="{{page.base_url}}images/components/buttons/dropdown-button-left-example.png" class="img-responsive hca-visual-example__comp" alt="Button with menu open to the left" />
+              <figcaption class="hca-visual-example__caption">An example of a button menu opening to the left</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
 
     <article id="section-floating-action-button-specs">
       <h2 class="site-article-headline hca-typography--headline">Floating Action Buttons</h2>
@@ -965,9 +1004,6 @@ base_url: '../../'
                 <span class="hca-typography--body-2">Text</span>
                 <ul class="hca-typography--body-1">
                   <li>
-                    <span class="hca-typography__color--asphalt">Text Color:</span> {{> white }}
-                  </li>
-                  <li>
                     <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
                   </li>
                   <li>
@@ -1022,7 +1058,84 @@ base_url: '../../'
         </div>
       </section>
     </article>
-    {{!-- / floating action buttons article --}}
+    {{!-- / large buttons specs article --}}
+
+
+    <article id="section-small-button-specs">
+      <h2 class="site-article-headline hca-typography--headline">Small Buttons</h2>
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="hca-typography--title">Defaults</h3>
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <span class="hca-typography--body-2">Sizing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Height:</span> 25px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Maximum Width:</span> 200px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Text</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Weight:</span> Semibold
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                  </li>
+                </ul>
+                <span class="hca-typography--body-2">Spacing</span>
+                <ul class="hca-typography--body-1">
+                  <li>
+                    <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 10px
+                  </li>
+                  <li>
+                    <span class="hca-typography__color--asphalt">Margin - All Sides:</span> 2px
+                  </li>
+                </ul>
+              </div>
+            </div>
+            {{!-- / defaults specs --}}
+          </div>
+          <div class="col-sm-7 text-center">
+            <figure class="hca-visual-example hca-visual-example--mobile hca-visual-example--margin-top">
+              <img src="{{page.base_url}}images/components/buttons/specs-small-button.png" class="img-responsive hca-visual-example__comp" alt="Large Button specs" />
+              {{!-- <figcaption class="hca-visual-example__caption">Default specs for Flat Buttons</figcaption> --}}
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="hca-typography--title">Variants</h3>
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <p class="hca-typography--body-1">Small Buttons can utilize all of the same variants as regular buttons: default, primary, success, warning, danger.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3 class="hca-typography--title">States</h3>
+            <div class="site-container--body-content">
+              <div class="site-card hca-specs">
+                <p class="hca-typography--body-1">Small Buttons utilize all of the same state changes as regular buttons.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    {{!-- / small buttons specs article --}}
 
 
   </div>
