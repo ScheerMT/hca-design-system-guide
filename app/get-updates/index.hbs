@@ -1,0 +1,42 @@
+---
+layout: no-tabs.hbs
+title: Get Updates
+base_url: '../'
+---
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="site-container--body-content">
+      <p class="hca-typography--subhead">Sign up below to receive an update every time a new version of HCA Design System is released. </p>
+      <p class="hca-typography--body-1">We make new releases as frequent as once every three weeks, but not always this often.</p>
+    </div>
+
+    <div class="site-container--body-content">
+      <div class="hca-card">
+        <div class="hca-card__content">
+          <form class="site-email-submission-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfnaruStEbMYW0jjes2CEXRYC2181NHjYNjGwHiO1w7Y33cUg/formResponse" target="_self" method="POST">
+            <div class="hca-text-field">
+              <label class="hca-typography--headline">Enter your email</label>
+              <input type="email" class="hca-text-field__input"  autocomplete="email" tabindex="0" aria-label="Enter your email" name="emailAddress" value="" required="true" dir="auto">
+            </div>
+            <button role="button" class="hca-button hca-button--raised hca-button--evening" aria-disabled="false" tabindex="0">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{{!-- Pagination Navigation --}}
+<nav class="site-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}accessibility/" class="hca-button hca-button--has-icon-left">Back to Accessibility <span class="material-icons">keyboard_arrow_left</span></a>
+      <a class="hca-button hca-button--disabled hca-button--has-icon-right hca-typography__color--night">Next: TBD <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>

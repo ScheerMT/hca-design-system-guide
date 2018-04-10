@@ -1,0 +1,95 @@
+////////////////////////////////////////////////////////////////////////////////
+//Defaults
+////////////////////////////////////////////////////////////////////////////////
+.hca-text-field {
+  display: inline-block;
+}
+.hca-text-field__label,
+.hca-text-field__input,
+.hca-text-field__helper-text {
+  display: block;
+}
+.hca-text-field__feedback-icon {
+  display: none;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+//Inputs
+////////////////////////////////////////////////////////////////////////////////
+$text-field-input-height: 40px;
+
+.hca-text-field__input {
+  height: $text-field-input-height;
+  line-height: $text-field-input-height;
+  background-color: $color__white;
+  border: 1px solid $color__geyser;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: $color__asphalt;
+
+
+  // Focus and Active State
+  &:focus,
+  &:active {
+    border: 1px solid $color__noon;
+    outline: none;
+  }
+
+  // Disabled Fields
+  &[disabled],
+  &--disabled {
+    background-color: $color__geyser;
+    color: $color__slate;
+    cursor: not-allowed;
+
+    //Interaction States for Disabled Fields
+    &:focus,
+    &:hover,
+    &:active {
+      border: 1px solid $color__geyser;
+    }
+  }
+}
+// end of hca-text-field__input
+
+
+//
+// Multi Line Text Field / Textarea
+//
+textarea.hca-text-field__input {
+  line-height: 1.5;
+  padding: 10px 15px;
+  min-height: 125px;
+  width: 100%;
+  max-width: 600px;
+  resize: vertical;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//Labels
+////////////////////////////////////////////////////////////////////////////////
+.hca-text-field__label {
+  color: $color__cadet;
+  font-size: 14px;
+  font-weight: regular;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+//Helper Text
+////////////////////////////////////////////////////////////////////////////////
+.hca-text-field__helper-text {
+  color: $color__asphalt;
+  font-size: 12px;
+  font-weight: semibold;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
