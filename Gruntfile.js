@@ -60,7 +60,8 @@ module.exports = function (grunt) {
             '<%= yeoman.app %>/components/**/*.hbs',
             '<%= yeoman.app %>/patterns/**/*.hbs',
             '<%= yeoman.app %>/accessibility/**/*.hbs',
-            '<%= yeoman.app %>/forum/**/*.hbs'
+            '<%= yeoman.app %>/forum/**/*.hbs',
+            '<%= yeoman.app %>/get-updates/**/*.hbs'
           ],
           dest: '<%= yeoman.tmp %>'
         }]

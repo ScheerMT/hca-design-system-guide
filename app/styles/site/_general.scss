@@ -331,6 +331,24 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
 
 
 
+.site-email-submission-form {
+  .hca-text-field {
+    width: 100%;
+  }
+  .hca-text-field__label {
+    margin-top: 0;
+  }
+  .hca-text-field__input {
+    width: 100%;
+  }
+  .hca-button {
+    display: block;
+    margin: 0;
+  }
+}
+
+
+
 //
 //Modifier class for landing page style differences
 //
@@ -406,6 +424,7 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
     margin: auto;
     width: 100%;
   }
+
 
 
 }
