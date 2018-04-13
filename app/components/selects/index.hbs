@@ -1,0 +1,203 @@
+---
+layout: no-tabs.hbs
+title: Selects
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+    <section class="site-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="site-container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Selects are a specific type of form input that allow the user to select from a list of multiple options.</p>
+            <p class="hca-typography--body-1">Selects carry the same visual characteristics as <a href="{{page.base_url}}components/text-fields/">Text Fields</a>, and should open the user's native broswer or native device menu.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          {{!-- <nav>
+            <span class="hca-typography--subhead">Contents:</span>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="site-toc__item"><a href="#section-name">List</a></li>
+              <li class="site-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav> --}}
+        </div>
+      </div>
+    </section>
+
+    <article id="section-specs-single-line" class="site-section">
+      {{!-- <h2 class="site-article-headline hca-typography--headline">Specs</h2> --}}
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="site-container--body-content">
+            <div class="site-card hca-specs">
+              <span class="hca-typography--body-2">Label</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> {{> cadet }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Margin - Top and Bottom:</span> 10px
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Select</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Height:</span> 40px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Background Color:</span> {{> white }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Border:</span> 1px {{> geyser }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Corner Radius - All Corners:</span> 5px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Margin Bottom:</span> 10px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Padding - Left and Right:</span> 15px
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Select when Focused and Open</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Border Color:</span> {{> noon }}
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Default Select Text</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Font Size:</span> 16px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> {{> cadet }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Alignment:</span> Left aligned, vertically centered
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Selected Option Text</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Color:</span> {{> asphalt }}
+                </li>
+              </ul>
+              <span class="hca-typography--body-2">Caret Icon</span>
+              <ul class="hca-typography--body-1">
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Container:</span> 20px by 20px
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Icon Color:</span> {{> cadet }}
+                </li>
+                <li>
+                  <span class="hca-typography__color--asphalt">Alignment:</span> Right aligned, vertically centered inside field
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <figure class="hca-visual-example">
+            <img src="{{page.base_url}}images/components/selects/specs-select-resting.jpg" class="img-responsive hca-visual-example__comp" alt="" />
+            {{!-- <figcaption class="hca-visual-example__caption hca-typography--caption">Single line field with icon and helper text</figcaption> --}}
+          </figure>
+          <h3 class="hca-typography--title">Interaction States</h3>
+          <div class="row">
+            <div class="col-sm-6">
+              <span class="hca-typography--support">1</span>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/selects/select-resting.jpg" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption hca-typography--caption">Select resting before interaction</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6">
+              <span class="hca-typography--support">2</span>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/selects/select-focused.jpg" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption hca-typography--caption">Select focused</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <span class="hca-typography--support">3</span>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/selects/select-open.jpg" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption hca-typography--caption">Select when menu is open</figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6">
+              <span class="hca-typography--support">4</span>
+              <figure class="hca-visual-example">
+                <img src="{{page.base_url}}images/components/selects/select-selected.jpg" class="img-responsive hca-visual-example__comp" alt="" />
+                <figcaption class="hca-visual-example__caption hca-typography--caption">Select after choosing an option</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  {{!-- STYLES TAB --}}
+  {{!-- <div role="tabpanel" class="tab-pane" id="app-styles-tab">
+
+    <section class="site-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="site-container--body-content">
+            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <ul class="site-toc">
+              <span class="hca-typography--subhead">Contents:</span>
+              <li class="site-toc__item"><a href="#section-name">Topic</a></li>
+              <li class="site-toc__item"><a href="#section-name">List</a></li>
+              <li class="site-toc__item"><a href="#section-name">Here</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    Put your content here.
+  </div> --}}
+
+  {{!-- CODE TAB --}}
+  {{!-- <div role="tabpanel" class="tab-pane" id="app-code-tab">
+    Coming soon.
+  </div> --}}
+
+</div>
+
+
+{{!-- Pagination Navigation --}}
+<nav class="site-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/menus/" class="hca-button hca-button--has-icon-left">Back to Menus <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}components/snackbars" class="hca-button hca-button--has-icon-right hca-typography__color--evening">Next: Snackbars <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>
