@@ -150,8 +150,8 @@ base_url: '../../'
         </div>
         <div class="col-sm-5">
           <nav>
+            <span class="hca-typography--subhead">Contents:</span>
             <ul class="site-toc">
-              <span class="hca-typography--subhead">Contents:</span>
               <li class="site-toc__item"><a href="#section-name">Topic</a></li>
               <li class="site-toc__item"><a href="#section-name">List</a></li>
               <li class="site-toc__item"><a href="#section-name">Here</a></li>
