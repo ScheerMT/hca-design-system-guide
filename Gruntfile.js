@@ -7,7 +7,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     // Configurable paths
     yeoman: {
-      app: 'app',
+      source: 'source',
       dist: 'dist',
       tmp: '.tmp'
     },
@@ -34,20 +34,20 @@ module.exports = function (grunt) {
     assemble: {
       options: {
         flatten: true,
-        partials: ['<%= yeoman.app %>/_includes/**/*.hbs'],
-        layoutdir: '<%= yeoman.app %>/_layouts',
+        partials: ['<%= yeoman.source %>/_includes/**/*.hbs'],
+        layoutdir: '<%= yeoman.source %>/_layouts',
         layout: 'default.hbs',
-        data: '<%= yeoman.app %>/_data/*.json'
+        data: '<%= yeoman.source %>/_data/*.json'
       },
       files: {
-        '<%= yeoman.dist %>/': ['<%= yeoman.app %>/**/*.hbs' ]
+        '<%= yeoman.dist %>/': ['<%= yeoman.source %>/**/*.hbs' ]
       },
       dist: {
         files: [{
           expand: true,
           dot: true,
           src: [
-            '<%= yeoman.app %>/**/*.hbs',
+            '<%= yeoman.source %>/**/*.hbs',
             '!**/_*{,/**}', // exclude .hbs files in folders prefixed with underscore
           ],
           dest: '<%= yeoman.tmp %>'
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '<%= yeoman.app %>',
+          cwd: '<%= yeoman.source %>',
           src: [
             // Assemble processes and moves HTML and text files
             // Copy moves asset files and directories
@@ -106,7 +106,7 @@ module.exports = function (grunt) {
           sourceMapRootpath: '../'
         },
         files: {
-          'dist/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
+          'dist/styles/main.css': '<%= yeoman.source %>/styles/main.scss'
         }
       }
     },
@@ -200,19 +200,19 @@ module.exports = function (grunt) {
     },
     watch: {
       styles: {
-        files: ['<%= yeoman.app %>/styles/**/*.scss'],
+        files: ['<%= yeoman.source %>/styles/**/*.scss'],
         tasks: ['sass:dist']
       },
       scripts: {
-        files: ['<%= yeoman.app %>/scripts/**/*.js'],
+        files: ['<%= yeoman.source %>/scripts/**/*.js'],
         tasks: ['copy:dist', 'eslint:app']
       },
       pages: {
-        files: ['<%= yeoman.app %>/**/*.hbs'],
+        files: ['<%= yeoman.source %>/**/*.hbs'],
         tasks: ['newer:assemble:dist', 'copy:tmp']
       },
       images: {
-        files: ['<%= yeoman.app %>/images/**/*'],
+        files: ['<%= yeoman.source %>/images/**/*'],
         tasks: ['copy:dist']
       }
     },
@@ -223,8 +223,8 @@ module.exports = function (grunt) {
       },
       app: [
         'Gruntfile.js',
-        '<%= yeoman.app %>/scripts/**/*.js',
-        '!<%= yeoman.app %>/scripts/vendor/**/*'
+        '<%= yeoman.source %>/scripts/**/*.js',
+        '!<%= yeoman.source %>/scripts/vendor/**/*'
       ],
       dist: [
         '<%= yeoman.dist %>/scripts/**/*.js'
@@ -252,9 +252,9 @@ module.exports = function (grunt) {
         options: {},
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/_release-notes-markdown/',
+          cwd: '<%= yeoman.source %>/_release-notes-markdown/',
           src: ['**/*.md'],
-          dest: '<%= yeoman.app %>/_includes/release-notes',
+          dest: '<%= yeoman.source %>/_includes/release-notes',
           ext: '.hbs'
         }]
       }
