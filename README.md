@@ -6,20 +6,17 @@ that you can count on to point you in the right direction in the world of HCA De
 
 ## Dependencies
 1. Node.js & NPM
-2. Yarn
 3. Globally installed Grunt
 
 ## Project Setup
 
 1. Clone this repository
-2. `yarn`
+2. run `npm install` in the root directory (hca-design-system-guide/)
 
 ## Usage
-`yarn start`
-
-or...
 
 ### Grunt Tasks
+
 ##### `grunt serve` (default grunt task)
 Serve your source locally into your browser. BrowserSync will automatically load any changes to HTML, CSS and JavaScript that you make.
 

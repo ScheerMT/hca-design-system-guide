@@ -37,8 +37,7 @@ module.exports = function (grunt) {
         partials: ['<%= yeoman.app %>/_includes/**/*.hbs'],
         layoutdir: '<%= yeoman.app %>/_layouts',
         layout: 'default.hbs',
-        data: '<%= yeoman.app %>/_data/*.json',
-        helpers: ['<%= yeoman.app %>/helpers/**/*.js']
+        data: '<%= yeoman.app %>/_data/*.json'
       },
       files: {
         '<%= yeoman.dist %>/': ['<%= yeoman.app %>/**/*.hbs' ]
@@ -48,13 +47,8 @@ module.exports = function (grunt) {
           expand: true,
           dot: true,
           src: [
-            '<%= yeoman.app %>/*.hbs',
-            '<%= yeoman.app %>/essentials/**/*.hbs',
-            '<%= yeoman.app %>/components/**/*.hbs',
-            '<%= yeoman.app %>/patterns/**/*.hbs',
-            '<%= yeoman.app %>/accessibility/**/*.hbs',
-            '<%= yeoman.app %>/forum/**/*.hbs',
-            '<%= yeoman.app %>/get-updates/**/*.hbs'
+            '<%= yeoman.app %>/**/*.hbs',
+            '!**/_*{,/**}', // exclude .hbs files in folders prefixed with underscore
           ],
           dest: '<%= yeoman.tmp %>'
         }]
@@ -76,7 +70,6 @@ module.exports = function (grunt) {
             // Explicitly add any files your site needs for distribution here
             // ex: './vendor/jquery/jquery.js',
             'favicon.ico',
-            '_data/**/*',
             // 'apple-touch*.png'
           ],
           dest: '<%= yeoman.dist %>'
@@ -259,7 +252,7 @@ module.exports = function (grunt) {
         options: {},
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/release-notes/',
+          cwd: '<%= yeoman.app %>/_release-notes-markdown/',
           src: ['**/*.md'],
           dest: '<%= yeoman.app %>/_includes/release-notes',
           ext: '.hbs'
