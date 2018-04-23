@@ -2,8 +2,7 @@
 
 module.exports = function (grunt) {
   require('time-grunt')(grunt); // Show elapsed time after tasks run
-  require('jit-grunt')(grunt, { scsslint: 'grunt-scss-lint' }); // Load all Grunt tasks
-  grunt.loadNpmTasks('grunt-md2html');
+  require('jit-grunt')(grunt); // Load all Grunt tasks
 
   grunt.initConfig({
     // Configurable paths
@@ -20,13 +19,6 @@ module.exports = function (grunt) {
           continueAfterInstall: true
         }
       },
-      // bower: {
-      //   options: {
-      //     packageManager: 'bower',
-      //     install: true,
-      //     continueAfterInstall: true
-      //   }
-      // },
     },
     clean: {
       dist: {
@@ -101,39 +93,6 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }]
       },
-      vendorScripts: {
-        files: [{
-          cwd: './vendor/bower_components',
-          expand: true,
-          flatten: true,
-          src: [
-            'bootstrap/dist/js/bootstrap.min.js',
-            'jquery/dist/jquery.min.js'
-          ],
-          dest: '<%= yeoman.dist %>/vendor/scripts/'
-        }]
-      },
-      vendorStyles: {
-        files: [{
-          cwd: './vendor/bower_components',
-          expand: true,
-          flatten: true,
-          src: [''],
-          dest: '<%= yeoman.dist %>/vendor/styles/'
-        }]
-      },
-      vendorFonts: {
-        files: [{
-          cwd: './vendor/bower_components',
-          expand: true,
-          flatten: true,
-          src: [
-            'font-awesome/fonts/*',
-            'font-awesome/css/font-awesome.css'
-          ],
-          dest: '<%= yeoman.dist %>/fonts/'
-        }]
-      }
     },
     sass: {
       options: {
@@ -249,7 +208,7 @@ module.exports = function (grunt) {
     watch: {
       styles: {
         files: ['<%= yeoman.app %>/styles/**/*.scss'],
-        tasks: ['sass:dist'] //, 'scsslint:app'
+        tasks: ['sass:dist']
       },
       scripts: {
         files: ['<%= yeoman.app %>/scripts/**/*.js'],
@@ -277,30 +236,6 @@ module.exports = function (grunt) {
       dist: [
         '<%= yeoman.dist %>/scripts/**/*.js'
       ]
-    },
-    // lesslint: {
-    //   options: {
-    //     csslint: {
-    //       csslintrc: '.csslintrc'
-    //     },
-    //     failOnWarning: false
-    //   },
-    //   app: {
-    //     src: ['<%= yeoman.app %>/styles/**/*.less'],
-    //   }
-    // },
-    scsslint: {
-      app: [
-        '<%= yeoman.app %>/styles/**/*.scss',
-        '!<%= yeoman.app %>/styles/main.scss',
-        '!<%= yeoman.app %>/styles/syntax.scss'
-      ],
-      options: {
-        bundleExec: false,
-        // config: '.scss-lint.yml',
-        // reporterOutput: 'scss-lint-report.xml',
-        colorizeOutput: true
-      },
     },
     csslint: {
       options: {
@@ -357,12 +292,10 @@ module.exports = function (grunt) {
     'assemble:dist',
     'copy:tmp',
     'copy:vendorScripts',
-    // 'copy:vendorStyles',
     'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:app',
-    // 'scsslint:app',
     'browserSync',
     'watch'
   ]);
@@ -373,13 +306,11 @@ module.exports = function (grunt) {
     'assemble:dist',
     'copy:tmp',
     'copy:vendorScripts',
-    // 'copy:vendorStyles',
     'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:app',
     'eslint:dist',
-    // 'scsslint:app',
     'csslint:dist'
   ]);
 
@@ -390,21 +321,18 @@ module.exports = function (grunt) {
     'assemble:dist',
     'copy:tmp',
     'copy:vendorScripts',
-    // 'copy:vendorStyles',
     'copy:vendorFonts',
     'md2html',
     'copy:dist',
     'sass:dist',
     'eslint:dist',
-    // 'csslint:dist',
-    // 'uncss:dist',
     'concat:scripts',
     'concat:styles',
     'uglify:dist',
     'cssmin:dist',
     'imagemin:dist',
     'svgmin:dist',
-    // 'htmlmin:dist'
+    'htmlmin:dist'
   ]);
 
   grunt.registerTask('deploy', [

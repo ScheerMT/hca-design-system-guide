@@ -1,10 +1,10 @@
 {
-  "name": "unity-static",
-  "version": "0.0.0",
+  "name": "hca-design-system-guide",
+  "version": "1.0.0",
   "scripts": {
     "start": "grunt"
   },
-  "repository": "https://github.com/hcadigitalmedia/unity-static",
+  "repository": "https://github.com/hca-design-system/hca-design-system-guide",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=6.9.4"
@@ -36,6 +36,5 @@
   "devDependencies": {
     "grunt-md2html": "^0.3.1",
     "grunt-sass": "^2.1.0",
-    "grunt-scss-lint": "^0.5.0"
   }
 }

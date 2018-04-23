@@ -1,4 +1,4 @@
-# .gitignore for Liftoff
+# .gitignore for HCA Design System Guide
 
 # Ignore hidden folders #
 # This takes care of .tmp, .sass-cache, and many others #
@@ -34,9 +34,10 @@ Thumbs.db
 *.tar
 *.zip
 
-# Ignore for Liftoff #
+# Ignore for HCA Design System Guide #
 /node_modules
 /vendor/*
 /dist
+/.tmp
 .ftppass
 !.ftppass.keep
