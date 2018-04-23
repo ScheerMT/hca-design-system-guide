@@ -5,7 +5,20 @@
   box-shadow: 0 2px 4px 0 rgba(31, 37, 50, 0.2);
 }
 
+.hca-card__title,
+.hca-card__content,
+.hca-card__action-bar {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
-.hca-card__content {
-  padding: 10px 20px;
+.hca-card__title {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.hca-card__content,
+.hca-card__action-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

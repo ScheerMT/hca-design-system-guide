@@ -119,12 +119,12 @@ base_url: '../../'
     <div class="row">
       <div class="col-sm-7">
         <div class="site-container--body-content">
-          <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+          <p class="hca-text--subhead hca-text__color--asphalt">Intro paragraph(s) here.</p>
         </div>
       </div>
       <div class="col-sm-5">
         <nav>
-          <span class="hca-typography--subhead">Contents:</span>
+          <span class="hca-text--subhead">Contents:</span>
           <ul class="site-toc">
             <li class="site-toc__item"><a href="#section-name">Topic</a></li>
             <li class="site-toc__item"><a href="#section-name">List</a></li>
@@ -145,12 +145,12 @@ base_url: '../../'
       <div class="row">
         <div class="col-sm-7">
           <div class="site-container--body-content">
-            <p class="hca-typography--subhead hca-typography__color--asphalt">Intro paragraph(s) here.</p>
+            <p class="hca-text--subhead hca-text__color--asphalt">Intro paragraph(s) here.</p>
           </div>
         </div>
         <div class="col-sm-5">
           <nav>
-            <span class="hca-typography--subhead">Contents:</span>
+            <span class="hca-text--subhead">Contents:</span>
             <ul class="site-toc">
               <li class="site-toc__item"><a href="#section-name">Topic</a></li>
               <li class="site-toc__item"><a href="#section-name">List</a></li>
@@ -177,7 +177,7 @@ base_url: '../../'
   <div class="row">
     <div class="col-sm-12 text-right">
       <a href="{{page.base_url}}components/text-fields/" class="hca-button hca-button--has-icon-left">Back to [Topic Name] <span class="material-icons">keyboard_arrow_left</span></a>
-      <a href="" class="hca-button hca-button--disabled hca-button--has-icon-right hca-typography__color--evening">Next: Coming Soon <span class="material-icons">keyboard_arrow_right</span></a>
+      <a href="" class="hca-button hca-button--disabled hca-button--has-icon-right hca-text__color--evening">Next: Coming Soon <span class="material-icons">keyboard_arrow_right</span></a>
     </div>
   </div>
 </nav>

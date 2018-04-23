@@ -16,8 +16,8 @@ hr {
   background-color: $color__morning;
   margin-bottom: 30px;
 
-  .hca-typography--display-2,
-  .hca-typography--body-1 {
+  .hca-text--display-2,
+  .hca-text--body-1 {
     color: $color__asphalt;
   }
 }
@@ -38,6 +38,19 @@ hr {
 
 
 .site-drawer-nav {
+  padding-left: 0;
+  list-style: none;
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
   a,
   a:hover {
     border-bottom: none;
@@ -52,6 +65,11 @@ hr {
     font-weight: 600;
     border-left: 2px solid $color__evening;
   }
+}
+
+.hca-list__item--small {
+  font-size: 14px;
+  font-weight: 400 !important;
 }
 
 .site-drawer-hr {
@@ -216,6 +234,7 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
 .site-toc {
   padding-left: 15px;
   border-left: 3px solid $color__cadet;
+  list-style: none;
 
   a {
     border: none;
@@ -299,15 +318,6 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
 }
 
 
-.site-spec-list {
-  margin-left: 20px;
-  &__item {
-    list-style: initial;
-    margin-left: 10px;
-  }
-}
-
-
 .site-list--bulleted,
 .site-list--ordered {
   padding-left: 40px;
@@ -345,86 +355,4 @@ $site-tab-inactive-color: rgba($site-tab-active-color, .7);
     display: block;
     margin: 0;
   }
-}
-
-
-
-//
-//Modifier class for landing page style differences
-//
-.site--landing-page {
-
-  #site-header-hca-logo {
-    width: 80px;
-  }
-
-  .site-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 400px;
-    background: url("/images/site/homepage-header.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:  cover;
-    color: $color__white;
-    text-align: center;
-
-    // tablet and larger
-    @media (min-width: $screen__tablet) {
-      min-height: 500px;
-    }
-
-
-    &__title-text {
-      display: block;
-      font-size: 36px;
-      font-weight: 300;
-
-      //tablet and larger
-      @media (min-width: $screen__tablet) {
-        font-size: 56px;
-      }
-    }
-
-    hr {
-      border-color: $color__white;
-      max-width: 600px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    &__body-text {
-      margin-right: auto;
-      margin-bottom: 50px;
-      margin-left: auto;
-    }
-
-    &__disclaimer {
-      display: flex;
-      text-align: left;
-      justify-content: center;
-      align-items: center;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    &__disclaimer-icon {
-      font-size: 35px;
-      margin-top: auto;
-      margin-right: 10px;
-      margin-bottom: auto;
-    }
-
-  }
-  //  end. site-header
-
-  .site-homepage-icon {
-    display: block;
-    max-width: 200px;
-    margin: auto;
-    width: 100%;
-  }
-
-
-
 }

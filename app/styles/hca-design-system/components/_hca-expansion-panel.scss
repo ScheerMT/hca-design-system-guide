@@ -1,0 +1,62 @@
+//This component is making use of Bootstrap's Collapse functionality.
+// http://getbootstrap.com/docs/4.1/components/collapse/
+//
+// Style here are defaulted to an "open" epansion panel.
+$hca-expansion-panel-border-color: rgba($color__asphalt, .25);
+
+.hca-expansion-panel-container {
+  border: 1px solid $hca-expansion-panel-border-color;
+  border-radius: 5px;
+  background: $color__white;
+
+  .hca-expansion-panel:last-child {
+    border-bottom: none;
+  }
+}
+
+.hca-expansion-panel {
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid $hca-expansion-panel-border-color;
+}
+
+.hca-expansion-panel__title {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: $color__asphalt;
+}
+
+.hca-expansion-panel__title-text,
+.hca-expansion-panel__title-icon {
+  align-self: center;
+}
+
+.hca-expansion-panel__title-text {
+  font-weight: 600;
+}
+
+.hca-expansion-panel__title-icon {
+  color: $color__noon;
+  font-size: 22px;
+
+}
+
+// WHEN COLLAPSED
+//using Bootstrap's .collapsed class
+.hca-expansion-panel__title.collapsed {
+  .hca-expansion-panel__title-text,
+  .hca-expansion-panel__title-icon {
+    font-weight: 400;
+  }
+  .hca-expansion-panel__title-icon {
+    transform: rotate(180deg);
+    color: $color__slate;
+  }
+}
+
+.hca-expansion-panel__content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}

@@ -11,12 +11,12 @@ base_url: '../../'
   <div class="row">
     <div class="col-sm-6">
       <div class="site-container--body-content">
-        <p class="hca-typography--subhead hca-typography__color--asphalt">Tooltips are text labels that can appear when a user interacts with an element. A tooltip adds supplemental information, which provides clarity to any element or piece of content that needs further explanation. </p>
+        <p class="hca-text--subhead hca-text__color--asphalt">Tooltips are text labels that can appear when a user interacts with an element. A tooltip adds supplemental information, which provides clarity to any element or piece of content that needs further explanation. </p>
       </div>
     </div>
     <div class="col-sm-4 col-sm-offset-1">
       <nav>
-        <span class="hca-typography--subhead">Contents:</span>
+        <span class="hca-text--subhead">Contents:</span>
         <ul class="site-toc">
           <li class="site-toc__item"><a href="#section-usage">Usage</a></li>
           <li class="site-toc__item"><a href="#section-specs">Specs</a></li>
@@ -27,19 +27,19 @@ base_url: '../../'
 </section>
 
 <article id="section-usage">
-  <h2 class="site-article-headline hca-typography--headline">Usage</h2>
+  <h2 class="site-article-headline hca-text--headline">Usage</h2>
 
 
   <section class="site-section">
     <div class="row site-section">
       <div class="col-sm-6">
         <div class="site-container--body-content">
-          <p class="hca-typography--body-1">When a tooltip is activated, it either identifies the element or contains brief helper text about the element's function.</p>
-          <p class="hca-typography--body-1">Tooltip text should stay concise and avoid line breaking.</p>
-          <p class="hca-typography--body-1">Tooltips don’t have directional arrows. Instead, they rely on motion emanating from the source to convey direction.</p>
+          <p class="hca-text--body-1">When a tooltip is activated, it either identifies the element or contains brief helper text about the element's function.</p>
+          <p class="hca-text--body-1">Tooltip text should stay concise and avoid line breaking.</p>
+          <p class="hca-text--body-1">Tooltips don’t have directional arrows. Instead, they rely on motion emanating from the source to convey direction.</p>
         </div>
         <div class="site-container--body-content">
-          <h4 class="hca-typography--body-2">Summoned by:</h4>
+          <h4 class="hca-text--body-2">Summoned by:</h4>
           <ul>
             <li>Hover (Desktop)</li>
             <li>Focus (Keyboard/Assistive devices)</li>
@@ -54,18 +54,18 @@ base_url: '../../'
       </div>
     </div>
 
-    {{!-- <span class="hca-typography--title">Examples</span> --}}
+    {{!-- <span class="hca-text--title">Examples</span> --}}
     <div class="row">
       <div class="col-sm-8">
         <figure class="hca-visual-example hca-visual-example--do">
           <img src="{{page.base_url}}images/components/tooltips/tooltips-usage-do.png" class="img-responsive hca-visual-example__comp" alt="A common example of a tooltip would be text information about an actionable icon." />
-          <figcaption class="hca-visual-example__caption hca-typography--caption">A common example of a tooltip would be text information about an actionable icon.</figcaption>
+          <figcaption class="hca-visual-example__caption hca-text--caption">A common example of a tooltip would be text information about an actionable icon.</figcaption>
         </figure>
       </div>
       <div class="col-sm-4">
         <figure class="hca-visual-example hca-visual-example--dont">
           <img src="{{page.base_url}}images/components/tooltips/tooltips-usage-dont.png" class="img-responsive hca-visual-example__comp" alt="Tooltips do not display rich information. This includes images and formatted text." />
-          <figcaption class="hca-visual-example__caption hca-typography--caption">Tooltips do not display rich information. This includes images and formatted text.</figcaption>
+          <figcaption class="hca-visual-example__caption hca-text--caption">Tooltips do not display rich information. This includes images and formatted text.</figcaption>
         </figure>
 
       </div>
@@ -86,46 +86,46 @@ base_url: '../../'
 
 
   <article id="section-specs">
-    <h2 class="site-article-headline hca-typography--headline">Specs</h2>
+    <h2 class="site-article-headline hca-text--headline">Specs</h2>
 
     {{!-- tooltips desktop specs --}}
     <section class="site-section">
-        <h3 class="hca-typography--title">Tooltips (Desktop)</h3>
+        <h3 class="hca-text--title">Tooltips (Desktop)</h3>
         <div class="row">
           <div class="col-sm-4">
             <div class="site-card hca-specs">
               <div class="site-container--body-content">
-                <span class="hca-typography--body-2">Component</span>
-                <ul class="hca-typography--body-1">
+                <span class="hca-text--body-2">Component</span>
+                <ul class="hca-text--body-1">
                   <li>
-                    <span class="hca-typography__color--asphalt">Height:</span> 26px
+                    <span class="hca-text__color--asphalt">Height:</span> 26px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Padding Top and Bottom:</span> 7px
+                    <span class="hca-text__color--asphalt">Padding Top and Bottom:</span> 7px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Padding Left and Right:</span> 10px
+                    <span class="hca-text__color--asphalt">Padding Left and Right:</span> 10px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Margin Top:</span> 15px
+                    <span class="hca-text__color--asphalt">Margin Top:</span> 15px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 2px
+                    <span class="hca-text__color--asphalt">Border Radius - All Corners:</span> 2px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
+                    <span class="hca-text__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
                   </li>
                 </ul>
-                <span class="hca-typography--body-2">Text</span>
-                <ul class="hca-typography--body-1">
+                <span class="hca-text--body-2">Text</span>
+                <ul class="hca-text--body-1">
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Size:</span> 12px
+                    <span class="hca-text__color--asphalt">Font Size:</span> 12px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                    <span class="hca-text__color--asphalt">Font Weight:</span> Regular
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Color:</span> {{> white }}
+                    <span class="hca-text__color--asphalt">Font Color:</span> {{> white }}
                   </li>
                 </ul>
               </div>
@@ -152,42 +152,42 @@ base_url: '../../'
 
     {{!-- tooltips mobile specs --}}
     <section class="site-section">
-        <h3 class="hca-typography--title">Tooltips (Mobile)</h3>
+        <h3 class="hca-text--title">Tooltips (Mobile)</h3>
         <div class="row">
           <div class="col-sm-4">
             <div class="site-card hca-specs">
               <div class="site-container--body-content">
-                <span class="hca-typography--body-2">Component</span>
-                <ul class="hca-typography--body-1">
+                <span class="hca-text--body-2">Component</span>
+                <ul class="hca-text--body-1">
                   <li>
-                    <span class="hca-typography__color--asphalt">Height:</span> 34px
+                    <span class="hca-text__color--asphalt">Height:</span> 34px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Padding Top and Bottom:</span> 10px
+                    <span class="hca-text__color--asphalt">Padding Top and Bottom:</span> 10px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Padding Left and Right:</span> 20px
+                    <span class="hca-text__color--asphalt">Padding Left and Right:</span> 20px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Margin Top:</span> 20px
+                    <span class="hca-text__color--asphalt">Margin Top:</span> 20px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Border Radius - All Corners:</span> 2px
+                    <span class="hca-text__color--asphalt">Border Radius - All Corners:</span> 2px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
+                    <span class="hca-text__color--asphalt">Background Color:</span> {{> asphalt }} at 90% opacity
                   </li>
                 </ul>
-                <span class="hca-typography--body-2">Text</span>
-                <ul class="hca-typography--body-1">
+                <span class="hca-text--body-2">Text</span>
+                <ul class="hca-text--body-1">
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Size:</span> 14px
+                    <span class="hca-text__color--asphalt">Font Size:</span> 14px
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Weight:</span> Regular
+                    <span class="hca-text__color--asphalt">Font Weight:</span> Regular
                   </li>
                   <li>
-                    <span class="hca-typography__color--asphalt">Font Color:</span> {{> white }}
+                    <span class="hca-text__color--asphalt">Font Color:</span> {{> white }}
                   </li>
                 </ul>
               </div>
@@ -218,7 +218,7 @@ base_url: '../../'
     <div class="row">
       <div class="col-sm-12 text-right">
         <a href="{{page.base_url}}components/text-fields/" class="hca-button hca-button--has-icon-left">Back to Text Fields <span class="material-icons">keyboard_arrow_left</span></a>
-        <a href="{{page.base_url}}patterns/navigation/" class="hca-button hca-button--has-icon-right hca-typography__color--evening">Next: Navigation <span class="material-icons">keyboard_arrow_right</span></a>
+        <a href="{{page.base_url}}patterns/navigation/" class="hca-button hca-button--has-icon-right hca-text__color--evening">Next: Navigation <span class="material-icons">keyboard_arrow_right</span></a>
       </div>
     </div>
   </nav>
