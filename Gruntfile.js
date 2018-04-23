@@ -3,6 +3,7 @@
 module.exports = function (grunt) {
   require('time-grunt')(grunt); // Show elapsed time after tasks run
   require('jit-grunt')(grunt, { scsslint: 'grunt-scss-lint' }); // Load all Grunt tasks
+  grunt.loadNpmTasks('grunt-md2html');
 
   grunt.initConfig({
     // Configurable paths
@@ -318,6 +319,18 @@ module.exports = function (grunt) {
         }
       }
     },
+    md2html: {
+      multiple_files: {
+        options: {},
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/release-notes/',
+          src: ['**/*.md'],
+          dest: '<%= yeoman.app %>/_includes/release-notes',
+          ext: '.hbs'
+        }]
+      }
+    },
     ftpush: {
       build: {
         auth: {
@@ -338,6 +351,7 @@ module.exports = function (grunt) {
 
   // Define Tasks
   grunt.registerTask('serve', [
+    'md2html',
     'checkDependencies',
     'clean:dist',
     'assemble:dist',
@@ -370,6 +384,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'md2html',
     'checkDependencies',
     'clean:dist',
     'assemble:dist',
@@ -377,6 +392,7 @@ module.exports = function (grunt) {
     'copy:vendorScripts',
     // 'copy:vendorStyles',
     'copy:vendorFonts',
+    'md2html',
     'copy:dist',
     'sass:dist',
     'eslint:dist',

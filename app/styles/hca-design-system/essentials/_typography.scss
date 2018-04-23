@@ -3,17 +3,17 @@
    ========================================================================== */
 
 //display settings so that they are not dependent on markup
-.hca-typography--display-4,
-.hca-typography--display-3,
-.hca-typography--display-2,
-.hca-typography--display-1,
-.hca-typography--headline,
-.hca-typography--title,
-.hca-typography--subhead,
-.hca-typography--body-2,
-.hca-typography--body-1,
-.hca-typography--caption,
-.hca-typography--support {
+.hca-text--display-4,
+.hca-text--display-3,
+.hca-text--display-2,
+.hca-text--display-1,
+.hca-text--headline,
+.hca-text--title,
+.hca-text--subhead,
+.hca-text--body-2,
+.hca-text--body-1,
+.hca-text--caption,
+.hca-text--support {
   display: block;
   line-height: 1.5;
 }
@@ -22,31 +22,31 @@
 /**
  * Color Defaults
  */
-.hca-typography--display-1,
-.hca-typography--title,
-.hca-typography--body-2,
-.hca-typography--support,
-.hca-typography--tag {
+.hca-text--display-1,
+.hca-text--title,
+.hca-text--body-2,
+.hca-text--support,
+.hca-text--tag {
   color: $color__asphalt;
 }
 
 /**
  * Weight Defaults
  */
-.hca-typography--display-3,
-.hca-typography--display-2,
-.hca-typography--display-1,
-.hca-typography--headline,
-.hca-typography--subhead,
-.hca-typography--body-1,
-.hca-typography--caption {
+.hca-text--display-3,
+.hca-text--display-2,
+.hca-text--display-1,
+.hca-text--headline,
+.hca-text--subhead,
+.hca-text--body-1,
+.hca-text--caption {
   font-weight: 400;
 }
 
-.hca-typography--title,
-.hca-typography--body-2,
-.hca-typography--support,
-.hca-typography--tag {
+.hca-text--title,
+.hca-text--body-2,
+.hca-text--support,
+.hca-text--tag {
   font-weight: 600;
 }
 
@@ -55,73 +55,73 @@
 /**
  * Default sizes and specifics
  */
-.hca-typography--display-4 {
+.hca-text--display-4 {
   font-weight: 300;
   font-size: 112px;
   padding-bottom: 25px;
   line-height: 140px;
 }
 
-.hca-typography--display-3 {
+.hca-text--display-3 {
   font-size: 56px;
   padding-bottom: 25px;
   line-height: 70px;
 }
 
-.hca-typography--display-2 {
+.hca-text--display-2 {
   font-size: 45px;
   padding-bottom: 25px;
   line-height: 50px;
 }
 
-.hca-typography--display-1 {
+.hca-text--display-1 {
   font-size: 34px;
   padding-bottom: 17px;
   line-height: 40px;
 }
 
-.hca-typography--headline {
+.hca-text--headline {
   font-size: 26px;
   padding-bottom: 10px;
   line-height: 32px;
 }
 
-.hca-typography--title {
+.hca-text--title {
   font-size: 22px;
   padding-bottom: 10px;
   line-height: 32px;
 }
 
-.hca-typography--subhead {
+.hca-text--subhead {
   font-size: 18px;
   padding-bottom: 5px;
   line-height: 27px;
 }
 
-.hca-typography--body-2 {
+.hca-text--body-2 {
   font-size: 16px;
   padding-bottom: 5px;
   line-height: 26px;
 }
 
-.hca-typography--body-1 {
+.hca-text--body-1 {
   font-size: 16px;
   padding-bottom: 10px;
   line-height: 26px;
 }
 
-.hca-typography--caption {
+.hca-text--caption {
   font-size: 14px;
   line-height: 22px;
 }
 
-.hca-typography--tag {
+.hca-text--tag {
   font-size: 14px;
   line-height: 22px;
   text-transform: uppercase;
 }
 
-.hca-typography--support {
+.hca-text--support {
   font-size: 12px;
   line-height: 20px;
 }
@@ -137,22 +137,22 @@
 /**
  * Weight and style modifiers
  */
- .hca-typography__weight--light {
+ .hca-text__weight--light {
    font-weight: lighter !important;
    font-weight: 300 !important;
  }
 
- .hca-typography__weight--regular {
+ .hca-text__weight--regular {
    font-weight: normal !important;
    font-weight: 400 !important;
  }
 
- .hca-typography__weight--semibold {
+ .hca-text__weight--semibold {
    font-weight: bold !important;
    font-weight: 600 !important;
  }
 
- .hca-typography--italic {
+ .hca-text--italic {
    font-style: italic !important;
  }
 
@@ -160,7 +160,7 @@
  /**
   * Color modifiers
   */
-  .hca-typography__color {
+  .hca-text__color {
     &--asphalt {
       color: $color__asphalt !important;
     }

@@ -1,0 +1,78 @@
+//
+//Modifier class for landing page style differences
+//
+.site--landing-page {
+
+  #site-header-hca-logo {
+    width: 80px;
+  }
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    background: url("/images/site/homepage-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  cover;
+    color: $color__white;
+    text-align: center;
+
+    // tablet and larger
+    @media (min-width: $screen__tablet) {
+      min-height: 500px;
+    }
+
+
+    &__title-text {
+      display: block;
+      font-size: 36px;
+      font-weight: 300;
+
+      //tablet and larger
+      @media (min-width: $screen__tablet) {
+        font-size: 56px;
+      }
+    }
+
+    hr {
+      border-color: $color__white;
+      max-width: 600px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__body-text {
+      margin-right: auto;
+      margin-bottom: 50px;
+      margin-left: auto;
+    }
+
+    &__disclaimer {
+      display: flex;
+      text-align: left;
+      justify-content: center;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__disclaimer-icon {
+      font-size: 35px;
+      margin-top: auto;
+      margin-right: 10px;
+      margin-bottom: auto;
+    }
+
+  }
+  //  end. site-header
+
+  .site-homepage-icon {
+    display: block;
+    max-width: 200px;
+    margin: auto;
+    width: 100%;
+  }
+
+}
+// end site--landing-page

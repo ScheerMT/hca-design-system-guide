@@ -97,7 +97,14 @@ a.hca-button {
 }
 
 
+/**
+ * Width and Size Modifiers
+ */
 
+ .hca-button--full-width {
+   width: 100%;
+   max-width: 300px;
+ }
 
 
 
