@@ -77,7 +77,7 @@ module.exports = function (grunt) {
       },
       tmp: {
         files: [{
-          cwd: '<%= yeoman.tmp %>/app',
+          cwd: '<%= yeoman.tmp %>/source',
           expand: true,
           flatten: false,
           src: [

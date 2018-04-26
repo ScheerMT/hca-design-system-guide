@@ -7,45 +7,36 @@
   .hca-expansion-panel__content {
 
     h1 {
-      font-size: 45px;
-      padding-bottom: 25px;
-      line-height: 50px;
-    }
-
-    h2 {
       font-size: 34px;
-      padding-top: 30px;
-      // padding-bottom: 15px;
+      padding-bottom: 17px;
       line-height: 40px;
     }
 
-    h3 {
+    h2 {
       font-size: 26px;
-      padding-top: 20px;
+      padding-bottom: 10px;
+      line-height: 32px;
+    }
+
+    h3 {
+      font-size: 22px;
       padding-bottom: 10px;
       line-height: 32px;
     }
 
     h4 {
-      font-size: 22px;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      line-height: 32px;
-    }
-
-    h5 {
       font-size: 18px;
       padding-bottom: 5px;
       line-height: 27px;
     }
 
-    h6 {
+    h5 {
       font-size: 16px;
       padding-bottom: 5px;
       line-height: 26px;
     }
 
-    p {
+    h6, p {
       padding-bottom: 10px;
       line-height: 26px;
     }
