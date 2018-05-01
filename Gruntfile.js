@@ -2,13 +2,12 @@
 
 module.exports = function (grunt) {
   require('time-grunt')(grunt); // Show elapsed time after tasks run
-  require('jit-grunt')(grunt, { scsslint: 'grunt-scss-lint' }); // Load all Grunt tasks
-  grunt.loadNpmTasks('grunt-md2html');
+  require('jit-grunt')(grunt); // Load all Grunt tasks
 
   grunt.initConfig({
     // Configurable paths
     yeoman: {
-      app: 'app',
+      source: 'source',
       dist: 'dist',
       tmp: '.tmp'
     },
@@ -20,13 +19,6 @@ module.exports = function (grunt) {
           continueAfterInstall: true
         }
       },
-      // bower: {
-      //   options: {
-      //     packageManager: 'bower',
-      //     install: true,
-      //     continueAfterInstall: true
-      //   }
-      // },
     },
     clean: {
       dist: {
@@ -42,27 +34,21 @@ module.exports = function (grunt) {
     assemble: {
       options: {
         flatten: true,
-        partials: ['<%= yeoman.app %>/_includes/**/*.hbs'],
-        layoutdir: '<%= yeoman.app %>/_layouts',
+        partials: ['<%= yeoman.source %>/_includes/**/*.hbs'],
+        layoutdir: '<%= yeoman.source %>/_layouts',
         layout: 'default.hbs',
-        data: '<%= yeoman.app %>/_data/*.json',
-        helpers: ['<%= yeoman.app %>/helpers/**/*.js']
+        data: '<%= yeoman.source %>/_data/*.json'
       },
       files: {
-        '<%= yeoman.dist %>/': ['<%= yeoman.app %>/**/*.hbs' ]
+        '<%= yeoman.dist %>/': ['<%= yeoman.source %>/**/*.hbs' ]
       },
       dist: {
         files: [{
           expand: true,
           dot: true,
           src: [
-            '<%= yeoman.app %>/*.hbs',
-            '<%= yeoman.app %>/essentials/**/*.hbs',
-            '<%= yeoman.app %>/components/**/*.hbs',
-            '<%= yeoman.app %>/patterns/**/*.hbs',
-            '<%= yeoman.app %>/accessibility/**/*.hbs',
-            '<%= yeoman.app %>/forum/**/*.hbs',
-            '<%= yeoman.app %>/get-updates/**/*.hbs'
+            '<%= yeoman.source %>/**/*.hbs',
+            '!**/_*{,/**}', // exclude .hbs files in folders prefixed with underscore
           ],
           dest: '<%= yeoman.tmp %>'
         }]
@@ -73,7 +59,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           dot: true,
-          cwd: '<%= yeoman.app %>',
+          cwd: '<%= yeoman.source %>',
           src: [
             // Assemble processes and moves HTML and text files
             // Copy moves asset files and directories
@@ -84,7 +70,6 @@ module.exports = function (grunt) {
             // Explicitly add any files your site needs for distribution here
             // ex: './vendor/jquery/jquery.js',
             'favicon.ico',
-            '_data/**/*',
             // 'apple-touch*.png'
           ],
           dest: '<%= yeoman.dist %>'
@@ -92,7 +77,7 @@ module.exports = function (grunt) {
       },
       tmp: {
         files: [{
-          cwd: '<%= yeoman.tmp %>/app',
+          cwd: '<%= yeoman.tmp %>/source',
           expand: true,
           flatten: false,
           src: [
@@ -101,39 +86,6 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }]
       },
-      vendorScripts: {
-        files: [{
-          cwd: './vendor/bower_components',
-          expand: true,
-          flatten: true,
-          src: [
-            'bootstrap/dist/js/bootstrap.min.js',
-            'jquery/dist/jquery.min.js'
-          ],
-          dest: '<%= yeoman.dist %>/vendor/scripts/'
-        }]
-      },
-      vendorStyles: {
-        files: [{
-          cwd: './vendor/bower_components',
-          expand: true,
-          flatten: true,
-          src: [''],
-          dest: '<%= yeoman.dist %>/vendor/styles/'
-        }]
-      },
-      vendorFonts: {
-        files: [{
-          cwd: './vendor/bower_components',
-          expand: true,
-          flatten: true,
-          src: [
-            'font-awesome/fonts/*',
-            'font-awesome/css/font-awesome.css'
-          ],
-          dest: '<%= yeoman.dist %>/fonts/'
-        }]
-      }
     },
     sass: {
       options: {
@@ -154,7 +106,7 @@ module.exports = function (grunt) {
           sourceMapRootpath: '../'
         },
         files: {
-          'dist/styles/main.css': '<%= yeoman.app %>/styles/main.scss'
+          'dist/styles/main.css': '<%= yeoman.source %>/styles/main.scss'
         }
       }
     },
@@ -248,19 +200,19 @@ module.exports = function (grunt) {
     },
     watch: {
       styles: {
-        files: ['<%= yeoman.app %>/styles/**/*.scss'],
-        tasks: ['sass:dist'] //, 'scsslint:app'
+        files: ['<%= yeoman.source %>/styles/**/*.scss'],
+        tasks: ['sass:dist']
       },
       scripts: {
-        files: ['<%= yeoman.app %>/scripts/**/*.js'],
+        files: ['<%= yeoman.source %>/scripts/**/*.js'],
         tasks: ['copy:dist', 'eslint:app']
       },
       pages: {
-        files: ['<%= yeoman.app %>/**/*.hbs'],
+        files: ['<%= yeoman.source %>/**/*.hbs'],
         tasks: ['newer:assemble:dist', 'copy:tmp']
       },
       images: {
-        files: ['<%= yeoman.app %>/images/**/*'],
+        files: ['<%= yeoman.source %>/images/**/*'],
         tasks: ['copy:dist']
       }
     },
@@ -271,36 +223,12 @@ module.exports = function (grunt) {
       },
       app: [
         'Gruntfile.js',
-        '<%= yeoman.app %>/scripts/**/*.js',
-        '!<%= yeoman.app %>/scripts/vendor/**/*'
+        '<%= yeoman.source %>/scripts/**/*.js',
+        '!<%= yeoman.source %>/scripts/vendor/**/*'
       ],
       dist: [
         '<%= yeoman.dist %>/scripts/**/*.js'
       ]
-    },
-    // lesslint: {
-    //   options: {
-    //     csslint: {
-    //       csslintrc: '.csslintrc'
-    //     },
-    //     failOnWarning: false
-    //   },
-    //   app: {
-    //     src: ['<%= yeoman.app %>/styles/**/*.less'],
-    //   }
-    // },
-    scsslint: {
-      app: [
-        '<%= yeoman.app %>/styles/**/*.scss',
-        '!<%= yeoman.app %>/styles/main.scss',
-        '!<%= yeoman.app %>/styles/syntax.scss'
-      ],
-      options: {
-        bundleExec: false,
-        // config: '.scss-lint.yml',
-        // reporterOutput: 'scss-lint-report.xml',
-        colorizeOutput: true
-      },
     },
     csslint: {
       options: {
@@ -324,9 +252,9 @@ module.exports = function (grunt) {
         options: {},
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/release-notes/',
+          cwd: '<%= yeoman.source %>/_release-notes-markdown/',
           src: ['**/*.md'],
-          dest: '<%= yeoman.app %>/_includes/release-notes',
+          dest: '<%= yeoman.source %>/_includes/release-notes',
           ext: '.hbs'
         }]
       }
@@ -356,13 +284,9 @@ module.exports = function (grunt) {
     'clean:dist',
     'assemble:dist',
     'copy:tmp',
-    'copy:vendorScripts',
-    // 'copy:vendorStyles',
-    'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:app',
-    // 'scsslint:app',
     'browserSync',
     'watch'
   ]);
@@ -372,14 +296,10 @@ module.exports = function (grunt) {
     'clean:dist',
     'assemble:dist',
     'copy:tmp',
-    'copy:vendorScripts',
-    // 'copy:vendorStyles',
-    'copy:vendorFonts',
     'copy:dist',
     'sass:dist',
     'eslint:app',
     'eslint:dist',
-    // 'scsslint:app',
     'csslint:dist'
   ]);
 
@@ -389,22 +309,17 @@ module.exports = function (grunt) {
     'clean:dist',
     'assemble:dist',
     'copy:tmp',
-    'copy:vendorScripts',
-    // 'copy:vendorStyles',
-    'copy:vendorFonts',
     'md2html',
     'copy:dist',
     'sass:dist',
     'eslint:dist',
-    // 'csslint:dist',
-    // 'uncss:dist',
     'concat:scripts',
     'concat:styles',
     'uglify:dist',
     'cssmin:dist',
     'imagemin:dist',
     'svgmin:dist',
-    // 'htmlmin:dist'
+    'htmlmin:dist'
   ]);
 
   grunt.registerTask('deploy', [

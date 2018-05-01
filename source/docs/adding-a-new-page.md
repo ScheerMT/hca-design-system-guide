@@ -9,7 +9,7 @@ the page you are creating will live within one of those top level topics.
 See general file tree:
 
 ```
-app/ (root)
+source/ (root)
   |--index.hbs (Get Started)
   |
   |--essentials/
@@ -28,14 +28,14 @@ app/ (root)
   |--patterns/
   |     |--etc...
   |
-  |--Downloads/
+  |--other-pages/
   |     |--index.hbs  
 ```
 
 Let's pretend for the rest of the examples that the topic we are going to add
 is Typography. We have identified that it needs to live in the Essentials/ directory.
 
-## Create a folder for each page/topic 
+## Create a folder for each component or pattern 
 
 Rather than create a typography.hbs, we are creating a folder for topic and giving
 each folder an index.hbs file. 
@@ -43,11 +43,7 @@ each folder an index.hbs file.
 This means your page for Typography would live at ```essentials/typography/index.hbs```. 
 
 
-### Where this lives in the nav
-![Step 1](http://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Add your nav item")
-
-
-## Add front-matter
+## Add front-matter to index.hbs 
 
 Every index.hbs file needs a couple front-matter variables declared at the very top of the file before any other code. 
 This is an example of the one used on our Typography page:
@@ -84,8 +80,20 @@ An example of this variable being used in markup for an image path:
 <img src="{{page.base_url}}images/example.jpg" alt="example of color usage in typography"/>
 ```
 
+## Add nav item to global nav
 
-## Add your content
+Add this as a nav item in ```_includes/global/nav.hbs```. We place the nav items in alphabetical order. Make sure each link has a title="" attribute with the page name for accessibility.
+
+
+![Step 3](http://www.hcaprototypes.com/images/hca-design-system-docs/1-add-nav-item.png "Add your nav item")
+
+
+## Edit the new page and neighboring page's bottom pagination component 
+
+Every page should have a nav element at the bottom called "site-pagination". When you add a new page you will need to make sure you set these pagination links to be correct on the new page, the existing page that precedes it, and the existing page that comes after it. 
+
+
+## Add your content to index.hbs
 
 You will add your content below the front-matter variables. Make sure you replace the title with the actual title of your page/topic. You may also need to adjust the ```base_url``` depending on where your page sits in the directory tree. 
 
@@ -96,6 +104,7 @@ If you use the default.hbs, make sure you write the markup required for making u
 Remember you can use ```layout: no-tabs.hbs``` if you would like a blank page with just a header and no tabbed layout. (as seen on the root index.hbs or Get Started page) 
 
 Refer to the new page boilerplate for base markup when using tabs. 
+
 
 
 
