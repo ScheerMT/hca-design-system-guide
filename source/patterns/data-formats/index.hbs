@@ -1,0 +1,411 @@
+---
+layout: no-tabs.hbs
+title: Data Formats
+base_url: '../../'
+---
+
+<!-- Tab panes - tab controls in _layouts/default.hbs -->
+<div class="tab-content">
+
+  {{!-- USAGE TAB --}}
+  <div role="tabpanel" class="tab-pane active" id="app-guidelines-tab">
+
+    <section class="site-tab-header">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="site-container--body-content">
+            <p class="hca-text--subhead hca-text__color--asphalt">Common data types like addresses, phone numbers, dates, times, etc. should be visually presented in a consistent way to your users.</p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <nav>
+            <span class="hca-text--subhead">Contents:</span>
+            <ul class="site-toc">
+              <li class="site-toc__item"><a href="#section-phone-numbers">Phone Numbers</a></li>
+              <li class="site-toc__item"><a href="#section-dates-and-time">Dates and Time</a></li>
+              <li class="site-toc__item"><a href="#section-addresses">Addresses</a></li>
+              <li class="site-toc__item"><a href="#section-urls">URLs</a></li>
+              <li class="site-toc__item"><a href="#section-urls">Ranges</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <article id="section-phone-numbers" class="site-section">
+    <h2 class="site-article-headline hca-text--headline">Phone Numbers</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="site-container--body-content">
+            <p class="hca-text--body-1">Use this format: <b class="hca-text--asphalt">(XXX) XXX-XXXX</b>.
+            <p class="hca-text--body-1">Phone numbers can be bolded when listed within body copy, where they can sometimes get lost.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--do">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>(615) 342-1000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--dont">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>615-342-1000</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>1-615-342-1000</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>1 (615) 342-1000</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>615.342.1000</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>6153421000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="section-dates-and-time" class="site-section">
+      <h2 class="site-article-headline hca-text--headline">Dates and Time</h2>
+      <h3 class="hca-text--title">Dates</h3>
+      <br />
+      <h4 class="hca-text--body-2">Numeric Dates</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="site-container--body-content">
+            <p class="hca-text--body-1">Use this format: <b class="hca-text--asphalt">MM/DD/YYYY</b></p>
+
+            <p class="hca-text--body-1">When using numeric dates, remove any leading 0s on numbers lower than 10, use a forward slash (/) to separate your numbers, and use the full four-digit year.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--do">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>3/5/2018</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>12/15/2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--dont">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>03/05/2018</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>3/5/18</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>3-5-2018</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>3.5.2018</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>3 5 2018</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- /row --}}
+
+      <h4 class="hca-text--body-2">Months and Numeric Days</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="site-container--body-content">
+            <p class="hca-text--body-1"><span class="hca-text--asphalt">Months:</span> When representing a month within a paragraph of content, always capitalize the first letter. If used with a numeric date, you may abbreviate with a period.</p>
+            <p class="hca-text--body-1"><span class="hca-text--asphalt">Days:</span> Use only numerical days with no leading 0s. Do not add “st,” “nd,” “rd” or “th.”</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--do">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Jan. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Feb. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Mar. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Apr. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>May 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>June 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>July 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Aug. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Sept. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Oct. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Nov. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Dec. 3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--dont">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>jan. 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>FEB 3</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Mar. 3rd</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Apr 3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- /row --}}
+
+      <h4 class="hca-text--body-2">Days of the Week</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="site-container--body-content">
+            <p class="hca-text--body-1">Days of the week should be capitalized. Abbreviate only when needed for space constraints. (i.e. in table headers, calendar headers, etc.) Try to use the longer abbreviation if possible.</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--do">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Monday</td>
+                    <td>Mon.</td>
+                    <td>M</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Tuesday</td>
+                    <td>Tues.</td>
+                    <td>T</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Wednesday</td>
+                    <td>Wed.</td>
+                    <td>W</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Thursday</td>
+                    <td>Thurs.</td>
+                    <td>T</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Friday</td>
+                    <td>Fri.</td>
+                    <td>F</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Saturday</td>
+                    <td>Sat.</td>
+                    <td>S</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Sunday</td>
+                    <td>Sun.</td>
+                    <td>S</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--dont">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>monday</td>
+                    <td>Mon</td>
+                    <td>M.</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>tuesday</td>
+                    <td>tues.</td>
+                    <td>t</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>WEDNESDAY</td>
+                    <td>WED.</td>
+                    <td>w.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- /row --}}
+
+      <h3 class="hca-text--title">Time</h3>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="site-container--body-content">
+            <p class="hca-text--body-1">When presenting a time, timestamp, or range of time in an app or website it is important to always present it in numerical format. This will enable any native device functionality available for interacting with times and timeframes such as selecting that time to add to a calendar appointment.</p>
+            <p class="hca-text--body-1">Display time using uppercase AM or PM with no periods. This saves UI space, and helps visually identify the timestamp among words like "am".</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--do">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--grass" aria-hidden="true">check_circle</span></th>
+                    <td>Your appointment will be at 12:00 PM on Monday June 3.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="hca-visual-example hca-visual-example--dont">
+            <div class="hca-visual-example__example">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Your appointment will be at noon on Monday June 3.</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Your appointment will be at 12pm on Monday June 3.</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Your appointment will be at 12:00pm on Monday June 3.</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Your appointment will be at 12:00 p.m. on Monday June 3.</td>
+                  </tr>
+                  <tr>
+                    <th><span class="material-icons hca-text--strawberry" aria-hidden="true">do_not_disturb</span></th>
+                    <td>Your appointment will be at 12:00 P.M. on Monday June 3.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{!-- / row --}}
+    </article>
+
+  </div>
+
+
+</div>
+
+
+
+{{!-- Pagination Navigation --}}
+<nav class="site-pagination">
+  <div class="row">
+    <div class="col-sm-12 text-right">
+      <a href="{{page.base_url}}components/tooltips/" class="hca-button hca-button--has-icon-left">Back to Tooltips <span class="material-icons">keyboard_arrow_left</span></a>
+      <a href="{{page.base_url}}patterns/navigation" class="hca-button hca-button--has-icon-right hca-text__color--evening">Next: Navigation <span class="material-icons">keyboard_arrow_right</span></a>
+    </div>
+  </div>
+</nav>

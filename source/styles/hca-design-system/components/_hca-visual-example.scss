@@ -16,7 +16,7 @@ $visual-example-line-size: 10px;
   margin-left: auto;
   text-align: left; //added so we can use bootstrap text-center class on wrapper
 }
-.hca-visual-example__comp {
+.hca-visual-example__example {
   display: block;
   margin-bottom: 5px;
   border-bottom: $visual-example-line-size solid transparent;
@@ -39,7 +39,7 @@ $visual-example-line-size: 10px;
 
 /* Do and Don't modifiers */
 .hca-visual-example--do {
-  .hca-visual-example__comp {
+  .hca-visual-example__example {
     padding-top: 5px;
     border-top: $visual-example-line-size solid $color__grass;
   }
@@ -58,7 +58,7 @@ $visual-example-line-size: 10px;
 }
 
 .hca-visual-example--dont {
-  .hca-visual-example__comp {
+  .hca-visual-example__example {
     padding-top: 5px;
     border-top: $visual-example-line-size dashed $color__strawberry;
   }
@@ -84,7 +84,7 @@ $visual-example-line-size: 10px;
 }
 
 .hca-visual-example--half-size {
-  .hca-visual-example__comp {
+  .hca-visual-example__example {
     width: 50%;
     height: 50%;
     // margin: 0 auto;
