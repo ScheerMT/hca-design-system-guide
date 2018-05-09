@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: $color__evening;
+  color: $color__white;
+}
+
 body,
 html {
   background-color: $background-color;
