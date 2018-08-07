@@ -74,7 +74,7 @@ var addTheme = function() {
   colors[1] = new Array("hca-background--evening-gradient","hca-background--morning");
   colors[2] = new Array("hca-background--ivy-gradient","hca-background--mint");
   colors[3] = new Array("hca-background--hazelnut-gradient","hca-background--vanilla");
-  colors[4] = new Array("hca-background--cherry-gradient","hca-background--watermelon");
+  colors[4] = new Array("hca-background--cherry-gradient","hca-background--teaberry");
 
   //generate random number between 0-4 to choose which colors[] array to choose
   var colorScheme = Math.floor(Math.random() * 5);

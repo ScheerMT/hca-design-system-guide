@@ -66,8 +66,8 @@
   &--strawberry {
     background-color: $color__strawberry !important;
   }
-  &--watermelon {
-    background-color: $color__watermelon !important;
+  &--teaberry {
+    background-color: $color__teaberry !important;
   }
 
   //
@@ -97,10 +97,10 @@
     background: linear-gradient(to left, transparent, $color__vanilla); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-  &--watermelon-gradient {
-    background: $color__watermelon;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, transparent, $color__watermelon);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, transparent, $color__watermelon); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  &--teaberry-gradient {
+    background: $color__teaberry;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, transparent, $color__teaberry);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, transparent, $color__teaberry); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
 
@@ -205,7 +205,7 @@
   &--strawberry {
     color: $color__strawberry !important;
   }
-  &--watermelon {
-    color: $color__watermelon !important;
+  &--teaberry {
+    color: $color__teaberry !important;
   }
 }
