@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="270px" height="214px" viewBox="0 0 270 214" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Color-Do2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-761.000000, -3478.000000)">
+            <g id="Color-Do2" transform="translate(761.000000, 3472.000000)">
+                <rect id="Rectangle-4" fill="#EDEDED" x="0" y="43" width="270" height="177"></rect>
+                <rect id="Rectangle-8" fill="#26CC6D" x="0" y="28" width="270" height="15"></rect>
+                <text id="Do" font-family="OpenSans-Regular, Open Sans" font-size="20" font-weight="normal" fill="#455561">
+                    <tspan x="14" y="21">Do</tspan>
+                </text>
+                <path d="M0,12.071906 C0.0166915916,11.4768516 0.104807668,10.9801437 0.477457156,10.5810172 C0.860975587,10.1692625 1.31514215,9.80495902 1.90439415,9.93927678 C2.53362834,10.082396 2.51189045,10.6916093 2.5871967,11.1821944 C2.67298372,11.742043 2.5673997,12.5077691 3.10812963,12.7312493 C3.72261311,12.985726 4.05916218,12.2288014 4.45393773,11.8568446 C5.87738114,10.5167283 7.24803253,9.12112474 8.67652224,7.78560058 C9.09575291,7.39336212 9.69626203,6.67317402 10.2051615,7.16720316 C10.6810659,7.62947054 10.4799905,8.51191143 9.98584174,9.09280703 C9.42725568,9.74947163 8.80966679,10.3583023 8.20644043,10.9778477 C6.62035105,12.6061157 5.14489199,14.3465065 3.35811533,15.7750198 C1.96378516,16.8897424 0.586534766,16.3953306 0.262019171,14.6488171 C0.10014955,13.778239 0.0780234865,12.882022 0,12.071906" id="Fill-1" fill="#455561"></path>
+                <rect id="Rectangle-9" fill="#115730" x="19" y="56" width="116" height="129"></rect>
+                <polygon id="Triangle" fill="#E9F9F0" points="76.5 99 103 142 50 142"></polygon>
+                <rect id="Rectangle-9" fill="#E9F9F0" x="134" y="56" width="116" height="129"></rect>
+                <polygon id="Triangle" fill="#10572F" points="191.5 99 218 142 165 142"></polygon>
+                <text id="Pine-Copy-2" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#E9F9F0">
+                    <tspan x="58" y="178">Pine</tspan>
+                </text>
+                <text id="Mint-Copy-2" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#115730">
+                    <tspan x="180" y="178">Mint</tspan>
+                </text>
+                <text id="Pine-Copy" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#E9F9F0">
+                    <tspan x="177" y="137">Pine</tspan>
+                </text>
+                <text id="Mint-Copy" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#115730">
+                    <tspan x="60" y="137">Mint</tspan>
+                </text>
+                <text id="ratio:-7.94:1" font-family="OpenSans-Semibold, Open Sans" font-size="16" font-weight="500" line-spacing="21" fill="#115730">
+                    <tspan x="26" y="210">ratio: 7.94:1</tspan>
+                </text>
+                <text id="ratio:-7.94:1" font-family="OpenSans-Semibold, Open Sans" font-size="16" font-weight="500" line-spacing="21" fill="#115730">
+                    <tspan x="149" y="210">ratio: 7.94:1</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

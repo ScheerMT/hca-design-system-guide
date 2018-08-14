@@ -24,14 +24,20 @@
 
     {{> nav }}
 
-    <header class="site-header hca-js-site-header">
+    <header id="main-header-show-hide" class="site-header hca-js-site-header">
       <div class="container site-container">
-        <span class="hca-text--caption">HCA Design System (Beta)</span>
         <h1 class="hca-text--display-2">{{page.title}}</h1>
+        <span class="hca-text--caption">HCA Design System (Beta)</span>
         {{!-- <div class="site-container--body-content">
           <p class="hca-text--body-1">{{page.intro}}</p>
         </div> --}}
+      </div>
+    </header>
 
+    <header id="accessibility-header" class="site-header hca-js-site-header">
+      <div class="container site-container">
+        <span class="site-header__title-text hca-text--headline">HCA Design System</span>
+        <h1 class="hca-text--display-3"><strong>{{page.title}}</strong></h1>
       </div>
     </header>
 

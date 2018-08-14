@@ -107,6 +107,16 @@ var activateNavItem = function() {
     // if href matches current pages path add active class to that anchor element
     if(navItemHref.indexOf(urlPathToMatch) > -1) {
       //if element has a parent with class "collapse"
+      if (navItemHref === '/accessibility') {
+        console.log('/accessibility');
+        document.getElementById('accessibility-header').classList.remove('isHidden');
+        document.getElementById('main-header-show-hide').classList.add('isHidden');
+        console.log(document.getElementById('accessibility-header'));
+      } else {
+         document.getElementById('accessibility-header').classList.add('isHidden');
+         document.getElementById('main-header-show-hide').classList.remove('isHidden');
+         console.log(document.getElementById('accessibility-header'));
+      }
 
       if(drawerNavItem.closest('.collapse')) {
         //get only the parent .collapse element (plugin class)

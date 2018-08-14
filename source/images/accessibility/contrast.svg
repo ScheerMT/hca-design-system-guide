@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="279px" height="103px" viewBox="0 0 279 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 35</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="55" height="55" rx="27.5"></rect>
+        <filter x="-38.2%" y="-27.3%" width="176.4%" height="176.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.023529   0 0 0 0 0.109804   0 0 0 0 0.247059  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="55" height="55" rx="27.5"></rect>
+        <filter x="-32.7%" y="-21.8%" width="165.5%" height="165.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="50" height="50" rx="25"></rect>
+        <filter x="-58.0%" y="-38.0%" width="216.0%" height="216.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-898.000000, -3835.000000)">
+            <g id="Group-35" transform="translate(898.000000, 3835.000000)">
+                <rect id="Rectangle-10" fill="#EDEDED" x="0" y="0" width="279" height="103" rx="5"></rect>
+                <g id="Floating-Action-Pressed" transform="translate(186.000000, 24.000000)">
+                    <g id="Components/Buttons/Floating-Action/Success/Pressed">
+                        <g id="Evening">
+                            <rect id="Button-Color" fill="#115730" x="0" y="0" width="55" height="55" rx="27.5"></rect>
+                            <g id="Hover-Color">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill-opacity="0.4" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                        <g id="ic_add" transform="translate(16.000000, 16.000000)">
+                            <g id="Icon-24px">
+                                <polygon id="Shape" fill="#FFFFFF" points="19 13 13 13 13 19 11 19 11 13 5 13 5 11 11 11 11 5 13 5 13 11 19 11"></polygon>
+                                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Floating-Action-Hover" transform="translate(112.000000, 24.000000)">
+                    <g id="Components/Buttons/Floating-Action/Success/Hover">
+                        <g id="Evening">
+                            <g id="Button-Color">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#208052" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <rect id="Hover-Color" fill-opacity="0.4" fill="#000000" x="0" y="0" width="55" height="55" rx="27.5"></rect>
+                        </g>
+                        <g id="ic_add" transform="translate(16.000000, 16.000000)">
+                            <g id="Icon-24px">
+                                <polygon id="Shape" fill="#FFFFFF" points="19 13 13 13 13 19 11 19 11 13 5 13 5 11 11 11 11 5 13 5 13 11 19 11"></polygon>
+                                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Floating-Action-Button" transform="translate(42.000000, 27.000000)">
+                    <g id="Components/Buttons/Floating-Action/Success/Resting">
+                        <g id="Evening">
+                            <g id="Button-Color">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#208052" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                        <g id="ic_add" transform="translate(13.000000, 13.000000)">
+                            <g id="Icon-24px">
+                                <polygon id="Shape" fill="#FFFFFF" points="19 13 13 13 13 19 11 19 11 13 5 13 5 11 11 11 11 5 13 5 13 11 19 11"></polygon>
+                                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
