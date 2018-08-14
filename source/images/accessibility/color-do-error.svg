@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="209px" viewBox="0 0 272 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Color-DoError</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-760.000000, -3201.000000)">
+            <g id="Color-DoError" transform="translate(760.000000, 3195.000000)">
+                <rect id="Rectangle-12" fill="#EDEDED" x="0" y="43" width="271.205521" height="172"></rect>
+                <g id="Error-multi-line" transform="translate(17.000000, 53.000000)">
+                    <g id="Components/Text-Fields/Multiple-Lines/Error">
+                        <text id="Character-Count-with-Helper-Text" font-family="OpenSans-Semibold, Open Sans" font-size="12" font-weight="500" line-spacing="12" fill="#990112">
+                            <tspan x="0" y="150.685864">142/130 You are over the word count</tspan>
+                        </text>
+                        <rect id="Text-Field" stroke="#990112" fill="#FFFFFF" x="0.5" y="25.5" width="240" height="103.057592" rx="5"></rect>
+                        <text id="Body-Text" font-family="OpenSans-Regular, Open Sans" font-size="14" font-weight="normal" line-spacing="23" fill="#465561">
+                            <tspan x="12" y="60">these symptoms for a few days </tspan>
+                            <tspan x="12" y="83">now and I’m beginning to think </tspan>
+                            <tspan x="12" y="106">that I’ve come down with|</tspan>
+                        </text>
+                        <text id="Required-Label" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="14" fill="#465561">
+                            <tspan x="0" y="15">Tell us why you’re visiting</tspan>
+                        </text>
+                        <g id="ic_error" transform="translate(213.000000, 29.000000)">
+                            <g id="Icon-24px">
+                                <polygon id="Shape" points="0 0 19.9448276 0 19.9448276 19.9790576 0 19.9790576"></polygon>
+                                <path d="M9.97241379,2.66492147 C5.38510345,2.66492147 1.66206897,6.39434555 1.66206897,10.9895288 C1.66206897,15.584712 5.38510345,19.3141361 9.97241379,19.3141361 C14.5597241,19.3141361 18.2827586,15.584712 18.2827586,10.9895288 C18.2827586,6.39434555 14.5597241,2.66492147 9.97241379,2.66492147 L9.97241379,2.66492147 Z M10.8034483,15.1518325 L9.14137931,15.1518325 L9.14137931,13.486911 L10.8034483,13.486911 L10.8034483,15.1518325 L10.8034483,15.1518325 Z M10.8034483,11.8219895 L9.14137931,11.8219895 L9.14137931,6.82722513 L10.8034483,6.82722513 L10.8034483,11.8219895 L10.8034483,11.8219895 Z" id="Shape" fill="#F55D50"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-8" fill="#26CC6D" x="0" y="28" width="271" height="15"></rect>
+                <text id="Do" font-family="OpenSans-Regular, Open Sans" font-size="20" font-weight="normal" fill="#455561">
+                    <tspan x="15" y="21">Do</tspan>
+                </text>
+                <path d="M1,12.071906 C1.01669159,11.4768516 1.10480767,10.9801437 1.47745716,10.5810172 C1.86097559,10.1692625 2.31514215,9.80495902 2.90439415,9.93927678 C3.53362834,10.082396 3.51189045,10.6916093 3.5871967,11.1821944 C3.67298372,11.742043 3.5673997,12.5077691 4.10812963,12.7312493 C4.72261311,12.985726 5.05916218,12.2288014 5.45393773,11.8568446 C6.87738114,10.5167283 8.24803253,9.12112474 9.67652224,7.78560058 C10.0957529,7.39336212 10.696262,6.67317402 11.2051615,7.16720316 C11.6810659,7.62947054 11.4799905,8.51191143 10.9858417,9.09280703 C10.4272557,9.74947163 9.80966679,10.3583023 9.20644043,10.9778477 C7.62035105,12.6061157 6.14489199,14.3465065 4.35811533,15.7750198 C2.96378516,16.8897424 1.58653477,16.3953306 1.26201917,14.6488171 C1.10014955,13.778239 1.07802349,12.882022 1,12.071906" id="Fill-1" fill="#455561"></path>
+            </g>
+        </g>
+    </g>
+</svg>

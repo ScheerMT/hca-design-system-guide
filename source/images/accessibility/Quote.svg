@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="717px" height="676px" viewBox="0 0 717 676" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.4%" y="-1.3%" width="103.0%" height="103.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-671.000000, -862.000000)">
+            <g id="Quote" transform="translate(671.000000, 862.000000)">
+                <rect id="Rectangle" fill="#F5F7F9" x="0" y="0" width="716.384214" height="676"></rect>
+                <rect id="Rectangle-19" fill-opacity="0.2" fill="#26CC6D" x="29" y="264" width="183" height="11"></rect>
+                <rect id="Rectangle-19-Copy-8" fill-opacity="0.2" fill="#26CC6D" x="121" y="420" width="595" height="27"></rect>
+                <rect id="Rectangle-19-Copy-2" fill-opacity="0.2" fill="#26CC6D" x="50" y="204" width="182.635311" height="11"></rect>
+                <rect id="Rectangle-19-Copy" fill-opacity="0.2" fill="#26CC6D" x="531" y="109" width="183" height="27"></rect>
+                <g id="Simple-Card" transform="translate(161.691735, 126.934498)">
+                    <g id="Components/Cards/Simple-Card/Default">
+                        <g id="Components/Cards/Blank/Resting" fill="#FFFFFF">
+                            <g id="Card-/-Blank" filter="url(#filter-1)">
+                                <rect id="Card-Wrapper" x="0" y="0" width="494.058079" height="379.622707" rx="5"></rect>
+                            </g>
+                        </g>
+                        <rect id="Rectangle-19-Copy-7" fill-opacity="0.2" fill="#26CC6D" x="389" y="271.065502" width="155.943576" height="8.37899078"></rect>
+                        <g id="Components/Cards/Title/Large/Title-with-Subheader/Text-Only" transform="translate(33.789554, 279.444493)" fill="#1F2532" font-family="OpenSans-Semibold, Open Sans" font-size="20" font-weight="500" line-spacing="32">
+                            <text id="Title-here">
+                                <tspan x="0.283416579" y="23.6257313">- R. Milton Johnson, Chairman &amp; CEO</tspan>
+                            </text>
+                        </g>
+                        <g id="Card-Content" transform="translate(0.000000, 25.044554)">
+                            <rect id="Card-Content-Wrapper" x="0" y="0" width="494.058079" height="338.804642"></rect>
+                            <text id="&quot;At-HCA,-we-believe" font-family="OpenSans, Open Sans" font-size="20" font-weight="normal" line-spacing="27" fill="#465561">
+                                <tspan x="34.072971" y="40.0749249">"At HCA, we believe delivering a quality </tspan>
+                                <tspan x="34.072971" y="67.0749249">patient experience is central to fulfilling our </tspan>
+                                <tspan x="34.072971" y="94.0749249">mission of the care and improvement of </tspan>
+                                <tspan x="34.072971" y="121.074925">human life. We can only achieve this by </tspan>
+                                <tspan x="34.072971" y="148.074925">providing care that recognizes the diverse </tspan>
+                                <tspan x="34.072971" y="175.074925">cultures and backgrounds of our patients, </tspan>
+                                <tspan x="34.072971" y="202.074925">physicians and employees – where everyone </tspan>
+                                <tspan x="34.072971" y="229.074925">is treated with fairness, dignity and respect."</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-19-Copy-9" fill-opacity="0.2" fill="#26CC6D" x="111" y="464" width="183" height="11"></rect>
+                <rect id="Rectangle-19" fill-opacity="0.2" fill="#26CC6D" x="478" y="147" width="208" height="11"></rect>
+                <rect id="Rectangle-19-Copy" fill-opacity="0.2" fill="#26CC6D" x="57" y="226" width="128" height="27"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

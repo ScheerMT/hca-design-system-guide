@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="495px" viewBox="0 0 1440 495" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Header</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="30.4827558 -0.568137858 43.1494225 -0.568137858 43.1494225 346.128291 37.439614 349.971391 30.4827558 346.128291"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -61.000000)">
+            <g id="Header" transform="translate(0.000000, 61.000000)">
+                <rect id="Rectangle-3" fill="#F5F7F9" x="3.36710834" y="0" width="1434.38815" height="494.023658"></rect>
+                <rect id="Rectangle-2" fill="#B4D5C2" x="0" y="0" width="1440" height="463"></rect>
+                <g id="Header-Vectors" transform="translate(40.000000, 44.000000)">
+                    <g id="Lines" fill="#26CC6D" fill-opacity="0.2">
+                        <g id="Group-5" transform="translate(681.000000, 146.000000)">
+                            <rect id="Rectangle-19" x="0" y="60" width="325" height="11"></rect>
+                            <rect id="Rectangle-19-Copy-2" x="38" y="0" width="325" height="11"></rect>
+                            <rect id="Rectangle-19-Copy" x="49" y="22" width="325" height="27"></rect>
+                        </g>
+                        <g id="Group-7">
+                            <rect id="Rectangle-19" x="0" y="60" width="325" height="11"></rect>
+                            <rect id="Rectangle-19-Copy-2" x="38" y="0" width="325" height="11"></rect>
+                            <rect id="Rectangle-19-Copy" x="49" y="22" width="325" height="27"></rect>
+                        </g>
+                        <g id="Group-8" transform="translate(1082.000000, 0.000000)">
+                            <rect id="Rectangle-19-Copy-3" x="0" y="38" width="162" height="11"></rect>
+                            <rect id="Rectangle-19-Copy-4" x="21" y="0" width="173" height="27"></rect>
+                        </g>
+                        <g id="Group-9" transform="translate(353.000000, 267.000000)">
+                            <rect id="Rectangle-19-Copy-3" x="0" y="38" width="162" height="11"></rect>
+                            <rect id="Rectangle-19-Copy-4" x="21" y="0" width="173" height="27"></rect>
+                        </g>
+                        <g id="Group-10" transform="translate(1049.000000, 222.000000)">
+                            <rect id="Rectangle-19-Copy-5" x="0" y="38" width="119" height="11"></rect>
+                            <rect id="Rectangle-19-Copy-6" x="16" y="0" width="130" height="27"></rect>
+                        </g>
+                    </g>
+                    <g id="Flag" transform="translate(808.000000, 32.000000)">
+                        <polygon id="Path-16" fill-opacity="0.5" fill="#10572F" points="51 312.420159 59.9712972 353 72 349.094891 61.5 306"></polygon>
+                        <polygon id="Rectangle-18" fill="#26CC6D" points="101 57 281.148298 57 322 253 133.107896 253"></polygon>
+                        <polygon id="Rectangle-18" fill-opacity="0.5" fill="#218052" points="101 57 281.148298 57 322 253 133.107896 253"></polygon>
+                        <polygon id="Path-8" fill="#218052" points="128 219 133.783288 252 241 220.95502"></polygon>
+                        <polygon id="Rectangle-18" fill="#26CC6D" points="19 26 199.148298 26 240 222 51.1078962 222"></polygon>
+                        <g id="Path-4" transform="translate(19.000000, 26.000000)" fill="#218052" fill-opacity="0.2">
+                            <polygon points="-2.364774 -2.13634073 14.6326172 -2.13634073 61.0617327 209.960307 35.2619559 209.960307"></polygon>
+                        </g>
+                        <rect id="Rectangle-17" fill="#218052" transform="translate(43.500000, 178.500000) rotate(-10.000000) translate(-43.500000, -178.500000) " x="37" y="5" width="13" height="347"></rect>
+                        <g id="Rectangle" transform="translate(7.000000, 6.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#218052" transform="translate(36.816089, 174.701626) rotate(-10.000000) translate(-36.816089, -174.701626) " xlink:href="#path-1"></use>
+                            <rect fill="#10572F" mask="url(#mask-2)" transform="translate(12.666667, 16.758929) rotate(-10.000000) translate(-12.666667, -16.758929) " x="0" y="7.30357143" width="25.3333333" height="18.9107143"></rect>
+                        </g>
+                        <circle id="Oval-9" fill="#218052" cx="12.5" cy="12.5" r="12.5"></circle>
+                        <polygon id="Triangle-4" fill-opacity="0.5" fill="#E9F9F0" points="122.437219 76 170 143 89 143"></polygon>
+                    </g>
+                    <g id="Right-Mtn" transform="translate(487.000000, 323.000000)">
+                        <polygon id="Path-11" fill="#218052" points="296.298507 96 793 96 626.654014 15.2630291 568.903306 37.9720415 407.711869 0 326.505716 48 296.298507 30.9280423 226 96"></polygon>
+                        <polygon id="Path-11-Copy" fill="#218052" points="70.5652109 96 567.266703 96 400.920718 15.2630291 343.17001 37.9720415 181.978572 -2.84217094e-13 100.77242 48 70.5652109 30.9280423 0.266703481 96"></polygon>
+                        <polygon id="Path-14" fill="#10572F" points="337 55.0765055 391.144885 73 437 47.3585681 381.509008 30"></polygon>
+                        <polygon id="Triangle-5" fill-opacity="0.5" fill="#10572F" points="628.950449 25 745 81 587 45.1669668"></polygon>
+                        <polygon id="Triangle-5-Copy" fill-opacity="0.5" fill="#10572F" points="451.996323 72 504 87 421 87"></polygon>
+                        <polygon id="Triangle-5-Copy-3" fill-opacity="0.5" fill="#10572F" points="558.959115 61 626 86 519 86"></polygon>
+                        <polygon id="Triangle-5-Copy-2" fill-opacity="0.5" fill="#10572F" points="263.815996 38 380 81 218 81"></polygon>
+                        <polygon id="Path-2" fill-opacity="0.5" fill="#10572F" points="26.6930925 89.2199535 72.1105511 48.2199535 144.228013 89.2199535"></polygon>
+                    </g>
+                    <g id="Left-Mtn" transform="translate(13.000000, 352.000000)">
+                        <polygon id="Path-3" fill="#218052" transform="translate(122.500000, 33.538928) scale(-1, 1) translate(-122.500000, -33.538928) " points="0 67.077857 60.2703409 21.6457668 86.5761413 33.9596868 156.509426 0 245 67.077857"></polygon>
+                        <polygon id="Triangle-5-Copy" fill-opacity="0.5" fill="#10572F" points="186.635276 30 233 63 159 63"></polygon>
+                        <polygon id="Path-5" fill-opacity="0.5" fill="#10572F" points="91.5894186 10.5208151 119.752663 25.5963461 23.4161859 58.8416987"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

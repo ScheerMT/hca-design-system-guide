@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="212px" viewBox="0 0 272 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Color-DontError</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1050.000000, -3198.000000)">
+            <g id="Color-DontError" transform="translate(1050.000000, 3192.000000)">
+                <g id="Group-32">
+                    <g id="Error-multi-line" transform="translate(0.794479, 45.753906)">
+                        <rect id="Rectangle-12" fill="#EDEDED" x="0" y="0.24609375" width="271.205521" height="172"></rect>
+                        <g id="Components/Text-Fields/Multiple-Lines/Error" transform="translate(16.000000, 10.000000)">
+                            <rect id="Text-Field" stroke="#DC1128" fill="#FFFFFF" x="0.5" y="26.5" width="240.07362" height="103.003906" rx="5"></rect>
+                            <text id="Body-Text" font-family="OpenSans-Regular, Open Sans" font-size="14" font-weight="normal" line-spacing="23" fill="#465561">
+                                <tspan x="12" y="60">these symptoms for a few days </tspan>
+                                <tspan x="12" y="83">now and I’m beginning to think </tspan>
+                                <tspan x="12" y="106">that I’ve come down with|</tspan>
+                            </text>
+                            <text id="Required-Label" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="14" fill="#465561">
+                                <tspan x="0" y="15">Tell us why you’re visiting</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-8" fill="#F55D50" x="1" y="30.7929688" width="29.095092" height="14.9765625"></rect>
+                    <rect id="Rectangle-8" fill="#F55D50" x="49.3809816" y="30.7929688" width="29.095092" height="14.9765625"></rect>
+                    <rect id="Rectangle-8" fill="#F55D50" x="97.7619632" y="30.7929688" width="29.095092" height="14.9765625"></rect>
+                    <rect id="Rectangle-8" fill="#F55D50" x="146.142945" y="30.7929688" width="29.095092" height="14.9765625"></rect>
+                    <rect id="Rectangle-8" fill="#F55D50" x="194.523926" y="30.7929688" width="29.095092" height="14.9765625"></rect>
+                    <rect id="Rectangle-8" fill="#F55D50" x="242.904908" y="30.7929688" width="29.095092" height="14.9765625"></rect>
+                    <text id="Don’t" font-family="OpenSans-Regular, Open Sans" font-size="20" font-weight="normal" fill="#455561">
+                        <tspan x="16" y="21">Don’t</tspan>
+                    </text>
+                    <path d="M1.04886225,18.7371451 C0.895886682,18.3498918 1.13486694,18.0355087 1.31533581,17.7082865 C2.08937806,16.3046665 3.08689153,15.0499101 4.12775982,13.8419988 C4.70265185,13.1747155 4.79852594,12.6132675 4.43406342,11.8332087 C4.06854347,11.051415 3.86128626,10.1995269 3.55145787,9.39066708 C3.41187648,9.0266628 3.51867739,8.58284823 3.79325795,8.61720135 C4.2366756,8.67202754 4.73648977,8.04846634 5.10059981,8.66994553 C5.43686406,9.24388556 5.74528254,9.83725766 6.01351849,10.4441628 C6.26836027,11.0208788 6.49711866,10.9733397 6.85347418,10.5281371 C7.34306648,9.91567994 7.91866347,9.366377 8.37300794,8.73136475 C8.80444133,8.12862362 9.36065202,7.92076988 10.042345,8.02625826 C10.593621,8.11127356 10.690905,8.4336377 10.342304,8.87814627 C9.48119958,9.97467015 8.64899842,11.0944431 7.75793338,12.1663299 C7.39029856,12.6087565 7.31451574,12.9689437 7.60601525,13.4793825 C7.97823229,14.1313978 8.23413151,14.8465674 8.59647916,15.5048287 C8.9556545,16.156497 9.03002741,16.7040649 8.56264124,17.3866164 C8.16962799,17.9615974 7.92148329,17.8915031 7.59931817,17.4445656 C7.107611,16.7623612 6.62154348,16.0718287 6.19856958,15.3476371 C5.87569949,14.7952112 5.65927784,14.8802265 5.36249115,15.3417381 C4.5316999,16.6336237 3.66107861,17.9022602 2.86377279,19.2139248 C2.56099397,19.7118716 2.20851571,20.103289 1.63468111,19.9585895 C1.07247829,19.816319 0.96920216,19.2923471 1.04886225,18.7371451" id="Fill-1" fill="#455561"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

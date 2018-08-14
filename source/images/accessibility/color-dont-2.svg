@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="217px" viewBox="0 0 272 217" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Color-Don't2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1052.000000, -3475.000000)">
+            <g id="Color-Don't2" transform="translate(1052.000000, 3469.000000)">
+                <rect id="Rectangle-4" fill="#EDEDED" x="0" y="46" width="270" height="177"></rect>
+                <rect id="Rectangle-9" fill="#26CC6D" x="19" y="59" width="116" height="129"></rect>
+                <polygon id="Triangle" fill="#E9F9F0" points="76.5 102 103 145 50 145"></polygon>
+                <rect id="Rectangle-9" fill="#E9F9F0" x="134" y="59" width="116" height="129"></rect>
+                <polygon id="Triangle" fill="#26CC6D" points="191.5 102 218 145 165 145"></polygon>
+                <text id="Grass" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#E9F9F0">
+                    <tspan x="58" y="181">Gras</tspan>
+                    <tspan x="58" y="207">s</tspan>
+                </text>
+                <text id="Mint-Copy-2" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#26CC6D">
+                    <tspan x="180" y="181">Mint</tspan>
+                </text>
+                <text id="Grass" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#E9F9F0">
+                    <tspan x="172" y="140">Grass</tspan>
+                </text>
+                <text id="Mint-Copy" font-family="OpenSans-Semibold, Open Sans" font-size="14" font-weight="500" line-spacing="26" fill="#26CC6D">
+                    <tspan x="60" y="140">Mint</tspan>
+                </text>
+                <text id="ratio:-1.94:1" font-family="OpenSans-Semibold, Open Sans" font-size="16" font-weight="500" line-spacing="21" fill="#115730">
+                    <tspan x="23" y="213">ratio: 1.94:1</tspan>
+                </text>
+                <text id="ratio:-1.94:1" font-family="OpenSans-Semibold, Open Sans" font-size="16" font-weight="500" line-spacing="21" fill="#115730">
+                    <tspan x="145" y="213">ratio: 1.94:1</tspan>
+                </text>
+                <rect id="Rectangle-8" fill="#F55D50" x="0" y="31" width="29.095092" height="14.9765625"></rect>
+                <rect id="Rectangle-8" fill="#F55D50" x="49" y="31" width="29.095092" height="14.9765625"></rect>
+                <rect id="Rectangle-8" fill="#F55D50" x="97" y="31" width="29.095092" height="14.9765625"></rect>
+                <rect id="Rectangle-8" fill="#F55D50" x="146" y="31" width="29.095092" height="14.9765625"></rect>
+                <rect id="Rectangle-8" fill="#F55D50" x="194" y="31" width="29.095092" height="14.9765625"></rect>
+                <rect id="Rectangle-8" fill="#F55D50" x="242" y="31" width="29.095092" height="14.9765625"></rect>
+                <text id="Don’t" font-family="OpenSans-Regular, Open Sans" font-size="20" font-weight="normal" fill="#455561">
+                    <tspan x="15" y="21">Don’t</tspan>
+                </text>
+                <path d="M0.0488622455,18.7371451 C-0.104113318,18.3498918 0.13486694,18.0355087 0.315335808,17.7082865 C1.08937806,16.3046665 2.08689153,15.0499101 3.12775982,13.8419988 C3.70265185,13.1747155 3.79852594,12.6132675 3.43406342,11.8332087 C3.06854347,11.051415 2.86128626,10.1995269 2.55145787,9.39066708 C2.41187648,9.0266628 2.51867739,8.58284823 2.79325795,8.61720135 C3.2366756,8.67202754 3.73648977,8.04846634 4.10059981,8.66994553 C4.43686406,9.24388556 4.74528254,9.83725766 5.01351849,10.4441628 C5.26836027,11.0208788 5.49711866,10.9733397 5.85347418,10.5281371 C6.34306648,9.91567994 6.91866347,9.366377 7.37300794,8.73136475 C7.80444133,8.12862362 8.36065202,7.92076988 9.04234497,8.02625826 C9.59362096,8.11127356 9.69090496,8.4336377 9.34230396,8.87814627 C8.48119958,9.97467015 7.64899842,11.0944431 6.75793338,12.1663299 C6.39029856,12.6087565 6.31451574,12.9689437 6.60601525,13.4793825 C6.97823229,14.1313978 7.23413151,14.8465674 7.59647916,15.5048287 C7.9556545,16.156497 8.03002741,16.7040649 7.56264124,17.3866164 C7.16962799,17.9615974 6.92148329,17.8915031 6.59931817,17.4445656 C6.107611,16.7623612 5.62154348,16.0718287 5.19856958,15.3476371 C4.87569949,14.7952112 4.65927784,14.8802265 4.36249115,15.3417381 C3.5316999,16.6336237 2.66107861,17.9022602 1.86377279,19.2139248 C1.56099397,19.7118716 1.20851571,20.103289 0.634681108,19.9585895 C0.0724782887,19.816319 -0.0307978405,19.2923471 0.0488622455,18.7371451" id="Fill-1" fill="#455561"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="563px" height="310px" viewBox="0 0 563 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 33</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="31" height="31" rx="15.5"></rect>
+        <filter x="-93.5%" y="-61.3%" width="287.1%" height="287.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="10.2517986" y="12.3636364" width="264.496403" height="112.30303"></rect>
+        <rect id="path-5" x="0" y="0" width="47.1582734" height="47.3939394" rx="23.5791367"></rect>
+        <filter x="-61.5%" y="-40.1%" width="223.0%" height="222.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="0" y="0" width="25" height="25" rx="12.5"></rect>
+        <filter x="-116.0%" y="-76.0%" width="332.0%" height="332.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.121568627   0 0 0 0 0.145098039   0 0 0 0 0.196078431  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-760.000000, -4088.000000)">
+            <g id="Group-33" transform="translate(760.000000, 4088.000000)">
+                <rect id="Rectangle-10" fill="#EDEDED" x="0" y="0" width="563" height="310" rx="5"></rect>
+                <g id="Visual-Hierarchy-Zoom" transform="translate(35.000000, 26.000000)">
+                    <g id="Left-Screen">
+                        <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="0" width="356" height="169"></rect>
+                        <rect id="Path" fill="#1F2532" x="13.2988506" y="15.3636364" width="330.425287" height="6.14545455"></rect>
+                        <rect id="Rectangle-5" fill="#465561" x="13.2988506" y="20.4848485" width="330.425287" height="23.5575758"></rect>
+                        <g id="Group-23" transform="translate(116.189655, 33.227273) scale(-1, 1) translate(-116.189655, -33.227273) translate(23.689655, 30.727273)" fill="#CAD6DA">
+                            <g id="Group-3">
+                                <polygon id="Rectangle" points="96.3785767 0 115.967718 0 115.967718 4.0969697 100.530238 4.0969697 96.3785767 4.0969697"></polygon>
+                                <polygon id="Rectangle" points="124.586941 0 155.929567 0 155.929567 4.0969697 128.738602 4.0969697 124.586941 4.0969697"></polygon>
+                                <polygon id="Rectangle" points="164.548789 0 184.137931 0 184.137931 4.0969697 168.700451 4.0969697 164.548789 4.0969697"></polygon>
+                                <polygon id="Rectangle" points="0 0 19.5891416 0 19.5891416 4.0969697 4.15166124 4.0969697 0 4.0969697"></polygon>
+                                <polygon id="Rectangle" points="28.2083639 0 59.5509905 0 59.5509905 4.0969697 32.3600251 4.0969697 28.2083639 4.0969697"></polygon>
+                                <polygon id="Rectangle" points="68.1702128 0 87.7593544 0 87.7593544 4.0969697 72.321874 4.0969697 68.1702128 4.0969697"></polygon>
+                            </g>
+                        </g>
+                        <g id="Left-Mtn" opacity="0.5" transform="translate(35.804598, 137.248485)">
+                            <polygon id="Path-3" fill="#218052" transform="translate(32.735632, 8.193939) scale(-1, 1) translate(-32.735632, -8.193939) " points="0 16.3878788 16.1060221 5.28830553 23.135712 8.2967354 41.8239592 0 65.4712644 16.3878788"></polygon>
+                            <polygon id="Triangle-5-Copy" fill-opacity="0.5" fill="#10572F" points="49.9602872 7.12516469 62.3160227 15.6753623 42.5957624 15.6753623"></polygon>
+                            <polygon id="Path-5" fill-opacity="0.5" fill="#10572F" points="24.1731273 2.13754941 31.5524166 5.69429369 6.31048331 13.5378129"></polygon>
+                        </g>
+                        <g id="Right-Mtn" opacity="0.5" transform="translate(184.137931, 136.224242)">
+                            <polygon id="Path-11" fill="#218052" points="58.6787249 17.4121212 156.517241 17.4121212 123.750993 2.76835117 112.375461 6.88722697 80.6245377 0 64.6288349 8.70606061 58.6787249 5.60961272 44.8315717 17.4121212"></polygon>
+                            <polygon id="Path-11-Copy" fill="#218052" points="13.8471532 17.4121212 111.68567 17.4121212 78.9194214 2.76835117 67.5438896 6.88722697 35.7929661 0 19.7972632 8.70606061 13.8471532 5.60961272 0 17.4121212"></polygon>
+                            <polygon id="Path-14" fill="#10572F" points="66.0675793 10.4580973 76.7140718 13.784596 85.7305493 9.02569196 74.8193721 5.8040404"></polygon>
+                            <polygon id="Triangle-5" fill-opacity="0.5" fill="#10572F" points="123.971382 4.3530303 147.079016 14.510101 115.618264 8.01083936"></polygon>
+                            <polygon id="Triangle-5-Copy" fill-opacity="0.5" fill="#10572F" points="89.5392219 13.0590909 99.8878877 15.9611111 83.3709929 15.9611111"></polygon>
+                            <polygon id="Triangle-5-Copy-3" fill-opacity="0.5" fill="#10572F" points="110.178024 10.8825758 123.483452 15.2356061 102.247444 15.2356061"></polygon>
+                            <polygon id="Triangle-5-Copy-2" fill-opacity="0.5" fill="#10572F" points="52.3785391 7.25505051 75.5058049 15.2356061 43.258534 15.2356061"></polygon>
+                            <polygon id="Path-2" fill-opacity="0.5" fill="#10572F" points="5.50563161 15.9611111 14.3194281 8.70606061 28.3146768 15.9611111"></polygon>
+                        </g>
+                        <rect id="Rectangle-7" fill-opacity="0.2" fill="#B4D5C2" x="13.2988506" y="44.0424242" width="330.425287" height="109.593939"></rect>
+                        <rect id="Rectangle" fill-opacity="0.8" fill="#7F94A2" x="74.6781609" y="73.7454545" width="205.171527" height="20.6217343"></rect>
+                        <g id="text/titleH1" style="mix-blend-mode: multiply;" transform="translate(142.195402, 112.666667)" fill="#D8DDE6">
+                            <rect id="Rectangle" x="0" y="0" width="73" height="8"></rect>
+                        </g>
+                        <g id="text/titleH1" style="mix-blend-mode: multiply;" transform="translate(115.597701, 102.424242)" fill="#D8DDE6">
+                            <rect id="Rectangle" x="0" y="0" width="125" height="8"></rect>
+                        </g>
+                        <g id="Components/Buttons/Floating-Action/Primary/Resting" transform="translate(296.666667, 34.824242)">
+                            <g id="Evening">
+                                <g id="Button-Color">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#7F94A2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                            </g>
+                            <g id="ic_add" transform="translate(8.060000, 8.060000)">
+                                <g id="Icon-24px">
+                                    <polygon id="Shape" fill="#FFFFFF" points="11.78 8.06 8.06 8.06 8.06 11.78 6.82 11.78 6.82 8.06 3.1 8.06 3.1 6.82 6.82 6.82 6.82 3.1 8.06 3.1 8.06 6.82 11.78 6.82"></polygon>
+                                    <polygon id="Shape" points="0 0 14.88 0 14.88 14.88 0 14.88"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Right-Screen" transform="translate(208.000000, 122.000000)">
+                        <rect id="Rectangle-6" fill="#FFFFFF" x="0" y="0" width="285" height="136"></rect>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <rect id="Path" fill="#1F2532" mask="url(#mask-4)" x="-236.816547" y="-39.1515152" width="511.564748" height="10.3030303"></rect>
+                        <rect id="Rectangle-5" fill="#465561" mask="url(#mask-4)" x="-236.816547" y="-30.9090909" width="511.564748" height="36.0606061"></rect>
+                        <g id="Group-23" mask="url(#mask-4)">
+                            <g transform="translate(-76.888489, -11.954545) scale(-1, 1) translate(76.888489, 11.954545) translate(-219.388489, -15.454545)" id="Group-3">
+                                <g>
+                                    <polygon id="Rectangle" fill="#CAD6DA" points="149.170213 0 179.489362 0 179.489362 6.18181818 155.595958 6.18181818 149.170213 6.18181818"></polygon>
+                                    <polygon id="Rectangle" fill="#CAD6DA" points="192.829787 0 241.340426 0 241.340426 6.18181818 199.255533 6.18181818 192.829787 6.18181818"></polygon>
+                                    <polygon id="Rectangle" fill="#CAD6DA" points="254.680851 0 285 0 285 6.18181818 261.106596 6.18181818 254.680851 6.18181818"></polygon>
+                                    <polygon id="Rectangle" fill="#CAD6DA" points="0 0 30.3191489 0 30.3191489 6.18181818 6.42574534 6.18181818 0 6.18181818"></polygon>
+                                    <polygon id="Rectangle" fill="#CAD6DA" points="43.6595745 0 92.1702128 0 92.1702128 6.18181818 50.0853198 6.18181818 43.6595745 6.18181818"></polygon>
+                                    <polygon id="Rectangle" fill="#CAD6DA" points="105.510638 0 135.829787 0 135.829787 6.18181818 111.936384 6.18181818 105.510638 6.18181818"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Left-Mtn" opacity="0.5" mask="url(#mask-4)">
+                            <g transform="translate(-201.960432, 150.424242)">
+                                <polygon id="Path-3" fill="#218052" transform="translate(50.746403, 12.878788) scale(-1, 1) translate(-50.746403, -12.878788) " points="0 25.7575758 24.9673714 8.31187075 35.8647163 13.040357 64.8350235 0 101.492806 25.7575758"></polygon>
+                                <polygon id="Triangle-5-Copy" fill-opacity="0.5" fill="#10572F" points="77.4478662 11.198946 96.6015862 24.6376812 66.031464 24.6376812"></polygon>
+                                <polygon id="Path-5" fill-opacity="0.5" fill="#10572F" points="37.4729056 3.35968379 48.9121955 8.94998083 9.78243911 21.2779974"></polygon>
+                            </g>
+                        </g>
+                        <g id="Right-Mtn" opacity="0.5" mask="url(#mask-4)">
+                            <g transform="translate(27.679856, 148.363636)">
+                                <polygon id="Path-11" fill="#218052" points="90.7048585 26.7878788 241.942446 26.7878788 191.292778 4.25900179 173.70862 10.5957338 124.628429 0 99.902466 13.3939394 90.7048585 8.63017341 69.3000976 26.7878788"></polygon>
+                                <polygon id="Path-11-Copy" fill="#218052" points="21.4047609 26.7878788 172.642348 26.7878788 121.992681 4.25900179 104.408522 10.5957338 55.3283311 0 30.6023684 13.3939394 21.4047609 8.63017341 0 26.7878788"></polygon>
+                                <polygon id="Path-14" fill="#10572F" points="102.12646 16.0893804 118.583678 21.2070707 132.521239 13.8856799 115.654874 8.92929293"></polygon>
+                                <polygon id="Triangle-5" fill-opacity="0.5" fill="#10572F" points="191.633453 6.6969697 227.352952 22.3232323 178.721304 12.3243683"></polygon>
+                                <polygon id="Triangle-5-Copy-2" fill-opacity="0.5" fill="#10572F" points="80.966108 11.1616162 116.715954 23.4393939 66.8685152 23.4393939"></polygon>
+                                <polygon id="Path-2" fill-opacity="0.5" fill="#10572F" points="8.5105383 24.5555556 22.1347976 13.3939394 43.7684827 24.5555556"></polygon>
+                            </g>
+                        </g>
+                        <rect id="Rectangle-7" fill-opacity="0.2" fill="#B4D5C2" mask="url(#mask-4)" x="-236.816547" y="5.15151515" width="511.564748" height="171.030303"></rect>
+                        <rect id="Rectangle" fill-opacity="0.8" fill="#7F94A2" mask="url(#mask-4)" x="-141.47482" y="51.5151515" width="317.805755" height="31.9393939"></rect>
+                        <g id="text/titleH1" style="mix-blend-mode: multiply;" mask="url(#mask-4)" fill="#D8DDE6">
+                            <g transform="translate(-36.906475, 112.303030)" id="Rectangle">
+                                <rect x="0" y="0" width="112" height="12"></rect>
+                            </g>
+                        </g>
+                        <g id="text/titleH1" style="mix-blend-mode: multiply;" mask="url(#mask-4)" fill="#D8DDE6">
+                            <g transform="translate(-78.938849, 95.818182)" id="Rectangle">
+                                <rect x="0" y="0" width="194" height="12"></rect>
+                            </g>
+                        </g>
+                        <g id="Components/Buttons/Floating-Action/Primary/Resting" mask="url(#mask-4)">
+                            <g transform="translate(201.960432, -9.272727)">
+                                <g id="Evening">
+                                    <g id="Button-Color">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                        <use fill="#7F94A2" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                    </g>
+                                </g>
+                                <g id="ic_add" transform="translate(12.261151, 12.322424)">
+                                    <g id="Icon-24px">
+                                        <polygon id="Shape" fill="#FFFFFF" points="17.9201439 12.3224242 12.2611511 12.3224242 12.2611511 18.009697 10.3748201 18.009697 10.3748201 12.3224242 4.71582734 12.3224242 4.71582734 10.4266667 10.3748201 10.4266667 10.3748201 4.73939394 12.2611511 4.73939394 12.2611511 10.4266667 17.9201439 10.4266667"></polygon>
+                                        <polygon id="Shape" points="0 0 22.6359712 0 22.6359712 22.7490909 0 22.7490909"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Components/Buttons/Floating-Action/Primary/Resting" mask="url(#mask-4)">
+                            <g transform="translate(146.600719, -86.545455)">
+                                <g id="Evening">
+                                    <g id="Button-Color">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                        <use fill="#7F94A2" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                    </g>
+                                </g>
+                                <g id="ic_add" transform="translate(6.500000, 6.500000)">
+                                    <g id="Icon-24px">
+                                        <polygon id="Shape" fill="#FFFFFF" points="9.5 6.5 6.5 6.5 6.5 9.5 5.5 9.5 5.5 6.5 2.5 6.5 2.5 5.5 5.5 5.5 5.5 2.5 6.5 2.5 6.5 5.5 9.5 5.5"></polygon>
+                                        <polygon id="Shape" points="0 0 12 0 12 12 0 12"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
