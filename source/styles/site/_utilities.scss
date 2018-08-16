@@ -209,3 +209,17 @@
     color: $color__teaberry !important;
   }
 }
+
+.hca-flex {
+  display: flex !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+}
+
+.hca-flex--wrap {
+  display: -webkit-flex !important; /* Safari */
+  -webkit-flex-wrap: wrap !important; /* Safari 6.1+ */
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
